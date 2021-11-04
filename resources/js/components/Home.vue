@@ -1,82 +1,10 @@
 <template>
   <div>
     <div class="relative flex flex-col justify-center items-center pb-20">
-      <div
-        class="
-          absolute
-          top-10
-          left-7
-          w-72
-          h-72
-          bg-blue-400
-          rounded-full
-          mix-blend-multiply
-          filter
-          blur-none
-          animate-blob
-        "
-      ></div>
-      <div
-        class="
-          absolute
-          top-10
-          left-44
-          w-72
-          h-72
-          bg-blue-700
-          rounded-full
-          mix-blend-multiply
-          filter
-          blur-none
-          animate-blob
-        "
-      ></div>
-      <div
-        class="
-          absolute
-          top-44
-          left-7
-          w-72
-          h-72
-          bg-blue-400
-          rounded-full
-          mix-blend-multiply
-          filter
-          blur-none
-          animate-blob
-        "
-      ></div>
-      <div
-        class="
-          absolute
-          top-44
-          left-44
-          w-72
-          h-72
-          bg-blue-700
-          rounded-full
-          mix-blend-multiply
-          filter
-          blur-none
-          animate-blob
-        "
-      ></div>
-
-      <div
-        class="
-          absolute
-          top-64
-          left-28
-          w-80
-          h-80
-          bg-blue-200
-          rounded-full
-          mix-blend-multiply
-          filter
-          blur-none
-          animate-blob
-        "
-      ></div>
+      <div class="absolute rounded-full opacity-5 h-96 w-96 bg-blue-700"></div>
+      <div class="absolute rounded-full opacity-5 h-80 w-80 bg-blue-700"></div>
+      <div class="absolute rounded-full opacity-5 h-64 w-64 bg-blue-700"></div>
+      <div class="absolute rounded-full opacity-5 h-48 w-48 bg-blue-700"></div>
       <div class="pt-7">
         <svg
           id="logo-33"
@@ -157,12 +85,32 @@
           ></path>
         </svg>
       </div>
-      <div>
-        <h1 class="text-7xl pt-40 font-bold font-poppins text-blue-700">
+      <div class="text-center">
+        <h1
+          class="
+            text-2xl
+            md:text-7xl
+            pt-20
+            md:pt-36
+            font-bold font-poppins
+            text-blue-900
+          "
+        >
           Fast and Affordable Service.
         </h1>
       </div>
-      <div class="max-w-xl text-center pt-7 text-gray-500 font-poppins">
+      <div
+        class="
+          max-w-sm
+          md:max-w-xl
+          text-sm
+          md:text-base
+          text-center
+          pt-7
+          text-gray-700
+          font-poppins
+        "
+      >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
           quam dolor blanditiis sint commodi ipsam, harum nihil repudiandae quia
@@ -170,19 +118,32 @@
           cumque.
         </p>
       </div>
-      <div class="w-10 border-b-2 border-blue-700 pt-12"></div>
-      <div class="pt-10 font-poppins text-blue-700">
-        <!-- <button class="bg-blue-700 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
+      <div class="w-10 border-b-2 border-blue-900 pt-12"></div>
+      <div class="pt-10 font-poppins text-blue-900">
+        <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-        <p class="text-3xl font-semibold uppercase">Some of our services</p>
+        <p class="text-2xl md:text-3xl font-semibold uppercase">
+          Some of our services
+        </p>
       </div>
-      <div class="w-32 border-b-2 border-blue-700 pt-10"></div>
+      <div class="w-32 border-b-2 border-blue-900 pt-10"></div>
     </div>
 
     <!-- services -->
     <div class="font-poppins">
-      <div class="flex space-x-7 justify-around">
+      <div
+        class="
+          flex flex-col
+          md:flex-row
+          space-y-7
+          md:space-y-0 md:space-x-5
+          justify-center
+          items-center
+          md:justify-around
+        "
+      >
+        <!-- <div></div> -->
         <div
           class="
             flex flex-col
@@ -191,7 +152,7 @@
             text-center
             max-w-sm
             bg-white
-            border-l-4 border-blue-700
+            border-l-4 border-blue-900
             p-12
             shadow-lg
           "
@@ -210,40 +171,7 @@
             </svg>
           </p>
           <p class="font-bold pt-2 pb-2">Server setup</p>
-          <div class="w-5 border-b-2 border-blue-700"></div>
-          <p class="text-sm text-gray-500 pt-2">
-            Lorem ipsum dolor alias saepe quidem hic ducimus autem, sit quos
-            culpa! Cupiditate, fugit!
-          </p>
-        </div>
-        <div
-          class="
-            flex flex-col
-            justify-center
-            items-center
-            text-center
-            max-w-sm
-            bg-white
-            border-l-4 border-blue-700
-            p-12
-            shadow-lg
-          "
-        >
-          <p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="blue"
-            >
-              <path
-                d="M23.334 11.96c-.713-.726-.872-1.829-.393-2.727.342-.64.366-1.401.064-2.062-.301-.66-.893-1.142-1.601-1.302-.991-.225-1.722-1.067-1.803-2.081-.059-.723-.451-1.378-1.062-1.77-.609-.393-1.367-.478-2.05-.229-.956.347-2.026.032-2.642-.776-.44-.576-1.124-.915-1.85-.915-.725 0-1.409.339-1.849.915-.613.809-1.683 1.124-2.639.777-.682-.248-1.44-.163-2.05.229-.61.392-1.003 1.047-1.061 1.77-.082 1.014-.812 1.857-1.803 2.081-.708.16-1.3.642-1.601 1.302s-.277 1.422.065 2.061c.479.897.32 2.001-.392 2.727-.509.517-.747 1.242-.644 1.96s.536 1.347 1.17 1.7c.888.495 1.352 1.51 1.144 2.505-.147.71.044 1.448.519 1.996.476.549 1.18.844 1.902.798 1.016-.063 1.953.54 2.317 1.489.259.678.82 1.195 1.517 1.399.695.204 1.447.072 2.031-.357.819-.603 1.936-.603 2.754 0 .584.43 1.336.562 2.031.357.697-.204 1.258-.722 1.518-1.399.363-.949 1.301-1.553 2.316-1.489.724.046 1.427-.249 1.902-.798.475-.548.667-1.286.519-1.996-.207-.995.256-2.01 1.145-2.505.633-.354 1.065-.982 1.169-1.7s-.135-1.443-.643-1.96zm-12.584 5.43l-4.5-4.364 1.857-1.857 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.642z"
-              />
-            </svg>
-          </p>
-          <p class="font-bold pt-2 pb-2">Server setup</p>
-          <div class="w-5 border-b-2 border-blue-700"></div>
+          <div class="w-5 border-b-2 border-blue-900"></div>
 
           <p class="text-sm text-gray-500 pt-2">
             Lorem ipsum dolor alias saepe quidem hic ducimus autem, sit quos
@@ -258,7 +186,7 @@
             text-center
             max-w-sm
             bg-white
-            border-l-4 border-blue-700
+            border-l-4 border-blue-900
             p-12
             shadow-lg
           "
@@ -277,7 +205,7 @@
             </svg>
           </p>
           <p class="font-bold pt-2 pb-2">Server setup</p>
-          <div class="w-5 border-b-2 border-blue-700"></div>
+          <div class="w-5 border-b-2 border-blue-900"></div>
 
           <p class="text-sm text-gray-500 pt-2">
             Lorem ipsum dolor alias saepe quidem hic ducimus autem, sit quos
@@ -292,7 +220,7 @@
             text-center
             max-w-sm
             bg-white
-            border-l-4 border-blue-700
+            border-l-4 border-blue-900
             p-12
             shadow-lg
           "
@@ -311,7 +239,41 @@
             </svg>
           </p>
           <p class="font-bold pt-2 pb-2">Server setup</p>
-          <div class="w-5 border-b-2 border-blue-700"></div>
+          <div class="w-5 border-b-2 border-blue-900"></div>
+
+          <p class="text-sm text-gray-500 pt-2">
+            Lorem ipsum dolor alias saepe quidem hic ducimus autem, sit quos
+            culpa! Cupiditate, fugit!
+          </p>
+        </div>
+        <div
+          class="
+            flex flex-col
+            justify-center
+            items-center
+            text-center
+            max-w-sm
+            bg-white
+            border-l-4 border-blue-900
+            p-12
+            shadow-lg
+          "
+        >
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="blue"
+            >
+              <path
+                d="M23.334 11.96c-.713-.726-.872-1.829-.393-2.727.342-.64.366-1.401.064-2.062-.301-.66-.893-1.142-1.601-1.302-.991-.225-1.722-1.067-1.803-2.081-.059-.723-.451-1.378-1.062-1.77-.609-.393-1.367-.478-2.05-.229-.956.347-2.026.032-2.642-.776-.44-.576-1.124-.915-1.85-.915-.725 0-1.409.339-1.849.915-.613.809-1.683 1.124-2.639.777-.682-.248-1.44-.163-2.05.229-.61.392-1.003 1.047-1.061 1.77-.082 1.014-.812 1.857-1.803 2.081-.708.16-1.3.642-1.601 1.302s-.277 1.422.065 2.061c.479.897.32 2.001-.392 2.727-.509.517-.747 1.242-.644 1.96s.536 1.347 1.17 1.7c.888.495 1.352 1.51 1.144 2.505-.147.71.044 1.448.519 1.996.476.549 1.18.844 1.902.798 1.016-.063 1.953.54 2.317 1.489.259.678.82 1.195 1.517 1.399.695.204 1.447.072 2.031-.357.819-.603 1.936-.603 2.754 0 .584.43 1.336.562 2.031.357.697-.204 1.258-.722 1.518-1.399.363-.949 1.301-1.553 2.316-1.489.724.046 1.427-.249 1.902-.798.475-.548.667-1.286.519-1.996-.207-.995.256-2.01 1.145-2.505.633-.354 1.065-.982 1.169-1.7s-.135-1.443-.643-1.96zm-12.584 5.43l-4.5-4.364 1.857-1.857 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.642z"
+              />
+            </svg>
+          </p>
+          <p class="font-bold pt-2 pb-2">Server setup</p>
+          <div class="w-5 border-b-2 border-blue-900"></div>
 
           <p class="text-sm text-gray-500 pt-2">
             Lorem ipsum dolor alias saepe quidem hic ducimus autem, sit quos
@@ -323,25 +285,40 @@
 
     <!-- planning -->
     <div class="flex flex-col justify-center items-center">
-      <div class="w-10 border-b-2 border-blue-700 pt-12"></div>
-      <div class="pt-10 font-poppins text-blue-700">
-        <!-- <button class="bg-blue-700 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
+      <div class="w-10 border-b-2 border-blue-900 pt-12"></div>
+      <div class="pt-10 font-poppins text-blue-900">
+        <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-        <p class="text-2xl font-semibold uppercase">Right plan for you.!</p>
+        <p class="text-2xl md:text-3xl font-semibold uppercase">
+          Right plan for you.!
+        </p>
       </div>
-      <div class="w-32 border-b-2 border-blue-700 pt-10"></div>
+      <div class="w-32 border-b-2 border-blue-900 pt-10"></div>
     </div>
 
     <!-- cards -->
 
-    <div class="flex justify-center py-20 font-poppins">
-      <div class="bg-gray-100 py-24 px-7 text-black rounded-lg shadow-2xl">
-        <div class="text-center text-lg font-semibold pb-4">Service1</div>
+    <div
+      class="
+        flex flex-col
+        md:flex-row
+        space-y-9
+        md:space-y-0
+        items-center
+        justify-center
+        py-20
+        font-poppins
+      "
+    >
+      <div class="bg-gray-100 py-20 px-7 text-black rounded-lg shadow-2xl">
+        <div class="divide-y divide-gray-200">
+          <div class="text-center text-lg font-semibold pb-4">Service1</div>
 
-        <div class="text-center max-w-xs">
-          Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta
-          provident odit! Placeat voluptas error magnam.
+          <div class="text-center max-w-xs py-4">
+            Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta
+            provident odit! Placeat voluptas error magnam.
+          </div>
         </div>
 
         <div class="text-center pt-7">
@@ -349,7 +326,7 @@
           <span class="text-sm items-baseline">Birr</span>
         </div>
 
-        <div class="pt-4 space-y-2">
+        <div class="pt-8 space-y-2 flex flex-col items-center">
           <div class="flex space-x-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -410,15 +387,24 @@
 
         <div class="text-center pt-10">
           <button
-            class="px-8 py-2 text-blue-700 rounded ring ring-blue-700 bg-white uppercase"
+            class="
+              px-8
+              py-2
+              text-blue-700
+              rounded
+              font-semibold
+              ring ring-blue-700
+              bg-white
+              uppercase
+            "
           >
             I'm interested
           </button>
         </div>
       </div>
-      <div class="bg-blue-700 py-8  px-7 text-white rounded-lg shadow-2xl">
-        <div class="flex justify-center ">
-             <svg
+      <div class="bg-blue-900 py-24 px-7 text-white rounded-lg shadow-2xl">
+        <div class="flex justify-center">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="62"
             height="62"
@@ -430,20 +416,20 @@
             />
           </svg>
         </div>
-        <div class="text-center text-lg font-semibold pb-4">
-            Service1</div>
+        <div class="divide-y">
+          <div class="text-center text-lg font-semibold pb-4">Service3</div>
 
-        <div class="text-center max-w-xs">
-          Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta
-          provident odit! Placeat voluptas error magnam.
+          <div class="text-center max-w-xs py-4">
+            Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta
+            provident odit! Placeat voluptas error magnam.
+          </div>
         </div>
-
         <div class="text-center pt-7">
           <span class="text-6xl font-bold">3700</span>
           <span class="text-sm items-baseline">Birr</span>
         </div>
 
-        <div class="pt-4 space-y-2">
+        <div class="pt-8 space-y-2 flex flex-col items-center">
           <div class="flex space-x-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -503,25 +489,36 @@
         </div>
 
         <div class="text-center pt-10">
-          <button class="px-8 py-2 text-white rounded ring ring-white uppercase">
+          <button
+            class="
+              px-8
+              py-2
+              text-white
+              rounded
+              ring ring-white
+              uppercase
+              font-semibold
+            "
+          >
             I'm interested
           </button>
         </div>
       </div>
-      <div class="bg-gray-100 py-24 px-7 text-black rounded-lg">
-        <div class="text-center text-lg font-semibold pb-4">Service1</div>
+      <div class="bg-gray-100 py-20 px-7 text-black rounded-lg">
+        <div class="divide-y divide-gray-200">
+          <div class="text-center text-lg font-semibold pb-4">Service1</div>
 
-        <div class="text-center max-w-xs">
-          Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta
-          provident odit! Placeat voluptas error magnam.
+          <div class="text-center max-w-xs py-4">
+            Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta
+            provident odit! Placeat voluptas error magnam.
+          </div>
         </div>
-
         <div class="text-center pt-7">
           <span class="text-6xl font-bold">1700</span>
           <span class="text-sm items-baseline">Birr</span>
         </div>
 
-        <div class="pt-4 space-y-2">
+        <div class="pt-8 space-y-2 flex flex-col items-center">
           <div class="flex space-x-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -582,7 +579,16 @@
 
         <div class="text-center pt-10">
           <button
-            class="px-8 py-2 text-blue-700 rounded ring ring-blue-700 bg-white uppercase"
+            class="
+              px-8
+              py-2
+              text-blue-700
+              rounded
+              ring ring-blue-700
+              bg-white
+              uppercase
+              font-semibold
+            "
           >
             I'm interested
           </button>
