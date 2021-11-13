@@ -2755,6 +2755,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -21589,7 +21621,74 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { class: _vm.lightMode ? "" : "dark" }, [
-    _vm._m(0),
+    _c(
+      "div",
+      {
+        staticClass:
+          "\n      relative\n      flex flex-col\n      justify-center\n      items-center\n      pb-20\n      dark:bg-gray-900\n    ",
+      },
+      [
+        _c("div", {
+          staticClass: "absolute rounded-full opacity-5 h-96 w-96 bg-blue-700",
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "absolute rounded-full opacity-5 h-80 w-80 bg-blue-700",
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "absolute rounded-full opacity-5 h-64 w-64 bg-blue-700",
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "absolute rounded-full opacity-5 h-48 w-48 bg-blue-700",
+        }),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "pt-7" }, [
+          _c(
+            "svg",
+            {
+              staticClass: "h-10 w-10 text-blue-900",
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                stroke: "currentColor",
+              },
+            },
+            [
+              _c("path", {
+                attrs: {
+                  "stroke-linecap": "round",
+                  "stroke-linejoin": "round",
+                  "stroke-width": "2",
+                  d: "M13 10V3L4 14h7v7l9-11h-7z",
+                },
+              }),
+            ]
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "max-w-xl text-center pt-7 text-gray-500 tracking-wide",
+          },
+          [
+            _vm._v(
+              "\n      Skynet provides reliable, scaleable, convenient Internet. A great choice\n      for enterprise and the public sector, businesses of all sizes, or just\n      skyping with your grandkids or streaming videos and gaming, Skynet\n      delivers.\n    "
+            ),
+          ]
+        ),
+      ]
+    ),
     _vm._v(" "),
     _c("div", { staticClass: "font-poppins dark:bg-gray-900" }, [
       _c(
@@ -21649,7 +21748,7 @@ var render = function () {
                 "p",
                 {
                   staticClass:
-                    "text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed",
+                    "\n            text-sm text-gray-500\n            dark:text-blue-300\n            pt-2\n            tracking-wide\n            leading-relaxed\n          ",
                 },
                 [
                   _vm._v(
@@ -21710,7 +21809,7 @@ var render = function () {
                 "p",
                 {
                   staticClass:
-                    "text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed",
+                    "\n            text-sm text-gray-500\n            dark:text-blue-300\n            pt-2\n            tracking-wide\n            leading-relaxed\n          ",
                 },
                 [
                   _vm._v(
@@ -21771,7 +21870,7 @@ var render = function () {
                 "p",
                 {
                   staticClass:
-                    "text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed",
+                    "\n            text-sm text-gray-500\n            dark:text-blue-300\n            pt-2\n            tracking-wide\n            leading-relaxed\n          ",
                 },
                 [
                   _vm._v(
@@ -21785,7 +21884,7 @@ var render = function () {
       ),
     ]),
     _vm._v(" "),
-    _vm._m(1),
+    _vm._m(3),
     _vm._v(" "),
     _c(
       "div",
@@ -21801,9 +21900,9 @@ var render = function () {
               "\n        bg-gray-100\n        dark:text-blue-300 dark:bg-blue-400 dark:bg-opacity-10\n        py-20\n        px-7\n        text-black\n        rounded-lg\n        shadow-2xl\n      ",
           },
           [
-            _vm._m(2),
+            _vm._m(4),
             _vm._v(" "),
-            _vm._m(3),
+            _vm._m(5),
             _vm._v(" "),
             _c(
               "div",
@@ -21841,7 +21940,7 @@ var render = function () {
               0
             ),
             _vm._v(" "),
-            _vm._m(4),
+            _vm._m(6),
           ]
         ),
         _vm._v(" "),
@@ -21877,9 +21976,9 @@ var render = function () {
               ),
             ]),
             _vm._v(" "),
-            _vm._m(5),
+            _vm._m(7),
             _vm._v(" "),
-            _vm._m(6),
+            _vm._m(8),
             _vm._v(" "),
             _c(
               "div",
@@ -21917,7 +22016,7 @@ var render = function () {
               0
             ),
             _vm._v(" "),
-            _vm._m(7),
+            _vm._m(9),
           ]
         ),
         _vm._v(" "),
@@ -21928,9 +22027,9 @@ var render = function () {
               "\n        bg-gray-100\n        py-20\n        px-7\n        dark:text-blue-300\n        text-black\n        rounded-lg\n        shadow-2xl\n        dark:bg-blue-400 dark:border dark:bg-opacity-10\n      ",
           },
           [
-            _vm._m(8),
+            _vm._m(10),
             _vm._v(" "),
-            _vm._m(9),
+            _vm._m(11),
             _vm._v(" "),
             _c(
               "div",
@@ -21968,7 +22067,7 @@ var render = function () {
               0
             ),
             _vm._v(" "),
-            _vm._m(10),
+            _vm._m(12),
           ]
         ),
       ]
@@ -21980,92 +22079,55 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center" }, [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "\n          text-2xl\n          md:text-7xl\n          pt-20\n          md:pt-36\n          font-bold font-poppins\n          text-blue-900\n          dark:text-blue-100\n        ",
+        },
+        [_vm._v("\n        Dependable, Fast Internet Connection.\n      ")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c(
       "div",
       {
         staticClass:
-          "\n      relative\n      flex flex-col\n      justify-center\n      items-center\n      pb-20\n      dark:bg-gray-900\n    ",
+          "\n        max-w-sm\n        md:max-w-xl\n        text-sm\n        md:text-base\n        text-center\n        pt-7\n        text-gray-700\n        dark:text-blue-200\n        font-poppins\n      ",
       },
       [
-        _c("div", {
-          staticClass: "absolute rounded-full opacity-5 h-96 w-96 bg-blue-700",
-        }),
-        _vm._v(" "),
-        _c("div", {
-          staticClass: "absolute rounded-full opacity-5 h-80 w-80 bg-blue-700",
-        }),
-        _vm._v(" "),
-        _c("div", {
-          staticClass: "absolute rounded-full opacity-5 h-64 w-64 bg-blue-700",
-        }),
-        _vm._v(" "),
-        _c("div", {
-          staticClass: "absolute rounded-full opacity-5 h-48 w-48 bg-blue-700",
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-center" }, [
-          _c(
-            "h1",
-            {
-              staticClass:
-                "\n          text-2xl\n          md:text-7xl\n          pt-20\n          md:pt-36\n          font-bold font-poppins\n          text-blue-900\n          dark:text-blue-100\n        ",
-            },
-            [_vm._v("\n        Dependable, Fast Internet Connection.\n      ")]
-          ),
-        ]),
-        _vm._v(" "),
         _c(
-          "div",
-          {
-            staticClass:
-              "\n        max-w-sm\n        md:max-w-xl\n        text-sm\n        md:text-base\n        text-center\n        pt-7\n        text-gray-700\n        dark:text-blue-200\n        font-poppins\n      ",
-          },
-          [
-            _c(
-              "p",
-              { staticClass: "text-sm md:text-lg uppercase tracking-wider" },
-              [
-                _vm._v(
-                  "\n        With a local maintenance and support staff that you can rely on !\n      "
-                ),
-              ]
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", {
-          staticClass:
-            "w-10 border-b-2 border-blue-900 dark:border-blue-400 pt-12",
-        }),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "pt-10 font-poppins text-blue-900 dark:text-blue-400",
-          },
-          [
-            _c(
-              "p",
-              {
-                staticClass:
-                  "\n          text-xl\n          md:text-2xl\n          uppercase\n          font-bold\n          text-center\n          tracking-wider\n        ",
-              },
-              [_vm._v("\n        High Speed Internet For Addis Ababa\n      ")]
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "max-w-xl text-center pt-10 text-gray-500 tracking-wide",
-          },
+          "p",
+          { staticClass: "text-sm md:text-lg uppercase tracking-wider" },
           [
             _vm._v(
-              "\n      Skynet provides reliable, scaleable, convenient Internet. A great choice\n      for enterprise and the public sector, businesses of all sizes, or just\n      skyping with your grandkids or streaming videos and gaming, Skynet\n      delivers.\n    "
+              "\n        With a local maintenance and support staff that you can rely on !\n      "
             ),
           ]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "pt-7 font-poppins text-blue-900 dark:text-blue-400" },
+      [
+        _c(
+          "p",
+          {
+            staticClass:
+              "\n          text-xl\n          md:text-2xl\n          uppercase\n          font-bold\n          text-center\n          tracking-wider\n        ",
+          },
+          [_vm._v("\n        High Speed Internet For Addis Ababa\n      ")]
         ),
       ]
     )
@@ -22095,7 +22157,7 @@ var staticRenderFns = [
             _c(
               "p",
               { staticClass: "text-2xl md:text-3xl font-semibold uppercase" },
-              [_vm._v("\n        Right plan for you.!\n      ")]
+              [_vm._v("\n        Right plan for you !\n      ")]
             ),
           ]
         ),

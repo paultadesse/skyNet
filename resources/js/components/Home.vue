@@ -47,10 +47,24 @@
           With a local maintenance and support staff that you can rely on !
         </p>
       </div>
-      <div
-        class="w-10 border-b-2 border-blue-900 dark:border-blue-400 pt-12"
-      ></div>
-      <div class="pt-10 font-poppins text-blue-900 dark:text-blue-400">
+      <div class="pt-7">
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-blue-900"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      </div>
+      <div class="pt-7 font-poppins text-blue-900 dark:text-blue-400">
         <p
           class="
             text-xl
@@ -64,7 +78,7 @@
           High Speed Internet For Addis Ababa
         </p>
       </div>
-      <div class="max-w-xl text-center pt-10 text-gray-500 tracking-wide">
+      <div class="max-w-xl text-center pt-7 text-gray-500 tracking-wide">
         Skynet provides reliable, scaleable, convenient Internet. A great choice
         for enterprise and the public sector, businesses of all sizes, or just
         skyping with your grandkids or streaming videos and gaming, Skynet
@@ -132,7 +146,13 @@
           ></div>
 
           <p
-            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed"
+            class="
+              text-sm text-gray-500
+              dark:text-blue-300
+              pt-2
+              tracking-wide
+              leading-relaxed
+            "
           >
             We provide a dependable, fast Internet connection with a local
             maintenance and support staff that you can rely on. For Residential
@@ -186,7 +206,13 @@
           ></div>
 
           <p
-            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed"
+            class="
+              text-sm text-gray-500
+              dark:text-blue-300
+              pt-2
+              tracking-wide
+              leading-relaxed
+            "
           >
             We provide a site survey and guaranteed solutions with same-day
             service turnaround and fast, local tech support.
@@ -237,7 +263,13 @@
           ></div>
 
           <p
-            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed"
+            class="
+              text-sm text-gray-500
+              dark:text-blue-300
+              pt-2
+              tracking-wide
+              leading-relaxed
+            "
           >
             We provide redundancy solutions and advanced, microwave fixed
             wireless techology for the fastest, lowest latency signal available.
@@ -256,7 +288,7 @@
           services
         </button> -->
         <p class="text-2xl md:text-3xl font-semibold uppercase">
-          Right plan for you.!
+          Right plan for you !
         </p>
       </div>
       <div
