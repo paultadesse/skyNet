@@ -36,7 +36,7 @@
               Skynet
             </h2>
             <div class="flex flex-col items-center">
-              <div class="text-2xl pb-7 text-blue-900">
+              <div class="text-2xl pb-7 text-blue-900 font-semibold">
                 We've Got You Covered !
               </div>
               <div
@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-            <p class="md:text-lg text-blue-900 ">
+            <p class="text-base text-gray-500 ">
               Dependable, Fast Internet connection !
             </p>
           </div>

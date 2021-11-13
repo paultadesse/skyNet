@@ -22864,9 +22864,11 @@ var staticRenderFns = [
         ),
         _vm._v(" "),
         _c("div", { staticClass: "flex flex-col items-center" }, [
-          _c("div", { staticClass: "text-2xl pb-7 text-blue-900" }, [
-            _vm._v("\n              We've Got You Covered !\n            "),
-          ]),
+          _c(
+            "div",
+            { staticClass: "text-2xl pb-7 text-blue-900 font-semibold" },
+            [_vm._v("\n              We've Got You Covered !\n            ")]
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -22887,7 +22889,7 @@ var staticRenderFns = [
           ),
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "md:text-lg text-blue-900 " }, [
+        _c("p", { staticClass: "text-base text-gray-500 " }, [
           _vm._v(
             "\n            Dependable, Fast Internet connection !\n          "
           ),
