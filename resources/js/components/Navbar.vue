@@ -97,10 +97,11 @@
           text-sm
         "
       >
+        <router-link to="/" class="p-7">Home</router-link>
         <router-link to="/services" class="p-7">Services</router-link>
-        <div class="p-7">About Us</div>
+        <router-link to="/about" class="p-7 text-center">About Us</router-link>
         <div class="p-7">Contact</div>
-        <div class="ml-7 cursor-pointer" v-on:click="lightMode = !lightMode">
+        <!-- <div class="ml-7 cursor-pointer" v-on:click="lightMode = !lightMode">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             :class="
@@ -124,7 +125,7 @@
               d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
             />
           </svg>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

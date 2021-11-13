@@ -10,23 +10,56 @@
             sm:grid-cols-2
             md:grid-cols-3 md:gap-8
             text-center
+            md:p-28
           "
         >
           <div
             class="
               flex flex-col
-              justify-center
+              justify-evenly
               space-y-7
               items-center
-              divide-y
               shadow-lg
               row-span-1
               col-span-2
-              md:col-span-1 md:row-span-4 md:p-20 md:h-full
+              md:col-span-1 md:row-span-3 md:p-20 md:h-full
             "
           >
-            <h2 class="text-blue-900 text-2xl md:text-7xl font-bold">Skynet</h2>
-            <p class="md:text-lg text-gray-500 font-semibold tracking-wide">Dependable, Fast Internet connection !</p>
+            <h2
+              class="
+                text-blue-900 text-2xl
+                md:text-7xl
+                tracking-tighter
+                font-bold
+              "
+            >
+              Skynet
+            </h2>
+            <div class="flex flex-col items-center">
+              <div class="text-2xl pb-7 text-blue-900">
+                We've Got You Covered !
+              </div>
+              <div
+                class="relative shadow-2xl h-20 w-20 rounded-full bg-blue-900"
+              >
+                <div
+                  class="
+                    absolute
+                    top-5
+                    left-3
+                    font-semibold
+                    leading-relaxed
+                    tracking-wide
+                    text-2xl text-white
+                  "
+                >
+                  24/7
+                </div>
+              </div>
+            </div>
+            <p class="md:text-lg text-blue-900 ">
+              Dependable, Fast Internet connection !
+            </p>
           </div>
           <div
             class="
@@ -36,14 +69,13 @@
               shadow-lg
               col-span-2
               md:col-span-1
-              max-w-md
               space-y-4
               p-4
             "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-12 w-12 dark:text-blue-100 text-blue-900"
+              class="h-8 w-8 dark:text-blue-100 text-blue-900"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -70,7 +102,16 @@
             <div
               class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
             ></div>
-            <p class="pt-2 text-sm tracking-wider text-gray-600 leading-relaxed">
+            <p
+              class="
+                text-justify
+                pt-2
+                text-sm
+                tracking-wide
+                text-gray-600
+                leading-relaxed
+              "
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Blanditiis, consequatur, eos qui animi amet quasi corrupti eius
               deleniti reiciendis voluptatibus facilis officiis consequuntur
@@ -85,14 +126,13 @@
               shadow-lg
               col-span-2
               md:col-span-1
-              max-w-md
-               space-y-4
+              space-y-4
               p-4
             "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-12 w-12 dark:text-blue-100 text-blue-900"
+              class="h-8 w-8 dark:text-blue-100 text-blue-900"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -114,12 +154,22 @@
                 dark:text-blue-300
               "
             >
-              Colud & hosting
+              Colud & Hosting
             </h2>
             <div
               class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
             ></div>
-            <p class="pt-2 text-sm tracking-wider text-gray-600 leading-relaxed">
+
+            <p
+              class="
+                text-justify
+                pt-2
+                text-sm
+                tracking-normal
+                text-gray-600
+                leading-relaxed
+              "
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis officia placeat facere unde ad facilis, odio libero
               quibusdam beatae in quod minima ea, dolorem adipisci velit dolore
@@ -134,14 +184,13 @@
               shadow-lg
               col-span-2
               md:col-span-1
-              max-w-md
-               space-y-4
+              space-y-4
               p-4
             "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-12 w-12 dark:text-blue-100 text-blue-900"
+              class="h-8 w-8 dark:text-blue-100 text-blue-900"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -168,7 +217,7 @@
             <div
               class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
             ></div>
-            <p class="pt-2 text-sm tracking-wider text-gray-600 leading-relaxed">
+            <p class="text-justify pt-2 text-sm text-gray-600 leading-relaxed">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
               iusto et nobis aut odit mollitia exercitationem pariatur, eius
               repellendus voluptatum, ullam, suscipit adipisci earum architecto
@@ -183,14 +232,13 @@
               shadow-lg
               col-span-2
               md:col-span-1
-              max-w-md
-               space-y-4
+              space-y-4
               p-4
             "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="flex-none h-12 w-12 dark:text-blue-100 text-blue-900"
+              class="flex-none h-8 w-8 dark:text-blue-100 text-blue-900"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -217,7 +265,7 @@
             <div
               class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
             ></div>
-            <p class="pt-2 text-sm tracking-wider text-gray-600 leading-relaxed">
+            <p class="text-justify pt-2 text-sm text-gray-600 leading-relaxed">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
               repellat natus accusamus quas nulla quia, modi laboriosam earum
               minus. Possimus assumenda natus ea magnam porro soluta voluptatem
@@ -228,14 +276,13 @@
             class="
               flex
               items-center
-              max-w-4xl
               divide-x
               space-x-7
               shadow-lg
               col-span-2
               p-4
               text-gray-500
-              tracking-wider
+              tracking-wide
               text-sm
             "
           >
@@ -254,7 +301,15 @@
               />
             </svg>
             <div>
-              <p>
+              <p
+                class="
+                  text-justify
+                  pt-2
+                  text-sm text-gray-600
+                  leading-relaxed
+                  ml-2
+                "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 perspiciatis alias quos voluptas corporis vero exercitationem.
                 Ea alias odit blanditiis soluta corporis dolor? Voluptate
@@ -266,14 +321,14 @@
             class="
               flex
               items-center
-              max-w-4xl
               divide-x
               space-x-7
               shadow-lg
               col-span-2
+              md:col-span-3
               p-4
               text-gray-500
-              tracking-wider
+              tracking-wide
               text-sm
             "
           >
@@ -288,11 +343,19 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
               />
             </svg>
             <div>
-              <p class="">
+              <p
+                class="
+                  text-justify
+                  pt-2
+                  text-sm text-gray-600
+                  leading-relaxed
+                  ml-2
+                "
+              >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 saepe ut totam exercitationem amet assumenda commodi a ducimus.
                 At deleniti veritatis impedit rem tempore minima laboriosam

@@ -43,7 +43,7 @@
           font-poppins
         "
       >
-        <p class="text-sm md:text-lg uppercase tracking-wide">
+        <p class="text-sm md:text-lg uppercase tracking-wider">
           With a local maintenance and support staff that you can rely on !
         </p>
       </div>
@@ -132,7 +132,7 @@
           ></div>
 
           <p
-            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide"
+            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed"
           >
             We provide a dependable, fast Internet connection with a local
             maintenance and support staff that you can rely on. For Residential
@@ -186,7 +186,7 @@
           ></div>
 
           <p
-            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide"
+            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed"
           >
             We provide a site survey and guaranteed solutions with same-day
             service turnaround and fast, local tech support.
@@ -237,7 +237,7 @@
           ></div>
 
           <p
-            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide"
+            class="text-sm text-gray-500 dark:text-blue-300 pt-2 tracking-wide leading-relaxed"
           >
             We provide redundancy solutions and advanced, microwave fixed
             wireless techology for the fastest, lowest latency signal available.
