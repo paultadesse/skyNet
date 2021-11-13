@@ -24,7 +24,17 @@
 </head>
 <body>
     <div id="app">
-        <router-view class="mb-auto  bg-white h-full"></router-view>
+        <div class="flex flex-col h-screen justify-between">
+            <div>
+                <nav-bar></nav-bar>
+            </div>
+            <div>
+                <router-view class="mb-auto  bg-white h-full"></router-view>
+            </div>
+            <div>
+                <footer-bar></footer-bar>
+            </div>
+        </div>
     </div>
 </body>
 </html>

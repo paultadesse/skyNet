@@ -6,6 +6,8 @@ import routes from './routes';
 
 Vue.use(VueRouter);
 
+Vue.component("nav-bar", require("./components/Navbar.vue").default);
+Vue.component("footer-bar", require("./components/Footerbar.vue").default);
 Vue.component(
     "example-component",
     require("./components/ExampleComponent.vue").default
