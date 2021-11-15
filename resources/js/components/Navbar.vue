@@ -100,7 +100,7 @@
         <router-link to="/" class="p-7">Home</router-link>
         <router-link to="/services" class="p-7">Services</router-link>
         <router-link to="/about" class="p-7 text-center">About Us</router-link>
-        <div class="p-7">Contact</div>
+        <router-link to="/contact" class="p-7 text-center">Contact</router-link>
         <!-- <div class="ml-7 cursor-pointer" v-on:click="lightMode = !lightMode">
           <svg
             xmlns="http://www.w3.org/2000/svg"
