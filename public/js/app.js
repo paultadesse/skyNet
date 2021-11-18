@@ -3168,6 +3168,196 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -22391,6 +22581,14 @@ var render = function () {
             {
               staticClass:
                 "\n          relative\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-sm\n        ",
+              on: {
+                mouseover: function ($event) {
+                  _vm.showResidential = true
+                },
+                mouseout: function ($event) {
+                  _vm.showResidential = false
+                },
+              },
             },
             [
               _c(
@@ -22405,7 +22603,7 @@ var render = function () {
                     },
                   ],
                   staticClass:
-                    " lg:left-7 lg:-top-7\n            w-full\n            h-full\n            absolute\n            flex flex-col\n            justify-center\n            items-center\n            text-center\n            max-w-sm\n            dark:bg-blue-400\n            bg-blue-900\n            dark:bg-opacity-10\n            dark:border-blue-400\n            dark:text-blue-400\n            text-white\n            border-blue-900\n            p-12\n            shadow-xl\n            rounded-sm\n          ",
+                    "\n            w-full\n            absolute\n            flex flex-col\n            justify-center\n            items-center\n            text-center\n            dark:bg-blue-400\n            bg-blue-900\n            dark:bg-opacity-10 dark:border-blue-400 dark:text-blue-400\n            text-white\n            border-blue-900\n            p-12\n            shadow-xl\n            rounded-md\n          ",
                 },
                 [
                   _c("p", [
@@ -22426,7 +22624,7 @@ var render = function () {
                             "stroke-linecap": "round",
                             "stroke-linejoin": "round",
                             "stroke-width": "2",
-                            d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+                            d: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4",
                           },
                         }),
                       ]
@@ -22442,7 +22640,7 @@ var render = function () {
                           "svg",
                           {
                             staticClass:
-                              "\n                    flex-none\n                    ml-4\n                    h-7\n                    w-7\n                    dark:text-blue-100\n                    text-white\n                  ",
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
                             attrs: {
                               xmlns: "http://www.w3.org/2000/svg",
                               fill: "none",
@@ -22464,7 +22662,7 @@ var render = function () {
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "text-justify" }, [
-                        _vm._v("Valid business Licence is required"),
+                        _vm._v("Valid ID/License or Passport"),
                       ]),
                     ]),
                     _vm._v(" "),
@@ -22474,71 +22672,7 @@ var render = function () {
                           "svg",
                           {
                             staticClass:
-                              "\n                    flex-none\n                    ml-4\n                    h-7\n                    w-7\n                    dark:text-blue-100\n                    text-white\n                  ",
-                            attrs: {
-                              xmlns: "http://www.w3.org/2000/svg",
-                              fill: "none",
-                              viewBox: "0 0 24 24",
-                              stroke: "currentColor",
-                            },
-                          },
-                          [
-                            _c("path", {
-                              attrs: {
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                                "stroke-width": "2",
-                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
-                              },
-                            }),
-                          ]
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "text-justify" }, [
-                        _vm._v("Valid business Licence is required"),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "flex items-center space-x-2" }, [
-                      _c("div", [
-                        _c(
-                          "svg",
-                          {
-                            staticClass:
-                              "\n                    flex-none\n                    ml-4\n                    h-7\n                    w-7\n                    dark:text-blue-100\n                    text-white\n                  ",
-                            attrs: {
-                              xmlns: "http://www.w3.org/2000/svg",
-                              fill: "none",
-                              viewBox: "0 0 24 24",
-                              stroke: "currentColor",
-                            },
-                          },
-                          [
-                            _c("path", {
-                              attrs: {
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                                "stroke-width": "2",
-                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
-                              },
-                            }),
-                          ]
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "text-justify" }, [
-                        _vm._v("Valid business Licence is required"),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "flex items-center space-x-2" }, [
-                      _c("div", [
-                        _c(
-                          "svg",
-                          {
-                            staticClass:
-                              "\n                    flex-none\n                    ml-4\n                    h-7\n                    w-7\n                    dark:text-blue-100\n                    text-white\n                  ",
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
                             attrs: {
                               xmlns: "http://www.w3.org/2000/svg",
                               fill: "none",
@@ -22561,25 +22695,77 @@ var render = function () {
                       _vm._v(" "),
                       _c("div", { staticClass: "text-justify" }, [
                         _vm._v(
-                          "\n                Lorem ipsum dolor sit amet\n              "
+                          "\n                Submit Request with specific bandwidth speed\n              "
+                        ),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex items-center space-x-2" }, [
+                      _c("div", [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "2",
+                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-justify" }, [
+                        _vm._v("Signing contract agreement"),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex items-center space-x-2" }, [
+                      _c("div", [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "2",
+                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-justify" }, [
+                        _vm._v(
+                          "\n                An Advance deposit guarantee of 1,000 ETB is required to have\n                the service, that will be returned back during service\n                termination by the customer\n              "
                         ),
                       ]),
                     ]),
                   ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass:
-                        "\n              block\n              text-blue-900\n              bg-white\n              py-2\n              px-8\n              mt-4\n              text-sm\n              rounded-md\n            ",
-                      on: {
-                        click: function ($event) {
-                          _vm.showResidential = !_vm.showResidential
-                        },
-                      },
-                    },
-                    [_vm._v("\n            Okay, i got it !\n          ")]
-                  ),
                 ]
               ),
               _vm._v(" "),
@@ -22634,20 +22820,6 @@ var render = function () {
                   ),
                 ]
               ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "\n            block\n            bg-blue-900\n            text-white\n            py-2\n            px-8\n            mt-4\n            rounded-md\n            text-sm\n          ",
-                  on: {
-                    click: function ($event) {
-                      _vm.showResidential = !_vm.showResidential
-                    },
-                  },
-                },
-                [_vm._v("\n          Check requirements\n        ")]
-              ),
             ]
           ),
           _vm._v(" "),
@@ -22655,9 +22827,197 @@ var render = function () {
             "div",
             {
               staticClass:
-                "\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-sm\n        ",
+                "\n          relative\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-sm\n        ",
+              on: {
+                mouseover: function ($event) {
+                  _vm.showCommercial = true
+                },
+                mouseout: function ($event) {
+                  _vm.showCommercial = false
+                },
+              },
             },
             [
+              _c(
+                "div",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: _vm.showCommercial,
+                      expression: "showCommercial",
+                    },
+                  ],
+                  staticClass:
+                    "\n            w-full\n            absolute\n            flex flex-col\n            justify-center\n            items-center\n            text-center\n            dark:bg-blue-400\n            bg-blue-900\n            dark:bg-opacity-10 dark:border-blue-400 dark:text-blue-400\n            text-white\n            border-blue-900\n            p-12\n            shadow-xl\n            rounded-md\n          ",
+                },
+                [
+                  _c("p", [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-12 w-12 dark:text-blue-100 text-white",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                        },
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4",
+                          },
+                        }),
+                      ]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(4),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "space-y-2 text-sm" }, [
+                    _c("div", { staticClass: "flex items-center space-x-2" }, [
+                      _c("div", [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "2",
+                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-justify" }, [
+                        _vm._v(
+                          "\n                Valid Business License is required\n              "
+                        ),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex items-center space-x-2" }, [
+                      _c("div", [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "2",
+                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-justify" }, [
+                        _vm._v(
+                          "\n                Submit Request with specific bandwidth speed\n              "
+                        ),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex items-center space-x-2" }, [
+                      _c("div", [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "2",
+                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-justify" }, [
+                        _vm._v("Signing contract agreement"),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex items-center space-x-2" }, [
+                      _c("div", [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "2",
+                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-justify" }, [
+                        _vm._v(
+                          "\n                An Advance deposit guarantee of 1,000 ETB is required to have\n                the service, that will be returned back during service\n                termination by the customer\n              "
+                        ),
+                      ]),
+                    ]),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
               _c("p", [
                 _c(
                   "svg",
@@ -22701,27 +23061,13 @@ var render = function () {
                 "p",
                 {
                   staticClass:
-                    "\n            text-sm text-gray-500\n            dark:text-blue-300\n            pt-2\n            tracking-wide\n            leading-relaxed text-justify\n          ",
+                    "\n            text-sm text-gray-500\n            dark:text-blue-300\n            pt-2\n            tracking-wide\n            leading-relaxed\n            text-justify\n          ",
                 },
                 [
                   _vm._v(
                     "\n          We provide a site survey and guaranteed solutions with same-day\n          service turnaround and fast, local tech support.\n        "
                   ),
                 ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "\n            block\n            bg-blue-900\n            text-white\n            py-2\n            px-8\n            mt-4\n            rounded-md\n            text-sm\n          ",
-                  on: {
-                    click: function ($event) {
-                      _vm.showCommercial = !_vm.showCommercial
-                    },
-                  },
-                },
-                [_vm._v("\n          Check requirements\n        ")]
               ),
             ]
           ),
@@ -22784,214 +23130,15 @@ var render = function () {
                   ),
                 ]
               ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "\n            block\n            bg-blue-900\n            text-white\n            py-2\n            px-8\n            mt-4\n            rounded-md\n            text-sm\n          ",
-                  on: {
-                    click: function ($event) {
-                      _vm.showEnterprise = !_vm.showEnterprise
-                    },
-                  },
-                },
-                [_vm._v("\n          Check requirements\n        ")]
-              ),
             ]
           ),
         ]
       ),
     ]),
     _vm._v(" "),
-    _vm._m(4),
+    _vm._m(5),
     _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass:
-          "\n      flex flex-col\n      md:flex-row\n      space-y-9\n      md:space-y-0\n      items-center\n      justify-center\n      py-20\n      font-poppins\n      dark:bg-gray-900\n    ",
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass:
-              "\n        bg-gray-100\n        dark:text-blue-300 dark:bg-blue-400 dark:bg-opacity-10\n        py-20\n        px-7\n        text-black\n        rounded-lg\n        shadow-2xl\n      ",
-          },
-          [
-            _vm._m(5),
-            _vm._v(" "),
-            _vm._m(6),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "pt-8 space-y-2 flex flex-col items-center" },
-              _vm._l(4, function (i) {
-                return _c(
-                  "div",
-                  { key: i, staticClass: "flex space-x-2 items-center" },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "h-5 w-5",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          viewBox: "0 0 20 20",
-                          fill: "currentColor",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d: "M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
-                            "clip-rule": "evenodd",
-                          },
-                        }),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("server maintenance")]),
-                  ]
-                )
-              }),
-              0
-            ),
-            _vm._v(" "),
-            _vm._m(7),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "\n        bg-blue-900\n        dark:bg-blue-400 dark:bg-opacity-10\n        py-24\n        px-7\n        text-white\n        dark:text-blue-300\n        rounded-lg\n        shadow-2xl\n      ",
-          },
-          [
-            _c("div", { staticClass: "flex justify-center" }, [
-              _c(
-                "svg",
-                {
-                  staticClass: "h-16 w-16 pb-2 dark:text-blue-100",
-                  attrs: {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    stroke: "currentColor",
-                  },
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
-                    },
-                  }),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _vm._m(8),
-            _vm._v(" "),
-            _vm._m(9),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "pt-8 space-y-2 flex flex-col items-center" },
-              _vm._l(4, function (i) {
-                return _c(
-                  "div",
-                  { key: i, staticClass: "flex space-x-2 items-center" },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "h-5 w-5",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          viewBox: "0 0 20 20",
-                          fill: "currentColor",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d: "M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
-                            "clip-rule": "evenodd",
-                          },
-                        }),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("server maintenance")]),
-                  ]
-                )
-              }),
-              0
-            ),
-            _vm._v(" "),
-            _vm._m(10),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "\n        bg-gray-100\n        py-20\n        px-7\n        dark:text-blue-300\n        text-black\n        rounded-lg\n        shadow-2xl\n        dark:bg-blue-400 dark:border dark:bg-opacity-10\n      ",
-          },
-          [
-            _vm._m(11),
-            _vm._v(" "),
-            _vm._m(12),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "pt-8 space-y-2 flex flex-col items-center" },
-              _vm._l(4, function (i) {
-                return _c(
-                  "div",
-                  { key: i, staticClass: "flex space-x-2 items-center" },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "h-5 w-5",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          viewBox: "0 0 20 20",
-                          fill: "currentColor",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d: "M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
-                            "clip-rule": "evenodd",
-                          },
-                        }),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("server maintenance")]),
-                  ]
-                )
-              }),
-              0
-            ),
-            _vm._v(" "),
-            _vm._m(13),
-          ]
-        ),
-      ]
-    ),
+    _vm._m(6),
   ])
 }
 var staticRenderFns = [
@@ -23074,6 +23221,23 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
+      "p",
+      {
+        staticClass: "font-normal pt-2 pb-2 text-white-900 dark:text-blue-300",
+      },
+      [
+        _vm._v("\n            Requirements For\n            "),
+        _c("span", { staticClass: "font-bold uppercase text-white text-lg" }, [
+          _vm._v("Commercial"),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
       "div",
       {
         staticClass:
@@ -23093,7 +23257,7 @@ var staticRenderFns = [
           [
             _c(
               "p",
-              { staticClass: "text-2xl md:text-3xl font-semibold uppercase" },
+              { staticClass: "text-xl md:text-2xl font-semibold uppercase" },
               [_vm._v("\n        Right plan for you !\n      ")]
             ),
           ]
@@ -23110,136 +23274,344 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "divide-y divide-gray-200 dark:divide-blue-400" },
-      [
-        _c("div", { staticClass: "text-center text-lg font-semibold pb-4" }, [
-          _vm._v("Residential"),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-center max-w-xs py-4" }, [
-          _vm._v(
-            "\n          Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta\n          provident odit! Placeat voluptas error magnam.\n        "
-          ),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center pt-7" }, [
-      _c("span", { staticClass: "text-6xl font-bold dark:text-blue-100" }, [
-        _vm._v("2700"),
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "text-sm items-baseline" }, [_vm._v("Birr")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center pt-10" }, [
+    return _c("div", { staticClass: "pt-7" }, [
       _c(
-        "button",
+        "div",
         {
           staticClass:
-            "\n            px-8\n            py-2\n            text-blue-700\n            rounded\n            font-semibold\n            ring ring-blue-700\n            dark:text-blue-300 dark:ring-blue-300\n            bg-white\n            dark:bg-transparent\n            uppercase\n          ",
+            "flex flex-col md:flex-row justify-center p-4 font-poppins",
         },
-        [_vm._v("\n          I'm interested\n        ")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "divide-y dark:divide-blue-400" }, [
-      _c("div", { staticClass: "text-center text-lg font-semibold pb-4" }, [
-        _vm._v("Enterprise"),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "text-center max-w-xs py-4" }, [
-        _vm._v(
-          "\n          Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta\n          provident odit! Placeat voluptas error magnam.\n        "
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center pt-7" }, [
-      _c("span", { staticClass: "text-6xl font-bold dark:text-blue-100" }, [
-        _vm._v("3700"),
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "text-sm items-baseline" }, [_vm._v("Birr")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center pt-10" }, [
-      _c(
-        "button",
-        {
-          staticClass:
-            "\n            px-8\n            py-2\n            text-white\n            rounded\n            ring ring-white\n            dark:text-blue-300 dark:ring-blue-300\n            uppercase\n            font-semibold\n          ",
-        },
-        [_vm._v("\n          I'm interested\n        ")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "divide-y divide-gray-200 dark:divide-blue-400" },
-      [
-        _c("div", { staticClass: "text-center text-lg font-semibold pb-4" }, [
-          _vm._v("Commercial"),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-center max-w-xs py-4" }, [
-          _vm._v(
-            "\n          Lorem ipsum dolor sit amet consequuntur, quod doloremque dicta\n          provident odit! Placeat voluptas error magnam.\n        "
-          ),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center pt-7" }, [
-      _c("span", { staticClass: "text-6xl font-bold dark:text-blue-100" }, [
-        _vm._v("1700"),
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "text-sm items-baseline" }, [_vm._v("Birr")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center pt-10" }, [
-      _c(
-        "button",
-        {
-          staticClass:
-            "\n            px-8\n            py-2\n            text-blue-700\n            rounded\n            ring ring-blue-700\n            dark:text-blue-300 dark:ring-blue-300\n            bg-white\n            dark:bg-transparent\n            uppercase\n            font-semibold\n          ",
-        },
-        [_vm._v("\n          I'm interested\n        ")]
+        [
+          _c("div", { staticClass: "border" }, [
+            _c("div", { staticClass: "flex flex-col divide-y" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "\n              flex\n              items-center\n              justify-between\n              bg-blue-900\n              text-white\n              uppercase\n              w-full\n              divide-x\n            ",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                    _vm._v("Bandwidth Speed"),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                    _c("span", { staticClass: "font-bold text-lg" }, [
+                      _vm._v("residential"),
+                    ]),
+                    _vm._v(" service\n              charge\n            "),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("2 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("790.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("3 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("990.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("5 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("1,390.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2 " }, [_vm._v("6 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("1,690.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("8 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("2,090.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("10 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("2,390.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("12 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("3,090.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "border border-l md:border-l-0" }, [
+            _c("div", { staticClass: "flex flex-col divide-y" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "\n              flex\n              items-center\n              justify-between\n              bg-blue-900\n              text-white\n              uppercase\n              divide-x\n            ",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                    _vm._v("Bandwidth Speed"),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                    _c("span", { staticClass: "font-bold text-lg" }, [
+                      _vm._v("business"),
+                    ]),
+                    _vm._v(" service charge\n            "),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("2 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("1,140.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("5 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("1,940.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("8 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("2,940.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("10 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("3,440.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2 " }, [
+                    _vm._v("12 mbps"),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("4,270.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("14 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("4,786.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex items-start divide-x justify-between text-center font-light",
+                },
+                [
+                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("18 mbps")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                    _vm._v("5,819.00 "),
+                    _c(
+                      "span",
+                      { staticClass: "text-xs font-bold align-baseline" },
+                      [_vm._v("Birr")]
+                    ),
+                  ]),
+                ]
+              ),
+            ]),
+          ]),
+        ]
       ),
     ])
   },

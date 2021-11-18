@@ -118,29 +118,27 @@
             shadow-xl
             rounded-sm
           "
+          @mouseover="showResidential = true"
+          @mouseout="showResidential = false"
         >
           <!-- requirment card -->
           <div
             v-show="showResidential"
-            class=" lg:left-7 lg:-top-7
+            class="
               w-full
-              h-full
               absolute
               flex flex-col
               justify-center
               items-center
               text-center
-              max-w-sm
               dark:bg-blue-400
               bg-blue-900
-              dark:bg-opacity-10
-              dark:border-blue-400
-              dark:text-blue-400
+              dark:bg-opacity-10 dark:border-blue-400 dark:text-blue-400
               text-white
               border-blue-900
               p-12
               shadow-xl
-              rounded-sm
+              rounded-md
             "
           >
             <p>
@@ -155,7 +153,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
                 />
               </svg>
             </p>
@@ -174,14 +172,7 @@
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="
-                      flex-none
-                      ml-4
-                      h-7
-                      w-7
-                      dark:text-blue-100
-                      text-white
-                    "
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -194,72 +185,13 @@
                     />
                   </svg>
                 </div>
-                <div class="text-justify">Valid business Licence is required</div>
+                <div class="text-justify">Valid ID/License or Passport</div>
               </div>
               <div class="flex items-center space-x-2">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="
-                      flex-none
-                      ml-4
-                      h-7
-                      w-7
-                      dark:text-blue-100
-                      text-white
-                    "
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <div class="text-justify">Valid business Licence is required</div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="
-                      flex-none
-                      ml-4
-                      h-7
-                      w-7
-                      dark:text-blue-100
-                      text-white
-                    "
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <div class="text-justify">Valid business Licence is required</div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="
-                      flex-none
-                      ml-4
-                      h-7
-                      w-7
-                      dark:text-blue-100
-                      text-white
-                    "
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -273,25 +205,52 @@
                   </svg>
                 </div>
                 <div class="text-justify">
-                  Lorem ipsum dolor sit amet
+                  Submit Request with specific bandwidth speed
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">Signing contract agreement</div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">
+                  An Advance deposit guarantee of 1,000 ETB is required to have
+                  the service, that will be returned back during service
+                  termination by the customer
                 </div>
               </div>
             </div>
-            <button
-              class="
-                block
-                text-blue-900
-                bg-white
-                py-2
-                px-8
-                mt-4
-                text-sm
-                rounded-md
-              "
-              @click="showResidential = !showResidential"
-            >
-              Okay, i got it !
-            </button>
           </div>
 
           <!-- requirment ends here -->
@@ -335,27 +294,12 @@
             maintenance and support staff that you can rely on. For Residential
             Customer.
           </p>
-
-          <button
-            class="
-              block
-              bg-blue-900
-              text-white
-              py-2
-              px-8
-              mt-4
-              rounded-md
-              text-sm
-            "
-            @click="showResidential = !showResidential"
-          >
-            Check requirements
-          </button>
         </div>
 
         <!-- commercial -->
         <div
           class="
+            relative
             flex flex-col
             justify-center
             items-center
@@ -371,7 +315,145 @@
             shadow-xl
             rounded-sm
           "
+          @mouseover="showCommercial = true"
+          @mouseout="showCommercial = false"
         >
+          <!-- requirment card -->
+          <div
+            v-show="showCommercial"
+            class="
+              w-full
+              absolute
+              flex flex-col
+              justify-center
+              items-center
+              text-center
+              dark:bg-blue-400
+              bg-blue-900
+              dark:bg-opacity-10 dark:border-blue-400 dark:text-blue-400
+              text-white
+              border-blue-900
+              p-12
+              shadow-xl
+              rounded-md
+            "
+          >
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 dark:text-blue-100 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                />
+              </svg>
+            </p>
+
+            <p class="font-normal pt-2 pb-2 text-white-900 dark:text-blue-300">
+              Requirements For
+              <span class="font-bold uppercase text-white text-lg"
+                >Commercial</span
+              >
+            </p>
+            <!-- <div
+              class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
+            ></div> -->
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">
+                  Valid Business License is required
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">
+                  Submit Request with specific bandwidth speed
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">Signing contract agreement</div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">
+                  An Advance deposit guarantee of 1,000 ETB is required to have
+                  the service, that will be returned back during service
+                  termination by the customer
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- requirment ends here -->
+
           <p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -404,27 +486,13 @@
               dark:text-blue-300
               pt-2
               tracking-wide
-              leading-relaxed text-justify
+              leading-relaxed
+              text-justify
             "
           >
             We provide a site survey and guaranteed solutions with same-day
             service turnaround and fast, local tech support.
           </p>
-          <button
-            class="
-              block
-              bg-blue-900
-              text-white
-              py-2
-              px-8
-              mt-4
-              rounded-md
-              text-sm
-            "
-            @click="showCommercial = !showCommercial"
-          >
-            Check requirements
-          </button>
         </div>
         <div
           class="
@@ -483,21 +551,6 @@
             We provide redundancy solutions and advanced, microwave fixed
             wireless techology for the fastest, lowest latency signal available.
           </p>
-          <button
-            class="
-              block
-              bg-blue-900
-              text-white
-              py-2
-              px-8
-              mt-4
-              rounded-md
-              text-sm
-            "
-            @click="showEnterprise = !showEnterprise"
-          >
-            Check requirements
-          </button>
         </div>
       </div>
     </div>
@@ -511,7 +564,7 @@
         <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-        <p class="text-2xl md:text-3xl font-semibold uppercase">
+        <p class="text-xl md:text-2xl font-semibold uppercase">
           Right plan for you !
         </p>
       </div>
@@ -520,9 +573,146 @@
       ></div>
     </div>
 
+    <div class="pt-7">
+      <div class="flex flex-col md:flex-row justify-center p-4 font-poppins">
+        <div class="border">
+          <div class="flex flex-col divide-y">
+            <div
+              class="
+                flex
+                items-center
+                justify-between
+                bg-blue-900
+                text-white
+                uppercase
+                w-full
+                divide-x
+              "
+            >
+              <div class="p-10 w-1/2 text-center">Bandwidth Speed</div>
+
+              <div class="p-10 w-1/2 text-center">
+                <span class="font-bold text-lg">residential</span> service
+                charge
+              </div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">2 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">790.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">3 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">990.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">5 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">1,390.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2 ">6 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">1,690.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">8 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">2,090.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">10 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">2,390.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">12 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">3,090.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="border border-l md:border-l-0">
+          <div class="flex flex-col divide-y">
+            <div
+              class="
+                flex
+                items-center
+                justify-between
+                bg-blue-900
+                text-white
+                uppercase
+                divide-x
+              "
+            >
+              <div class="p-10 w-1/2 text-center">Bandwidth Speed</div>
+
+              <div class="p-10 w-1/2 text-center">
+                <span class="font-bold text-lg">business</span> service charge
+              </div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">2 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">1,140.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">5 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">1,940.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">8 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">2,940.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">10 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">3,440.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2 ">12 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">4,270.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">14 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">4,786.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+            <div class="flex items-start divide-x justify-between text-center font-light">
+              <div class="p-10 w-1/2">18 mbps</div>
+
+              <div class="p-10 w-1/2 text-lg">5,819.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div>
+      <div class="grid grid-cols-2 gap-4 place-items-center">
+        <div class="grid grid-cols-2 gap-4 shadow-lg">
+          <div class="col-span-2">Monthly Service Charge</div>
+          <div>Bandwidth speed</div>
+          <div>Residential service charge</div>
+          <div>1211222222222222</div>
+          <div>1211222222222222</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>Bandwidth speed</div>
+          <div>Residential service charge</div>
+          <div>1211222222222222</div>
+          <div>1211222222222222</div>
+        </div>
+      </div>
+    </div> -->
+
     <!-- cards -->
 
-    <div
+    <!-- <div
       class="
         flex flex-col
         md:flex-row
@@ -735,7 +925,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
