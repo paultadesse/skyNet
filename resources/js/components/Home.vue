@@ -48,7 +48,6 @@
         </p>
       </div>
       <div class="pt-7">
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-10 w-10 text-blue-900"
@@ -103,6 +102,7 @@
         <!-- Residential -->
         <div
           class="
+            relative
             flex flex-col
             justify-center
             items-center
@@ -119,6 +119,182 @@
             rounded-sm
           "
         >
+          <!-- requirment card -->
+          <div
+            v-show="showResidential"
+            class=" lg:left-7 lg:-top-7
+              w-full
+              h-full
+              absolute
+              flex flex-col
+              justify-center
+              items-center
+              text-center
+              max-w-sm
+              dark:bg-blue-400
+              bg-blue-900
+              dark:bg-opacity-10
+              dark:border-blue-400
+              dark:text-blue-400
+              text-white
+              border-blue-900
+              p-12
+              shadow-xl
+              rounded-sm
+            "
+          >
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 dark:text-blue-100 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+            </p>
+
+            <p class="font-normal pt-2 pb-2 text-white-900 dark:text-blue-300">
+              Requirements For
+              <span class="font-bold uppercase text-white text-lg"
+                >Residential</span
+              >
+            </p>
+            <!-- <div
+              class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
+            ></div> -->
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="
+                      flex-none
+                      ml-4
+                      h-7
+                      w-7
+                      dark:text-blue-100
+                      text-white
+                    "
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">Valid business Licence is required</div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="
+                      flex-none
+                      ml-4
+                      h-7
+                      w-7
+                      dark:text-blue-100
+                      text-white
+                    "
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">Valid business Licence is required</div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="
+                      flex-none
+                      ml-4
+                      h-7
+                      w-7
+                      dark:text-blue-100
+                      text-white
+                    "
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">Valid business Licence is required</div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="
+                      flex-none
+                      ml-4
+                      h-7
+                      w-7
+                      dark:text-blue-100
+                      text-white
+                    "
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-justify">
+                  Lorem ipsum dolor sit amet
+                </div>
+              </div>
+            </div>
+            <button
+              class="
+                block
+                text-blue-900
+                bg-white
+                py-2
+                px-8
+                mt-4
+                text-sm
+                rounded-md
+              "
+              @click="showResidential = !showResidential"
+            >
+              Okay, i got it !
+            </button>
+          </div>
+
+          <!-- requirment ends here -->
           <p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,12 +328,29 @@
               pt-2
               tracking-wide
               leading-relaxed
+              text-justify
             "
           >
             We provide a dependable, fast Internet connection with a local
             maintenance and support staff that you can rely on. For Residential
             Customer.
           </p>
+
+          <button
+            class="
+              block
+              bg-blue-900
+              text-white
+              py-2
+              px-8
+              mt-4
+              rounded-md
+              text-sm
+            "
+            @click="showResidential = !showResidential"
+          >
+            Check requirements
+          </button>
         </div>
 
         <!-- commercial -->
@@ -211,12 +404,27 @@
               dark:text-blue-300
               pt-2
               tracking-wide
-              leading-relaxed
+              leading-relaxed text-justify
             "
           >
             We provide a site survey and guaranteed solutions with same-day
             service turnaround and fast, local tech support.
           </p>
+          <button
+            class="
+              block
+              bg-blue-900
+              text-white
+              py-2
+              px-8
+              mt-4
+              rounded-md
+              text-sm
+            "
+            @click="showCommercial = !showCommercial"
+          >
+            Check requirements
+          </button>
         </div>
         <div
           class="
@@ -269,11 +477,27 @@
               pt-2
               tracking-wide
               leading-relaxed
+              text-justify
             "
           >
             We provide redundancy solutions and advanced, microwave fixed
             wireless techology for the fastest, lowest latency signal available.
           </p>
+          <button
+            class="
+              block
+              bg-blue-900
+              text-white
+              py-2
+              px-8
+              mt-4
+              rounded-md
+              text-sm
+            "
+            @click="showEnterprise = !showEnterprise"
+          >
+            Check requirements
+          </button>
         </div>
       </div>
     </div>
@@ -523,6 +747,9 @@ export default {
   },
   data() {
     return {
+      showResidential: false,
+      showCommercial: false,
+      showEnterprise: false,
       lightMode: true,
     };
   },
