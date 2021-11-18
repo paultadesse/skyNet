@@ -3358,6 +3358,175 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -22580,7 +22749,7 @@ var render = function () {
             "div",
             {
               staticClass:
-                "\n          relative\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-sm\n        ",
+                "\n          relative\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-md\n        ",
               on: {
                 mouseover: function ($event) {
                   _vm.showResidential = true
@@ -22827,7 +22996,7 @@ var render = function () {
             "div",
             {
               staticClass:
-                "\n          relative\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-sm\n        ",
+                "\n          relative\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-md\n        ",
               on: {
                 mouseover: function ($event) {
                   _vm.showCommercial = true
@@ -23076,7 +23245,7 @@ var render = function () {
             "div",
             {
               staticClass:
-                "\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-sm\n        ",
+                "\n          flex flex-col\n          justify-center\n          items-center\n          text-center\n          max-w-sm\n          bg-white\n          dark:bg-blue-400\n          dark:bg-opacity-10\n          dark:border-blue-400\n          dark:text-blue-400\n          border-blue-900\n          p-12\n          shadow-xl\n          rounded-md\n        ",
             },
             [
               _c("p", [
@@ -23241,7 +23410,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "flex flex-col justify-center items-center dark:bg-gray-900",
+          "flex md:pt-10 flex-col justify-center items-center dark:bg-gray-900",
       },
       [
         _c("div", {
@@ -23255,11 +23424,9 @@ var staticRenderFns = [
             staticClass: "pt-10 font-poppins text-blue-900 dark:text-blue-400",
           },
           [
-            _c(
-              "p",
-              { staticClass: "text-xl md:text-2xl font-semibold uppercase" },
-              [_vm._v("\n        Right plan for you !\n      ")]
-            ),
+            _c("p", { staticClass: "text-xl md:text-3xl font-semibold " }, [
+              _vm._v("\n        We've got the Right plan for you !\n      "),
+            ]),
           ]
         ),
         _vm._v(" "),
@@ -23282,333 +23449,363 @@ var staticRenderFns = [
             "flex flex-col md:flex-row justify-center p-4 font-poppins",
         },
         [
-          _c("div", { staticClass: "border" }, [
-            _c("div", { staticClass: "flex flex-col divide-y" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "\n              flex\n              items-center\n              justify-between\n              bg-blue-900\n              text-white\n              uppercase\n              w-full\n              divide-x\n            ",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
-                    _vm._v("Bandwidth Speed"),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
-                    _c("span", { staticClass: "font-bold text-lg" }, [
-                      _vm._v("residential"),
+          _c("div", { staticClass: "shadow-md flex flex-col md:flex-row " }, [
+            _c("div", { staticClass: "border" }, [
+              _c("div", { staticClass: "flex flex-col divide-y" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-center\n                justify-between\n                bg-blue-900\n                text-white\n                uppercase\n                w-full\n                divide-x\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                      _vm._v("Bandwidth Speed"),
                     ]),
-                    _vm._v(" service\n              charge\n            "),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("2 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("790.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("3 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("990.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("5 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("1,390.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2 " }, [_vm._v("6 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("1,690.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("8 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("2,090.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("10 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("2,390.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("12 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("3,090.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                      _c("span", { staticClass: "font-bold text-lg" }, [
+                        _vm._v("residential"),
+                      ]),
+                      _vm._v(
+                        " service\n                charge\n              "
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center hover:bg-gray-100 hover:text-blue-900\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("2 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                790.00 "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center hover:bg-gray-100 hover:text-blue-900\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("3 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                990.00 "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("5 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                1,390.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("6 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                1,690.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("8 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                2,090.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("10 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                2,390.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("12 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                3,090.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+              ]),
             ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "border border-l md:border-l-0" }, [
-            _c("div", { staticClass: "flex flex-col divide-y" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "\n              flex\n              items-center\n              justify-between\n              bg-blue-900\n              text-white\n              uppercase\n              divide-x\n            ",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
-                    _vm._v("Bandwidth Speed"),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
-                    _c("span", { staticClass: "font-bold text-lg" }, [
-                      _vm._v("business"),
+            _vm._v(" "),
+            _c("div", { staticClass: "border border-l md:border-l-0" }, [
+              _c("div", { staticClass: "flex flex-col divide-y" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-center\n                justify-between\n                bg-blue-900\n                text-white\n                uppercase\n                divide-x\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                      _vm._v("Bandwidth Speed"),
                     ]),
-                    _vm._v(" service charge\n            "),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("2 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("1,140.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("5 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("1,940.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("8 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("2,940.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("10 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("3,440.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2 " }, [
-                    _vm._v("12 mbps"),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("4,270.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("14 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("4,786.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex items-start divide-x justify-between text-center font-light",
-                },
-                [
-                  _c("div", { staticClass: "p-10 w-1/2" }, [_vm._v("18 mbps")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
-                    _vm._v("5,819.00 "),
-                    _c(
-                      "span",
-                      { staticClass: "text-xs font-bold align-baseline" },
-                      [_vm._v("Birr")]
-                    ),
-                  ]),
-                ]
-              ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
+                      _c("span", { staticClass: "font-bold text-lg" }, [
+                        _vm._v("business"),
+                      ]),
+                      _vm._v(" service charge\n              "),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("2 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                1,140.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("5 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                1,940.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("8 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                2,940.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("10 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                3,440.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("12 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                4,270.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("14 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                4,786.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
+                  },
+                  [
+                    _c("div", { staticClass: "p-10 w-1/2" }, [
+                      _vm._v("18 mbps"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-10 w-1/2 text-lg" }, [
+                      _vm._v("\n                5,819.00\n                "),
+                      _c(
+                        "span",
+                        { staticClass: "text-xs font-bold align-middle" },
+                        [_vm._v("ETB")]
+                      ),
+                    ]),
+                  ]
+                ),
+              ]),
             ]),
           ]),
         ]

@@ -116,7 +116,7 @@
             border-blue-900
             p-12
             shadow-xl
-            rounded-sm
+            rounded-md
           "
           @mouseover="showResidential = true"
           @mouseout="showResidential = false"
@@ -313,7 +313,7 @@
             border-blue-900
             p-12
             shadow-xl
-            rounded-sm
+            rounded-md
           "
           @mouseover="showCommercial = true"
           @mouseout="showCommercial = false"
@@ -509,7 +509,7 @@
             border-blue-900
             p-12
             shadow-xl
-            rounded-sm
+            rounded-md
           "
         >
           <p>
@@ -556,7 +556,7 @@
     </div>
 
     <!-- planning -->
-    <div class="flex flex-col justify-center items-center dark:bg-gray-900">
+    <div class="flex md:pt-10 flex-col justify-center items-center dark:bg-gray-900">
       <div
         class="w-10 border-b-2 border-blue-900 dark:border-blue-400 pt-12"
       ></div>
@@ -564,8 +564,8 @@
         <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-        <p class="text-xl md:text-2xl font-semibold uppercase">
-          Right plan for you !
+        <p class="text-xl md:text-3xl font-semibold ">
+          We've got the Right plan for you !
         </p>
       </div>
       <div
@@ -575,117 +575,286 @@
 
     <div class="pt-7">
       <div class="flex flex-col md:flex-row justify-center p-4 font-poppins">
-        <div class="border">
-          <div class="flex flex-col divide-y">
-            <div
-              class="
-                flex
-                items-center
-                justify-between
-                bg-blue-900
-                text-white
-                uppercase
-                w-full
-                divide-x
-              "
-            >
-              <div class="p-10 w-1/2 text-center">Bandwidth Speed</div>
+        <div class="shadow-md flex flex-col md:flex-row ">
+          <div class="border">
+            <div class="flex flex-col divide-y">
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-between
+                  bg-blue-900
+                  text-white
+                  uppercase
+                  w-full
+                  divide-x
+                "
+              >
+                <div class="p-10 w-1/2 text-center">Bandwidth Speed</div>
 
-              <div class="p-10 w-1/2 text-center">
-                <span class="font-bold text-lg">residential</span> service
-                charge
+                <div class="p-10 w-1/2 text-center">
+                  <span class="font-bold text-lg">residential</span> service
+                  charge
+                </div>
               </div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">2 mbps</div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center hover:bg-gray-100 hover:text-blue-900
+                  font-light
+                "
 
-              <div class="p-10 w-1/2 text-lg">790.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">3 mbps</div>
+              >
+                <div class="p-10 w-1/2">2 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">990.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">5 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  790.00 <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center hover:bg-gray-100 hover:text-blue-900
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">3 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">1,390.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2 ">6 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  990.00 <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">5 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">1,690.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">8 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  1,390.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">6 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">2,090.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">10 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  1,690.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">8 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">2,390.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">12 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  2,090.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">10 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">3,090.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+                <div class="p-10 w-1/2 text-lg">
+                  2,390.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">12 mbps</div>
+
+                <div class="p-10 w-1/2 text-lg">
+                  3,090.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="border border-l md:border-l-0">
-          <div class="flex flex-col divide-y">
-            <div
-              class="
-                flex
-                items-center
-                justify-between
-                bg-blue-900
-                text-white
-                uppercase
-                divide-x
-              "
-            >
-              <div class="p-10 w-1/2 text-center">Bandwidth Speed</div>
+          <div class="border border-l md:border-l-0">
+            <div class="flex flex-col divide-y">
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-between
+                  bg-blue-900
+                  text-white
+                  uppercase
+                  divide-x
+                "
+              >
+                <div class="p-10 w-1/2 text-center">Bandwidth Speed</div>
 
-              <div class="p-10 w-1/2 text-center">
-                <span class="font-bold text-lg">business</span> service charge
+                <div class="p-10 w-1/2 text-center">
+                  <span class="font-bold text-lg">business</span> service charge
+                </div>
               </div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">2 mbps</div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">2 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">1,140.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">5 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  1,140.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">5 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">1,940.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">8 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  1,940.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">8 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">2,940.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">10 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  2,940.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">10 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">3,440.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2 ">12 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  3,440.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">12 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">4,270.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">14 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  4,270.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">14 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">4,786.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
-            </div>
-            <div class="flex items-start divide-x justify-between text-center font-light">
-              <div class="p-10 w-1/2">18 mbps</div>
+                <div class="p-10 w-1/2 text-lg">
+                  4,786.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  items-start
+                  divide-x
+                  justify-between
+                  text-center
+                  font-light
+                "
+              >
+                <div class="p-10 w-1/2">18 mbps</div>
 
-              <div class="p-10 w-1/2 text-lg">5,819.00 <span class="text-xs font-bold align-baseline">Birr</span></div>
+                <div class="p-10 w-1/2 text-lg">
+                  5,819.00
+                  <span class="text-xs font-bold align-middle">ETB</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -747,7 +916,7 @@
 
         <div class="text-center pt-7">
           <span class="text-6xl font-bold dark:text-blue-100">2700</span>
-          <span class="text-sm items-baseline">Birr</span>
+          <span class="text-sm items-baseline">ETB</span>
         </div>
 
         <div class="pt-8 space-y-2 flex flex-col items-center">
@@ -825,7 +994,7 @@
         </div>
         <div class="text-center pt-7">
           <span class="text-6xl font-bold dark:text-blue-100">3700</span>
-          <span class="text-sm items-baseline">Birr</span>
+          <span class="text-sm items-baseline">ETB</span>
         </div>
 
         <div class="pt-8 space-y-2 flex flex-col items-center">
@@ -885,7 +1054,7 @@
         </div>
         <div class="text-center pt-7">
           <span class="text-6xl font-bold dark:text-blue-100">1700</span>
-          <span class="text-sm items-baseline">Birr</span>
+          <span class="text-sm items-baseline">ETB</span>
         </div>
 
         <div class="pt-8 space-y-2 flex flex-col items-center">
