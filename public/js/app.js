@@ -3527,6 +3527,86 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -23308,6 +23388,8 @@ var render = function () {
     _vm._m(5),
     _vm._v(" "),
     _vm._m(6),
+    _vm._v(" "),
+    _vm._m(7),
   ])
 }
 var staticRenderFns = [
@@ -23408,14 +23490,160 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
+      { staticClass: "py-20 md:py-32 font-poppins mx-auto w-5/6" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "\n        flex flex-col\n        md:flex-row\n        items-center\n        justify-between\n        bg-gray-50\n        p-10\n      ",
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "flex flex-col items-start max-w-xl space-y-7" },
+              [
+                _c("p", { staticClass: "font-bold text-4xl text-blue-900" }, [
+                  _vm._v(
+                    "\n          Trusted by Ethiopia's best Real Estates\n        "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "text-gray-600" }, [
+                  _vm._v(
+                    "\n          Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, nemo\n          impedit consequuntur, saepe excepturi quas blanditiis repudiandae\n          tempore accusamus error doloremque dicta, ut dolorem provident\n          sapiente non ipsam iure? Labore.\n        "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "\n            block\n            px-4\n            py-2\n            text-white\n            rounded-sm\n            bg-blue-900\n            tracking-wide\n          ",
+                  },
+                  [_vm._v("\n          Contact Us\n        ")]
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex justify-start pt-7 md:pt-0" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "\n            grid grid-cols-2\n            md:grid-cols-3\n            gap-1\n            md:text-center\n            uppercase\n            text-gray-400 text-justify\n            md:font-semibold md:text-xl\n          ",
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "p-7 col-span-2 md:col-span-1 bg-white hover:animate-ping",
+                    },
+                    [
+                      _c("div", [
+                        _c("p", { staticClass: "tracking-wider" }, [
+                          _vm._v("Sunrise Apartments"),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "p-7 bg-white hover:animate-ping" },
+                    [
+                      _c("div", [
+                        _c("p", { staticClass: "tracking-wider" }, [
+                          _vm._v("Legacy"),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "p-7 bg-white hover:animate-ping" },
+                    [
+                      _c("div", [
+                        _c("p", { staticClass: "tracking-wider" }, [
+                          _vm._v("Noah"),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "p-7 col-span-2 md:col-span-1 bg-white hover:animate-ping",
+                    },
+                    [
+                      _c("div", [
+                        _c("p", { staticClass: "tracking-wider" }, [
+                          _vm._v("one Apartments"),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "p-7 bg-white hover:animate-ping" },
+                    [
+                      _c("div", [
+                        _c("p", { staticClass: "tracking-wider" }, [
+                          _vm._v("Zegba"),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "p-7 bg-white hover:animate-ping" },
+                    [
+                      _c("div", [
+                        _c("p", { staticClass: "tracking-wider" }, [
+                          _vm._v("Riverside"),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "p-7 bg-white hover:animate-ping" },
+                    [
+                      _c("div", [
+                        _c("p", { staticClass: "tracking-wider" }, [
+                          _vm._v("nova"),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ]
+              ),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
       {
         staticClass:
-          "flex md:pt-10 flex-col justify-center items-center dark:bg-gray-900",
+          "flex flex-col justify-center items-center dark:bg-gray-900",
       },
       [
         _c("div", {
-          staticClass:
-            "w-10 border-b-2 border-blue-900 dark:border-blue-400 pt-12",
+          staticClass: "w-10 border-b-2 border-blue-900 dark:border-blue-400",
         }),
         _vm._v(" "),
         _c(
@@ -23424,7 +23652,7 @@ var staticRenderFns = [
             staticClass: "pt-10 font-poppins text-blue-900 dark:text-blue-400",
           },
           [
-            _c("p", { staticClass: "text-xl md:text-3xl font-semibold " }, [
+            _c("p", { staticClass: "text-xl md:text-3xl font-semibold" }, [
               _vm._v("\n        We've got the Right plan for you !\n      "),
             ]),
           ]
@@ -23449,7 +23677,7 @@ var staticRenderFns = [
             "flex flex-col md:flex-row justify-center p-4 font-poppins",
         },
         [
-          _c("div", { staticClass: "shadow-md flex flex-col md:flex-row " }, [
+          _c("div", { staticClass: "shadow-md flex flex-col md:flex-row" }, [
             _c("div", { staticClass: "border" }, [
               _c("div", { staticClass: "flex flex-col divide-y" }, [
                 _c(
@@ -23478,7 +23706,7 @@ var staticRenderFns = [
                   "div",
                   {
                     staticClass:
-                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center hover:bg-gray-100 hover:text-blue-900\n                font-light\n              ",
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
                   },
                   [
                     _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -23500,7 +23728,7 @@ var staticRenderFns = [
                   "div",
                   {
                     staticClass:
-                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center hover:bg-gray-100 hover:text-blue-900\n                font-light\n              ",
+                      "\n                flex\n                items-start\n                divide-x\n                justify-between\n                text-center\n                font-light\n              ",
                   },
                   [
                     _c("div", { staticClass: "p-10 w-1/2" }, [

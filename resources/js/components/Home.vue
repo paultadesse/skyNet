@@ -555,16 +555,97 @@
       </div>
     </div>
 
-    <!-- planning -->
-    <div class="flex md:pt-10 flex-col justify-center items-center dark:bg-gray-900">
+    <!-- our clients -->
+
+    <div class="py-20 md:py-32 font-poppins mx-auto w-5/6">
       <div
-        class="w-10 border-b-2 border-blue-900 dark:border-blue-400 pt-12"
-      ></div>
+        class="
+          flex flex-col
+          md:flex-row
+          items-center
+          justify-between
+          bg-gray-50
+          p-10
+        "
+      >
+        <div class="flex flex-col items-start max-w-xl space-y-7">
+          <p class="font-bold text-4xl text-blue-900">
+            Trusted by Ethiopia's best Real&nbsp;Estates
+          </p>
+
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, nemo
+            impedit consequuntur, saepe excepturi quas blanditiis repudiandae
+            tempore accusamus error doloremque dicta, ut dolorem provident
+            sapiente non ipsam iure? Labore.
+          </p>
+
+          <button
+            class="
+              block
+              px-4
+              py-2
+              text-white
+              rounded-sm
+              bg-blue-900
+              tracking-wide
+            "
+          >
+            Contact Us
+          </button>
+        </div>
+        <div class="flex justify-start pt-7 md:pt-0">
+          <div
+            class="
+              grid grid-cols-2
+              md:grid-cols-3
+              gap-1
+              md:text-center
+              uppercase
+              text-gray-400 text-justify
+              md:font-semibold md:text-xl
+            "
+          >
+            <div
+              class="p-7 col-span-2 md:col-span-1 bg-white hover:animate-ping"
+            >
+              <div><p class="tracking-wider">Sunrise Apartments</p></div>
+            </div>
+            <div class="p-7 bg-white hover:animate-ping">
+              <div><p class="tracking-wider">Legacy</p></div>
+            </div>
+            <div class="p-7 bg-white hover:animate-ping">
+              <div><p class="tracking-wider">Noah</p></div>
+            </div>
+            <div
+              class="p-7 col-span-2 md:col-span-1 bg-white hover:animate-ping"
+            >
+              <div><p class="tracking-wider">one Apartments</p></div>
+            </div>
+            <div class="p-7 bg-white hover:animate-ping">
+              <div><p class="tracking-wider">Zegba</p></div>
+            </div>
+            <div class="p-7 bg-white hover:animate-ping">
+              <div><p class="tracking-wider">Riverside</p></div>
+            </div>
+            <div class="p-7 bg-white hover:animate-ping">
+              <div><p class="tracking-wider">nova</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- clients ection ends here -->
+
+    <!-- planning -->
+    <div class="flex flex-col justify-center items-center dark:bg-gray-900">
+      <div class="w-10 border-b-2 border-blue-900 dark:border-blue-400"></div>
       <div class="pt-10 font-poppins text-blue-900 dark:text-blue-400">
         <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-        <p class="text-xl md:text-3xl font-semibold ">
+        <p class="text-xl md:text-3xl font-semibold">
           We've got the Right plan for you !
         </p>
       </div>
@@ -575,7 +656,7 @@
 
     <div class="pt-7">
       <div class="flex flex-col md:flex-row justify-center p-4 font-poppins">
-        <div class="shadow-md flex flex-col md:flex-row ">
+        <div class="shadow-md flex flex-col md:flex-row">
           <div class="border">
             <div class="flex flex-col divide-y">
               <div
@@ -603,10 +684,9 @@
                   items-start
                   divide-x
                   justify-between
-                  text-center hover:bg-gray-100 hover:text-blue-900
+                  text-center
                   font-light
                 "
-
               >
                 <div class="p-10 w-1/2">2 mbps</div>
 
@@ -620,7 +700,7 @@
                   items-start
                   divide-x
                   justify-between
-                  text-center hover:bg-gray-100 hover:text-blue-900
+                  text-center
                   font-light
                 "
               >
