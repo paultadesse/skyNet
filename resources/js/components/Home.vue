@@ -134,6 +134,14 @@
                     <div
                         v-show="showResidential"
                         class="
+                            cursor-pointer
+                            transition
+                            transform
+                            hover:-translate-y-10
+                            ease-in-out
+                            delay-200
+                            motion-reduce:transition-none
+                            motion-reduce:transform-none
                             w-full
                             absolute
                             flex flex-col
@@ -385,6 +393,14 @@
                     <div
                         v-show="showCommercial"
                         class="
+                            cursor-pointer
+                            transition
+                            transform
+                            hover:-translate-y-10
+                            ease-in-out
+                            delay-200
+                            motion-reduce:transition-none
+                            motion-reduce:transform-none
                             w-full
                             absolute
                             flex flex-col
@@ -612,6 +628,7 @@
                 </div>
                 <div
                     class="
+                        relative
                         flex flex-col
                         justify-center
                         items-center
@@ -627,7 +644,194 @@
                         shadow-xl
                         rounded-md
                     "
+                    @mouseover="showEnterprise = true"
+                    @mouseout="showEnterprise = false"
                 >
+                    <!-- requirment card -->
+                    <div
+                        v-show="showEnterprise"
+                        class="
+                            cursor-pointer
+                            transition
+                            transform
+                            hover:-translate-y-10
+                            ease-in-out
+                            delay-200
+                            motion-reduce:transition-none
+                            motion-reduce:transform-none
+                            w-full
+                            absolute
+                            flex flex-col
+                            justify-center
+                            items-center
+                            text-center
+                            dark:bg-blue-400
+                            bg-blue-900
+                            dark:bg-opacity-10
+                            dark:border-blue-400
+                            dark:text-blue-400
+                            text-white
+                            border-blue-900
+                            p-12
+                            shadow-xl
+                            rounded-md
+                        "
+                    >
+                        <p>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-12 w-12 dark:text-blue-100 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                                />
+                            </svg>
+                        </p>
+
+                        <p
+                            class="
+                                font-normal
+                                pt-2
+                                pb-2
+                                text-white-900
+                                dark:text-blue-300
+                            "
+                        >
+                            Requirements For
+                            <span class="font-bold uppercase text-white text-lg"
+                                >Enterpries</span
+                            >
+                        </p>
+                        <!-- <div
+              class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
+            ></div> -->
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center space-x-2">
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="
+                                            flex-none
+                                            ml-4
+                                            h-7
+                                            w-7
+                                            dark:text-blue-100
+                                            text-white
+                                        "
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="text-justify">
+                                    Valid Business License is required
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="
+                                            flex-none
+                                            ml-4
+                                            h-7
+                                            w-7
+                                            dark:text-blue-100
+                                            text-white
+                                        "
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="text-justify">
+                                    Submit Request with specific bandwidth speed
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="
+                                            flex-none
+                                            ml-4
+                                            h-7
+                                            w-7
+                                            dark:text-blue-100
+                                            text-white
+                                        "
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="text-justify">
+                                    Signing contract agreement
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="
+                                            flex-none
+                                            ml-4
+                                            h-7
+                                            w-7
+                                            dark:text-blue-100
+                                            text-white
+                                        "
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="text-justify">
+                                    An Advance deposit guarantee of 1,000 ETB is
+                                    required to have the service, that will be
+                                    returned back during service termination by
+                                    the customer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- requirment ends here -->
+
                     <p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -640,7 +844,7 @@
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 stroke-width="2"
-                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                             />
                         </svg>
                     </p>
@@ -715,7 +919,7 @@
                             px-4
                             py-2
                             text-white
-                            rounded-sm
+                            rounded
                             bg-blue-900
                             tracking-wide
                         "
@@ -741,17 +945,50 @@
                                 col-span-2
                                 md:col-span-1
                                 bg-white
-                                hover:animate-ping
+                                cursor-pointer
+                                transition
+                                transform
+                                hover:scale-75
+                                ease-in-out
+                                delay-200
+                                motion-reduce:transition-none
+                                motion-reduce:transform-none
                             "
                         >
                             <div>
                                 <p class="tracking-wider">Sunrise Apartments</p>
                             </div>
                         </div>
-                        <div class="p-7 bg-white hover:animate-ping">
+                        <div
+                            class="
+                                p-7
+                                bg-white
+                                cursor-pointer
+                                transition
+                                transform
+                                hover:scale-75
+                                ease-in-out
+                                delay-200
+                                motion-reduce:transition-none
+                                motion-reduce:transform-none
+                            "
+                        >
                             <div><p class="tracking-wider">Legacy</p></div>
                         </div>
-                        <div class="p-7 bg-white hover:animate-ping">
+                        <div
+                            class="
+                                p-7
+                                bg-white
+                                cursor-pointer
+                                transition
+                                transform
+                                hover:scale-75
+                                ease-in-out
+                                delay-200
+                                motion-reduce:transition-none
+                                motion-reduce:transform-none
+                            "
+                        >
                             <div><p class="tracking-wider">Noah</p></div>
                         </div>
                         <div
@@ -760,20 +997,66 @@
                                 col-span-2
                                 md:col-span-1
                                 bg-white
-                                hover:animate-ping
+                                cursor-pointer
+                                transition
+                                transform
+                                hover:scale-75
+                                ease-in-out
+                                delay-200
+                                motion-reduce:transition-none
+                                motion-reduce:transform-none
                             "
                         >
                             <div>
                                 <p class="tracking-wider">one Apartments</p>
                             </div>
                         </div>
-                        <div class="p-7 bg-white hover:animate-ping">
+                        <div
+                            class="
+                                p-7
+                                bg-white
+                                cursor-pointer
+                                transition
+                                transform
+                                hover:scale-75
+                                ease-in-out
+                                delay-200
+                                motion-reduce:transition-none
+                                motion-reduce:transform-none
+                            "
+                        >
                             <div><p class="tracking-wider">Zegba</p></div>
                         </div>
-                        <div class="p-7 bg-white hover:animate-ping">
+                        <div
+                            class="
+                                p-7
+                                bg-white
+                                cursor-pointer
+                                transition
+                                transform
+                                hover:scale-75
+                                ease-in-out
+                                delay-200
+                                motion-reduce:transition-none
+                                motion-reduce:transform-none
+                            "
+                        >
                             <div><p class="tracking-wider">Riverside</p></div>
                         </div>
-                        <div class="p-7 bg-white hover:animate-ping">
+                        <div
+                            class="
+                                p-7
+                                bg-white
+                                cursor-pointer
+                                transition
+                                transform
+                                hover:scale-75
+                                ease-in-out
+                                delay-200
+                                motion-reduce:transition-none
+                                motion-reduce:transform-none
+                            "
+                        >
                             <div><p class="tracking-wider">nova</p></div>
                         </div>
                     </div>
