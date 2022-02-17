@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 export default {
     mode: "history",
     // linkActiveClass: "border-b-2 border-t-2 border-gray-400 text-gray-500 ",
-    linkExactActiveClass: "border-b-2 border-blue-900 text-blue-900 font-bold  ",
+    linkExactActiveClass: "border-b-2 border-LightGreen text-LightGreen font-bold  ",
     routes: [
         // {
         //     path: "*",

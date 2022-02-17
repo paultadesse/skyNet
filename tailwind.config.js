@@ -5,6 +5,13 @@ module.exports = {
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {
+        colors:{
+        LightGreen: '#70EE9C',
+        GreenLizard: '#B5F44A',
+        GreenSheen: '#79AEA3',
+        DarkLiver: '#484041',
+        PurpleNavy: '#434371'
+      },
           animation:{
             blob: "blob 60s infinite"
           },
@@ -27,6 +34,9 @@ module.exports = {
         },
         fontFamily: {
             poppins: ["Poppins"],
+            pressStart:['"Press Start 2P"'],
+            ubuntu:["Ubuntu"],
+            sourceCode:['"Source Code Pro']
         },
     },
     variants: {

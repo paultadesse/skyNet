@@ -1,7 +1,7 @@
 <template>
-    <div :class="lightMode ? '' : 'dark'">
+    <div :class="lightMode ? 'bg-black' : 'dark'">
         <div
-            class="
+            class=" 
                 relative
                 flex flex-col
                 justify-center
@@ -11,16 +11,16 @@
             "
         >
             <div
-                class="absolute rounded-full opacity-5 h-96 w-96 bg-blue-700"
+                class="absolute rounded-full opacity-10 h-96 w-96 bg-GreenLizard"
             ></div>
             <div
-                class="absolute rounded-full opacity-5 h-80 w-80 bg-blue-700"
+                class="absolute rounded-full opacity-10 h-80 w-80 bg-GreenLizard"
             ></div>
             <div
-                class="absolute rounded-full opacity-5 h-64 w-64 bg-blue-700"
+                class="absolute rounded-full opacity-10 h-64 w-64 bg-GreenLizard"
             ></div>
             <div
-                class="absolute rounded-full opacity-5 h-48 w-48 bg-blue-700"
+                class="absolute rounded-full opacity-10 h-48 w-48 bg-GreenLizard"
             ></div>
 
             <div class="text-center">
@@ -29,10 +29,10 @@
                         text-2xl
                         md:text-7xl
                         pt-20
-                        md:pt-36
-                        font-bold font-poppins
-                        text-blue-900
-                        dark:text-blue-100
+                        md:pt-36 
+                        font-bold font-ubuntu
+                        text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
+                        
                     "
                 >
                     Dependable, Fast Internet Connection.
@@ -46,9 +46,9 @@
                     md:text-base
                     text-center
                     pt-7
-                    text-gray-700
+                    text-white
                     dark:text-blue-200
-                    font-poppins
+                    font-ubuntu
                 "
             >
                 <p class="text-sm md:text-lg uppercase tracking-wider">
@@ -59,7 +59,7 @@
             <div class="pt-7">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-10 w-10 text-blue-900"
+                    class="h-10 w-10 text-LightGreen"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -72,7 +72,7 @@
                     />
                 </svg>
             </div>
-            <div class="pt-7 font-poppins text-blue-900 dark:text-blue-400">
+            <div class="pt-7  text-LightGreen dark:text-blue-400">
                 <p
                     class="
                         text-xl
@@ -80,13 +80,13 @@
                         uppercase
                         font-bold
                         text-center
-                        tracking-wider
+                        tracking-wider font-ubuntu
                     "
                 >
                     High Speed Internet For Addis Ababa
                 </p>
             </div>
-            <div class="max-w-xl text-center pt-7 text-gray-500 tracking-wide">
+            <div class="max-w-xl text-center pt-7 font-ubuntu text-GreenLizard tracking-wide">
                 Skynet provides reliable, scaleable, convenient Internet. A
                 great choice for enterprise and the public sector, businesses of
                 all sizes, or just skyping with your grandkids or streaming
@@ -95,7 +95,7 @@
         </div>
 
         <!-- services -->
-        <div class="font-poppins dark:bg-gray-900">
+        <div class="font-ubuntu dark:bg-gray-900">
             <div
                 class="
                     flex flex-col
@@ -111,17 +111,14 @@
                 <!-- Residential -->
                 <div
                     class="
+
                         relative
                         flex flex-col
                         justify-center
                         items-center
                         text-center
                         max-w-sm
-                        bg-white
-                        dark:bg-blue-400
-                        dark:bg-opacity-10
-                        dark:border-blue-400
-                        dark:text-blue-400
+                        bg-gradient-to-t from-LightGreen to-GreenLizard
                         border-blue-900
                         p-12
                         shadow-xl
@@ -134,6 +131,7 @@
                     <div
                         v-show="showResidential"
                         class="
+                        bg-gradient-to-r to-myblue  from-myyellow
                             cursor-pointer
                             transition
                             transform
@@ -163,7 +161,7 @@
                         <p>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-12 w-12 dark:text-blue-100 text-white"
+                                class="h-12 w-12  text-PurpleNavy"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -182,19 +180,18 @@
                                 font-normal
                                 pt-2
                                 pb-2
-                                text-white-900
-                                dark:text-blue-300
+                                text-DarkLiver
                             "
                         >
                             Requirements For
-                            <span class="font-bold uppercase text-white text-lg"
+                            <span class="font-bold uppercase text-DarkLiver text-lg"
                                 >Residential</span
                             >
                         </p>
                         <!-- <div
               class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
             ></div> -->
-                        <div class="space-y-2 text-sm">
+                        <div class="space-y-2 text-sm text-DarkLiver">
                             <div class="flex items-center space-x-2">
                                 <div>
                                     <svg
@@ -203,9 +200,8 @@
                                             flex-none
                                             ml-4
                                             h-7
-                                            w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            w-7 
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -233,7 +229,7 @@
                                             h-7
                                             w-7
                                             dark:text-blue-100
-                                            text-white
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -260,8 +256,8 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -288,8 +284,8 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -317,7 +313,7 @@
                     <p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 dark:text-blue-100 text-blue-900"
+                            class="h-12 w-12  text-PurpleNavy"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -337,8 +333,7 @@
                             text-xl
                             pt-2
                             pb-2
-                            text-blue-900
-                            dark:text-blue-300
+                            text-DarkLiver
                         "
                     >
                         Residential
@@ -346,14 +341,14 @@
                     <div
                         class="
                             w-5
-                            border-b-2 border-blue-900
+                            border-b-2 border-GreenSheen
                             dark:border-blue-200
                         "
                     ></div>
 
                     <p
                         class="
-                            text-sm text-gray-500
+                            text-sm text-DarkLiver
                             dark:text-blue-300
                             pt-2
                             tracking-wide
@@ -377,10 +372,7 @@
                         text-center
                         max-w-sm
                         bg-white
-                        dark:bg-blue-400
-                        dark:bg-opacity-10
-                        dark:border-blue-400
-                        dark:text-blue-400
+                        bg-gradient-to-t from-LightGreen to-GreenLizard
                         border-blue-900
                         p-12
                         shadow-xl
@@ -407,11 +399,7 @@
                             justify-center
                             items-center
                             text-center
-                            dark:bg-blue-400
-                            bg-blue-900
-                            dark:bg-opacity-10
-                            dark:border-blue-400
-                            dark:text-blue-400
+                            bg-gradient-to-r from-LightGreen to-GreenLizard
                             text-white
                             border-blue-900
                             p-12
@@ -422,7 +410,7 @@
                         <p>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-12 w-12 dark:text-blue-100 text-white"
+                                class="h-12 w-12 text-PurpleNavy"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -441,19 +429,18 @@
                                 font-normal
                                 pt-2
                                 pb-2
-                                text-white-900
-                                dark:text-blue-300
+                                text-DarkLiver
                             "
                         >
                             Requirements For
-                            <span class="font-bold uppercase text-white text-lg"
+                            <span class="font-bold uppercase text-DarkLiver text-lg"
                                 >Commercial</span
                             >
                         </p>
                         <!-- <div
               class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
             ></div> -->
-                        <div class="space-y-2 text-sm">
+                        <div class="space-y-2 text-sm text-DarkLiver">
                             <div class="flex items-center space-x-2">
                                 <div>
                                     <svg
@@ -463,8 +450,8 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -491,8 +478,8 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -519,8 +506,8 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -547,8 +534,8 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -577,7 +564,7 @@
                     <p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 dark:text-blue-100 text-blue-900"
+                            class="h-12 w-12 text-PurpleNavy"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -597,8 +584,7 @@
                             text-xl
                             pt-2
                             pb-2
-                            text-blue-900
-                            dark:text-blue-300
+                            text-DarkLiver
                         "
                     >
                         Commercial
@@ -606,15 +592,13 @@
                     <div
                         class="
                             w-5
-                            border-b-2 border-blue-900
-                            dark:border-blue-200
+                            border-b-2 border-GreenSheen
                         "
                     ></div>
 
                     <p
                         class="
-                            text-sm text-gray-500
-                            dark:text-blue-300
+                            text-sm text-DarkLiver
                             pt-2
                             tracking-wide
                             leading-relaxed
@@ -634,11 +618,7 @@
                         items-center
                         text-center
                         max-w-sm
-                        bg-white
-                        dark:bg-blue-400
-                        dark:bg-opacity-10
-                        dark:border-blue-400
-                        dark:text-blue-400
+                        bg-gradient-to-t from-LightGreen to-GreenLizard
                         border-blue-900
                         p-12
                         shadow-xl
@@ -665,11 +645,7 @@
                             justify-center
                             items-center
                             text-center
-                            dark:bg-blue-400
-                            bg-blue-900
-                            dark:bg-opacity-10
-                            dark:border-blue-400
-                            dark:text-blue-400
+                            bg-gradient-to-r from-LightGreen to-GreenLizard
                             text-white
                             border-blue-900
                             p-12
@@ -680,7 +656,7 @@
                         <p>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-12 w-12 dark:text-blue-100 text-white"
+                                class="h-12 w-12 text-PurpleNavy"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -699,19 +675,18 @@
                                 font-normal
                                 pt-2
                                 pb-2
-                                text-white-900
-                                dark:text-blue-300
+                                text-DarkLiver
                             "
                         >
                             Requirements For
-                            <span class="font-bold uppercase text-white text-lg"
+                            <span class="font-bold uppercase text-DarkLiver text-lg"
                                 >Enterpries</span
                             >
                         </p>
                         <!-- <div
               class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
             ></div> -->
-                        <div class="space-y-2 text-sm">
+                        <div class="space-y-2 text-sm text-DarkLiver">
                             <div class="flex items-center space-x-2">
                                 <div>
                                     <svg
@@ -721,8 +696,7 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -749,8 +723,7 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -777,8 +750,7 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -805,8 +777,7 @@
                                             ml-4
                                             h-7
                                             w-7
-                                            dark:text-blue-100
-                                            text-white
+                                            text-PurpleNavy
                                         "
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -835,7 +806,7 @@
                     <p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 dark:text-blue-100 text-blue-900"
+                            class="h-12 w-12 text-PurpleNavy"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -855,8 +826,7 @@
                             text-xl
                             pt-2
                             pb-2
-                            text-blue-900
-                            dark:text-blue-300
+                            text-DarkLiver
                         "
                     >
                         Enterprise
@@ -864,15 +834,13 @@
                     <div
                         class="
                             w-5
-                            border-b-2 border-blue-900
-                            dark:border-blue-200
+                            border-b-2 border-GreenSheen
                         "
                     ></div>
 
                     <p
                         class="
-                            text-sm text-gray-500
-                            dark:text-blue-300
+                            text-sm text-DarkLiver
                             pt-2
                             tracking-wide
                             leading-relaxed
@@ -889,19 +857,19 @@
 
         <!-- our clients -->
 
-        <div class="py-20 md:py-32 font-poppins mx-auto w-5/6">
+        <div class="py-20 md:py-32 font-ubuntu mx-auto w-5/6">
             <div
                 class="
                     flex flex-col
                     md:flex-row
                     items-center
                     justify-between
-                    bg-gray-50
+                     bg-gradient-to-t from-GreenLizard to-LightGreen
                     p-10
                 "
             >
                 <div class="flex flex-col items-start max-w-xl space-y-7">
-                    <p class="font-bold text-4xl text-blue-900">
+                    <p class="font-bold text-4xl text-gray-900">
                         Trusted by Ethiopia's best Real&nbsp;Estates
                     </p>
 
@@ -918,16 +886,16 @@
                             block
                             px-4
                             py-2
-                            text-white
+                            text-GreenLizard
                             rounded
-                            bg-blue-900
+                            bg-gray-900
                             tracking-wide
                         "
                     >
                         Contact Us
                     </button>
                 </div>
-                <div class="flex justify-start pt-7 md:pt-0">
+                <div class="flex font-poppins justify-start pt-7 md:pt-0">
                     <div
                         class="
                             grid grid-cols-2
@@ -935,7 +903,7 @@
                             gap-1
                             md:text-center
                             uppercase
-                            text-gray-400 text-justify
+                            text-GreenLizard text-justify
                             md:font-semibold md:text-xl
                         "
                     >
@@ -944,7 +912,7 @@
                                 p-7
                                 col-span-2
                                 md:col-span-1
-                                bg-white
+                                bg-gray-800
                                 cursor-pointer
                                 transition
                                 transform
@@ -956,13 +924,13 @@
                             "
                         >
                             <div>
-                                <p class="tracking-wider">Sunrise Apartments</p>
+                                <p class="tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard">Sunrise Apartments</p>
                             </div>
                         </div>
                         <div
                             class="
                                 p-7
-                                bg-white
+                                bg-gray-800
                                 cursor-pointer
                                 transition
                                 transform
@@ -973,12 +941,12 @@
                                 motion-reduce:transform-none
                             "
                         >
-                            <div><p class="tracking-wider">Legacy</p></div>
+                            <div><p class="tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard">Legacy</p></div>
                         </div>
                         <div
                             class="
                                 p-7
-                                bg-white
+                                bg-gray-800
                                 cursor-pointer
                                 transition
                                 transform
@@ -989,14 +957,14 @@
                                 motion-reduce:transform-none
                             "
                         >
-                            <div><p class="tracking-wider">Noah</p></div>
+                            <div><p class="tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard">Noah</p></div>
                         </div>
                         <div
                             class="
                                 p-7
                                 col-span-2
                                 md:col-span-1
-                                bg-white
+                                bg-gray-800
                                 cursor-pointer
                                 transition
                                 transform
@@ -1008,13 +976,13 @@
                             "
                         >
                             <div>
-                                <p class="tracking-wider">one Apartments</p>
+                                <p class="tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard">one Apartments</p>
                             </div>
                         </div>
                         <div
                             class="
                                 p-7
-                                bg-white
+                                bg-gray-800
                                 cursor-pointer
                                 transition
                                 transform
@@ -1025,12 +993,12 @@
                                 motion-reduce:transform-none
                             "
                         >
-                            <div><p class="tracking-wider">Zegba</p></div>
+                            <div><p class="tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard">Zegba</p></div>
                         </div>
                         <div
                             class="
                                 p-7
-                                bg-white
+                                bg-gray-800
                                 cursor-pointer
                                 transition
                                 transform
@@ -1041,12 +1009,12 @@
                                 motion-reduce:transform-none
                             "
                         >
-                            <div><p class="tracking-wider">Riverside</p></div>
+                            <div><p class="tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard">Riverside</p></div>
                         </div>
                         <div
                             class="
                                 p-7
-                                bg-white
+                                bg-gray-800
                                 cursor-pointer
                                 transition
                                 transform
@@ -1057,7 +1025,7 @@
                                 motion-reduce:transform-none
                             "
                         >
-                            <div><p class="tracking-wider">nova</p></div>
+                            <div><p class="tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard">nova</p></div>
                         </div>
                     </div>
                 </div>
