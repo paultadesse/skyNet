@@ -11,16 +11,16 @@
             "
         >
             <div
-                class="absolute rounded-full opacity-10 h-96 w-96 bg-GreenLizard"
+                class="absolute rounded-full opacity-5 h-96 w-96 bg-GreenLizard"
             ></div>
             <div
-                class="absolute rounded-full opacity-10 h-80 w-80 bg-GreenLizard"
+                class="absolute rounded-full opacity-5 h-80 w-80 bg-GreenLizard"
             ></div>
             <div
-                class="absolute rounded-full opacity-10 h-64 w-64 bg-GreenLizard"
+                class="absolute rounded-full opacity-5 h-64 w-64 bg-GreenLizard"
             ></div>
             <div
-                class="absolute rounded-full opacity-10 h-48 w-48 bg-GreenLizard"
+                class="absolute rounded-full opacity-5 h-48 w-48 bg-GreenLizard"
             ></div>
 
             <div class="text-center">
@@ -30,7 +30,7 @@
                         md:text-7xl
                         pt-20
                         md:pt-36 
-                        font-bold font-ubuntu
+                        font-medium font-ubuntu
                         text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
                         
                     "
@@ -77,7 +77,7 @@
                     class="
                         text-xl
                         md:text-2xl
-                        uppercase
+                        
                         font-bold
                         text-center
                         tracking-wider font-ubuntu
@@ -86,7 +86,7 @@
                     High Speed Internet For Addis Ababa
                 </p>
             </div>
-            <div class="max-w-xl text-center pt-7 font-ubuntu text-GreenLizard tracking-wide">
+            <div class="max-w-xl font-light text-center pt-7 font-ubuntu text-justify text-GreenLizard tracking-wide">
                 Skynet provides reliable, scaleable, convenient Internet. A
                 great choice for enterprise and the public sector, businesses of
                 all sizes, or just skyping with your grandkids or streaming
@@ -95,7 +95,7 @@
         </div>
 
         <!-- services -->
-        <div class="font-ubuntu dark:bg-gray-900">
+        <div class="font-ubuntu ">
             <div
                 class="
                     flex flex-col
@@ -118,11 +118,10 @@
                         items-center
                         text-center
                         max-w-sm
-                        bg-gradient-to-t from-LightGreen to-GreenLizard
-                        border-blue-900
-                        p-12
+                        border-blue-900 
+                        p-12 border-GreenLizard border 
                         shadow-xl
-                        rounded-md
+                        rounded-sm
                     "
                     @mouseover="showResidential = true"
                     @mouseout="showResidential = false"
@@ -146,11 +145,7 @@
                             justify-center
                             items-center
                             text-center
-                            dark:bg-blue-400
-                            bg-blue-900
-                            dark:bg-opacity-10
-                            dark:border-blue-400
-                            dark:text-blue-400
+                            bg-gradient-to-r from-LightGreen to-GreenLizard
                             text-white
                             border-blue-900
                             p-12
@@ -313,7 +308,7 @@
                     <p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12  text-PurpleNavy"
+                            class="h-12 w-12  text-LightGreen"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -331,29 +326,28 @@
                         class="
                             font-bold
                             text-xl
-                            pt-2
-                            pb-2
-                            text-DarkLiver
+                            pt-3
+                            pb-3
+                            text-LightGreen 
                         "
                     >
                         Residential
                     </p>
                     <div
                         class="
-                            w-5
-                            border-b-2 border-GreenSheen
-                            dark:border-blue-200
+                            w-1/2
+                            border-b-2 border-GreenLizard
+                            
                         "
                     ></div>
 
                     <p
                         class="
-                            text-sm text-DarkLiver
-                            dark:text-blue-300
-                            pt-2
+                            text-sm text-GreenLizard
+                            pt-3
                             tracking-wide
                             leading-relaxed
-                            text-justify
+                            text-justify font-light
                         "
                     >
                         We provide a dependable, fast Internet connection with a
@@ -371,12 +365,9 @@
                         items-center
                         text-center
                         max-w-sm
-                        bg-white
-                        bg-gradient-to-t from-LightGreen to-GreenLizard
-                        border-blue-900
-                        p-12
+                        p-12 border-GreenLizard border 
                         shadow-xl
-                        rounded-md
+                        rounded-sm
                     "
                     @mouseover="showCommercial = true"
                     @mouseout="showCommercial = false"
@@ -403,7 +394,7 @@
                             text-white
                             border-blue-900
                             p-12
-                            shadow-xl
+                            shadow-xl 
                             rounded-md
                         "
                     >
@@ -564,7 +555,7 @@
                     <p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 text-PurpleNavy"
+                            class="h-12 w-12 text-LightGreen"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -582,27 +573,27 @@
                         class="
                             font-bold
                             text-xl
-                            pt-2
-                            pb-2
-                            text-DarkLiver
+                            pt-3
+                            pb-3
+                            text-LightGreen
                         "
                     >
                         Commercial
                     </p>
                     <div
                         class="
-                            w-5
-                            border-b-2 border-GreenSheen
+                            w-1/2
+                            border-b-2 border-GreenLizard
                         "
                     ></div>
 
                     <p
                         class="
-                            text-sm text-DarkLiver
-                            pt-2
+                            text-sm text-GreenLizard
+                            pt-3
                             tracking-wide
                             leading-relaxed
-                            text-justify
+                            text-justify font-light
                         "
                     >
                         We provide a site survey and guaranteed solutions with
@@ -618,11 +609,10 @@
                         items-center
                         text-center
                         max-w-sm
-                        bg-gradient-to-t from-LightGreen to-GreenLizard
-                        border-blue-900
+                        border-GreenLizard border 
                         p-12
                         shadow-xl
-                        rounded-md
+                        rounded-sm
                     "
                     @mouseover="showEnterprise = true"
                     @mouseout="showEnterprise = false"
@@ -647,7 +637,6 @@
                             text-center
                             bg-gradient-to-r from-LightGreen to-GreenLizard
                             text-white
-                            border-blue-900
                             p-12
                             shadow-xl
                             rounded-md
@@ -806,7 +795,7 @@
                     <p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 text-PurpleNavy"
+                            class="h-12 w-12 text-LightGreen"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -824,27 +813,27 @@
                         class="
                             font-bold
                             text-xl
-                            pt-2
-                            pb-2
-                            text-DarkLiver
+                            pt-3
+                            pb-3
+                            text-LightGreen
                         "
                     >
                         Enterprise
                     </p>
                     <div
                         class="
-                            w-5
-                            border-b-2 border-GreenSheen
+                            w-1/2
+                            border-b-2 border-GreenLizard
                         "
                     ></div>
 
                     <p
                         class="
-                            text-sm text-DarkLiver
-                            pt-2
+                            text-sm text-GreenLizard
+                            pt-3
                             tracking-wide
                             leading-relaxed
-                            text-justify
+                            text-justify font-light
                         "
                     >
                         We provide redundancy solutions and advanced, microwave
@@ -864,7 +853,7 @@
                     md:flex-row
                     items-center
                     justify-between
-                     bg-gradient-to-t from-GreenLizard to-LightGreen
+                    bg-gradient-to-t from-GreenLizard to-LightGreen
                     p-10
                 "
             >
@@ -904,7 +893,7 @@
                             md:text-center
                             uppercase
                             text-GreenLizard text-justify
-                            md:font-semibold md:text-xl
+                            md:font-semibold 
                         "
                     >
                         <div
@@ -1035,23 +1024,22 @@
         <!-- clients ection ends here -->
 
         <!-- planning -->
-        <div class="flex flex-col justify-center items-center dark:bg-gray-900">
+        <div class="flex flex-col justify-center items-center ">
             <div
-                class="w-10 border-b-2 border-blue-900 dark:border-blue-400"
+                class="w-10 border-b-2 border-GreenLizard"
             ></div>
-            <div class="pt-10 font-poppins text-blue-900 dark:text-blue-400">
+            <div class="pt-10 font-ubuntu text-GreenLizard">
                 <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-                <p class="text-xl md:text-3xl font-semibold">
+                <p class="text-xl md:text-3xl font-semibold ">
                     We've got the Right plan for you !
                 </p>
             </div>
             <div
                 class="
                     w-32
-                    border-b-2 border-blue-900
-                    dark:border-blue-400
+                    border-b-2 border-GreenLizard
                     pt-10
                 "
             ></div>

@@ -3478,18 +3478,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -5507,7 +5495,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mode: "history",
   // linkActiveClass: "border-b-2 border-t-2 border-gray-400 text-gray-500 ",
-  linkExactActiveClass: "border-b-2 border-LightGreen text-LightGreen font-bold  ",
+  linkExactActiveClass: "border-b-2 border-GreenLizard text-GreenSheen font-bold  ",
   routes: [// {
   //     path: "*",
   //     component: PageNotFound
@@ -24093,22 +24081,22 @@ var render = function () {
         [
           _c("div", {
             staticClass:
-              "absolute rounded-full opacity-10 h-96 w-96 bg-GreenLizard",
+              "absolute rounded-full opacity-5 h-96 w-96 bg-GreenLizard",
           }),
           _vm._v(" "),
           _c("div", {
             staticClass:
-              "absolute rounded-full opacity-10 h-80 w-80 bg-GreenLizard",
+              "absolute rounded-full opacity-5 h-80 w-80 bg-GreenLizard",
           }),
           _vm._v(" "),
           _c("div", {
             staticClass:
-              "absolute rounded-full opacity-10 h-64 w-64 bg-GreenLizard",
+              "absolute rounded-full opacity-5 h-64 w-64 bg-GreenLizard",
           }),
           _vm._v(" "),
           _c("div", {
             staticClass:
-              "absolute rounded-full opacity-10 h-48 w-48 bg-GreenLizard",
+              "absolute rounded-full opacity-5 h-48 w-48 bg-GreenLizard",
           }),
           _vm._v(" "),
           _vm._m(0),
@@ -24146,7 +24134,7 @@ var render = function () {
             "div",
             {
               staticClass:
-                "max-w-xl text-center pt-7 font-ubuntu text-GreenLizard tracking-wide",
+                "max-w-xl font-light text-center pt-7 font-ubuntu text-justify text-GreenLizard tracking-wide",
             },
             [
               _vm._v(
@@ -24157,7 +24145,7 @@ var render = function () {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "font-ubuntu dark:bg-gray-900" }, [
+      _c("div", { staticClass: "font-ubuntu " }, [
         _c(
           "div",
           {
@@ -24169,7 +24157,7 @@ var render = function () {
               "div",
               {
                 staticClass:
-                  "\n\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    bg-gradient-to-t from-LightGreen to-GreenLizard\n                    border-blue-900\n                    p-12\n                    shadow-xl\n                    rounded-md\n                ",
+                  "\n\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-blue-900 \n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm\n                ",
                 on: {
                   mouseover: function ($event) {
                     _vm.showResidential = true
@@ -24192,7 +24180,7 @@ var render = function () {
                       },
                     ],
                     staticClass:
-                      "\n                    bg-gradient-to-r to-myblue  from-myyellow\n                        cursor-pointer\n                        transition\n                        transform\n                        hover:-translate-y-10\n                        ease-in-out\n                        delay-200\n                        motion-reduce:transition-none\n                        motion-reduce:transform-none\n                        w-full\n                        absolute\n                        flex flex-col\n                        justify-center\n                        items-center\n                        text-center\n                        dark:bg-blue-400\n                        bg-blue-900\n                        dark:bg-opacity-10\n                        dark:border-blue-400\n                        dark:text-blue-400\n                        text-white\n                        border-blue-900\n                        p-12\n                        shadow-xl\n                        rounded-md\n                    ",
+                      "\n                    bg-gradient-to-r to-myblue  from-myyellow\n                        cursor-pointer\n                        transition\n                        transform\n                        hover:-translate-y-10\n                        ease-in-out\n                        delay-200\n                        motion-reduce:transition-none\n                        motion-reduce:transform-none\n                        w-full\n                        absolute\n                        flex flex-col\n                        justify-center\n                        items-center\n                        text-center\n                        bg-gradient-to-r from-LightGreen to-GreenLizard\n                        text-white\n                        border-blue-900\n                        p-12\n                        shadow-xl\n                        rounded-md\n                    ",
                   },
                   [
                     _c("p", [
@@ -24386,7 +24374,7 @@ var render = function () {
                   _c(
                     "svg",
                     {
-                      staticClass: "h-12 w-12  text-PurpleNavy",
+                      staticClass: "h-12 w-12  text-LightGreen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -24411,7 +24399,7 @@ var render = function () {
                   "p",
                   {
                     staticClass:
-                      "\n                        font-bold\n                        text-xl\n                        pt-2\n                        pb-2\n                        text-DarkLiver\n                    ",
+                      "\n                        font-bold\n                        text-xl\n                        pt-3\n                        pb-3\n                        text-LightGreen \n                    ",
                   },
                   [
                     _vm._v(
@@ -24422,14 +24410,14 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", {
                   staticClass:
-                    "\n                        w-5\n                        border-b-2 border-GreenSheen\n                        dark:border-blue-200\n                    ",
+                    "\n                        w-1/2\n                        border-b-2 border-GreenLizard\n                        \n                    ",
                 }),
                 _vm._v(" "),
                 _c(
                   "p",
                   {
                     staticClass:
-                      "\n                        text-sm text-DarkLiver\n                        dark:text-blue-300\n                        pt-2\n                        tracking-wide\n                        leading-relaxed\n                        text-justify\n                    ",
+                      "\n                        text-sm text-GreenLizard\n                        pt-3\n                        tracking-wide\n                        leading-relaxed\n                        text-justify font-light\n                    ",
                   },
                   [
                     _vm._v(
@@ -24444,7 +24432,7 @@ var render = function () {
               "div",
               {
                 staticClass:
-                  "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    bg-white\n                    bg-gradient-to-t from-LightGreen to-GreenLizard\n                    border-blue-900\n                    p-12\n                    shadow-xl\n                    rounded-md\n                ",
+                  "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm\n                ",
                 on: {
                   mouseover: function ($event) {
                     _vm.showCommercial = true
@@ -24467,7 +24455,7 @@ var render = function () {
                       },
                     ],
                     staticClass:
-                      "\n                        cursor-pointer\n                        transition\n                        transform\n                        hover:-translate-y-10\n                        ease-in-out\n                        delay-200\n                        motion-reduce:transition-none\n                        motion-reduce:transform-none\n                        w-full\n                        absolute\n                        flex flex-col\n                        justify-center\n                        items-center\n                        text-center\n                        bg-gradient-to-r from-LightGreen to-GreenLizard\n                        text-white\n                        border-blue-900\n                        p-12\n                        shadow-xl\n                        rounded-md\n                    ",
+                      "\n                        cursor-pointer\n                        transition\n                        transform\n                        hover:-translate-y-10\n                        ease-in-out\n                        delay-200\n                        motion-reduce:transition-none\n                        motion-reduce:transform-none\n                        w-full\n                        absolute\n                        flex flex-col\n                        justify-center\n                        items-center\n                        text-center\n                        bg-gradient-to-r from-LightGreen to-GreenLizard\n                        text-white\n                        border-blue-900\n                        p-12\n                        shadow-xl \n                        rounded-md\n                    ",
                   },
                   [
                     _c("p", [
@@ -24661,7 +24649,7 @@ var render = function () {
                   _c(
                     "svg",
                     {
-                      staticClass: "h-12 w-12 text-PurpleNavy",
+                      staticClass: "h-12 w-12 text-LightGreen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -24686,21 +24674,21 @@ var render = function () {
                   "p",
                   {
                     staticClass:
-                      "\n                        font-bold\n                        text-xl\n                        pt-2\n                        pb-2\n                        text-DarkLiver\n                    ",
+                      "\n                        font-bold\n                        text-xl\n                        pt-3\n                        pb-3\n                        text-LightGreen\n                    ",
                   },
                   [_vm._v("\n                    Commercial\n                ")]
                 ),
                 _vm._v(" "),
                 _c("div", {
                   staticClass:
-                    "\n                        w-5\n                        border-b-2 border-GreenSheen\n                    ",
+                    "\n                        w-1/2\n                        border-b-2 border-GreenLizard\n                    ",
                 }),
                 _vm._v(" "),
                 _c(
                   "p",
                   {
                     staticClass:
-                      "\n                        text-sm text-DarkLiver\n                        pt-2\n                        tracking-wide\n                        leading-relaxed\n                        text-justify\n                    ",
+                      "\n                        text-sm text-GreenLizard\n                        pt-3\n                        tracking-wide\n                        leading-relaxed\n                        text-justify font-light\n                    ",
                   },
                   [
                     _vm._v(
@@ -24715,7 +24703,7 @@ var render = function () {
               "div",
               {
                 staticClass:
-                  "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    bg-gradient-to-t from-LightGreen to-GreenLizard\n                    border-blue-900\n                    p-12\n                    shadow-xl\n                    rounded-md\n                ",
+                  "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-GreenLizard border \n                    p-12\n                    shadow-xl\n                    rounded-sm\n                ",
                 on: {
                   mouseover: function ($event) {
                     _vm.showEnterprise = true
@@ -24738,7 +24726,7 @@ var render = function () {
                       },
                     ],
                     staticClass:
-                      "\n                        cursor-pointer\n                        transition\n                        transform\n                        hover:-translate-y-10\n                        ease-in-out\n                        delay-200\n                        motion-reduce:transition-none\n                        motion-reduce:transform-none\n                        w-full\n                        absolute\n                        flex flex-col\n                        justify-center\n                        items-center\n                        text-center\n                        bg-gradient-to-r from-LightGreen to-GreenLizard\n                        text-white\n                        border-blue-900\n                        p-12\n                        shadow-xl\n                        rounded-md\n                    ",
+                      "\n                        cursor-pointer\n                        transition\n                        transform\n                        hover:-translate-y-10\n                        ease-in-out\n                        delay-200\n                        motion-reduce:transition-none\n                        motion-reduce:transform-none\n                        w-full\n                        absolute\n                        flex flex-col\n                        justify-center\n                        items-center\n                        text-center\n                        bg-gradient-to-r from-LightGreen to-GreenLizard\n                        text-white\n                        p-12\n                        shadow-xl\n                        rounded-md\n                    ",
                   },
                   [
                     _c("p", [
@@ -24932,7 +24920,7 @@ var render = function () {
                   _c(
                     "svg",
                     {
-                      staticClass: "h-12 w-12 text-PurpleNavy",
+                      staticClass: "h-12 w-12 text-LightGreen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -24957,21 +24945,21 @@ var render = function () {
                   "p",
                   {
                     staticClass:
-                      "\n                        font-bold\n                        text-xl\n                        pt-2\n                        pb-2\n                        text-DarkLiver\n                    ",
+                      "\n                        font-bold\n                        text-xl\n                        pt-3\n                        pb-3\n                        text-LightGreen\n                    ",
                   },
                   [_vm._v("\n                    Enterprise\n                ")]
                 ),
                 _vm._v(" "),
                 _c("div", {
                   staticClass:
-                    "\n                        w-5\n                        border-b-2 border-GreenSheen\n                    ",
+                    "\n                        w-1/2\n                        border-b-2 border-GreenLizard\n                    ",
                 }),
                 _vm._v(" "),
                 _c(
                   "p",
                   {
                     staticClass:
-                      "\n                        text-sm text-DarkLiver\n                        pt-2\n                        tracking-wide\n                        leading-relaxed\n                        text-justify\n                    ",
+                      "\n                        text-sm text-GreenLizard\n                        pt-3\n                        tracking-wide\n                        leading-relaxed\n                        text-justify font-light\n                    ",
                   },
                   [
                     _vm._v(
@@ -25004,7 +24992,7 @@ var staticRenderFns = [
         "h1",
         {
           staticClass:
-            "\n                    text-2xl\n                    md:text-7xl\n                    pt-20\n                    md:pt-36 \n                    font-bold font-ubuntu\n                    text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n                    \n                ",
+            "\n                    text-2xl\n                    md:text-7xl\n                    pt-20\n                    md:pt-36 \n                    font-medium font-ubuntu\n                    text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n                    \n                ",
         },
         [
           _vm._v(
@@ -25049,7 +25037,7 @@ var staticRenderFns = [
           "p",
           {
             staticClass:
-              "\n                    text-xl\n                    md:text-2xl\n                    uppercase\n                    font-bold\n                    text-center\n                    tracking-wider font-ubuntu\n                ",
+              "\n                    text-xl\n                    md:text-2xl\n                    \n                    font-bold\n                    text-center\n                    tracking-wider font-ubuntu\n                ",
           },
           [
             _vm._v(
@@ -25138,7 +25126,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "\n                flex flex-col\n                md:flex-row\n                items-center\n                justify-between\n                 bg-gradient-to-t from-GreenLizard to-LightGreen\n                p-10\n            ",
+              "\n                flex flex-col\n                md:flex-row\n                items-center\n                justify-between\n                bg-gradient-to-t from-GreenLizard to-LightGreen\n                p-10\n            ",
           },
           [
             _c(
@@ -25176,7 +25164,7 @@ var staticRenderFns = [
                   "div",
                   {
                     staticClass:
-                      "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-semibold md:text-xl\n                    ",
+                      "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-semibold \n                    ",
                   },
                   [
                     _c(
@@ -25333,32 +25321,21 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      {
-        staticClass:
-          "flex flex-col justify-center items-center dark:bg-gray-900",
-      },
+      { staticClass: "flex flex-col justify-center items-center " },
       [
-        _c("div", {
-          staticClass: "w-10 border-b-2 border-blue-900 dark:border-blue-400",
-        }),
+        _c("div", { staticClass: "w-10 border-b-2 border-GreenLizard" }),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "pt-10 font-poppins text-blue-900 dark:text-blue-400",
-          },
-          [
-            _c("p", { staticClass: "text-xl md:text-3xl font-semibold" }, [
-              _vm._v(
-                "\n                We've got the Right plan for you !\n            "
-              ),
-            ]),
-          ]
-        ),
+        _c("div", { staticClass: "pt-10 font-ubuntu text-GreenLizard" }, [
+          _c("p", { staticClass: "text-xl md:text-3xl font-semibold " }, [
+            _vm._v(
+              "\n                We've got the Right plan for you !\n            "
+            ),
+          ]),
+        ]),
         _vm._v(" "),
         _c("div", {
           staticClass:
-            "\n                w-32\n                border-b-2 border-blue-900\n                dark:border-blue-400\n                pt-10\n            ",
+            "\n                w-32\n                border-b-2 border-GreenLizard\n                pt-10\n            ",
         }),
       ]
     )
