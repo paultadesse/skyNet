@@ -2,12 +2,12 @@
     <div class="pt-7">
         <div class="flex flex-col md:flex-row justify-center p-4 font-poppins">
             <div class="shadow-md flex flex-col md:flex-row">
-                <div class="border">
+                <div class="border border-black">
                     <div
                         style="height: 50rem"
                         class="
                             flex flex-col
-                            divide-y
+                            divide-y divide-black
 
                             overflow-y-scroll
                         "
@@ -17,11 +17,11 @@
                                 flex
                                 items-center
                                 justify-between
-                                bg-blue-900
-                                text-white
+                                bg-gradient-to-t from-GreenLizard to-LightGreen 
+                                text-DarkLiver
                                 uppercase
                                 w-full
-                                divide-x
+                                divide-x divide-black
                             "
                         >
                             <div class="p-10 w-1/2 text-center">
@@ -34,7 +34,7 @@
                                 >
                                 service charge
                                 <div class="pt-2">
-                                    <hr />
+                                    <hr class="border-DarkLiver" />
                                 </div>
                                 <div
                                     class="
@@ -46,9 +46,9 @@
                                 >
                                     <div
                                         class="
-                                            bg-white
+                                            bg-DarkLiver
                                             px-2
-                                            text-blue-900
+                                            text-GreenLizard
                                             rounded-sm
                                             text-sm
                                         "
@@ -58,9 +58,9 @@
                                     <div>|</div>
                                     <div
                                         class="
-                                            bg-white
+                                            bg-DarkLiver
                                             px-2
-                                            text-blue-900
+                                            text-GreenLizard
                                             rounded-sm
                                             text-sm
                                         "
@@ -72,9 +72,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard 
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -84,7 +84,7 @@
 
                             <div
                                 class="
-                                    flex
+                                    flex 
                                     pt-10
                                     pb-10
                                     justify-around
@@ -110,9 +110,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard 
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -148,9 +148,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -186,9 +186,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -198,7 +198,7 @@
 
                             <div
                                 class="
-                                    flex
+                                    flex 
                                     pt-10
                                     pb-10
                                     justify-around
@@ -224,9 +224,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -262,9 +262,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -299,9 +299,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -336,9 +336,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -347,7 +347,7 @@
                             <div class="p-10 w-1/2">10 mbps</div>
                             <div
                                 class="
-                                    flex
+                                    flex 
                                     pt-10
                                     pb-10
                                     justify-around
@@ -373,9 +373,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -410,9 +410,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -448,9 +448,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -486,9 +486,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -498,7 +498,7 @@
 
                             <div
                                 class="
-                                    flex
+                                    flex 
                                     pt-10
                                     pb-10
                                     justify-around
@@ -524,9 +524,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -562,9 +562,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -600,9 +600,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -638,25 +638,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="border border-l md:border-l-0">
+                <div class=" ">
                     <div
                         style="height: 50rem"
                         class="
                             flex flex-col
-                            divide-y
+                            divide-y divide-black
 
                             overflow-y-scroll
                         "
                     >
                         <div
                             class="
-                                flex
+                                flex bg-gradient-to-t from-GreenLizard to-LightGreen
                                 items-center
                                 justify-between
-                                bg-blue-900
-                                text-white
+                                divide-x divide-black
+                                text-DarkLiver
                                 uppercase
-                                divide-x
+                                
                             "
                         >
                             <div class="p-10 w-1/2 text-center">
@@ -670,9 +670,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -689,9 +689,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -708,9 +708,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard 
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -727,9 +727,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -746,9 +746,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -765,9 +765,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -784,9 +784,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -808,20 +808,20 @@
                         style="height: 50rem"
                         class="
                             flex flex-col
-                            divide-y
+                            divide-y divide-black
 
                             overflow-y-scroll
                         "
                     >
                         <div
                             class="
-                                flex
+                                flex bg-gradient-to-t from-GreenLizard to-LightGreen
                                 items-center
                                 justify-between
-                                bg-blue-900
-                                text-white
+                                
+                                text-DarkLiver
                                 uppercase
-                                divide-x
+                                divide-x divide-black
                             "
                         >
                             <div class="p-10 w-1/2 text-center">
@@ -837,9 +837,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -856,9 +856,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -875,9 +875,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -894,9 +894,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -913,9 +913,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -932,9 +932,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -951,9 +951,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -970,9 +970,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -989,9 +989,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1008,9 +1008,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1027,9 +1027,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1046,9 +1046,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1065,9 +1065,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1084,9 +1084,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1103,9 +1103,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1122,9 +1122,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1141,9 +1141,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1160,9 +1160,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1179,9 +1179,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1198,9 +1198,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1217,9 +1217,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1236,9 +1236,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light
@@ -1255,9 +1255,9 @@
                         </div>
                         <div
                             class="
-                                flex
+                                flex bg-GreenLizard
                                 items-start
-                                divide-x
+                                divide-x divide-black
                                 justify-between
                                 text-center
                                 font-light

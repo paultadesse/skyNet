@@ -25661,12 +25661,12 @@ var staticRenderFns = [
         },
         [
           _c("div", { staticClass: "shadow-md flex flex-col md:flex-row" }, [
-            _c("div", { staticClass: "border" }, [
+            _c("div", { staticClass: "border border-black" }, [
               _c(
                 "div",
                 {
                   staticClass:
-                    "\n                        flex flex-col\n                        divide-y\n\n                        overflow-y-scroll\n                    ",
+                    "\n                        flex flex-col\n                        divide-y divide-black\n\n                        overflow-y-scroll\n                    ",
                   staticStyle: { height: "50rem" },
                 },
                 [
@@ -25674,7 +25674,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-center\n                            justify-between\n                            bg-blue-900\n                            text-white\n                            uppercase\n                            w-full\n                            divide-x\n                        ",
+                        "\n                            flex\n                            items-center\n                            justify-between\n                            bg-gradient-to-t from-GreenLizard to-LightGreen \n                            text-DarkLiver\n                            uppercase\n                            w-full\n                            divide-x divide-black\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
@@ -25690,7 +25690,9 @@ var staticRenderFns = [
                         _vm._v(
                           "\n                            service charge\n                            "
                         ),
-                        _c("div", { staticClass: "pt-2" }, [_c("hr")]),
+                        _c("div", { staticClass: "pt-2" }, [
+                          _c("hr", { staticClass: "border-DarkLiver" }),
+                        ]),
                         _vm._v(" "),
                         _c(
                           "div",
@@ -25703,7 +25705,7 @@ var staticRenderFns = [
                               "div",
                               {
                                 staticClass:
-                                  "\n                                        bg-white\n                                        px-2\n                                        text-blue-900\n                                        rounded-sm\n                                        text-sm\n                                    ",
+                                  "\n                                        bg-DarkLiver\n                                        px-2\n                                        text-GreenLizard\n                                        rounded-sm\n                                        text-sm\n                                    ",
                               },
                               [
                                 _vm._v(
@@ -25718,7 +25720,7 @@ var staticRenderFns = [
                               "div",
                               {
                                 staticClass:
-                                  "\n                                        bg-white\n                                        px-2\n                                        text-blue-900\n                                        rounded-sm\n                                        text-sm\n                                    ",
+                                  "\n                                        bg-DarkLiver\n                                        px-2\n                                        text-GreenLizard\n                                        rounded-sm\n                                        text-sm\n                                    ",
                               },
                               [
                                 _vm._v(
@@ -25736,7 +25738,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard \n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -25747,7 +25749,7 @@ var staticRenderFns = [
                         "div",
                         {
                           staticClass:
-                            "\n                                flex\n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
+                            "\n                                flex \n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
                         },
                         [
                           _c("div", { staticClass: "leading-none" }, [
@@ -25782,7 +25784,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard \n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -25828,7 +25830,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -25874,7 +25876,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -25885,7 +25887,7 @@ var staticRenderFns = [
                         "div",
                         {
                           staticClass:
-                            "\n                                flex\n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
+                            "\n                                flex \n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
                         },
                         [
                           _c("div", { staticClass: "leading-none" }, [
@@ -25920,7 +25922,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -25966,7 +25968,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26012,7 +26014,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26058,7 +26060,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26069,7 +26071,7 @@ var staticRenderFns = [
                         "div",
                         {
                           staticClass:
-                            "\n                                flex\n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
+                            "\n                                flex \n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
                         },
                         [
                           _c("div", { staticClass: "leading-none" }, [
@@ -26104,7 +26106,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26148,7 +26150,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26194,7 +26196,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26240,7 +26242,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26251,7 +26253,7 @@ var staticRenderFns = [
                         "div",
                         {
                           staticClass:
-                            "\n                                flex\n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
+                            "\n                                flex \n                                pt-10\n                                pb-10\n                                justify-around\n                                items-center\n                                w-1/2\n                                text-lg\n                            ",
                         },
                         [
                           _c("div", { staticClass: "leading-none" }, [
@@ -26286,7 +26288,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26332,7 +26334,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26378,7 +26380,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26423,12 +26425,12 @@ var staticRenderFns = [
               ),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "border border-l md:border-l-0" }, [
+            _c("div", { staticClass: " " }, [
               _c(
                 "div",
                 {
                   staticClass:
-                    "\n                        flex flex-col\n                        divide-y\n\n                        overflow-y-scroll\n                    ",
+                    "\n                        flex flex-col\n                        divide-y divide-black\n\n                        overflow-y-scroll\n                    ",
                   staticStyle: { height: "50rem" },
                 },
                 [
@@ -26436,7 +26438,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-center\n                            justify-between\n                            bg-blue-900\n                            text-white\n                            uppercase\n                            divide-x\n                        ",
+                        "\n                            flex bg-gradient-to-t from-GreenLizard to-LightGreen\n                            items-center\n                            justify-between\n                            divide-x divide-black\n                            text-DarkLiver\n                            uppercase\n                            \n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
@@ -26460,7 +26462,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26484,7 +26486,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26508,7 +26510,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard \n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26532,7 +26534,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26556,7 +26558,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26580,7 +26582,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26604,7 +26606,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26632,7 +26634,7 @@ var staticRenderFns = [
                 "div",
                 {
                   staticClass:
-                    "\n                        flex flex-col\n                        divide-y\n\n                        overflow-y-scroll\n                    ",
+                    "\n                        flex flex-col\n                        divide-y divide-black\n\n                        overflow-y-scroll\n                    ",
                   staticStyle: { height: "50rem" },
                 },
                 [
@@ -26640,7 +26642,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-center\n                            justify-between\n                            bg-blue-900\n                            text-white\n                            uppercase\n                            divide-x\n                        ",
+                        "\n                            flex bg-gradient-to-t from-GreenLizard to-LightGreen\n                            items-center\n                            justify-between\n                            \n                            text-DarkLiver\n                            uppercase\n                            divide-x divide-black\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
@@ -26664,7 +26666,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26688,7 +26690,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26712,7 +26714,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26736,7 +26738,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26760,7 +26762,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26784,7 +26786,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26808,7 +26810,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26832,7 +26834,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26856,7 +26858,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26880,7 +26882,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26904,7 +26906,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26928,7 +26930,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26952,7 +26954,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -26976,7 +26978,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27000,7 +27002,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27024,7 +27026,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27048,7 +27050,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27072,7 +27074,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27096,7 +27098,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27120,7 +27122,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27144,7 +27146,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27168,7 +27170,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
@@ -27192,7 +27194,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-start\n                            divide-x\n                            justify-between\n                            text-center\n                            font-light\n                        ",
+                        "\n                            flex bg-GreenLizard\n                            items-start\n                            divide-x divide-black\n                            justify-between\n                            text-center\n                            font-light\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2" }, [
