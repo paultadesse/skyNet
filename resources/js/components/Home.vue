@@ -1032,9 +1032,9 @@
                 <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-                <p class="text-xl md:text-3xl font-semibold ">
-                    We've got the right plan for you !
-                </p>
+        <h2 class="text-xl md:text-6xl pt-4 font-medium font-ubuntu text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen     
+                    ">We've got the right plan for you !
+                </h2>
             </div>
             <div
                 class="

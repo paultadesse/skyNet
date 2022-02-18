@@ -25608,11 +25608,14 @@ var staticRenderFns = [
         _c("div", { staticClass: "w-10 border-b-2 border-GreenLizard" }),
         _vm._v(" "),
         _c("div", { staticClass: "pt-10 font-ubuntu text-GreenLizard" }, [
-          _c("p", { staticClass: "text-xl md:text-3xl font-semibold " }, [
-            _vm._v(
-              "\n                We've got the right plan for you !\n            "
-            ),
-          ]),
+          _c(
+            "h2",
+            {
+              staticClass:
+                "text-xl md:text-6xl pt-4 font-medium font-ubuntu text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen     \n                ",
+            },
+            [_vm._v("We've got the right plan for you !\n            ")]
+          ),
         ]),
         _vm._v(" "),
         _c("div", {
