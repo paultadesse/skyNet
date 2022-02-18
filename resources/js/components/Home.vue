@@ -26,12 +26,12 @@
             <div class="text-center">
                 <h1
                     class="
-                        text-2xl
-                        md:text-7xl
+                        text-3xl
+                        xl:text-7xl
                         pt-20
                         md:pt-36 
                         font-medium font-ubuntu
-                        text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
+                        text-transparent bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
                         
                     "
                 >
@@ -86,7 +86,7 @@
                     High Speed Internet For Addis Ababa
                 </p>
             </div>
-            <div class="max-w-xl font-light text-center pt-7 font-ubuntu text-justify text-GreenLizard tracking-wide">
+            <div class="max-w-xl px-6 xl:px-0 font-light text-center pt-7 font-ubuntu text-justify text-GreenLizard tracking-wide">
                 Skynet provides reliable, scaleable, convenient Internet. A
                 great choice for enterprise and the public sector, businesses of
                 all sizes, or just skyping with your grandkids or streaming
@@ -1032,7 +1032,7 @@
                 <!-- <button class="bg-blue-900 px-12 py-2 rounded-lg ring-2 ring-offset-1 uppercase">
           services
         </button> -->
-        <h2 class="text-xl md:text-6xl pt-4 font-medium font-ubuntu text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen     
+        <h2 class="text-xl text-4xl px-4 xl:px-0 text-center pt-4 font-medium font-ubuntu text-transparent xl:text-7xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen     
                     ">We've got the right plan for you !
                 </h2>
             </div>

@@ -78,7 +78,7 @@
                 ></button>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    class="h-6 w-6 text-GreenLizard"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -93,15 +93,14 @@
                 </svg>
                 <div
                     v-show="showDropDown"
-                    class="absolute top-10 right-0 bg-gray-50 p-2 z-10"
+                    class="absolute top-10 right-0 bg-gray-900 p-2 z-10"
                 >
                     <div
                         class="
                             flex flex-col
                             items-start
                             uppercase
-                            text-blue-900
-                            dark:text-blue-100
+                            text-GreenLizard
                             text-sm
                             space-y-8
                             px-12

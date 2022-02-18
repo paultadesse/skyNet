@@ -3650,7 +3650,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -24195,7 +24194,7 @@ var render = function () {
             "div",
             {
               staticClass:
-                "max-w-xl font-light text-center pt-7 font-ubuntu text-justify text-GreenLizard tracking-wide",
+                "max-w-xl px-6 xl:px-0 font-light text-center pt-7 font-ubuntu text-justify text-GreenLizard tracking-wide",
             },
             [
               _vm._v(
@@ -25053,7 +25052,7 @@ var staticRenderFns = [
         "h1",
         {
           staticClass:
-            "\n                    text-2xl\n                    md:text-7xl\n                    pt-20\n                    md:pt-36 \n                    font-medium font-ubuntu\n                    text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n                    \n                ",
+            "\n                    text-3xl\n                    xl:text-7xl\n                    pt-20\n                    md:pt-36 \n                    font-medium font-ubuntu\n                    text-transparent bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n                    \n                ",
         },
         [
           _vm._v(
@@ -25391,7 +25390,7 @@ var staticRenderFns = [
             "h2",
             {
               staticClass:
-                "text-xl md:text-6xl pt-4 font-medium font-ubuntu text-transparent text-8xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen     \n                ",
+                "text-xl text-4xl px-4 xl:px-0 text-center pt-4 font-medium font-ubuntu text-transparent xl:text-7xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen     \n                ",
             },
             [_vm._v("We've got the right plan for you !\n            ")]
           ),
@@ -25518,7 +25517,7 @@ var render = function () {
           _c(
             "svg",
             {
-              staticClass: "h-6 w-6",
+              staticClass: "h-6 w-6 text-GreenLizard",
               attrs: {
                 xmlns: "http://www.w3.org/2000/svg",
                 fill: "none",
@@ -25554,14 +25553,14 @@ var render = function () {
                   expression: "showDropDown",
                 },
               ],
-              staticClass: "absolute top-10 right-0 bg-gray-50 p-2 z-10",
+              staticClass: "absolute top-10 right-0 bg-gray-900 p-2 z-10",
             },
             [
               _c(
                 "div",
                 {
                   staticClass:
-                    "\n                        flex flex-col\n                        items-start\n                        uppercase\n                        text-blue-900\n                        dark:text-blue-100\n                        text-sm\n                        space-y-8\n                        px-12\n                    ",
+                    "\n                        flex flex-col\n                        items-start\n                        uppercase\n                        text-GreenLizard\n                        text-sm\n                        space-y-8\n                        px-12\n                    ",
                 },
                 [
                   _c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")]),
