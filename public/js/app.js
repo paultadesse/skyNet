@@ -2428,6 +2428,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -24033,7 +24035,7 @@ var render = function () {
         "div",
         {
           staticClass:
-            "flex justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-10",
+            "flex flex-col space-y-1 justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-16",
         },
         [
           _c(
@@ -24042,9 +24044,17 @@ var render = function () {
             [
               _vm._v("© " + _vm._s(new Date().getFullYear()) + " · Skynet - "),
               _c("span", { staticClass: "text-xs" }, [
-                _vm._v("All rights reserved"),
+                _vm._v("All rights reserved."),
               ]),
             ]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "w-5 border-DarkLiver" }),
+          _vm._v(" "),
+          _c(
+            "p",
+            { staticClass: " text-DarkLiver text-sm font-bold uppercase" },
+            [_vm._v("Made with ❤️ in 🇪🇹")]
           ),
         ]
       ),

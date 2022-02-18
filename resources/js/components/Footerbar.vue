@@ -53,8 +53,10 @@
       </div>
       
     </div>
-    <div class="flex justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-10">
-      <p class="font-ubuntu  text-sm text-DarkLiver font-bold">&copy; {{ new Date().getFullYear() }} &middot; Skynet - <span class="text-xs">All rights reserved</span></p>
+    <div class="flex flex-col space-y-1 justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-16">
+      <p class="font-ubuntu  text-sm text-DarkLiver font-bold">&copy; {{ new Date().getFullYear() }} &middot; Skynet - <span class="text-xs">All rights reserved.</span></p>
+      <hr class="w-5 border-DarkLiver">
+      <p class=" text-DarkLiver text-sm font-bold uppercase">Made with ❤️ in 🇪🇹</p>
     </div>
   </div>
 </template>
