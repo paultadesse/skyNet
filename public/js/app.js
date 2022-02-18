@@ -5422,46 +5422,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {};
@@ -27529,7 +27489,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "font-poppins" }, [
+  return _c("div", { staticClass: "font-ubuntu" }, [
     _c(
       "div",
       { staticClass: "min-h-screen flex justify-center items-center" },
@@ -27554,7 +27514,7 @@ var render = function () {
                   _c(
                     "svg",
                     {
-                      staticClass: "h-8 w-8 dark:text-blue-100 text-blue-900",
+                      staticClass: "h-8 w-8 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -27568,7 +27528,7 @@ var render = function () {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
-                          d: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
+                          d: "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z",
                         },
                       }),
                     ]
@@ -27578,25 +27538,25 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-blue-900\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
                     },
-                    [_vm._v("\n            Internet Services\n          ")]
+                    [_vm._v("\n            24/7 Customer Support\n          ")]
                   ),
                   _vm._v(" "),
                   _c("div", {
                     staticClass:
-                      "w-5 border-b-2 border-blue-900 dark:border-blue-200",
+                      "w-5 border-b-2 border-GreenSheen dark:border-blue-200",
                   }),
                   _vm._v(" "),
                   _c(
                     "p",
                     {
                       staticClass:
-                        "\n              text-justify\n              pt-2\n              text-sm\n              tracking-wide\n              text-gray-600\n              leading-relaxed\n            ",
+                        "\n              text-justify\n              pt-2\n              text-sm\n              tracking-wide\n              text-GreenSheen\n              leading-relaxed\n            ",
                     },
                     [
                       _vm._v(
-                        "\n            Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            Blanditiis, consequatur, eos qui animi amet quasi corrupti eius\n            deleniti reiciendis voluptatibus facilis officiis consequuntur\n            enim eum consectetur fugit dolor porro dolorum.\n          "
+                        "\n            Working for customer satisfaction\n          "
                       ),
                     ]
                   ),
@@ -27613,7 +27573,7 @@ var render = function () {
                   _c(
                     "svg",
                     {
-                      staticClass: "h-8 w-8 dark:text-blue-100 text-blue-900",
+                      staticClass: "h-8 w-8 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -27627,7 +27587,7 @@ var render = function () {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
-                          d: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
+                          d: "M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7",
                         },
                       }),
                     ]
@@ -27637,25 +27597,29 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-blue-900\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
                     },
-                    [_vm._v("\n            Colud & Hosting\n          ")]
+                    [
+                      _vm._v(
+                        "\n            Packages for Every Budget\n          "
+                      ),
+                    ]
                   ),
                   _vm._v(" "),
                   _c("div", {
                     staticClass:
-                      "w-5 border-b-2 border-blue-900 dark:border-blue-200",
+                      "w-5 border-b-2 border-GreenSheen dark:border-blue-200",
                   }),
                   _vm._v(" "),
                   _c(
                     "p",
                     {
                       staticClass:
-                        "\n              text-justify\n              pt-2\n              text-sm\n              tracking-normal\n              text-gray-600\n              leading-relaxed\n            ",
+                        "\n              text-justify\n              pt-2\n              text-sm\n              tracking-normal\n              text-GreenSheen\n              leading-relaxed\n            ",
                     },
                     [
                       _vm._v(
-                        "\n            Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            Perspiciatis officia placeat facere unde ad facilis, odio libero\n            quibusdam beatae in quod minima ea, dolorem adipisci velit dolore\n            ut! Ab, nemo.\n          "
+                        "\n            Affordable and reasonable price for the packages you choose\n          "
                       ),
                     ]
                   ),
@@ -27672,7 +27636,7 @@ var render = function () {
                   _c(
                     "svg",
                     {
-                      staticClass: "h-8 w-8 dark:text-blue-100 text-blue-900",
+                      staticClass: "h-8 w-8 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -27686,7 +27650,7 @@ var render = function () {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
-                          d: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+                          d: "M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4",
                         },
                       }),
                     ]
@@ -27696,25 +27660,25 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-blue-900\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
                     },
-                    [_vm._v("\n            Enterprise\n          ")]
+                    [_vm._v("\n            Free Setup Fee\n          ")]
                   ),
                   _vm._v(" "),
                   _c("div", {
                     staticClass:
-                      "w-5 border-b-2 border-blue-900 dark:border-blue-200",
+                      "w-5 border-b-2 border-GreenSheen dark:border-blue-200",
                   }),
                   _vm._v(" "),
                   _c(
                     "p",
                     {
                       staticClass:
-                        "text-justify pt-2 text-sm text-gray-600 leading-relaxed",
+                        "text-justify pt-2 text-sm text-GreenSheen leading-relaxed",
                     },
                     [
                       _vm._v(
-                        "\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis\n            iusto et nobis aut odit mollitia exercitationem pariatur, eius\n            repellendus voluptatum, ullam, suscipit adipisci earum architecto\n            voluptates nesciunt porro quo assumenda?\n          "
+                        "\n            Connecting you to the world by setting your internet with no price within a two day\n          "
                       ),
                     ]
                   ),
@@ -27732,7 +27696,7 @@ var render = function () {
                     "svg",
                     {
                       staticClass:
-                        "flex-none h-8 w-8 dark:text-blue-100 text-blue-900",
+                        "flex-none h-8 w-8 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -27746,7 +27710,16 @@ var render = function () {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
-                          d: "M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01",
+                          d: "M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z",
+                        },
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        attrs: {
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                          d: "M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z",
                         },
                       }),
                     ]
@@ -27756,25 +27729,25 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-blue-900\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
                     },
-                    [_vm._v("\n            VAS\n          ")]
+                    [_vm._v("\n            Unlimited Internet\n          ")]
                   ),
                   _vm._v(" "),
                   _c("div", {
                     staticClass:
-                      "w-5 border-b-2 border-blue-900 dark:border-blue-200",
+                      "w-5 border-b-2 border-GreenSheen dark:border-blue-200",
                   }),
                   _vm._v(" "),
                   _c(
                     "p",
                     {
                       staticClass:
-                        "text-justify pt-2 text-sm text-gray-600 leading-relaxed",
+                        "text-justify pt-2 text-sm text-GreenSheen leading-relaxed",
                     },
                     [
                       _vm._v(
-                        "\n            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum\n            repellat natus accusamus quas nulla quia, modi laboriosam earum\n            minus. Possimus assumenda natus ea magnam porro soluta voluptatem\n            nihil in odio.\n          "
+                        "\n            Stay connected to the world at all time with reasonable cost\n          "
                       ),
                     ]
                   ),
@@ -27785,14 +27758,14 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex\n            items-center\n            divide-x\n            space-x-7\n            shadow-lg\n            col-span-2\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
+                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            space-x-7\n            shadow-lg\n            col-span-2\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
                 },
                 [
                   _c(
                     "svg",
                     {
                       staticClass:
-                        "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-blue-900",
+                        "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -27806,7 +27779,7 @@ var render = function () {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
-                          d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                          d: "M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z",
                         },
                       }),
                     ]
@@ -27820,14 +27793,14 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex\n            items-center\n            divide-x\n            space-x-7\n            shadow-lg\n            col-span-2\n            md:col-span-3\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
+                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            space-x-7\n            shadow-lg\n            col-span-2\n            md:col-span-3\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
                 },
                 [
                   _c(
                     "svg",
                     {
                       staticClass:
-                        "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-blue-900",
+                        "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -27866,14 +27839,14 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "\n            flex flex-col\n            justify-evenly\n            space-y-7\n            items-center\n            shadow-lg\n            row-span-1\n            col-span-2\n            md:col-span-1 md:row-span-3 md:p-20 md:h-full\n          ",
+          "\n            flex flex-col\n            justify-evenly\n            space-y-7\n            items-center\n            shadow-lg bg-gradient-to-r from-LightGreen  to-GreenLizard\n            row-span-1\n            col-span-2\n            md:col-span-1 md:row-span-3 md:p-20 md:h-full\n          ",
       },
       [
         _c(
           "h2",
           {
             staticClass:
-              "\n              text-blue-900 text-2xl\n              md:text-7xl\n              tracking-tighter\n              font-bold\n            ",
+              "\n              text-gray-800 text-2xl\n              md:text-7xl\n              tracking-tighter\n              font-bold\n            ",
           },
           [_vm._v("\n            Skynet\n          ")]
         ),
@@ -27881,7 +27854,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "flex flex-col items-center" }, [
           _c(
             "div",
-            { staticClass: "text-2xl pb-7 text-blue-900 font-semibold" },
+            { staticClass: "text-2xl pb-7 text-gray-800 font-semibold" },
             [_vm._v("\n              We've Got You Covered !\n            ")]
           ),
           _vm._v(" "),
@@ -27889,14 +27862,14 @@ var staticRenderFns = [
             "div",
             {
               staticClass:
-                "relative shadow-2xl h-20 w-20 rounded-full bg-blue-900",
+                "relative shadow-2xl h-20 w-20 rounded-full bg-gray-800",
             },
             [
               _c(
                 "div",
                 {
                   staticClass:
-                    "\n                  absolute\n                  top-5\n                  left-3\n                  font-semibold\n                  leading-relaxed\n                  tracking-wide\n                  text-2xl text-white\n                ",
+                    "\n                  absolute\n                  top-5\n                  left-3\n                  font-semibold\n                  leading-relaxed\n                  tracking-wide\n                  text-2xl text-GreenLizard\n                ",
                 },
                 [_vm._v("\n                24/7\n              ")]
               ),
@@ -27904,7 +27877,7 @@ var staticRenderFns = [
           ),
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "text-base text-gray-500 " }, [
+        _c("p", { staticClass: "text-base text-black " }, [
           _vm._v(
             "\n            Dependable, Fast Internet connection !\n          "
           ),
@@ -27916,17 +27889,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", {}, [
       _c(
-        "p",
+        "div",
         {
           staticClass:
-            "\n                text-justify\n                pt-2\n                text-sm text-gray-600\n                leading-relaxed\n                ml-2\n              ",
+            "\n                text-justify\n                pt-2 space-y-2\n                text-sm text-GreenSheen\n                leading-relaxed\n                ml-2 flex flex-col\n              ",
         },
         [
-          _vm._v(
-            "\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,\n              perspiciatis alias quos voluptas corporis vero exercitationem.\n              Ea alias odit blanditiis soluta corporis dolor? Voluptate\n              numquam, hic beatae atque nulla molestiae?\n            "
-          ),
+          _c("span", { staticClass: "text-GreenLizard uppercase" }, [
+            _vm._v("Additional services"),
+          ]),
+          _vm._v(" "),
+          _c("span", [_c("hr", { staticClass: "w-5" })]),
+          _vm._v(" "),
+          _c("span", [
+            _vm._v(
+              "Free technical assistance, promotional period discount at your neighbourhood via fiber optics."
+            ),
+          ]),
         ]
       ),
     ])
@@ -27940,11 +27921,11 @@ var staticRenderFns = [
         "p",
         {
           staticClass:
-            "\n                text-justify\n                pt-2\n                text-sm text-gray-600\n                leading-relaxed\n                ml-2\n              ",
+            "\n                text-justify\n                pt-2\n                text-sm text-GreenSheen\n                leading-relaxed\n                ml-2\n              ",
         },
         [
           _vm._v(
-            "\n              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque\n              saepe ut totam exercitationem amet assumenda commodi a ducimus.\n              At deleniti veritatis impedit rem tempore minima laboriosam\n              dolore sapiente ratione tenetur?\n            "
+            "\n              Skynet, the number one private Internet Service Provider in Ethiopia, has selected Cisco Routed Optical Networking Solution for its high speed broadband service.\n            "
           ),
         ]
       ),

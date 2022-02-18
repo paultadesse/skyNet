@@ -1,5 +1,5 @@
 <template>
-  <div class="font-poppins">
+  <div class="font-ubuntu">
     <!-- services -->
     <div class="min-h-screen flex justify-center items-center">
       <div class="">
@@ -19,7 +19,7 @@
               justify-evenly
               space-y-7
               items-center
-              shadow-lg
+              shadow-lg bg-gradient-to-r from-LightGreen  to-GreenLizard
               row-span-1
               col-span-2
               md:col-span-1 md:row-span-3 md:p-20 md:h-full
@@ -27,7 +27,7 @@
           >
             <h2
               class="
-                text-blue-900 text-2xl
+                text-gray-800 text-2xl
                 md:text-7xl
                 tracking-tighter
                 font-bold
@@ -36,11 +36,11 @@
               Skynet
             </h2>
             <div class="flex flex-col items-center">
-              <div class="text-2xl pb-7 text-blue-900 font-semibold">
+              <div class="text-2xl pb-7 text-gray-800 font-semibold">
                 We've Got You Covered !
               </div>
               <div
-                class="relative shadow-2xl h-20 w-20 rounded-full bg-blue-900"
+                class="relative shadow-2xl h-20 w-20 rounded-full bg-gray-800"
               >
                 <div
                   class="
@@ -50,14 +50,14 @@
                     font-semibold
                     leading-relaxed
                     tracking-wide
-                    text-2xl text-white
+                    text-2xl text-GreenLizard
                   "
                 >
                   24/7
                 </div>
               </div>
             </div>
-            <p class="text-base text-gray-500 ">
+            <p class="text-base text-black ">
               Dependable, Fast Internet connection !
             </p>
           </div>
@@ -75,17 +75,12 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 dark:text-blue-100 text-blue-900"
+              class="h-8 w-8 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-              />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
             </svg>
             <h2
               class="
@@ -93,14 +88,14 @@
                 text-xl
                 pt-2
                 pb-2
-                text-blue-900
+                text-GreenLizard
                 dark:text-blue-300
               "
             >
-              Internet Services
+              24/7 Customer Support
             </h2>
             <div
-              class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
+              class="w-5 border-b-2 border-GreenSheen dark:border-blue-200"
             ></div>
             <p
               class="
@@ -108,14 +103,11 @@
                 pt-2
                 text-sm
                 tracking-wide
-                text-gray-600
+                text-GreenSheen
                 leading-relaxed
               "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, consequatur, eos qui animi amet quasi corrupti eius
-              deleniti reiciendis voluptatibus facilis officiis consequuntur
-              enim eum consectetur fugit dolor porro dolorum.
+              Working for customer satisfaction
             </p>
           </div>
           <div
@@ -132,17 +124,12 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 dark:text-blue-100 text-blue-900"
+              class="h-8 w-8 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-              />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
             </svg>
             <h2
               class="
@@ -150,14 +137,14 @@
                 text-xl
                 pt-2
                 pb-2
-                text-blue-900
+                text-GreenLizard
                 dark:text-blue-300
               "
             >
-              Colud & Hosting
+              Packages for Every Budget
             </h2>
             <div
-              class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
+              class="w-5 border-b-2 border-GreenSheen dark:border-blue-200"
             ></div>
 
             <p
@@ -166,14 +153,11 @@
                 pt-2
                 text-sm
                 tracking-normal
-                text-gray-600
+                text-GreenSheen
                 leading-relaxed
               "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis officia placeat facere unde ad facilis, odio libero
-              quibusdam beatae in quod minima ea, dolorem adipisci velit dolore
-              ut! Ab, nemo.
+              Affordable and reasonable price for the packages you choose
             </p>
           </div>
           <div
@@ -190,17 +174,12 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 dark:text-blue-100 text-blue-900"
+              class="h-8 w-8 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-              />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
             </svg>
             <h2
               class="
@@ -208,20 +187,17 @@
                 text-xl
                 pt-2
                 pb-2
-                text-blue-900
+                text-GreenLizard
                 dark:text-blue-300
               "
             >
-              Enterprise
+              Free Setup Fee
             </h2>
             <div
-              class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
+              class="w-5 border-b-2 border-GreenSheen dark:border-blue-200"
             ></div>
-            <p class="text-justify pt-2 text-sm text-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-              iusto et nobis aut odit mollitia exercitationem pariatur, eius
-              repellendus voluptatum, ullam, suscipit adipisci earum architecto
-              voluptates nesciunt porro quo assumenda?
+            <p class="text-justify pt-2 text-sm text-GreenSheen leading-relaxed">
+              Connecting you to the world by setting your internet with no price within a two day
             </p>
           </div>
           <div
@@ -238,17 +214,13 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="flex-none h-8 w-8 dark:text-blue-100 text-blue-900"
+              class="flex-none h-8 w-8 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
-              />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
             </svg>
             <h2
               class="
@@ -256,27 +228,24 @@
                 text-xl
                 pt-2
                 pb-2
-                text-blue-900
+                text-GreenLizard
                 dark:text-blue-300
               "
             >
-              VAS
+              Unlimited Internet
             </h2>
             <div
-              class="w-5 border-b-2 border-blue-900 dark:border-blue-200"
+              class="w-5 border-b-2 border-GreenSheen dark:border-blue-200"
             ></div>
-            <p class="text-justify pt-2 text-sm text-gray-600 leading-relaxed">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              repellat natus accusamus quas nulla quia, modi laboriosam earum
-              minus. Possimus assumenda natus ea magnam porro soluta voluptatem
-              nihil in odio.
+            <p class="text-justify pt-2 text-sm text-GreenSheen leading-relaxed">
+              Stay connected to the world at all time with reasonable cost
             </p>
           </div>
           <div
             class="
               flex
               items-center
-              divide-x
+              divide-x divide-GreenLizard
               space-x-7
               shadow-lg
               col-span-2
@@ -288,40 +257,34 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-blue-900"
+              class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
             </svg>
-            <div>
-              <p
+            <div class="">
+              
+              <div
                 class="
                   text-justify
-                  pt-2
-                  text-sm text-gray-600
+                  pt-2 space-y-2
+                  text-sm text-GreenSheen
                   leading-relaxed
-                  ml-2
+                  ml-2 flex flex-col
                 "
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-                perspiciatis alias quos voluptas corporis vero exercitationem.
-                Ea alias odit blanditiis soluta corporis dolor? Voluptate
-                numquam, hic beatae atque nulla molestiae?
-              </p>
+              > <span class="text-GreenLizard uppercase">Additional services</span>
+              <span><hr class="w-5"></span>
+                <span>Free technical assistance, promotional period discount at your neighbourhood via fiber optics.</span>
+              </div>
             </div>
           </div>
           <div
             class="
               flex
               items-center
-              divide-x
+              divide-x divide-GreenLizard
               space-x-7
               shadow-lg
               col-span-2
@@ -334,7 +297,7 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-blue-900"
+              class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -351,15 +314,12 @@
                 class="
                   text-justify
                   pt-2
-                  text-sm text-gray-600
+                  text-sm text-GreenSheen
                   leading-relaxed
                   ml-2
                 "
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-                saepe ut totam exercitationem amet assumenda commodi a ducimus.
-                At deleniti veritatis impedit rem tempore minima laboriosam
-                dolore sapiente ratione tenetur?
+                Skynet, the number one private Internet Service Provider in Ethiopia, has selected Cisco Routed Optical Networking Solution for its high speed broadband service.
               </p>
             </div>
           </div>
