@@ -25328,7 +25328,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "pt-10 font-ubuntu text-GreenLizard" }, [
           _c("p", { staticClass: "text-xl md:text-3xl font-semibold " }, [
             _vm._v(
-              "\n                We've got the Right plan for you !\n            "
+              "\n                We've got the right plan for you !\n            "
             ),
           ]),
         ]),
@@ -25674,7 +25674,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex\n                            items-center\n                            justify-between\n                            bg-gradient-to-t from-GreenLizard to-LightGreen \n                            text-DarkLiver\n                            uppercase\n                            w-full\n                            divide-x divide-black\n                        ",
+                        "\n                            flex\n                            items-center\n                            justify-between\n                            bg-gray-800 \n                            text-GreenLizard\n                            uppercase\n                            w-full\n                            divide-x divide-GreenLizard\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
@@ -25691,7 +25691,7 @@ var staticRenderFns = [
                           "\n                            service charge\n                            "
                         ),
                         _c("div", { staticClass: "pt-2" }, [
-                          _c("hr", { staticClass: "border-DarkLiver" }),
+                          _c("hr", { staticClass: "border-GreenLizard" }),
                         ]),
                         _vm._v(" "),
                         _c(
@@ -25705,7 +25705,7 @@ var staticRenderFns = [
                               "div",
                               {
                                 staticClass:
-                                  "\n                                        bg-DarkLiver\n                                        px-2\n                                        text-GreenLizard\n                                        rounded-sm\n                                        text-sm\n                                    ",
+                                  "\n                                        bg-GreenLizard\n                                        px-2\n                                        text-DarkLiver\n                                        rounded-sm\n                                        text-sm\n                                    ",
                               },
                               [
                                 _vm._v(
@@ -25720,7 +25720,7 @@ var staticRenderFns = [
                               "div",
                               {
                                 staticClass:
-                                  "\n                                        bg-DarkLiver\n                                        px-2\n                                        text-GreenLizard\n                                        rounded-sm\n                                        text-sm\n                                    ",
+                                  "\n                                        bg-GreenLizard\n                                        px-2\n                                        text-DarkLiver\n                                        rounded-sm\n                                        text-sm\n                                    ",
                               },
                               [
                                 _vm._v(
@@ -26438,7 +26438,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex bg-gradient-to-t from-GreenLizard to-LightGreen\n                            items-center\n                            justify-between\n                            divide-x divide-black\n                            text-DarkLiver\n                            uppercase\n                            \n                        ",
+                        "\n                            flex bg-gray-800\n                            items-center\n                            justify-between\n                            divide-x divide-GreenLizard\n                            text-GreenLizard\n                            uppercase\n                            \n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2 text-center" }, [
@@ -26629,7 +26629,7 @@ var staticRenderFns = [
               ),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "border border-l md:border-l-0" }, [
+            _c("div", {}, [
               _c(
                 "div",
                 {
@@ -26642,7 +26642,7 @@ var staticRenderFns = [
                     "div",
                     {
                       staticClass:
-                        "\n                            flex bg-gradient-to-t from-GreenLizard to-LightGreen\n                            items-center\n                            justify-between\n                            \n                            text-DarkLiver\n                            uppercase\n                            divide-x divide-black\n                        ",
+                        "\n                            flex bg-gray-800\n                            items-center\n                            justify-between\n                            \n                            text-GreenLizard\n                            uppercase\n                            divide-x divide-GreenLizard\n                        ",
                     },
                     [
                       _c("div", { staticClass: "p-10 w-1/2 text-center" }, [

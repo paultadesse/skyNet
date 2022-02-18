@@ -1033,7 +1033,7 @@
           services
         </button> -->
                 <p class="text-xl md:text-3xl font-semibold ">
-                    We've got the Right plan for you !
+                    We've got the right plan for you !
                 </p>
             </div>
             <div

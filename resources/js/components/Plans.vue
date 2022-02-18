@@ -17,11 +17,11 @@
                                 flex
                                 items-center
                                 justify-between
-                                bg-gradient-to-t from-GreenLizard to-LightGreen 
-                                text-DarkLiver
+                                bg-gray-800 
+                                text-GreenLizard
                                 uppercase
                                 w-full
-                                divide-x divide-black
+                                divide-x divide-GreenLizard
                             "
                         >
                             <div class="p-10 w-1/2 text-center">
@@ -34,7 +34,7 @@
                                 >
                                 service charge
                                 <div class="pt-2">
-                                    <hr class="border-DarkLiver" />
+                                    <hr class="border-GreenLizard" />
                                 </div>
                                 <div
                                     class="
@@ -46,9 +46,9 @@
                                 >
                                     <div
                                         class="
-                                            bg-DarkLiver
+                                            bg-GreenLizard
                                             px-2
-                                            text-GreenLizard
+                                            text-DarkLiver
                                             rounded-sm
                                             text-sm
                                         "
@@ -58,9 +58,9 @@
                                     <div>|</div>
                                     <div
                                         class="
-                                            bg-DarkLiver
+                                            bg-GreenLizard
                                             px-2
-                                            text-GreenLizard
+                                            text-DarkLiver
                                             rounded-sm
                                             text-sm
                                         "
@@ -650,11 +650,11 @@
                     >
                         <div
                             class="
-                                flex bg-gradient-to-t from-GreenLizard to-LightGreen
+                                flex bg-gray-800
                                 items-center
                                 justify-between
-                                divide-x divide-black
-                                text-DarkLiver
+                                divide-x divide-GreenLizard
+                                text-GreenLizard
                                 uppercase
                                 
                             "
@@ -803,7 +803,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="border border-l md:border-l-0">
+                <div class="">
                     <div
                         style="height: 50rem"
                         class="
@@ -815,13 +815,13 @@
                     >
                         <div
                             class="
-                                flex bg-gradient-to-t from-GreenLizard to-LightGreen
+                                flex bg-gray-800
                                 items-center
                                 justify-between
                                 
-                                text-DarkLiver
+                                text-GreenLizard
                                 uppercase
-                                divide-x divide-black
+                                divide-x divide-GreenLizard
                             "
                         >
                             <div class="p-10 w-1/2 text-center">
