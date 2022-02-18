@@ -2411,6 +2411,59 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -24033,19 +24086,248 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-gray-100 py-4" }, [
-    _c("div", { staticClass: "flex justify-center items-center" }, [
+  return _c(
+    "div",
+    { staticClass: "bg-gray-800 font-ubuntu font-light mt-10" },
+    [
       _c(
-        "p",
+        "div",
         {
-          staticClass: "font-poppins uppercase text-sm text-blue-900 font-bold",
+          staticClass:
+            "md:flex justify-around text-GreenLizard p-10 space-y-9 md:space-y-0",
         },
-        [_vm._v("© " + _vm._s(new Date().getFullYear()) + " · Skynet")]
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "space-y-3" }, [
+            _c("div", { staticClass: "font-bold text-lg  uppercase" }, [
+              _vm._v("Contact us"),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex space-x-1" }, [
+              _c("span", [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "h-5 w-5",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      fill: "none",
+                      viewBox: "0 0 24 24",
+                      stroke: "currentColor",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "1",
+                        d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _c("span", [_vm._v("5th floor")]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex space-x-1" }, [
+              _c("span", [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "h-5 w-5",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      fill: "none",
+                      viewBox: "0 0 24 24",
+                      stroke: "currentColor",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "1",
+                        d: "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _c("span", [_vm._v("Ethiopia")]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex space-x-1" }, [
+              _c("span", [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "h-5 w-5",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      fill: "none",
+                      viewBox: "0 0 24 24",
+                      stroke: "currentColor",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "1",
+                        d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _c("span", [_vm._v("+251922744488")]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex space-x-1" }, [
+              _c("span", [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "h-5 w-5",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      fill: "none",
+                      viewBox: "0 0 24 24",
+                      stroke: "currentColor",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "1",
+                        d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _c("span", [_vm._v("+251922744488")]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex space-x-1" }, [
+              _c("span", [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "h-5 w-5",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      fill: "none",
+                      viewBox: "0 0 24 24",
+                      stroke: "currentColor",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "1",
+                        d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _c("span", [_vm._v("info@skynet.com")]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _vm._m(1),
+        ]
       ),
-    ]),
-  ])
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex justify-center items-center bg-gradient-to-r p-4 from-GreenLizard to-LightGreen h-10",
+        },
+        [
+          _c(
+            "p",
+            { staticClass: "font-ubuntu  text-sm text-DarkLiver font-bold" },
+            [
+              _vm._v("© " + _vm._s(new Date().getFullYear()) + " · Skynet - "),
+              _c("span", { staticClass: "text-xs" }, [
+                _vm._v("All rights reserved"),
+              ]),
+            ]
+          ),
+        ]
+      ),
+    ]
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "space-y-4" }, [
+      _c("div", { staticClass: "font-bold text-5xl" }, [_vm._v("SkyNet")]),
+      _vm._v(" "),
+      _c("hr", { staticClass: "border-GreenLizard" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "max-w-md" }, [
+        _vm._v(
+          "Skynet is an internet service provider thriving to create powerful connection. Register here and be connected to the world."
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "space-y-2" }, [
+      _c("div", { staticClass: "font-bold text-lg uppercase" }, [
+        _vm._v("Register now"),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "max-w-md pb-4" }, [
+        _vm._v("Register "),
+        _c("span", { staticClass: "underline uppercase text-GreenSheen" }, [
+          _vm._v("Here"),
+        ]),
+        _vm._v(". Already have an account "),
+        _c("span", { staticClass: "underline uppercase text-GreenSheen" }, [
+          _vm._v("Login"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "font-light uppercase cursor-pointer text-lg py-5 border border-GreenLizard justify-center flex",
+        },
+        [_vm._v("Check out our services")]
+      ),
+    ])
+  },
+]
 render._withStripped = true
 
 

@@ -42,7 +42,7 @@
             <div>
                 <router-view class="mb-auto  bg-gray-900 h-full"></router-view>
             </div>
-            <div>
+            <div class=" bg-gray-900 ">
                 <footer-bar></footer-bar>
             </div>
         </div>
