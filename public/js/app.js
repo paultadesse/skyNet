@@ -2196,6 +2196,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -23469,7 +23471,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "min-h-screen font-poppins" }, [
+  return _c("div", { staticClass: "min-h-screen font-ubuntu" }, [
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "flex justify-center items-center p-4 md:p-20" }, [
@@ -23478,13 +23480,13 @@ var render = function () {
           "div",
           {
             staticClass:
-              "shadow-lg col-span-3 md:p-20 md:col-span-1 space-y-2 p-2",
+              "shadow-lg bg-gradient-to-l from-LightGreen to-GreenLizard col-span-3 md:p-20 md:col-span-1 space-y-2 p-2",
           },
           [
             _c(
               "svg",
               {
-                staticClass: "h-6 w-6 dark:text-blue-100 text-blue-900",
+                staticClass: "h-6 w-6 dark:text-blue-100 text-DarkLiver",
                 attrs: {
                   xmlns: "http://www.w3.org/2000/svg",
                   fill: "none",
@@ -23515,12 +23517,11 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass:
-                  "font-bold text-xl pt-2 pb-2 text-blue-900 dark:text-blue-300",
-              },
+              { staticClass: "font-bold text-xl pt-2 pb-2 text-DarkLiver" },
               [_vm._v("\n          Our Vision\n        ")]
             ),
+            _vm._v(" "),
+            _c("hr", { staticClass: "w-5 border-DarkLiver" }),
             _vm._v(" "),
             _c(
               "div",
@@ -23538,13 +23539,13 @@ var render = function () {
           "div",
           {
             staticClass:
-              "shadow-lg md:p-20 col-span-3 md:col-span-1 space-y-2 p-2",
+              "shadow-lg bg-gradient-to-t from-LightGreen to-GreenLizard md:p-20 col-span-3 md:col-span-1 space-y-2 p-2",
           },
           [
             _c(
               "svg",
               {
-                staticClass: "h-6 w-6 dark:text-blue-100 text-blue-900",
+                staticClass: "h-6 w-6 dark:text-blue-100 text-DarkLiver",
                 attrs: {
                   xmlns: "http://www.w3.org/2000/svg",
                   fill: "none",
@@ -23566,12 +23567,11 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass:
-                  "font-bold text-xl pt-2 pb-2 text-blue-900 dark:text-blue-300",
-              },
+              { staticClass: "font-bold text-xl pt-2 pb-2 text-DarkLiver" },
               [_vm._v("\n          Our Mission\n        ")]
             ),
+            _vm._v(" "),
+            _c("hr", { staticClass: "w-5 border-DarkLiver" }),
             _vm._v(" "),
             _c(
               "div",
@@ -23589,13 +23589,13 @@ var render = function () {
           "div",
           {
             staticClass:
-              "shadow-lg md:p-20 col-span-3 md:col-span-1 space-y-2 p-2",
+              "shadow-lg bg-gradient-to-r from-LightGreen to-GreenLizard md:p-20 col-span-3 md:col-span-1 space-y-2 p-2",
           },
           [
             _c(
               "svg",
               {
-                staticClass: "h-6 w-6 dark:text-blue-100 text-blue-900",
+                staticClass: "h-6 w-6 dark:text-blue-100 text-DarkLiver",
                 attrs: {
                   xmlns: "http://www.w3.org/2000/svg",
                   fill: "none",
@@ -23617,12 +23617,11 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass:
-                  "font-bold text-xl pt-2 pb-2 text-blue-900 dark:text-blue-300",
-              },
+              { staticClass: "font-bold text-xl pt-2 pb-2 text-DarkLiver" },
               [_vm._v("\n          Our Value\n        ")]
             ),
+            _vm._v(" "),
+            _c("hr", { staticClass: "w-5 border-DarkLiver" }),
             _vm._v(" "),
             _c(
               "div",
@@ -23652,7 +23651,7 @@ var staticRenderFns = [
           "h1",
           {
             staticClass:
-              "\n        text-2xl\n        md:text-4xl\n        pt-20\n        font-bold font-poppins\n        text-blue-900\n        dark:text-blue-100\n      ",
+              "\n        text-2xl\n        md:text-4xl\n        pt-20\n        font-bold\n        text-transparent bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n      ",
           },
           [_vm._v("\n      A Littel bit About Us\n    ")]
         ),
@@ -23661,7 +23660,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "\n        max-w-5xl\n         text-gray-600\n        leading-relaxed\n        md:tracking-wide p-4 md:p-0 text-justify\n      ",
+              "\n        max-w-5xl\n        text-GreenSheen\n        leading-relaxed\n        md:tracking-wide p-4 md:p-0 text-justify\n      ",
           },
           [
             _vm._v(

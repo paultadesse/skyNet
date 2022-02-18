@@ -1,14 +1,13 @@
 <template>
-  <div class="min-h-screen font-poppins">
+  <div class="min-h-screen font-ubuntu">
     <div class="flex flex-col items-center justify-center space-y-7">
       <h1
         class="
           text-2xl
           md:text-4xl
           pt-20
-          font-bold font-poppins
-          text-blue-900
-          dark:text-blue-100
+          font-bold
+          text-transparent bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
         "
       >
         A Littel bit About Us
@@ -16,7 +15,7 @@
       <div
         class="
           max-w-5xl
-           text-gray-600
+          text-GreenSheen
           leading-relaxed
           md:tracking-wide p-4 md:p-0 text-justify
         "
@@ -36,10 +35,10 @@
 
     <div class="flex justify-center items-center p-4 md:p-20">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="shadow-lg col-span-3 md:p-20 md:col-span-1 space-y-2 p-2">
+        <div class="shadow-lg bg-gradient-to-l from-LightGreen to-GreenLizard col-span-3 md:p-20 md:col-span-1 space-y-2 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 dark:text-blue-100 text-blue-900"
+              class="h-6 w-6 dark:text-blue-100 text-DarkLiver"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -58,10 +57,11 @@
             />
           </svg>
           <div
-            class="font-bold text-xl pt-2 pb-2 text-blue-900 dark:text-blue-300"
+            class="font-bold text-xl pt-2 pb-2 text-DarkLiver"
           >
             Our Vision
           </div>
+          <hr class="w-5 border-DarkLiver">
           <div class="text-sm leading-relaxed tracking-wide">
             Our vision is to grow as a leading IT solutions provider that will
             exceed expectations and set new standards in order to offer a broad
@@ -70,10 +70,10 @@
             (PSP).
           </div>
         </div>
-        <div class="shadow-lg md:p-20 col-span-3 md:col-span-1 space-y-2 p-2">
+        <div class="shadow-lg bg-gradient-to-t from-LightGreen to-GreenLizard md:p-20 col-span-3 md:col-span-1 space-y-2 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 dark:text-blue-100 text-blue-900"
+              class="h-6 w-6 dark:text-blue-100 text-DarkLiver"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -86,10 +86,11 @@
             />
           </svg>
           <div
-            class="font-bold text-xl pt-2 pb-2 text-blue-900 dark:text-blue-300"
+            class="font-bold text-xl pt-2 pb-2 text-DarkLiver"
           >
             Our Mission
           </div>
+          <hr class="w-5 border-DarkLiver">
           <div class="text-sm leading-relaxed tracking-wide">
             Our mission is simple, make technology an asset for our clients’
             business by providing a leading edge one-stop IT solution, backed up
@@ -97,10 +98,10 @@
             outstanding customer service.
           </div>
         </div>
-        <div class="shadow-lg md:p-20 col-span-3 md:col-span-1 space-y-2 p-2">
+        <div class="shadow-lg bg-gradient-to-r from-LightGreen to-GreenLizard md:p-20 col-span-3 md:col-span-1 space-y-2 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 dark:text-blue-100 text-blue-900"
+              class="h-6 w-6 dark:text-blue-100 text-DarkLiver"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -113,10 +114,11 @@
             />
           </svg>
           <div
-            class="font-bold text-xl pt-2 pb-2 text-blue-900 dark:text-blue-300"
+            class="font-bold text-xl pt-2 pb-2 text-DarkLiver"
           >
             Our Value
           </div>
+          <hr class="w-5 border-DarkLiver">
           <div class="text-sm leading-relaxed tracking-wide">
             We constantly strive to achieve the highest standard of quality and
             best practices in every aspect of our business. We take our
