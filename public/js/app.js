@@ -2352,44 +2352,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -23694,243 +23656,194 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex justify-center" }, [
-    _c("div", { staticClass: "flex flex-col" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "flex pt-7" }, [
-        _c("div", { staticClass: "shadow-lg p-20" }, [
-          _c("div", { staticClass: "flex justify-between items-center" }, [
-            _c("h1", { staticClass: "text-black text-2xl" }, [
-              _vm._v("Send Us a Message"),
-            ]),
+  return _c("div", { staticClass: "flex justify-center font-ubuntu pt-10" }, [
+    _c(
+      "div",
+      { staticClass: "flex flex-col md:flex-row text-GreenLizard space-x-10" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex flex-col space-y-7 text-4xl pt-10 md:pt-20 font-semibold max-w-md",
+          },
+          [
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-5xl p-2 xl:p-0 text-transparent bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen",
+              },
+              [_vm._v("Get In Touch")]
+            ),
             _vm._v(" "),
-            _c("div", [
-              _c(
-                "svg",
-                {
-                  staticClass: "h-6 w-6",
-                  attrs: {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    stroke: "currentColor",
-                  },
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
-                    },
-                  }),
-                ]
+            _c("p", { staticClass: "text-sm font-light p-7 xl:p-0" }, [
+              _vm._v(
+                "\n        Skynet is an internet service provider thriving to create powerful connection. \n      "
               ),
             ]),
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "flex flex-row p-10 text-white space-y-7" },
-            [
-              _c("div", { staticClass: "flex space-x-3 items-center" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-6 w-6",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
+            _vm._v(" "),
+            _c("div", { staticClass: "shadow-lg pt-7" }, [
+              _c(
+                "div",
+                { staticClass: "flex justify-around items-center space-x-3" },
+                [
+                  _c("h1", { staticClass: " text-2xl" }, [
+                    _vm._v("We accept comments"),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-6 w-6",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                        },
                       },
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z",
-                      },
-                    }),
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(1),
-              ]),
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
+                          },
+                        }),
+                      ]
+                    ),
+                  ]),
+                ]
+              ),
               _vm._v(" "),
-              _c("div", { staticClass: "flex space-x-3 items-center" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-6 w-6",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
-                      },
-                    }),
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(2),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex space-x-3 items-center" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-6 w-6",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
-                      },
-                    }),
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(3),
-              ]),
-            ]
-          ),
-        ]),
+              _vm._m(0),
+            ]),
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "shadow-lg p-20 bg-blue-900" }, [
-          _c("h1", { staticClass: "text-white text-2xl" }, [
-            _vm._v("Contact Information"),
-          ]),
-          _vm._v(" "),
+        _c("div", { staticClass: "flex pt-7 text-GreenLizard " }, [
           _c(
             "div",
-            { staticClass: "flex flex-col p-10 text-white space-y-7" },
+            {
+              staticClass:
+                "shadow-lg flex flex-col xl:flex-row p-10 xl:p-12 justify-center items-center bg-gradient-to-l from-LightGreen to-GreenLizard",
+            },
             [
-              _c("div", { staticClass: "flex space-x-3 items-center" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-6 w-6",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "text-DarkLiver text-xl font-semibold xl:mr-7 uppercase",
+                },
+                [_vm._v("Contact Information")]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-col p-10 text-DarkLiver space-y-7 xl:border-l xl:border-DarkLiver",
+                },
+                [
+                  _c("div", { staticClass: "flex space-x-3 items-center " }, [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-6 w-6",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                        },
                       },
-                    }),
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z",
+                          },
+                        }),
+                      ]
+                    ),
                     _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z",
+                    _vm._m(1),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex space-x-3 items-center" }, [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-6 w-6",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                        },
                       },
-                    }),
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(4),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex space-x-3 items-center" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-6 w-6",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+                          },
+                        }),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._m(2),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex space-x-3 items-center" }, [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-6 w-6",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                        },
                       },
-                    }),
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(5),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex space-x-3 items-center" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-6 w-6",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
-                      },
-                    }),
-                  ]
-                ),
-                _vm._v(" "),
-                _vm._m(6),
-              ]),
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
+                          },
+                        }),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._m(3),
+                  ]),
+                ]
+              ),
             ]
           ),
         ]),
-      ]),
-    ]),
+      ]
+    ),
   ])
 }
 var staticRenderFns = [
@@ -23938,52 +23851,29 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "flex flex-col space-y-2 text-4xl font-semibold max-w-md",
-      },
-      [
-        _c("h1", [_vm._v("Get In Touch")]),
+    return _c("div", { staticClass: "flex flex-row p-10 text-GreenLizard " }, [
+      _c("div", { staticClass: "mb-3 xl:w-96" }, [
+        _c("textarea", {
+          staticClass:
+            "\n      form-control\n      block\n      w-full\n      px-3\n      text-base\n      font-normal\n      text-GreenLizard\n      bg-gray-800 bg-clip-padding\n      border border-solid border-GreenLizard\n      rounded\n      transition\n      ease-in-out\n      m-0\n      focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none\n    ",
+          attrs: {
+            id: "exampleFormControlTextarea1",
+            rows: "5",
+            placeholder: "start typing...",
+          },
+        }),
         _vm._v(" "),
-        _c("p", { staticClass: "text-sm font-light" }, [
-          _vm._v(
-            "\n        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas\n        dignissimos nihil qui commodi laboriosam hic unde natus. Sed eaque\n        expedita,\n      "
+        _c("div", { staticClass: "pt-4" }, [
+          _c(
+            "button",
+            {
+              staticClass:
+                "block float-right bg-GreenLizard text-sm py-2 px-4 text-DarkLiver rounded-sm",
+            },
+            [_vm._v("send")]
           ),
         ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("p", { staticClass: "text-lg" }, [_vm._v("Find us at the office")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Bole · Addis Ababa, Ethiopia"),
       ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("p", { staticClass: "text-lg" }, [_vm._v("Give us a ring")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-sm" }, [_vm._v("+25198765412")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("p", { staticClass: "text-lg" }, [_vm._v("Email")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-sm" }, [_vm._v("contact@skynet.com")]),
     ])
   },
   function () {
@@ -24015,7 +23905,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", { staticClass: "text-lg" }, [_vm._v("Email")]),
       _vm._v(" "),
-      _c("p", { staticClass: "text-sm" }, [_vm._v("contact@skynet.com")]),
+      _c("p", { staticClass: "text-sm" }, [_vm._v("info@skynet.com")]),
     ])
   },
 ]
