@@ -24,12 +24,12 @@
                                 divide-x divide-GreenLizard
                             "
                         >
-                            <div class="p-10 w-1/2 text-center">
+                            <div class="p-10 w-1/2 text-center text-transparent  bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">
                                 Bandwidth Speed
                             </div>
 
-                            <div class="p-4 w-1/2 text-center">
-                                <span class="font-bold text-lg"
+                            <div class="p-4 w-1/2 text-center text-transparent  bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">
+                                <span class="font-bold text-lg "
                                     >residential</span
                                 >
                                 service charge
@@ -49,8 +49,8 @@
                                             bg-GreenLizard
                                             px-2
                                             text-DarkLiver
-                                            rounded-sm
-                                            text-sm
+                                            rounded-sm text-xs
+                                            xl:text-sm
                                         "
                                     >
                                         1 Month
@@ -61,8 +61,8 @@
                                             bg-GreenLizard
                                             px-2
                                             text-DarkLiver
-                                            rounded-sm
-                                            text-sm
+                                            rounded-sm text-xs
+                                            xl:text-sm
                                         "
                                     >
                                         3 Month
@@ -72,7 +72,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard 
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard 
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -110,7 +110,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard 
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard 
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -148,7 +148,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -186,7 +186,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -224,7 +224,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -262,7 +262,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -299,7 +299,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -336,7 +336,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -373,7 +373,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -410,7 +410,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -448,7 +448,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -486,7 +486,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -524,7 +524,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -562,7 +562,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -600,7 +600,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-r from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -659,18 +659,18 @@
                                 
                             "
                         >
-                            <div class="p-10 w-1/2 text-center">
+                            <div class="p-10 w-1/2 text-center text-transparent  bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">
                                 Bandwidth Speed
                             </div>
 
-                            <div class="p-10 w-1/2 text-center">
+                            <div class="p-10 w-1/2 text-center text-transparent  bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">
                                 <span class="font-bold text-lg">business</span>
                                 service charge
                             </div>
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-b from-LightGreen via-GreenLizard to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -824,11 +824,11 @@
                                 divide-x divide-GreenLizard
                             "
                         >
-                            <div class="p-10 w-1/2 text-center">
+                            <div class="p-10 w-1/2 text-center text-transparent  bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">
                                 Bandwidth Speed
                             </div>
 
-                            <div class="p-10 w-1/2 text-center">
+                            <div class="p-10 w-1/2 text-center text-transparent  bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">
                                 <span class="font-bold text-lg"
                                     >commercial</span
                                 >
@@ -837,7 +837,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -856,7 +856,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -875,7 +875,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -894,7 +894,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -913,7 +913,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -932,7 +932,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -951,7 +951,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -970,7 +970,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -989,7 +989,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1008,7 +1008,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1027,7 +1027,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1046,7 +1046,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1065,7 +1065,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1084,7 +1084,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1103,7 +1103,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1122,7 +1122,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1141,7 +1141,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1160,7 +1160,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1179,7 +1179,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1198,7 +1198,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1217,7 +1217,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1236,7 +1236,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between
@@ -1255,7 +1255,7 @@
                         </div>
                         <div
                             class="
-                                flex bg-GreenLizard
+                                flex bg-gradient-to-l from-LightGreen  to-GreenLizard
                                 items-start
                                 divide-x divide-black
                                 justify-between

@@ -41,7 +41,7 @@
             </div>
             <div>
                 {{-- banner that's located on the left of the screen -middle- --}}
-                <div class="fixed cursor-pointer z-10 flex items-center justify-center top-1/2 bg-gradient-to-t from-GreenLizard to-LightGreen h-40 w-10 opacity-80 hover:w-16 hover:opacity-100 hover:animate-pulse">
+                <div class="fixed cursor-pointer z-10 flex items-center justify-center top-1/2 bg-gradient-to-t from-GreenLizard to-LightGreen h-40 w-10 opacity-70 hover:w-16 hover:opacity-100 hover:animate-pulse">
  
                     <div class="transform -rotate-90 flex items-center space-x-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
