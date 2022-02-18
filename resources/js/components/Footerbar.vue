@@ -2,7 +2,7 @@
   <div class="bg-gray-800 font-ubuntu font-light mt-10">
     <div class="md:flex justify-around text-GreenLizard p-10 space-y-9 md:space-y-0">
       <div class="space-y-4">
-        <div class="font-bold text-5xl">SkyNet</div>
+        <div class="font-bold text-transparent text-4xl md:text-7xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">SkyNet</div>
         <hr class="border-GreenLizard">
         <div class="max-w-md">Skynet is an internet service provider thriving to create powerful connection. Register here and be connected to the world.</div>
       </div>

@@ -5418,10 +5418,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {};
@@ -24246,7 +24242,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "space-y-4" }, [
-      _c("div", { staticClass: "font-bold text-5xl" }, [_vm._v("SkyNet")]),
+      _c(
+        "div",
+        {
+          staticClass:
+            "font-bold text-transparent text-4xl md:text-7xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen",
+        },
+        [_vm._v("SkyNet")]
+      ),
       _vm._v(" "),
       _c("hr", { staticClass: "border-GreenLizard" }),
       _vm._v(" "),
@@ -27538,7 +27541,7 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n            ",
                     },
                     [_vm._v("\n            24/7 Customer Support\n          ")]
                   ),
@@ -27597,7 +27600,7 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n            ",
                     },
                     [
                       _vm._v(
@@ -27660,7 +27663,7 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n            ",
                     },
                     [_vm._v("\n            Free Setup Fee\n          ")]
                   ),
@@ -27729,7 +27732,7 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-GreenLizard\n              dark:text-blue-300\n            ",
+                        "\n              font-bold\n              pt-2\n              pb-2\n              text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n             \n            ",
                     },
                     [_vm._v("\n            Unlimited Internet\n          ")]
                   ),

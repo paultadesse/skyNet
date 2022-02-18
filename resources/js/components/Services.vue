@@ -88,8 +88,7 @@
                 text-xl
                 pt-2
                 pb-2
-                text-GreenLizard
-                dark:text-blue-300
+                text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
               "
             >
               24/7 Customer Support
@@ -137,8 +136,7 @@
                 text-xl
                 pt-2
                 pb-2
-                text-GreenLizard
-                dark:text-blue-300
+                text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
               "
             >
               Packages for Every Budget
@@ -187,8 +185,7 @@
                 text-xl
                 pt-2
                 pb-2
-                text-GreenLizard
-                dark:text-blue-300
+                text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
               "
             >
               Free Setup Fee
@@ -225,11 +222,10 @@
             <h2
               class="
                 font-bold
-                text-xl
                 pt-2
                 pb-2
-                text-GreenLizard
-                dark:text-blue-300
+                text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
+               
               "
             >
               Unlimited Internet
