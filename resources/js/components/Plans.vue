@@ -2,7 +2,7 @@
     <div class="pt-7">
         <div class="flex flex-col md:flex-row justify-center p-4 font-poppins">
             <div class="shadow-md flex flex-col md:flex-row">
-                <div class="border border-black">
+                <div class="">
                     <div
                         style="height: 50rem"
                         class="
@@ -1281,4 +1281,27 @@
 <script>
 export default {};
 </script>
-<style lang=""></style>
+
+<!-- custom scroll bar design using the skynet theme -->
+<style>
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue GreenLizard;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #B5F44A;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+</style>
