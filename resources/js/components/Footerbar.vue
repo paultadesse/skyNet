@@ -28,14 +28,14 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-          </span><span>+251922744488</span>
+          </span><span>+25198765412</span>
         </div>
         <div class="flex space-x-1"> 
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
-          </span><span>+251922744488</span>
+          </span><span>+25198765412</span>
         </div>  
         <div class="flex space-x-1"> 
           <span>
@@ -53,7 +53,7 @@
       </div>
       
     </div>
-    <div class="flex justify-center items-center bg-gradient-to-r p-4 from-GreenLizard to-LightGreen h-10">
+    <div class="flex justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-10">
       <p class="font-ubuntu  text-sm text-DarkLiver font-bold">&copy; {{ new Date().getFullYear() }} &middot; Skynet - <span class="text-xs">All rights reserved</span></p>
     </div>
   </div>
