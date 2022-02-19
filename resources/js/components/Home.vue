@@ -1033,7 +1033,7 @@
           services
         </button> -->
         <h2 class="text-xl text-4xl px-4 xl:px-0 text-center pt-4 font-medium font-ubuntu text-transparent xl:text-7xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen     
-                    ">We've got the right plan for you !
+                    ">We've got the right plan for you ! 
                 </h2>
             </div>
             <div
