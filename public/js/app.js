@@ -24649,7 +24649,7 @@ var staticRenderFns = [
             "div",
             {
               staticClass:
-                "px-9 font-light uppercase text-md tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:translate-x-1",
+                "px-9 font-light uppercase text-md tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
             },
             [_vm._v("Check out our services")]
           ),
