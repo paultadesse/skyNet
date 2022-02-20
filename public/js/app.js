@@ -25767,13 +25767,13 @@ var staticRenderFns = [
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "flex font-poppins justify-start pt-7 md:pt-0" },
+              { staticClass: "flex font-ubuntu justify-start pt-7 md:pt-0" },
               [
                 _c(
                   "div",
                   {
                     staticClass:
-                      "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-semibold \n                    ",
+                      "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-normal \n                    ",
                   },
                   [
                     _c(

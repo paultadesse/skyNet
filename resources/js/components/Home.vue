@@ -884,7 +884,7 @@
                         Contact Us
                     </button>
                 </div>
-                <div class="flex font-poppins justify-start pt-7 md:pt-0">
+                <div class="flex font-ubuntu justify-start pt-7 md:pt-0">
                     <div
                         class="
                             grid grid-cols-2
@@ -893,7 +893,7 @@
                             md:text-center
                             uppercase
                             text-GreenLizard text-justify
-                            md:font-semibold 
+                            md:font-normal 
                         "
                     >
                         <div
