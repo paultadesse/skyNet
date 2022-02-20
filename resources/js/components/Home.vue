@@ -121,8 +121,9 @@
                         border-blue-900 
                         p-12 border-GreenLizard border 
                         shadow-xl
-                        rounded-sm
+                        rounded-sm md:bottom-0
                     "
+                    :class="showResidential ? 'bottom-10':''"
                     @mouseover="showResidential = true"
                     @mouseout="showResidential = false"
                 >
@@ -369,6 +370,7 @@
                         shadow-xl
                         rounded-sm
                     "
+                    :class="showCommercial ? 'bottom-20 top-20 md:bottom-0 md:top-0':''"
                     @mouseover="showCommercial = true"
                     @mouseout="showCommercial = false"
                 >
@@ -614,6 +616,7 @@
                         shadow-xl
                         rounded-sm
                     "
+                    :class="showCommercial ||showEnterprise  ? 'top-20 md:top-0':''"
                     @mouseover="showEnterprise = true"
                     @mouseout="showEnterprise = false"
                 >
@@ -846,7 +849,7 @@
 
         <!-- our clients -->
 
-        <div class="py-20 md:py-32 font-ubuntu mx-auto w-5/6">
+        <div :class="showCommercial ||showEnterprise  ? 'pt-32 md:pt-20':'md:pt-20'" class="py-20 md:my-20 font-ubuntu mx-auto w-5/6">
             <div
                 class="
                     flex flex-col

@@ -3499,6 +3499,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -24766,7 +24769,8 @@ var render = function () {
               "div",
               {
                 staticClass:
-                  "\n\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-blue-900 \n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm\n                ",
+                  "\n\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-blue-900 \n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm md:bottom-0\n                ",
+                class: _vm.showResidential ? "bottom-10" : "",
                 on: {
                   mouseover: function ($event) {
                     _vm.showResidential = true
@@ -25042,6 +25046,9 @@ var render = function () {
               {
                 staticClass:
                   "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm\n                ",
+                class: _vm.showCommercial
+                  ? "bottom-20 top-20 md:bottom-0 md:top-0"
+                  : "",
                 on: {
                   mouseover: function ($event) {
                     _vm.showCommercial = true
@@ -25313,6 +25320,10 @@ var render = function () {
               {
                 staticClass:
                   "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-GreenLizard border \n                    p-12\n                    shadow-xl\n                    rounded-sm\n                ",
+                class:
+                  _vm.showCommercial || _vm.showEnterprise
+                    ? "top-20 md:top-0"
+                    : "",
                 on: {
                   mouseover: function ($event) {
                     _vm.showEnterprise = true
@@ -25582,7 +25593,17 @@ var render = function () {
         ),
       ]),
       _vm._v(" "),
-      _vm._m(6),
+      _c(
+        "div",
+        {
+          staticClass: "py-20 md:my-20 font-ubuntu mx-auto w-5/6",
+          class:
+            _vm.showCommercial || _vm.showEnterprise
+              ? "pt-32 md:pt-20"
+              : "md:pt-20",
+        },
+        [_vm._m(6)]
+      ),
       _vm._v(" "),
       _vm._m(7),
       _vm._v(" "),
@@ -25729,192 +25750,186 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "py-20 md:py-32 font-ubuntu mx-auto w-5/6" },
+      {
+        staticClass:
+          "\n                flex flex-col\n                md:flex-row\n                items-center\n                justify-between\n                bg-gradient-to-t from-GreenLizard to-LightGreen\n                p-10\n            ",
+      },
       [
         _c(
           "div",
-          {
-            staticClass:
-              "\n                flex flex-col\n                md:flex-row\n                items-center\n                justify-between\n                bg-gradient-to-t from-GreenLizard to-LightGreen\n                p-10\n            ",
-          },
+          { staticClass: "flex flex-col items-start max-w-xl space-y-7" },
+          [
+            _c("p", { staticClass: "font-bold text-4xl text-gray-900" }, [
+              _vm._v(
+                "\n                    Trusted by Ethiopia's best Real Estates\n                "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-gray-600" }, [
+              _vm._v(
+                "\n                    Lorem ipsum dolor sit amet consectetur, adipisicing\n                    elit. At, nemo impedit consequuntur, saepe excepturi\n                    quas blanditiis repudiandae tempore accusamus error\n                    doloremque dicta, ut dolorem provident sapiente non\n                    ipsam iure? Labore.\n                "
+              ),
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass:
+                  "\n                        block\n                        px-4\n                        py-2\n                        text-GreenLizard\n                        rounded\n                        bg-gray-900\n                        tracking-wide\n                    ",
+              },
+              [_vm._v("\n                    Contact Us\n                ")]
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex font-ubuntu justify-start pt-7 md:pt-0" },
           [
             _c(
               "div",
-              { staticClass: "flex flex-col items-start max-w-xl space-y-7" },
-              [
-                _c("p", { staticClass: "font-bold text-4xl text-gray-900" }, [
-                  _vm._v(
-                    "\n                    Trusted by Ethiopia's best Real Estates\n                "
-                  ),
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "text-gray-600" }, [
-                  _vm._v(
-                    "\n                    Lorem ipsum dolor sit amet consectetur, adipisicing\n                    elit. At, nemo impedit consequuntur, saepe excepturi\n                    quas blanditiis repudiandae tempore accusamus error\n                    doloremque dicta, ut dolorem provident sapiente non\n                    ipsam iure? Labore.\n                "
-                  ),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "\n                        block\n                        px-4\n                        py-2\n                        text-GreenLizard\n                        rounded\n                        bg-gray-900\n                        tracking-wide\n                    ",
-                  },
-                  [_vm._v("\n                    Contact Us\n                ")]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "flex font-ubuntu justify-start pt-7 md:pt-0" },
+              {
+                staticClass:
+                  "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-normal \n                    ",
+              },
               [
                 _c(
                   "div",
                   {
                     staticClass:
-                      "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-normal \n                    ",
+                      "\n                            p-7\n                            col-span-2\n                            md:col-span-1\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
                   },
                   [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "\n                            p-7\n                            col-span-2\n                            md:col-span-1\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
-                      },
-                      [
-                        _c("div", [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
-                            },
-                            [_vm._v("Sunrise Apartments")]
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
-                      },
-                      [
-                        _c("div", [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
-                            },
-                            [_vm._v("Legacy")]
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
-                      },
-                      [
-                        _c("div", [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
-                            },
-                            [_vm._v("Noah")]
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "\n                            p-7\n                            col-span-2\n                            md:col-span-1\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
-                      },
-                      [
-                        _c("div", [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
-                            },
-                            [_vm._v("one Apartments")]
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
-                      },
-                      [
-                        _c("div", [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
-                            },
-                            [_vm._v("Zegba")]
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
-                      },
-                      [
-                        _c("div", [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
-                            },
-                            [_vm._v("Riverside")]
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
-                      },
-                      [
-                        _c("div", [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
-                            },
-                            [_vm._v("nova")]
-                          ),
-                        ]),
-                      ]
-                    ),
+                    _c("div", [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
+                        },
+                        [_vm._v("Sunrise Apartments")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
+                  },
+                  [
+                    _c("div", [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
+                        },
+                        [_vm._v("Legacy")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
+                  },
+                  [
+                    _c("div", [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
+                        },
+                        [_vm._v("Noah")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                            p-7\n                            col-span-2\n                            md:col-span-1\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
+                  },
+                  [
+                    _c("div", [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
+                        },
+                        [_vm._v("one Apartments")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
+                  },
+                  [
+                    _c("div", [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
+                        },
+                        [_vm._v("Zegba")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
+                  },
+                  [
+                    _c("div", [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
+                        },
+                        [_vm._v("Riverside")]
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                            p-7\n                            bg-gray-800\n                            cursor-pointer\n                            transition\n                            transform\n                            hover:scale-75\n                            ease-in-out\n                            delay-200\n                            motion-reduce:transition-none\n                            motion-reduce:transform-none\n                        ",
+                  },
+                  [
+                    _c("div", [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "tracking-wider bg-clip-text bg-gradient-to-r from-LightGreen to-GreenLizard",
+                        },
+                        [_vm._v("nova")]
+                      ),
+                    ]),
                   ]
                 ),
               ]
