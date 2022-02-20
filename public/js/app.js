@@ -2430,6 +2430,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -24637,9 +24639,18 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "font-light uppercase cursor-pointer text-lg py-5 border border-GreenLizard justify-center flex",
+            "border border-transparent hover:border-current max-w-xs cursor-pointer",
         },
-        [_vm._v("Check out our services")]
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "px-9 font-light uppercase text-md tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:translate-x-1",
+            },
+            [_vm._v("Check out our services")]
+          ),
+        ]
       ),
     ])
   },
