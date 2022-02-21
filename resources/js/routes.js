@@ -7,6 +7,14 @@ export default {
     mode: "history",
     // linkActiveClass: "border-b-2 border-t-2 border-gray-400 text-gray-500 ",
     linkExactActiveClass: "border-b-2 border-GreenLizard text-GreenSheen font-bold  ",
+    scrollBehavior(to, from, savedPosition) {
+        if(savedPosition){
+            return savedPosition
+        }else {
+            //scroll to the top
+            return { x:0, y:0}
+        }
+    },
     routes: [
         // {
         //     path: "*",
