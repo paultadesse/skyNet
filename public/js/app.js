@@ -2432,6 +2432,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -4979,6 +4985,134 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Register.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Register.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Register',
+  data: function data() {
+    return {};
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Registerbanner.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Registerbanner.vue?vue&type=script&lang=js& ***!
@@ -4990,6 +5124,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
 //
 //
 //
@@ -5428,6 +5564,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Services__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Services */ "./resources/js/components/Services.vue");
 /* harmony import */ var _components_About__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/About */ "./resources/js/components/About.vue");
 /* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Contact */ "./resources/js/components/Contact.vue");
+/* harmony import */ var _components_Register__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Register */ "./resources/js/components/Register.vue");
+
 
 
 
@@ -5456,6 +5594,10 @@ __webpack_require__.r(__webpack_exports__);
     path: "/contact",
     component: _components_Contact__WEBPACK_IMPORTED_MODULE_3__["default"],
     name: "contact"
+  }, {
+    path: "/register",
+    component: _components_Register__WEBPACK_IMPORTED_MODULE_4__["default"],
+    name: "register"
   }]
 });
 
@@ -23114,6 +23256,45 @@ component.options.__file = "resources/js/components/Plans.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Register.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Register.vue ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Register_vue_vue_type_template_id_97358ae4_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Register.vue?vue&type=template&id=97358ae4&scoped=true& */ "./resources/js/components/Register.vue?vue&type=template&id=97358ae4&scoped=true&");
+/* harmony import */ var _Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Register.vue?vue&type=script&lang=js& */ "./resources/js/components/Register.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Register_vue_vue_type_template_id_97358ae4_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Register_vue_vue_type_template_id_97358ae4_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "97358ae4",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Register.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Registerbanner.vue":
 /*!****************************************************!*\
   !*** ./resources/js/components/Registerbanner.vue ***!
@@ -23288,6 +23469,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Register.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/Register.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Register.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Register.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Registerbanner.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************!*\
   !*** ./resources/js/components/Registerbanner.vue?vue&type=script&lang=js& ***!
@@ -23418,6 +23615,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Plans_vue_vue_type_template_id_50b40e0f_lang_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Plans_vue_vue_type_template_id_50b40e0f_lang_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Plans.vue?vue&type=template&id=50b40e0f&lang=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Plans.vue?vue&type=template&id=50b40e0f&lang=true&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Register.vue?vue&type=template&id=97358ae4&scoped=true&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/Register.vue?vue&type=template&id=97358ae4&scoped=true& ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_template_id_97358ae4_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_template_id_97358ae4_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_template_id_97358ae4_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Register.vue?vue&type=template&id=97358ae4&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Register.vue?vue&type=template&id=97358ae4&scoped=true&");
 
 
 /***/ }),
@@ -23988,157 +24202,209 @@ var render = function () {
               _vm._v("Contact us"),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "flex space-x-1" }, [
-              _c("span", [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-5 w-5",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex flex-col xl:flex-row xl:space-x-3 space-y-3 xl:space-y-0",
+              },
+              [
+                _c("div", { staticClass: "flex space-x-1" }, [
+                  _c("span", [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-5 w-5",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                        },
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "1",
+                            d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z",
+                          },
+                        }),
+                      ]
+                    ),
+                  ]),
+                  _c(
+                    "span",
+                    { staticClass: "tracking-widest uppercase text-sm" },
+                    [_vm._v("5th floor, behind skylight hotel")]
+                  ),
+                ]),
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex xl:space-x-3" }, [
+              _c("div", { staticClass: "flex space-x-1" }, [
+                _c("span", [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "h-5 w-5",
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        fill: "none",
+                        viewBox: "0 0 24 24",
+                        stroke: "currentColor",
+                      },
                     },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "1",
-                        d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
-                      },
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z",
-                      },
-                    }),
-                  ]
+                    [
+                      _c("path", {
+                        attrs: {
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "1",
+                          d: "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7",
+                        },
+                      }),
+                    ]
+                  ),
+                ]),
+                _c(
+                  "span",
+                  { staticClass: "uppercase text-sm tracking-widest" },
+                  [_vm._v("Ethiopia")]
                 ),
               ]),
-              _c("span", [_vm._v("5th floor")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex space-x-1 items-center" }, [
+                _c("span", [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "h-5 w-5",
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        fill: "none",
+                        viewBox: "0 0 24 24",
+                        stroke: "currentColor",
+                      },
+                    },
+                    [
+                      _c("path", {
+                        attrs: {
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "1",
+                          d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
+                        },
+                      }),
+                    ]
+                  ),
+                ]),
+                _c("span", { staticClass: "tracking-widest text-sm" }, [
+                  _vm._v("+25198765412"),
+                ]),
+              ]),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "flex space-x-1" }, [
-              _c("span", [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-5 w-5",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
+            _c("div", { staticClass: "flex xl:space-x-3" }, [
+              _c("div", { staticClass: "flex space-x-1 items-center" }, [
+                _c("span", [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "h-5 w-5",
                       attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "1",
-                        d: "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        fill: "none",
+                        viewBox: "0 0 24 24",
+                        stroke: "currentColor",
                       },
-                    }),
-                  ]
-                ),
-              ]),
-              _c("span", [_vm._v("Ethiopia")]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "flex space-x-1" }, [
-              _c("span", [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-5 w-5",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
                     },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "1",
-                        d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
-                      },
-                    }),
-                  ]
-                ),
+                    [
+                      _c("path", {
+                        attrs: {
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "1",
+                          d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+                        },
+                      }),
+                    ]
+                  ),
+                ]),
+                _c("span", { staticClass: "tracking-widest text-sm" }, [
+                  _vm._v("+25198765412"),
+                ]),
               ]),
-              _c("span", [_vm._v("+25198765412")]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "flex space-x-1" }, [
-              _c("span", [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-5 w-5",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
+              _vm._v(" "),
+              _c("div", { staticClass: "flex space-x-1 items-center" }, [
+                _c("span", [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "h-5 w-5",
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        fill: "none",
+                        viewBox: "0 0 24 24",
+                        stroke: "currentColor",
+                      },
                     },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "1",
-                        d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
-                      },
-                    }),
-                  ]
-                ),
+                    [
+                      _c("path", {
+                        attrs: {
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "1",
+                          d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
+                        },
+                      }),
+                    ]
+                  ),
+                ]),
+                _c("span", { staticClass: "text-sm tracking-widest" }, [
+                  _vm._v("info@skynet.com"),
+                ]),
               ]),
-              _c("span", [_vm._v("+25198765412")]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "flex space-x-1" }, [
-              _c("span", [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "h-5 w-5",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "1",
-                        d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
-                      },
-                    }),
-                  ]
-                ),
-              ]),
-              _c("span", [_vm._v("info@skynet.com")]),
             ]),
           ]),
           _vm._v(" "),
-          _vm._m(1),
+          _c("div", { staticClass: "space-y-2" }, [
+            _c("div", { staticClass: "font-bold text-lg uppercase" }, [
+              _vm._v("Register now"),
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "max-w-md space-x-1 pb-4" },
+              [
+                _c("span", [_vm._v("Not registered yet ?")]),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass:
+                      " uppercase text-sm tracking-widest text-GreenSheen",
+                    attrs: { to: "/register" },
+                  },
+                  [_vm._v("register here")]
+                ),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _vm._m(1),
+          ]),
         ]
       ),
       _vm._v(" "),
@@ -24189,7 +24455,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("hr", { staticClass: "border-GreenLizard" }),
       _vm._v(" "),
-      _c("div", { staticClass: "max-w-md" }, [
+      _c("div", { staticClass: "max-w-md uppercase text-xs tracking-widest" }, [
         _vm._v(
           "Skynet is an internet service provider thriving to create powerful connection. Register here and be connected to the world."
         ),
@@ -24200,40 +24466,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "space-y-2" }, [
-      _c("div", { staticClass: "font-bold text-lg uppercase" }, [
-        _vm._v("Register now"),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "max-w-md pb-4" }, [
-        _vm._v("Register "),
-        _c("span", { staticClass: "underline uppercase text-GreenSheen" }, [
-          _vm._v("Here"),
-        ]),
-        _vm._v(". Already have an account "),
-        _c("span", { staticClass: "underline uppercase text-GreenSheen" }, [
-          _vm._v("Login"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass:
-            "border border-transparent hover:border-current max-w-xs cursor-pointer",
-        },
-        [
-          _c(
-            "div",
-            {
-              staticClass:
-                "px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
-            },
-            [_vm._v("Check out our services")]
-          ),
-        ]
-      ),
-    ])
+    return _c(
+      "div",
+      {
+        staticClass:
+          "border border-transparent hover:border-current max-w-xs cursor-pointer",
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
+          },
+          [_vm._v("Check out our services")]
+        ),
+      ]
+    )
   },
 ]
 render._withStripped = true
@@ -27385,6 +27634,427 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Register.vue?vue&type=template&id=97358ae4&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Register.vue?vue&type=template&id=97358ae4&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "flex justify-center pt-10 font-ubuntu" }, [
+    _c(
+      "div",
+      {
+        staticClass:
+          "flex flex-col-reverse xl:flex-row xl:divide-x xl:divide-opacity-30 xl:divide-GreenLizard xl:space-x-10 justify-evenly items-center border border-opacity-50 border-GreenLizard  p-10  rounded-lg  ",
+      },
+      [
+        _c("div", { staticClass: "pt-10 md:pt-0 text-GreenLizard space-y-7" }, [
+          _c(
+            "h1",
+            {
+              staticClass:
+                "text-3xl uppercase font-bold tracking-widest text-center  max-w-md text-transparent bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen ",
+            },
+            [_vm._v("Register and get the most out of Us !")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "flex items-center space-x-5 justify-center" },
+            [
+              _c("hr", { staticClass: "opacity-20 w-4/12" }),
+              _vm._v(" "),
+              _c(
+                "svg",
+                {
+                  staticClass: "h-9 w-9 opacity-80",
+                  attrs: {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    stroke: "currentColor",
+                  },
+                },
+                [
+                  _c("path", {
+                    attrs: {
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "1",
+                      d: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4",
+                    },
+                  }),
+                ]
+              ),
+              _vm._v(" "),
+              _c("hr", { staticClass: "opacity-20 w-4/12" }),
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "ml-5 flex items-center space-x-2" }, [
+            _c(
+              "svg",
+              {
+                staticClass: "h-6 w-6 dark:text-blue-100 text-GreenSheen",
+                attrs: {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor",
+                },
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "1.5",
+                    d: "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "text-transparent tracking-widest text-sm uppercase bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen",
+              },
+              [_vm._v("24/7 Customer Support")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "ml-5 flex items-center space-x-2" }, [
+            _c(
+              "svg",
+              {
+                staticClass: "h-6 w-6 dark:text-blue-100 text-GreenSheen",
+                attrs: {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor",
+                },
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "1.5",
+                    d: "M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "text-transparent tracking-widest text-sm uppercase bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen",
+              },
+              [_vm._v("Packages for Every Budget")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "ml-5 flex items-center space-x-2" }, [
+            _c(
+              "svg",
+              {
+                staticClass: "h-6 w-6 dark:text-blue-100 text-GreenSheen",
+                attrs: {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor",
+                },
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "1.5",
+                    d: "M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "text-transparent tracking-widest text-sm uppercase bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen",
+              },
+              [_vm._v("Free Setup Fee")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "ml-5 flex items-center space-x-2" }, [
+            _c(
+              "svg",
+              {
+                staticClass:
+                  "flex-none h-6 w-6 dark:text-blue-100 text-GreenSheen",
+                attrs: {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor",
+                },
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "1.5",
+                    d: "M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z",
+                  },
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "2",
+                    d: "M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "text-transparent tracking-widest text-sm uppercase bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen",
+              },
+              [_vm._v("Unlimited Internet")]
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("p", { staticClass: "text-xs opacity-60 uppercase tracking-widest" }, [
+        _vm._v("Why you choose us ?"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "form",
+      {
+        staticClass: "mb-0 space-y-7 xl:px-20",
+        attrs: { action: "", method: "" },
+      },
+      [
+        _c("div", [
+          _c(
+            "label",
+            {
+              staticClass:
+                "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
+              attrs: { for: "name" },
+            },
+            [_vm._v("Name")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-1" }, [
+            _c("input", {
+              staticClass:
+                "w-full text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+              attrs: {
+                id: "name",
+                type: "text",
+                name: "name",
+                autocomplete: "email",
+                required: "",
+              },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "label",
+            {
+              staticClass:
+                "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
+              attrs: { for: "phone" },
+            },
+            [_vm._v("Phone")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-1" }, [
+            _c("input", {
+              staticClass:
+                "w-full text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+              attrs: {
+                id: "phone",
+                type: "tel",
+                name: "phone",
+                autocomplete: "phone",
+                required: "",
+              },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "label",
+            {
+              staticClass:
+                "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
+              attrs: { for: "email" },
+            },
+            [_vm._v("Email address")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-1" }, [
+            _c("input", {
+              staticClass:
+                "w-full text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+              attrs: {
+                id: "email",
+                type: "email",
+                name: "email",
+                autocomplete: "email",
+                required: "",
+              },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "label",
+            {
+              staticClass:
+                "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
+              attrs: { for: "service-type" },
+            },
+            [_vm._v("Service type")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-1" }, [
+            _c(
+              "select",
+              {
+                staticClass:
+                  "w-full text-white bg-gray-800 rounded border-GreenLizard focus:text-LightGreen focus:bg-gray-800 border-opacity-50 focus:border-LightGreen focus:outline-none",
+                attrs: { name: "service-type", id: "service-type" },
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Please select"),
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "residential" } }, [
+                  _vm._v("Residential"),
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "commercial" } }, [
+                  _vm._v("Commercial"),
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "enterprise" } }, [
+                  _vm._v("Enterprise"),
+                ]),
+              ]
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "label",
+            {
+              staticClass:
+                "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
+              attrs: { for: "site-location" },
+            },
+            [_vm._v("Site location")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-1" }, [
+            _c(
+              "select",
+              {
+                staticClass:
+                  "w-full text-white bg-gray-800 rounded border-GreenLizard focus:text-LightGreen focus:bg-gray-800 border-opacity-50 focus:border-LightGreen focus:outline-none",
+                attrs: { name: "site-location", id: "site-location" },
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Please select"),
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "residential" } }, [
+                  _vm._v("Residential"),
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "commercial" } }, [
+                  _vm._v("Commercial"),
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "enterprise" } }, [
+                  _vm._v("Enterprise"),
+                ]),
+              ]
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "border border-GreenLizard" }, [
+          _c(
+            "button",
+            {
+              staticClass:
+                "block bg-GreenLizard w-full px-2 py-4 uppercase text-sm tracking-widest transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
+            },
+            [_vm._v("Register")]
+          ),
+        ]),
+      ]
+    )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Registerbanner.vue?vue&type=template&id=7a8a198c&scoped=true&":
 /*!**************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Registerbanner.vue?vue&type=template&id=7a8a198c&scoped=true& ***!
@@ -27402,10 +28072,11 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "router-link",
     {
       staticClass:
         "fixed cursor-pointer z-10 flex items-center justify-center top-1/2 bg-gradient-to-t from-GreenLizard to-LightGreen h-40 w-10 opacity-70 hover:w-16 hover:opacity-100 hover:animate-pulse",
+      attrs: { to: "/register" },
     },
     [
       _c(
@@ -27436,7 +28107,7 @@ var render = function () {
           ),
           _vm._v(" "),
           _c("div", { staticClass: "tracking-wider text-sm uppercase" }, [
-            _vm._v("Register"),
+            _vm._v("\n                Register\n            "),
           ]),
         ]
       ),

@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Register from "./components/Register";
 export default {
     mode: "history",
     // linkActiveClass: "border-b-2 border-t-2 border-gray-400 text-gray-500 ",
@@ -31,6 +32,11 @@ export default {
             path: "/contact",
             component: Contact,
             name: "contact",
+        },
+        {
+            path: "/register",
+            component: Register,
+            name: "register"
         },
     ],
 };
