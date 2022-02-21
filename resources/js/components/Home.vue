@@ -123,7 +123,7 @@
                         shadow-xl
                         rounded-sm md:bottom-0
                     "
-                    :class="showResidential ? 'bottom-10':''"
+                    :class="showResidential ? 'pb-14 pt-16 md:pt-0 md:pb-0':''"
                     @mouseover="showResidential = true"
                     @mouseout="showResidential = false"
                 >
@@ -897,6 +897,7 @@
                             uppercase
                             text-GreenLizard text-justify
                             md:font-normal 
+                            text-sm
                         "
                     >
                         <div

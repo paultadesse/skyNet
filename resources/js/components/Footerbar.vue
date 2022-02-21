@@ -49,7 +49,7 @@
         <div class="font-bold text-lg uppercase">Register now</div>
         <div class="max-w-md pb-4">Register <span class="underline uppercase text-GreenSheen">Here</span>. Already have an account <span class="underline uppercase text-GreenSheen">Login</span> </div>
         <div class="border border-transparent hover:border-current max-w-xs cursor-pointer">
-          <div class="px-9 font-light uppercase text-md tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1">Check out our services</div>
+          <div class="px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1">Check out our services</div>
         </div>
 
       </div>

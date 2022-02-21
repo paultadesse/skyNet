@@ -3502,6 +3502,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -24649,7 +24650,7 @@ var staticRenderFns = [
             "div",
             {
               staticClass:
-                "px-9 font-light uppercase text-md tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
+                "px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
             },
             [_vm._v("Check out our services")]
           ),
@@ -24770,7 +24771,7 @@ var render = function () {
               {
                 staticClass:
                   "\n\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-blue-900 \n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm md:bottom-0\n                ",
-                class: _vm.showResidential ? "bottom-10" : "",
+                class: _vm.showResidential ? "pb-14 pt-16 md:pt-0 md:pb-0" : "",
                 on: {
                   mouseover: function ($event) {
                     _vm.showResidential = true
@@ -25790,7 +25791,7 @@ var staticRenderFns = [
               "div",
               {
                 staticClass:
-                  "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-normal \n                    ",
+                  "\n                        grid grid-cols-2\n                        md:grid-cols-3\n                        gap-1\n                        md:text-center\n                        uppercase\n                        text-GreenLizard text-justify\n                        md:font-normal \n                        text-sm\n                    ",
               },
               [
                 _c(
