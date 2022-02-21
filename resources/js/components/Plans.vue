@@ -14,7 +14,7 @@
                     >
                         <div
                             class="
-                                flex
+                                flex sticky top-0
                                 items-center
                                 justify-between
                                 bg-gray-800 
@@ -650,7 +650,8 @@
                     >
                         <div
                             class="
-                                flex bg-gray-800
+                                flex sticky top-0 
+                                bg-gray-800
                                 items-center
                                 justify-between
                                 divide-x divide-GreenLizard
@@ -815,10 +816,10 @@
                     >
                         <div
                             class="
-                                flex bg-gray-800
+                                flex sticky top-0
+                                bg-gray-800
                                 items-center
                                 justify-between
-                                
                                 text-GreenLizard
                                 uppercase
                                 divide-x divide-GreenLizard
@@ -1282,26 +1283,4 @@
 export default {};
 </script>
 
-<!-- custom scroll bar design using the skynet theme -->
-<style>
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: blue GreenLizard;
-}
 
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 7px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #222;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #B5F44A;
-  border-radius: 5px;
-  border: 1px solid black;
-}
-</style>
