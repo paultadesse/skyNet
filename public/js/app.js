@@ -5581,8 +5581,13 @@ __webpack_require__.r(__webpack_exports__);
       //scroll to the top
       return {
         x: 0,
-        y: 0
-      };
+        y: 0,
+        behavior: 'smooth'
+      }; // return new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     resolve({ x:0, y:0, behavior: 'smooth' })
+      //   }, 500)
+      // })
     }
   },
   routes: [// {
