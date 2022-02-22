@@ -13,11 +13,13 @@ class ServiceTypeController extends Controller
     public function index()
     {
         $service_types = ServiceType::with('speeds')->get();
-        $service_types_resource = ServiceTypeResource::collection($service_types);
 
         if($service_types != null)
         {
+            
+            $service_types_resource = ServiceTypeResource::collection($service_types);
             return $service_types_resource;
+
         }else {
             return response()->json([ 'message' => 'No Record Found !']);
         }

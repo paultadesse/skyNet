@@ -3,6 +3,8 @@
 namespace App\Http\Requests\Speed;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class CreateSpeedRequest extends FormRequest
 {
@@ -13,7 +15,8 @@ class CreateSpeedRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        //just set it to TRUE ONLY FOR NOW but [ ONLY AUTH USER CAN ACCESS THIS REQUEST in the future]
+        return true;
     }
 
     /**
@@ -24,7 +27,14 @@ class CreateSpeedRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'speed' => 'required',
+            'birr' => 'required'
         ];
+    }
+
+    //override the faildValidation method of this form request class...
+    protected function failedValidation(Validator $validator) 
+    { 
+        throw new HttpResponseException(response()->json($validator->errors(), 422)); 
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Resources\SpeedResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class ServiceTypeResource extends JsonResource
@@ -19,7 +20,7 @@ class ServiceTypeResource extends JsonResource
             'name' => $this->name,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'speeds' => ServiceTypeResource::collection($this->whenLoaded('speeds')),
+            'speeds' => SpeedResource::collection($this->whenLoaded('speeds')),
         ];
     }
 }

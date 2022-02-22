@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Resources\ServiceTypeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class SpeedResource extends JsonResource
@@ -17,7 +18,8 @@ class SpeedResource extends JsonResource
         return [
             'id' => $this->id,
             'speed' => $this->speed,
-            'birr' => $this->birr
+            'birr' => $this->birr,
+            'serviceType' => ServiceTypeResource::make($this->whenLoaded('serviceType')),
         ];
     }
 }
