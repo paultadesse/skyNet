@@ -107,6 +107,9 @@
 </template>
 
 <script>
+
+import RegistrationService from '../services/RegistrationService.js';
+
 export default {
 
   name: 'Register',
@@ -115,7 +118,18 @@ export default {
     return {
 
     }
+  },
+
+  created() {
+  	RegistrationService.all()
+  		.then(response => { 
+  			console.log(response);
+  		})
+  		.catch(error => { 
+  			console.log('Ther was an error: ' + error.response);
+  		 })
   }
+
 }
 </script>
 
