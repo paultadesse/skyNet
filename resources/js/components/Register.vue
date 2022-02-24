@@ -57,49 +57,98 @@
 		            </svg>
 					<p class="text-transparent tracking-widest text-sm uppercase bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">Unlimited Internet</p></div>
 			</div>
-			<form class="mb-0 space-y-7 xl:px-20" action="" method="">
-				<div>
-					<label for="name" class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Name</label>
-					<div class="mt-1">
-						<input id="name" type="text" name="name" autocomplete="email" required class="w-full text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none">
+			<form @submit.prevent="createRegistiration" class="mb-0 space-y-7 xl:px-20" >
+					<div>
+						<BaseInput 
+							lable="Name" 
+							v-model="register.name" 
+							type="text" 
+							v-on="$listeners"
+							@blur="$v.register.name.$touch()"/>
+
+							<template v-if="$v.register.name.$error">
+								<p class="text-red-500 text-sm" v-if="!$v.register.name.required">name is required</p>
+							</template>
 					</div>
-				</div>
-				<div>
-					<label for="phone" class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Phone</label>
-					<div class="mt-1">
-						<input id="phone" type="tel" name="phone" autocomplete="phone" required class="w-full text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none">
+
+					<div>
+						<BaseInput 
+							lable="Phone" 
+							v-model="register.phone_number" 
+							type="text" 
+							v-on="$listeners"
+							@blur="$v.register.phone_number.$touch()"/>
+							<template v-if="$v.register.phone_number.$error">
+								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.required">phone number is required</p>
+							</template>
 					</div>
-				</div>
-				<div>
-					<label for="email" class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Email address</label>
-					<div class="mt-1">
-						<input id="email" type="email" name="email" autocomplete="email" required class="w-full text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none">
+
+					<div>
+						<BaseInput 
+							lable="Email address" 
+							v-model="register.email" 
+							type="email" 
+							v-on="$listeners"
+							@blur="$v.register.email.$touch()"/>
+							<template v-if="$v.register.email.$error">
+								<p class="text-red-500 text-sm" v-if="!$v.register.email.required">email is required</p>
+							</template>
 					</div>
-				</div>
-				<div>
-					<label for="service-type" class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Service type</label>
-					<div class="mt-1">
-						<select class="w-full text-white bg-gray-800 rounded border-GreenLizard focus:text-LightGreen focus:bg-gray-800 border-opacity-50 focus:border-LightGreen focus:outline-none" name="service-type" id="service-type">
-							<option value="">Please select</option>
-							<option value="residential">Residential</option>
-							<option value="commercial">Commercial</option>
-							<option value="enterprise">Enterprise</option>
-						</select>
+
+					<div>
+						<BaseSelect 
+							lable="Service type" 
+							v-model="register.service_type" 
+							:options="serviceTypes" 
+							type="text"
+							v-on="$listeners"
+							@change="testChange($event)"
+							@blur="$v.register.service_type.$touch()"/>
+							<template v-if="$v.register.service_type.$error">
+									<p class="text-red-500 text-sm" v-if="!$v.register.service_type.required">service type is required</p>
+							</template>
 					</div>
-				</div>
-				<div>
-					<label for="site-location" class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Site location</label>
-					<div class="mt-1">
-						<select class="w-full text-white bg-gray-800 rounded border-GreenLizard focus:text-LightGreen focus:bg-gray-800 border-opacity-50 focus:border-LightGreen focus:outline-none" name="site-location" id="site-location">
-							<option value="">Please select</option>
-							<option value="residential">Residential</option>
-							<option value="commercial">Commercial</option>
-							<option value="enterprise">Enterprise</option>
-						</select>
+
+					<div v-if="!$v.register.service_type.$error && (register.service_type != '')">
+						<BaseSelect 
+							lable="Speed" 
+							v-model="register.desired_speed" 
+							:options="speed" 
+							type="text" 
+							v-on="$listeners"
+							@blur="$v.register.desired_speed.$touch()"/>
+							<template v-if="$v.register.desired_speed.$error">
+										<p class="text-red-500 text-sm" v-if="!$v.register.desired_speed.required">speed is required</p>
+							</template>
 					</div>
-				</div>
+
+					<div>
+						<BaseSelect 
+							lable="Site location" 
+							v-model="register.site_location" 
+							:options="siteLocation" 
+							type="text" 
+							v-on="$listeners"
+								@blur="$v.register.site_location.$touch()"/>
+							<template v-if="$v.register.site_location.$error">
+										<p class="text-red-500 text-sm" v-if="!$v.register.site_location.required">site location is required</p>
+							</template>
+					</div>
+
+					<div>
+						<BaseInput 
+							lable="Other" 
+							v-model="register.site_location_not_listed" 
+							type="text"
+							v-on="$listeners"
+									@blur="$v.register.site_location_not_listed.$touch()"/>
+							<template v-if="$v.register.site_location_not_listed.$error">
+										<p class="text-red-500 text-sm" v-if="!$v.register.site_location_not_listed.required">other is required</p>
+							</template>
+					</div>
+
 				<div class="border border-GreenLizard">
-					<button class="block bg-GreenLizard w-full px-2 py-4 uppercase text-sm tracking-widest transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1">Register</button>
+					<button type="submit" :disabled="$v.$anyError" class="block bg-GreenLizard w-full px-2 py-4 uppercase text-sm tracking-widest transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1">Register</button>
 				</div>
 			</form>
 		</div>
@@ -109,25 +158,85 @@
 <script>
 
 import RegistrationService from '../services/RegistrationService.js';
+import { required } from 'vuelidate/lib/validators';
+import BaseInput from './BaseInput';
+import BaseSelect from './BaseSelect';
 
 export default {
 
   name: 'Register',
 
+  components:{
+  	BaseInput,
+  	BaseSelect
+  },
+
   data () {
     return {
-
+    	serviceTypes: [],
+    	speed: ['1 mbps', '2 mbps', '3mpbs'],
+    	siteLocation: ['hayat', 'goro', 'summit'],
+    	register: this.createFreshRegisterObject()
     }
   },
 
   created() {
-  	RegistrationService.all()
+  	RegistrationService.getServiceTypes()
   		.then(response => { 
+  			this.serviceTypes = response.data.data
+  			// this.serviceTypes = Object.entries(response.data.data)
+  			
   			console.log(response);
   		})
   		.catch(error => { 
-  			console.log('Ther was an error: ' + error.response);
+  			console.log('Ther was an error: ' + error.response[0]);
   		 })
+  },
+
+  validations: {
+  	register: {
+  		name: { required },
+			phone_number: { required },
+			email: { required },
+			service_type: { required },
+			desired_speed: { required },
+			site_location: { required },
+			site_location_not_listed: { required },
+			comment: { required }
+  	}
+  },
+
+  methods: {
+  	testChange(event){
+  		console.log(event)
+  	},
+  	createRegistiration() {
+  		this.$v.$touch();
+
+  		if(!this.$v.$invalid) {
+  			RegistrationService.postRegistration(this.register)
+	  		.then((response) => { 
+	  			console.log(response);
+	  			this.register = this.createFreshRegisterObject();
+	  		})
+	  		.catch((error) => { 
+	  			console.log(error.response.data);
+	  		 })
+  		}
+  		
+  	},
+    createFreshRegisterObject() {
+      return {
+        name: "",
+				phone_number: "",
+				email: "",
+				service_type: "",
+				desired_speed: "",
+				site_location: "",
+				site_location_not_listed: "",
+				comment: "sss"
+      };
+    },
   }
 
 }

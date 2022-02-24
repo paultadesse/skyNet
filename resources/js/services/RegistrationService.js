@@ -1,7 +1,13 @@
 import Api from './Api';
 
 export default {
-	all() {
-		return Api.get("registrations");
+	getServiceTypes() 
+	{
+		return Api.get("service-types");
+	},
+
+	postRegistration(registration) 
+	{
+		return Api.post("registration/create", registration);
 	}
 }
