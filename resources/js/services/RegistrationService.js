@@ -6,6 +6,11 @@ export default {
 		return Api.get("service-types");
 	},
 
+	getSiteLocations()
+	{
+		return Api.get("site-locations");
+	},
+
 	postRegistration(registration) 
 	{
 		return Api.post("registration/create", registration);

@@ -96,46 +96,57 @@
 					</div>
 
 					<div>
-						<BaseSelect 
-							lable="Service type" 
-							v-model="register.service_type" 
-							:options="serviceTypes" 
-							type="text"
-							v-on="$listeners"
-							@change="testChange($event)"
-							@blur="$v.register.service_type.$touch()"/>
-							<template v-if="$v.register.service_type.$error">
+					  <label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">service type</label>
+					  <multiselect v-model="register.service_type" 
+							@blur="$v.register.service_type.$touch()"  
+							class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
+							:options="serviceTypes"
+							@input="setSpeed"  
+							:searchable="false" 
+							:allow-empty="false">
+					    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 " >{{ option.name }}</span></template>
+					  </multiselect>
+					  <template v-if="$v.register.service_type.$error">
 									<p class="text-red-500 text-sm" v-if="!$v.register.service_type.required">service type is required</p>
-							</template>
-					</div>
+						</template>
+				  </div>
+
 
 					<div v-if="!$v.register.service_type.$error && (register.service_type != '')">
-						<BaseSelect 
-							lable="Speed" 
-							v-model="register.desired_speed" 
-							:options="speed" 
-							type="text" 
-							v-on="$listeners"
-							@blur="$v.register.desired_speed.$touch()"/>
-							<template v-if="$v.register.desired_speed.$error">
+					  <label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Speed</label>
+					  <multiselect v-model="register.desired_speed" 
+							@blur="$v.register.desired_speed.$touch()"  
+							class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="speed" label="speed" placeholder=" select one" 
+							:options="speed"
+							:searchable="false" 
+							:allow-empty="false">
+					    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 " >{{ option.speed }}</span></template>
+					  </multiselect>
+					  <template v-if="$v.register.desired_speed.$error">
 										<p class="text-red-500 text-sm" v-if="!$v.register.desired_speed.required">speed is required</p>
 							</template>
-					</div>
+				  </div>
+				  <!-- <pre class="language-json"><code class="text-white">{{ register.desired_speed.speed  }}</code></pre> -->
 
-					<div>
-						<BaseSelect 
-							lable="Site location" 
-							v-model="register.site_location" 
-							:options="siteLocation" 
-							type="text" 
-							v-on="$listeners"
-								@blur="$v.register.site_location.$touch()"/>
-							<template v-if="$v.register.site_location.$error">
-										<p class="text-red-500 text-sm" v-if="!$v.register.site_location.required">site location is required</p>
+
+					<!--  -->
+
+					<div >
+					  <label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">site location</label>
+					  <multiselect v-model="register.site_location" 
+							@blur="$v.register.site_location.$touch()"  
+							class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
+							:options="siteLocations" 
+							:searchable="false" 
+							:allow-empty="false">
+					    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 " >{{ option.name }}</span></template>
+					  </multiselect>
+					  <template v-if="$v.register.site_location.$error">
+										<p class="text-red-500 text-sm" v-if="!$v.register.site_location.required">location is required</p>
 							</template>
-					</div>
+				  </div>
 
-					<div>
+					<div v-show="register.site_location.name === 'other'">
 						<BaseInput 
 							lable="Other" 
 							v-model="register.site_location_not_listed" 
@@ -156,9 +167,10 @@
 </template>
 
 <script>
+import Multiselect from 'vue-multiselect'
 
 import RegistrationService from '../services/RegistrationService.js';
-import { required } from 'vuelidate/lib/validators';
+import { required, requiredIf } from 'vuelidate/lib/validators';
 import BaseInput from './BaseInput';
 import BaseSelect from './BaseSelect';
 
@@ -168,25 +180,41 @@ export default {
 
   components:{
   	BaseInput,
-  	BaseSelect
+  	BaseSelect,
+  	Multiselect
   },
 
   data () {
     return {
     	serviceTypes: [],
-    	speed: ['1 mbps', '2 mbps', '3mpbs'],
-    	siteLocation: ['hayat', 'goro', 'summit'],
-    	register: this.createFreshRegisterObject()
+    	speed: [],
+    	siteLocations: [],
+    	other:{"id":"-1", "name": "other"},
+    	register: this.createFreshRegisterObject(),
     }
   },
 
   created() {
+  	this.$swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+  	console.log(this.register)
   	RegistrationService.getServiceTypes()
   		.then(response => { 
   			this.serviceTypes = response.data.data
-  			// this.serviceTypes = Object.entries(response.data.data)
-  			
-  			console.log(response);
+  		})
+  		.catch(error => { 
+  			console.log('Ther was an error: ' + error.response[0]);
+  		 });
+
+  		RegistrationService.getSiteLocations()
+  		.then(response => { 
+  			this.siteLocations = response.data.data;
+  			this.siteLocations.push(this.other)
   		})
   		.catch(error => { 
   			console.log('Ther was an error: ' + error.response[0]);
@@ -200,24 +228,31 @@ export default {
 			email: { required },
 			service_type: { required },
 			desired_speed: { required },
-			site_location: { required },
-			site_location_not_listed: { required },
+			site_location: { required: requiredIf(
+				function(register){ return this.register.site_location_not_listed === '' }) },
+			site_location_not_listed: { required: requiredIf(
+				function(register) { return this.register.site_location.name === 'other' }) },
 			comment: { required }
   	}
   },
 
   methods: {
-  	testChange(event){
-  		console.log(event)
+  	setSpeed(){
+  		this.speed = this.register.service_type.speeds;
   	},
   	createRegistiration() {
   		this.$v.$touch();
 
   		if(!this.$v.$invalid) {
+  			this.register.desired_speed = this.register.desired_speed ? this.register.desired_speed.speed : '';
+	  		this.register.service_type = this.register.service_type ? this.register.service_type.name : '';
+	  		this.register.site_location = this.register.site_location.name === 'other' ? '' : this.register.site_location.name;
   			RegistrationService.postRegistration(this.register)
 	  		.then((response) => { 
-	  			console.log(response);
+	  			// console.log(response);
+
 	  			this.register = this.createFreshRegisterObject();
+	  			this.$v.$reset()
 	  		})
 	  		.catch((error) => { 
 	  			console.log(error.response.data);
@@ -234,7 +269,7 @@ export default {
 				desired_speed: "",
 				site_location: "",
 				site_location_not_listed: "",
-				comment: "sss"
+				comment: "test"
       };
     },
   }
