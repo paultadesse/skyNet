@@ -255,7 +255,14 @@ export default {
 	  			this.$v.$reset()
 	  		})
 	  		.catch((error) => { 
-	  			console.log(error.response.data);
+	  			// console.log(error.response.data);
+	  			this.$swal.fire({
+					  position: 'center',
+					  icon: 'error',
+					  title: 'Some error occured please try again.',
+					  showConfirmButton: false,
+					  timer: 3000
+					})
 	  		 })
   		}
   		

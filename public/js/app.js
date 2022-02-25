@@ -5433,7 +5433,14 @@ __webpack_require__.r(__webpack_exports__);
 
           _this2.$v.$reset();
         })["catch"](function (error) {
-          console.log(error.response.data);
+          // console.log(error.response.data);
+          _this2.$swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Some error occured please try again.',
+            showConfirmButton: false,
+            timer: 3000
+          });
         });
       }
     },
