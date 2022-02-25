@@ -195,14 +195,7 @@ export default {
   },
 
   created() {
-  	this.$swal.fire({
-  position: 'top-end',
-  icon: 'success',
-  title: 'Your work has been saved',
-  showConfirmButton: false,
-  timer: 1500
-})
-  	console.log(this.register)
+
   	RegistrationService.getServiceTypes()
   		.then(response => { 
   			this.serviceTypes = response.data.data
@@ -238,6 +231,7 @@ export default {
 
   methods: {
   	setSpeed(){
+  		this.register.desired_speed = '';
   		this.speed = this.register.service_type.speeds;
   	},
   	createRegistiration() {
@@ -250,7 +244,13 @@ export default {
   			RegistrationService.postRegistration(this.register)
 	  		.then((response) => { 
 	  			// console.log(response);
-
+	  			this.$swal.fire({
+				  position: 'center',
+				  icon: 'success',
+				  title: 'Your Registration has been successful we will contact you soon !',
+				  showConfirmButton: false,
+				  timer: 3000
+				})
 	  			this.register = this.createFreshRegisterObject();
 	  			this.$v.$reset()
 	  		})

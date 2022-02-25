@@ -5360,14 +5360,6 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    this.$swal.fire({
-      position: 'top-end',
-      icon: 'success',
-      title: 'Your work has been saved',
-      showConfirmButton: false,
-      timer: 1500
-    });
-    console.log(this.register);
     _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_1__["default"].getServiceTypes().then(function (response) {
       _this.serviceTypes = response.data.data;
     })["catch"](function (error) {
@@ -5415,6 +5407,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     setSpeed: function setSpeed() {
+      this.register.desired_speed = '';
       this.speed = this.register.service_type.speeds;
     },
     createRegistiration: function createRegistiration() {
@@ -5428,6 +5421,14 @@ __webpack_require__.r(__webpack_exports__);
         this.register.site_location = this.register.site_location.name === 'other' ? '' : this.register.site_location.name;
         _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_1__["default"].postRegistration(this.register).then(function (response) {
           // console.log(response);
+          _this2.$swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Your Registration has been successful we will contact you soon !',
+            showConfirmButton: false,
+            timer: 3000
+          });
+
           _this2.register = _this2.createFreshRegisterObject();
 
           _this2.$v.$reset();
