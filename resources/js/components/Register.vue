@@ -254,7 +254,8 @@ export default {
 	  			this.register = this.createFreshRegisterObject();
 	  			this.$v.$reset()
 	  		})
-	  		.catch((error) => { 
+	  		.catch((error) => {
+	  			this.register = this.createFreshRegisterObject();
 	  			// console.log(error.response.data);
 	  			this.$swal.fire({
 					  position: 'center',

@@ -5433,7 +5433,8 @@ __webpack_require__.r(__webpack_exports__);
 
           _this2.$v.$reset();
         })["catch"](function (error) {
-          // console.log(error.response.data);
+          _this2.register = _this2.createFreshRegisterObject(); // console.log(error.response.data);
+
           _this2.$swal.fire({
             position: 'center',
             icon: 'error',
