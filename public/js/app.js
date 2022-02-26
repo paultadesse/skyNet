@@ -5333,6 +5333,67 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5379,10 +5440,14 @@ __webpack_require__.r(__webpack_exports__);
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
       },
       phone_number: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required,
+        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.numeric,
+        maxLength: (0,vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.maxLength)(10),
+        minLength: (0,vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.minLength)(10)
       },
       email: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required,
+        email: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.email
       },
       service_type: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
@@ -5424,9 +5489,10 @@ __webpack_require__.r(__webpack_exports__);
           _this2.$swal.fire({
             position: 'center',
             icon: 'success',
-            title: 'Your Registration has been successful we will contact you soon !',
+            title: "<p style='color:#B5F44A' >" + 'Your Registration has been successful we will contact you soon !' + "</p>",
             showConfirmButton: false,
-            timer: 3000
+            background: '#111',
+            timer: 3500
           });
 
           _this2.register = _this2.createFreshRegisterObject();
@@ -5438,9 +5504,10 @@ __webpack_require__.r(__webpack_exports__);
           _this2.$swal.fire({
             position: 'center',
             icon: 'error',
-            title: 'Some error occured please try again.',
-            showConfirmButton: false,
-            timer: 3000
+            title: "<p style='color:red' >" + 'Some error occured please try again.' + "</p>",
+            showConfirmButton: true,
+            confirmButtonColor: 'red',
+            background: '#111'
           });
         });
       }
@@ -30254,319 +30321,536 @@ var render = function () {
             },
           },
           [
-            _c(
-              "div",
-              [
-                _c(
-                  "BaseInput",
-                  _vm._g(
-                    {
-                      attrs: { lable: "Name", type: "text" },
-                      on: {
-                        blur: function ($event) {
-                          return _vm.$v.register.name.$touch()
+            _c("div", { staticClass: "flex items-center" }, [
+              _c(
+                "div",
+                [
+                  _c(
+                    "BaseInput",
+                    _vm._g(
+                      {
+                        attrs: { lable: "Name", type: "text" },
+                        on: {
+                          blur: function ($event) {
+                            return _vm.$v.register.name.$touch()
+                          },
+                        },
+                        model: {
+                          value: _vm.register.name,
+                          callback: function ($$v) {
+                            _vm.$set(_vm.register, "name", $$v)
+                          },
+                          expression: "register.name",
                         },
                       },
-                      model: {
-                        value: _vm.register.name,
-                        callback: function ($$v) {
-                          _vm.$set(_vm.register, "name", $$v)
+                      _vm.$listeners
+                    )
+                  ),
+                  _vm._v(" "),
+                  _vm.$v.register.name.$error
+                    ? [
+                        !_vm.$v.register.name.required
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("name is required"),
+                            ])
+                          : _vm._e(),
+                      ]
+                    : _vm._e(),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c("div", [
+                !_vm.$v.register.name.$invalid
+                  ? _c("div", { staticClass: "text-white mt-4 ml-1" }, [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "h-6 w-6 text-GreenLizard",
+                          attrs: {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                          },
                         },
-                        expression: "register.name",
-                      },
-                    },
-                    _vm.$listeners
-                  )
-                ),
-                _vm._v(" "),
-                _vm.$v.register.name.$error
-                  ? [
-                      !_vm.$v.register.name.required
-                        ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                            _vm._v("name is required"),
-                          ])
-                        : _vm._e(),
-                    ]
-                  : _vm._e(),
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              [
-                _c(
-                  "BaseInput",
-                  _vm._g(
-                    {
-                      attrs: { lable: "Phone", type: "text" },
-                      on: {
-                        blur: function ($event) {
-                          return _vm.$v.register.phone_number.$touch()
-                        },
-                      },
-                      model: {
-                        value: _vm.register.phone_number,
-                        callback: function ($$v) {
-                          _vm.$set(_vm.register, "phone_number", $$v)
-                        },
-                        expression: "register.phone_number",
-                      },
-                    },
-                    _vm.$listeners
-                  )
-                ),
-                _vm._v(" "),
-                _vm.$v.register.phone_number.$error
-                  ? [
-                      !_vm.$v.register.phone_number.required
-                        ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                            _vm._v("phone number is required"),
-                          ])
-                        : _vm._e(),
-                    ]
-                  : _vm._e(),
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              [
-                _c(
-                  "BaseInput",
-                  _vm._g(
-                    {
-                      attrs: { lable: "Email address", type: "email" },
-                      on: {
-                        blur: function ($event) {
-                          return _vm.$v.register.email.$touch()
-                        },
-                      },
-                      model: {
-                        value: _vm.register.email,
-                        callback: function ($$v) {
-                          _vm.$set(_vm.register, "email", $$v)
-                        },
-                        expression: "register.email",
-                      },
-                    },
-                    _vm.$listeners
-                  )
-                ),
-                _vm._v(" "),
-                _vm.$v.register.email.$error
-                  ? [
-                      !_vm.$v.register.email.required
-                        ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                            _vm._v("email is required"),
-                          ])
-                        : _vm._e(),
-                    ]
-                  : _vm._e(),
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              [
-                _c(
-                  "label",
-                  {
-                    staticClass:
-                      "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
-                  },
-                  [_vm._v("service type")]
-                ),
-                _vm._v(" "),
-                _c("multiselect", {
-                  staticClass:
-                    "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
-                  attrs: {
-                    "track-by": "name",
-                    label: "name",
-                    placeholder: " select one",
-                    options: _vm.serviceTypes,
-                    searchable: false,
-                    "allow-empty": false,
-                  },
-                  on: {
-                    blur: function ($event) {
-                      return _vm.$v.register.service_type.$touch()
-                    },
-                    input: _vm.setSpeed,
-                  },
-                  scopedSlots: _vm._u([
-                    {
-                      key: "singleLabel",
-                      fn: function (ref) {
-                        var option = ref.option
-                        return [
-                          _c("span", { staticClass: "text-sm space-y-3 " }, [
-                            _vm._v(_vm._s(option.name)),
-                          ]),
+                        [
+                          _c("path", {
+                            attrs: {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              "stroke-width": "1",
+                              d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                            },
+                          }),
                         ]
-                      },
-                    },
-                  ]),
-                  model: {
-                    value: _vm.register.service_type,
-                    callback: function ($$v) {
-                      _vm.$set(_vm.register, "service_type", $$v)
-                    },
-                    expression: "register.service_type",
-                  },
-                }),
-                _vm._v(" "),
-                _vm.$v.register.service_type.$error
-                  ? [
-                      !_vm.$v.register.service_type.required
-                        ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                            _vm._v("service type is required"),
-                          ])
-                        : _vm._e(),
-                    ]
+                      ),
+                    ])
                   : _vm._e(),
-              ],
-              2
-            ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex items-center" }, [
+              _c(
+                "div",
+                [
+                  _c(
+                    "BaseInput",
+                    _vm._g(
+                      {
+                        attrs: { lable: "Phone", type: "text" },
+                        on: {
+                          blur: function ($event) {
+                            return _vm.$v.register.phone_number.$touch()
+                          },
+                        },
+                        model: {
+                          value: _vm.register.phone_number,
+                          callback: function ($$v) {
+                            _vm.$set(_vm.register, "phone_number", $$v)
+                          },
+                          expression: "register.phone_number",
+                        },
+                      },
+                      _vm.$listeners
+                    )
+                  ),
+                  _vm._v(" "),
+                  _vm.$v.register.phone_number.$error
+                    ? [
+                        !_vm.$v.register.phone_number.required
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("phone number is required"),
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        !_vm.$v.register.phone_number.numeric
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("Alphabets are not allowed."),
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        !_vm.$v.register.phone_number.minLength
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("phone number must be 10 digits"),
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        !_vm.$v.register.phone_number.maxLength
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("phone number must be 10 digits"),
+                            ])
+                          : _vm._e(),
+                      ]
+                    : _vm._e(),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              !_vm.$v.register.phone_number.$invalid
+                ? _c("div", { staticClass: "text-white mt-4 ml-1" }, [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-6 w-6 text-GreenLizard",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                        },
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "1",
+                            d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                          },
+                        }),
+                      ]
+                    ),
+                  ])
+                : _vm._e(),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex items-center" }, [
+              _c(
+                "div",
+                [
+                  _c(
+                    "BaseInput",
+                    _vm._g(
+                      {
+                        attrs: { lable: "Email address", type: "email" },
+                        on: {
+                          blur: function ($event) {
+                            return _vm.$v.register.email.$touch()
+                          },
+                        },
+                        model: {
+                          value: _vm.register.email,
+                          callback: function ($$v) {
+                            _vm.$set(_vm.register, "email", $$v)
+                          },
+                          expression: "register.email",
+                        },
+                      },
+                      _vm.$listeners
+                    )
+                  ),
+                  _vm._v(" "),
+                  _vm.$v.register.email.$error
+                    ? [
+                        !_vm.$v.register.email.required
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("email is required"),
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        !_vm.$v.register.email.email
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("must be an email"),
+                            ])
+                          : _vm._e(),
+                      ]
+                    : _vm._e(),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c("div", [
+                !_vm.$v.register.email.$invalid
+                  ? _c("div", { staticClass: "text-white mt-4 ml-1" }, [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "h-6 w-6 text-GreenLizard",
+                          attrs: {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                          },
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              "stroke-width": "1",
+                              d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                            },
+                          }),
+                        ]
+                      ),
+                    ])
+                  : _vm._e(),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex items-center" }, [
+              _c(
+                "div",
+                { staticClass: "flex-1" },
+                [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
+                    },
+                    [_vm._v("service type")]
+                  ),
+                  _vm._v(" "),
+                  _c("multiselect", {
+                    staticClass:
+                      "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                    attrs: {
+                      "track-by": "name",
+                      label: "name",
+                      placeholder: " select one",
+                      options: _vm.serviceTypes,
+                      searchable: false,
+                      "allow-empty": false,
+                    },
+                    on: {
+                      blur: function ($event) {
+                        return _vm.$v.register.service_type.$touch()
+                      },
+                      input: _vm.setSpeed,
+                    },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "singleLabel",
+                        fn: function (ref) {
+                          var option = ref.option
+                          return [
+                            _c(
+                              "span",
+                              { staticClass: "text-sm space-y-3 ml-3" },
+                              [_vm._v(_vm._s(option.name))]
+                            ),
+                          ]
+                        },
+                      },
+                    ]),
+                    model: {
+                      value: _vm.register.service_type,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.register, "service_type", $$v)
+                      },
+                      expression: "register.service_type",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _vm.$v.register.service_type.$error
+                    ? [
+                        !_vm.$v.register.service_type.required
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("service type is required"),
+                            ])
+                          : _vm._e(),
+                      ]
+                    : _vm._e(),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c("div", [
+                !_vm.$v.register.service_type.$invalid
+                  ? _c("div", { staticClass: "text-white mt-4 ml-1" }, [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "h-6 w-6 text-GreenLizard",
+                          attrs: {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                          },
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              "stroke-width": "1",
+                              d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                            },
+                          }),
+                        ]
+                      ),
+                    ])
+                  : _vm._e(),
+              ]),
+            ]),
             _vm._v(" "),
             !_vm.$v.register.service_type.$error &&
             _vm.register.service_type != ""
-              ? _c(
-                  "div",
-                  [
-                    _c(
-                      "label",
-                      {
-                        staticClass:
-                          "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
-                      },
-                      [_vm._v("Speed")]
-                    ),
-                    _vm._v(" "),
-                    _c("multiselect", {
-                      staticClass:
-                        "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
-                      attrs: {
-                        "track-by": "speed",
-                        label: "speed",
-                        placeholder: " select one",
-                        options: _vm.speed,
-                        searchable: false,
-                        "allow-empty": false,
-                      },
-                      on: {
-                        blur: function ($event) {
-                          return _vm.$v.register.desired_speed.$touch()
+              ? _c("div", { staticClass: "flex items-center" }, [
+                  _c(
+                    "div",
+                    { staticClass: "flex-1" },
+                    [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
                         },
-                      },
-                      scopedSlots: _vm._u(
-                        [
-                          {
-                            key: "singleLabel",
-                            fn: function (ref) {
-                              var option = ref.option
-                              return [
-                                _c(
-                                  "span",
-                                  { staticClass: "text-sm space-y-3 " },
-                                  [_vm._v(_vm._s(option.speed))]
-                                ),
-                              ]
-                            },
-                          },
-                        ],
-                        null,
-                        false,
-                        3270068498
+                        [_vm._v("Speed")]
                       ),
-                      model: {
-                        value: _vm.register.desired_speed,
-                        callback: function ($$v) {
-                          _vm.$set(_vm.register, "desired_speed", $$v)
+                      _vm._v(" "),
+                      _c("multiselect", {
+                        staticClass:
+                          "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                        attrs: {
+                          "track-by": "speed",
+                          label: "speed",
+                          placeholder: " select one",
+                          options: _vm.speed,
+                          searchable: false,
+                          "allow-empty": false,
                         },
-                        expression: "register.desired_speed",
-                      },
-                    }),
-                    _vm._v(" "),
-                    _vm.$v.register.desired_speed.$error
-                      ? [
-                          !_vm.$v.register.desired_speed.required
-                            ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                                _vm._v("speed is required"),
-                              ])
-                            : _vm._e(),
-                        ]
+                        on: {
+                          blur: function ($event) {
+                            return _vm.$v.register.desired_speed.$touch()
+                          },
+                        },
+                        scopedSlots: _vm._u(
+                          [
+                            {
+                              key: "singleLabel",
+                              fn: function (ref) {
+                                var option = ref.option
+                                return [
+                                  _c(
+                                    "span",
+                                    { staticClass: "text-sm space-y-3 ml-3" },
+                                    [_vm._v(_vm._s(option.speed))]
+                                  ),
+                                ]
+                              },
+                            },
+                          ],
+                          null,
+                          false,
+                          2668792781
+                        ),
+                        model: {
+                          value: _vm.register.desired_speed,
+                          callback: function ($$v) {
+                            _vm.$set(_vm.register, "desired_speed", $$v)
+                          },
+                          expression: "register.desired_speed",
+                        },
+                      }),
+                      _vm._v(" "),
+                      _vm.$v.register.desired_speed.$error
+                        ? [
+                            !_vm.$v.register.desired_speed.required
+                              ? _c(
+                                  "p",
+                                  { staticClass: "text-red-500 text-sm" },
+                                  [_vm._v("speed is required")]
+                                )
+                              : _vm._e(),
+                          ]
+                        : _vm._e(),
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c("div", [
+                    !_vm.$v.register.desired_speed.$invalid
+                      ? _c("div", { staticClass: "text-white mt-4 ml-1" }, [
+                          _c(
+                            "svg",
+                            {
+                              staticClass: "h-6 w-6 text-GreenLizard",
+                              attrs: {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                fill: "none",
+                                viewBox: "0 0 24 24",
+                                stroke: "currentColor",
+                              },
+                            },
+                            [
+                              _c("path", {
+                                attrs: {
+                                  "stroke-linecap": "round",
+                                  "stroke-linejoin": "round",
+                                  "stroke-width": "1",
+                                  d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                },
+                              }),
+                            ]
+                          ),
+                        ])
                       : _vm._e(),
-                  ],
-                  2
-                )
+                  ]),
+                ])
               : _vm._e(),
             _vm._v(" "),
-            _c(
-              "div",
-              [
-                _c(
-                  "label",
-                  {
-                    staticClass:
-                      "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
-                  },
-                  [_vm._v("site location")]
-                ),
-                _vm._v(" "),
-                _c("multiselect", {
-                  staticClass:
-                    "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
-                  attrs: {
-                    "track-by": "name",
-                    label: "name",
-                    placeholder: " select one",
-                    options: _vm.siteLocations,
-                    searchable: false,
-                    "allow-empty": false,
-                  },
-                  on: {
-                    blur: function ($event) {
-                      return _vm.$v.register.site_location.$touch()
-                    },
-                  },
-                  scopedSlots: _vm._u([
+            _c("div", { staticClass: "flex items-center" }, [
+              _c(
+                "div",
+                { staticClass: "flex-1" },
+                [
+                  _c(
+                    "label",
                     {
-                      key: "singleLabel",
-                      fn: function (ref) {
-                        var option = ref.option
-                        return [
-                          _c("span", { staticClass: "text-sm space-y-3 " }, [
-                            _vm._v(_vm._s(option.name)),
-                          ]),
-                        ]
+                      staticClass:
+                        "block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard",
+                    },
+                    [_vm._v("site location")]
+                  ),
+                  _vm._v(" "),
+                  _c("multiselect", {
+                    staticClass:
+                      "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                    attrs: {
+                      "track-by": "name",
+                      label: "name",
+                      placeholder: " select one",
+                      options: _vm.siteLocations,
+                      searchable: false,
+                      "allow-empty": false,
+                    },
+                    on: {
+                      blur: function ($event) {
+                        return _vm.$v.register.site_location.$touch()
                       },
                     },
-                  ]),
-                  model: {
-                    value: _vm.register.site_location,
-                    callback: function ($$v) {
-                      _vm.$set(_vm.register, "site_location", $$v)
+                    scopedSlots: _vm._u([
+                      {
+                        key: "singleLabel",
+                        fn: function (ref) {
+                          var option = ref.option
+                          return [
+                            _c(
+                              "span",
+                              { staticClass: "text-sm space-y-3 ml-3 " },
+                              [_vm._v(_vm._s(option.name))]
+                            ),
+                          ]
+                        },
+                      },
+                    ]),
+                    model: {
+                      value: _vm.register.site_location,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.register, "site_location", $$v)
+                      },
+                      expression: "register.site_location",
                     },
-                    expression: "register.site_location",
-                  },
-                }),
-                _vm._v(" "),
-                _vm.$v.register.site_location.$error
-                  ? [
-                      !_vm.$v.register.site_location.required
-                        ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                            _vm._v("location is required"),
-                          ])
-                        : _vm._e(),
-                    ]
+                  }),
+                  _vm._v(" "),
+                  _vm.$v.register.site_location.$error
+                    ? [
+                        !_vm.$v.register.site_location.required
+                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                              _vm._v("location is required"),
+                            ])
+                          : _vm._e(),
+                      ]
+                    : _vm._e(),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c("div", [
+                !_vm.$v.register.site_location.$invalid
+                  ? _c("div", { staticClass: "text-white mt-4 ml-1" }, [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "h-6 w-6 text-GreenLizard",
+                          attrs: {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                          },
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              "stroke-width": "1",
+                              d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                            },
+                          }),
+                        ]
+                      ),
+                    ])
                   : _vm._e(),
-              ],
-              2
-            ),
+              ]),
+            ]),
             _vm._v(" "),
             _c(
               "div",
@@ -30579,45 +30863,81 @@ var render = function () {
                     expression: "register.site_location.name === 'other'",
                   },
                 ],
+                staticClass: "flex items-center",
               },
               [
                 _c(
-                  "BaseInput",
-                  _vm._g(
-                    {
-                      attrs: { lable: "Other", type: "text" },
-                      on: {
-                        blur: function ($event) {
-                          return _vm.$v.register.site_location_not_listed.$touch()
+                  "div",
+                  { staticClass: "flex-1" },
+                  [
+                    _c(
+                      "BaseInput",
+                      _vm._g(
+                        {
+                          attrs: { lable: "Other", type: "text" },
+                          on: {
+                            blur: function ($event) {
+                              return _vm.$v.register.site_location_not_listed.$touch()
+                            },
+                          },
+                          model: {
+                            value: _vm.register.site_location_not_listed,
+                            callback: function ($$v) {
+                              _vm.$set(
+                                _vm.register,
+                                "site_location_not_listed",
+                                $$v
+                              )
+                            },
+                            expression: "register.site_location_not_listed",
+                          },
                         },
-                      },
-                      model: {
-                        value: _vm.register.site_location_not_listed,
-                        callback: function ($$v) {
-                          _vm.$set(
-                            _vm.register,
-                            "site_location_not_listed",
-                            $$v
-                          )
-                        },
-                        expression: "register.site_location_not_listed",
-                      },
-                    },
-                    _vm.$listeners
-                  )
+                        _vm.$listeners
+                      )
+                    ),
+                    _vm._v(" "),
+                    _vm.$v.register.site_location_not_listed.$error
+                      ? [
+                          !_vm.$v.register.site_location_not_listed.required
+                            ? _c("p", { staticClass: "text-red-500 text-sm" }, [
+                                _vm._v("other is required"),
+                              ])
+                            : _vm._e(),
+                        ]
+                      : _vm._e(),
+                  ],
+                  2
                 ),
                 _vm._v(" "),
-                _vm.$v.register.site_location_not_listed.$error
-                  ? [
-                      !_vm.$v.register.site_location_not_listed.required
-                        ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                            _vm._v("other is required"),
-                          ])
-                        : _vm._e(),
-                    ]
-                  : _vm._e(),
-              ],
-              2
+                _c("div", [
+                  !_vm.$v.register.site_location_not_listed.$invalid
+                    ? _c("div", { staticClass: "text-white mt-4 ml-1" }, [
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "h-6 w-6 text-GreenLizard",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "1",
+                                d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                              },
+                            }),
+                          ]
+                        ),
+                      ])
+                    : _vm._e(),
+                ]),
+              ]
             ),
             _vm._v(" "),
             _c("div", { staticClass: "border border-GreenLizard" }, [

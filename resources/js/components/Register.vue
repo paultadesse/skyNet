@@ -58,8 +58,9 @@
 					<p class="text-transparent tracking-widest text-sm uppercase bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen">Unlimited Internet</p></div>
 			</div>
 			<form @submit.prevent="createRegistiration" class="mb-0 space-y-7 xl:px-20" >
-					<div>
-						<BaseInput 
+					<div class="flex items-center">
+						<div>
+							<BaseInput 
 							lable="Name" 
 							v-model="register.name" 
 							type="text" 
@@ -69,10 +70,19 @@
 							<template v-if="$v.register.name.$error">
 								<p class="text-red-500 text-sm" v-if="!$v.register.name.required">name is required</p>
 							</template>
+						</div>
+						<div>
+							<div v-if="!$v.register.name.$invalid" class="text-white mt-4 ml-1">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-GreenLizard" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+							</svg>
+						</div>
+						</div>
 					</div>
 
-					<div>
-						<BaseInput 
+					<div class="flex items-center">
+						<div>
+							<BaseInput 
 							lable="Phone" 
 							v-model="register.phone_number" 
 							type="text" 
@@ -80,11 +90,21 @@
 							@blur="$v.register.phone_number.$touch()"/>
 							<template v-if="$v.register.phone_number.$error">
 								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.required">phone number is required</p>
+								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.numeric">Alphabets are not allowed.</p>
+								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.minLength">phone number must be 10 digits</p>
+								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.maxLength">phone number must be 10 digits</p>
 							</template>
+						</div>
+						<div v-if="!$v.register.phone_number.$invalid" class="text-white mt-4 ml-1">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-GreenLizard" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+							</svg>
+						</div>
 					</div>
 
-					<div>
-						<BaseInput 
+					<div class="flex items-center">  
+						<div>
+							<BaseInput 
 							lable="Email address" 
 							v-model="register.email" 
 							type="email" 
@@ -92,62 +112,95 @@
 							@blur="$v.register.email.$touch()"/>
 							<template v-if="$v.register.email.$error">
 								<p class="text-red-500 text-sm" v-if="!$v.register.email.required">email is required</p>
+								<p class="text-red-500 text-sm" v-if="!$v.register.email.email">must be an email</p>
 							</template>
+						</div>
+						<div>
+							<div v-if="!$v.register.email.$invalid" class="text-white mt-4 ml-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-GreenLizard" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+						</div>
 					</div>
 
-					<div>
-					  <label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">service type</label>
-					  <multiselect v-model="register.service_type" 
-							@blur="$v.register.service_type.$touch()"  
-							class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
-							:options="serviceTypes"
-							@input="setSpeed"  
-							:searchable="false" 
-							:allow-empty="false">
-					    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 " >{{ option.name }}</span></template>
-					  </multiselect>
-					  <template v-if="$v.register.service_type.$error">
-									<p class="text-red-500 text-sm" v-if="!$v.register.service_type.required">service type is required</p>
-						</template>
-				  </div>
-
-
-					<div v-if="!$v.register.service_type.$error && (register.service_type != '')">
-					  <label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Speed</label>
-					  <multiselect v-model="register.desired_speed" 
-							@blur="$v.register.desired_speed.$touch()"  
-							class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="speed" label="speed" placeholder=" select one" 
-							:options="speed"
-							:searchable="false" 
-							:allow-empty="false">
-					    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 " >{{ option.speed }}</span></template>
-					  </multiselect>
-					  <template v-if="$v.register.desired_speed.$error">
-										<p class="text-red-500 text-sm" v-if="!$v.register.desired_speed.required">speed is required</p>
+					<div class="flex items-center">
+					  <div class="flex-1">
+					  	<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">service type</label>
+						  <multiselect v-model="register.service_type" 
+								@blur="$v.register.service_type.$touch()"  
+								class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
+								:options="serviceTypes"
+								@input="setSpeed"  
+								:searchable="false" 
+								:allow-empty="false">
+						    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-3" >{{ option.name }}</span></template>
+						  </multiselect>
+						  <template v-if="$v.register.service_type.$error">
+										<p class="text-red-500 text-sm" v-if="!$v.register.service_type.required">service type is required</p>
 							</template>
-				  </div>
-				  <!-- <pre class="language-json"><code class="text-white">{{ register.desired_speed.speed  }}</code></pre> -->
-
-
-					<!--  -->
-
-					<div >
-					  <label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">site location</label>
-					  <multiselect v-model="register.site_location" 
-							@blur="$v.register.site_location.$touch()"  
-							class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
-							:options="siteLocations" 
-							:searchable="false" 
-							:allow-empty="false">
-					    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 " >{{ option.name }}</span></template>
-					  </multiselect>
-					  <template v-if="$v.register.site_location.$error">
-										<p class="text-red-500 text-sm" v-if="!$v.register.site_location.required">location is required</p>
-							</template>
+					  </div>
+					  <div>
+					  	<div v-if="!$v.register.service_type.$invalid" class="text-white mt-4 ml-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-GreenLizard" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+					  </div>
 				  </div>
 
-					<div v-show="register.site_location.name === 'other'">
-						<BaseInput 
+
+					<div class="flex items-center" v-if="!$v.register.service_type.$error && (register.service_type != '')">
+						  <div class="flex-1">
+						  		<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Speed</label>
+								  <multiselect v-model="register.desired_speed" 
+										@blur="$v.register.desired_speed.$touch()"  
+										class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="speed" label="speed" placeholder=" select one" 
+										:options="speed"
+										:searchable="false" 
+										:allow-empty="false">
+								    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-3" >{{ option.speed }}</span></template>
+								  </multiselect>
+								  <template v-if="$v.register.desired_speed.$error">
+												<p class="text-red-500 text-sm" v-if="!$v.register.desired_speed.required">speed is required</p>
+									</template>
+						  </div>
+						  <div>
+						  	<div v-if="!$v.register.desired_speed.$invalid" class="text-white mt-4 ml-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-GreenLizard" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+						  </div>
+				  </div>
+
+					<div class="flex items-center">
+						  <div class="flex-1">
+						  	<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">site location</label>
+							  <multiselect v-model="register.site_location" 
+									@blur="$v.register.site_location.$touch()"  
+									class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
+									:options="siteLocations" 
+									:searchable="false" 
+									:allow-empty="false">
+							    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-3 " >{{ option.name }}</span></template>
+							  </multiselect>
+							  <template v-if="$v.register.site_location.$error">
+											<p class="text-red-500 text-sm" v-if="!$v.register.site_location.required">location is required</p>
+								</template>
+						  </div>
+						  <div>
+						  	<div v-if="!$v.register.site_location.$invalid" class="text-white mt-4 ml-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-GreenLizard" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+						  </div>
+				  </div>
+
+					<div class="flex items-center" v-show="register.site_location.name === 'other'">
+						<div class="flex-1">
+							<BaseInput 
 							lable="Other" 
 							v-model="register.site_location_not_listed" 
 							type="text"
@@ -156,6 +209,14 @@
 							<template v-if="$v.register.site_location_not_listed.$error">
 										<p class="text-red-500 text-sm" v-if="!$v.register.site_location_not_listed.required">other is required</p>
 							</template>
+						</div>
+						<div>
+							<div v-if="!$v.register.site_location_not_listed.$invalid" class="text-white mt-4 ml-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-GreenLizard" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+						</div>
 					</div>
 
 				<div class="border border-GreenLizard">
@@ -170,7 +231,7 @@
 import Multiselect from 'vue-multiselect'
 
 import RegistrationService from '../services/RegistrationService.js';
-import { required, requiredIf } from 'vuelidate/lib/validators';
+import { required, requiredIf, maxLength, minLength, numeric, email } from 'vuelidate/lib/validators';
 import BaseInput from './BaseInput';
 import BaseSelect from './BaseSelect';
 
@@ -217,8 +278,8 @@ export default {
   validations: {
   	register: {
   		name: { required },
-			phone_number: { required },
-			email: { required },
+			phone_number: { required, numeric, maxLength: maxLength(10), minLength: minLength(10) },
+			email: { required, email },
 			service_type: { required },
 			desired_speed: { required },
 			site_location: { required: requiredIf(
@@ -247,9 +308,10 @@ export default {
 	  			this.$swal.fire({
 				  position: 'center',
 				  icon: 'success',
-				  title: 'Your Registration has been successful we will contact you soon !',
+				  title: "<p style='color:#B5F44A' >" +'Your Registration has been successful we will contact you soon !' +"</p>",
 				  showConfirmButton: false,
-				  timer: 3000
+				  background: '#111',
+				  timer: 3500
 				})
 	  			this.register = this.createFreshRegisterObject();
 	  			this.$v.$reset()
@@ -258,12 +320,13 @@ export default {
 	  			this.register = this.createFreshRegisterObject();
 	  			// console.log(error.response.data);
 	  			this.$swal.fire({
-					  position: 'center',
-					  icon: 'error',
-					  title: 'Some error occured please try again.',
-					  showConfirmButton: false,
-					  timer: 3000
-					})
+				  position: 'center',
+				  icon: 'error',
+				  title: "<p style='color:red' >" +'Some error occured please try again.' +"</p>",
+				  showConfirmButton: true,
+				  confirmButtonColor: 'red',
+				  background: '#111',
+				})
 	  		 })
   		}
   		
