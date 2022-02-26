@@ -5394,6 +5394,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5474,6 +5520,9 @@ __webpack_require__.r(__webpack_exports__);
     setSpeed: function setSpeed() {
       this.register.desired_speed = '';
       this.speed = this.register.service_type.speeds;
+    },
+    setOtherEmptyOnLocationChanged: function setOtherEmptyOnLocationChanged() {
+      this.register.site_location_not_listed = '';
     },
     createRegistiration: function createRegistiration() {
       var _this2 = this;
@@ -30349,11 +30398,44 @@ var render = function () {
                   _vm._v(" "),
                   _vm.$v.register.name.$error
                     ? [
-                        !_vm.$v.register.name.required
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("name is required"),
-                            ])
-                          : _vm._e(),
+                        _c(
+                          "div",
+                          { staticClass: "flex items-center space-x-1" },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "h-4 w-4 text-red-500",
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", [
+                              !_vm.$v.register.name.required
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("name is required")]
+                                  )
+                                : _vm._e(),
+                            ]),
+                          ]
+                        ),
                       ]
                     : _vm._e(),
                 ],
@@ -30418,29 +30500,68 @@ var render = function () {
                   _vm._v(" "),
                   _vm.$v.register.phone_number.$error
                     ? [
-                        !_vm.$v.register.phone_number.required
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("phone number is required"),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        !_vm.$v.register.phone_number.numeric
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("Alphabets are not allowed."),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        !_vm.$v.register.phone_number.minLength
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("phone number must be 10 digits"),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        !_vm.$v.register.phone_number.maxLength
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("phone number must be 10 digits"),
-                            ])
-                          : _vm._e(),
+                        _c(
+                          "div",
+                          { staticClass: "flex items-center space-x-1" },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "h-4 w-4 text-red-500",
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", [
+                              !_vm.$v.register.phone_number.required
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("phone number is required")]
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              !_vm.$v.register.phone_number.numeric
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("Alphabets are not allowed.")]
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              !_vm.$v.register.phone_number.minLength
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("phone number must be 10 digits")]
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              !_vm.$v.register.phone_number.maxLength
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("phone number must be 10 digits")]
+                                  )
+                                : _vm._e(),
+                            ]),
+                          ]
+                        ),
                       ]
                     : _vm._e(),
                 ],
@@ -30503,17 +30624,52 @@ var render = function () {
                   _vm._v(" "),
                   _vm.$v.register.email.$error
                     ? [
-                        !_vm.$v.register.email.required
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("email is required"),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        !_vm.$v.register.email.email
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("must be an email"),
-                            ])
-                          : _vm._e(),
+                        _c(
+                          "div",
+                          { staticClass: "flex items-center space-x-1" },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "h-4 w-4 text-red-500",
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", [
+                              !_vm.$v.register.email.required
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("email is required")]
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              !_vm.$v.register.email.email
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("must be an email")]
+                                  )
+                                : _vm._e(),
+                            ]),
+                          ]
+                        ),
                       ]
                     : _vm._e(),
                 ],
@@ -30566,7 +30722,7 @@ var render = function () {
                   _vm._v(" "),
                   _c("multiselect", {
                     staticClass:
-                      "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                      "w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
                     attrs: {
                       "track-by": "name",
                       label: "name",
@@ -30589,7 +30745,9 @@ var render = function () {
                           return [
                             _c(
                               "span",
-                              { staticClass: "text-sm space-y-3 ml-3" },
+                              {
+                                staticClass: "text-sm space-y-3 ml-2 uppercase",
+                              },
                               [_vm._v(_vm._s(option.name))]
                             ),
                           ]
@@ -30607,11 +30765,42 @@ var render = function () {
                   _vm._v(" "),
                   _vm.$v.register.service_type.$error
                     ? [
-                        !_vm.$v.register.service_type.required
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("service type is required"),
-                            ])
-                          : _vm._e(),
+                        _c(
+                          "div",
+                          { staticClass: "flex items-center space-x-1" },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "h-4 w-4 text-red-500",
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            !_vm.$v.register.service_type.required
+                              ? _c(
+                                  "p",
+                                  { staticClass: "text-red-500 text-sm" },
+                                  [_vm._v("service type is required")]
+                                )
+                              : _vm._e(),
+                          ]
+                        ),
                       ]
                     : _vm._e(),
                 ],
@@ -30666,7 +30855,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("multiselect", {
                         staticClass:
-                          "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                          "w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
                         attrs: {
                           "track-by": "speed",
                           label: "speed",
@@ -30689,7 +30878,7 @@ var render = function () {
                                 return [
                                   _c(
                                     "span",
-                                    { staticClass: "text-sm space-y-3 ml-3" },
+                                    { staticClass: "text-sm space-y-3 ml-2 " },
                                     [_vm._v(_vm._s(option.speed))]
                                   ),
                                 ]
@@ -30698,7 +30887,7 @@ var render = function () {
                           ],
                           null,
                           false,
-                          2668792781
+                          3711289932
                         ),
                         model: {
                           value: _vm.register.desired_speed,
@@ -30711,13 +30900,42 @@ var render = function () {
                       _vm._v(" "),
                       _vm.$v.register.desired_speed.$error
                         ? [
-                            !_vm.$v.register.desired_speed.required
-                              ? _c(
-                                  "p",
-                                  { staticClass: "text-red-500 text-sm" },
-                                  [_vm._v("speed is required")]
-                                )
-                              : _vm._e(),
+                            _c(
+                              "div",
+                              { staticClass: "flex items-center space-x-1" },
+                              [
+                                _c(
+                                  "svg",
+                                  {
+                                    staticClass: "h-4 w-4 text-red-500",
+                                    attrs: {
+                                      xmlns: "http://www.w3.org/2000/svg",
+                                      fill: "none",
+                                      viewBox: "0 0 24 24",
+                                      stroke: "currentColor",
+                                    },
+                                  },
+                                  [
+                                    _c("path", {
+                                      attrs: {
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        "stroke-width": "2",
+                                        d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                      },
+                                    }),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                !_vm.$v.register.desired_speed.required
+                                  ? _c(
+                                      "p",
+                                      { staticClass: "text-red-500 text-sm" },
+                                      [_vm._v("speed is required")]
+                                    )
+                                  : _vm._e(),
+                              ]
+                            ),
                           ]
                         : _vm._e(),
                     ],
@@ -30771,11 +30989,11 @@ var render = function () {
                   _vm._v(" "),
                   _c("multiselect", {
                     staticClass:
-                      "w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                      "w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
                     attrs: {
                       "track-by": "name",
                       label: "name",
-                      placeholder: " select one",
+                      placeholder: "select one",
                       options: _vm.siteLocations,
                       searchable: false,
                       "allow-empty": false,
@@ -30784,6 +31002,7 @@ var render = function () {
                       blur: function ($event) {
                         return _vm.$v.register.site_location.$touch()
                       },
+                      input: _vm.setOtherEmptyOnLocationChanged,
                     },
                     scopedSlots: _vm._u([
                       {
@@ -30793,7 +31012,9 @@ var render = function () {
                           return [
                             _c(
                               "span",
-                              { staticClass: "text-sm space-y-3 ml-3 " },
+                              {
+                                staticClass: "text-sm space-y-3 ml-2 uppercase",
+                              },
                               [_vm._v(_vm._s(option.name))]
                             ),
                           ]
@@ -30811,11 +31032,42 @@ var render = function () {
                   _vm._v(" "),
                   _vm.$v.register.site_location.$error
                     ? [
-                        !_vm.$v.register.site_location.required
-                          ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                              _vm._v("location is required"),
-                            ])
-                          : _vm._e(),
+                        _c(
+                          "div",
+                          { staticClass: "flex items-center space-x-1" },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "h-4 w-4 text-red-500",
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                  },
+                                }),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            !_vm.$v.register.site_location.required
+                              ? _c(
+                                  "p",
+                                  { staticClass: "text-red-500 text-sm" },
+                                  [_vm._v("location is required")]
+                                )
+                              : _vm._e(),
+                          ]
+                        ),
                       ]
                     : _vm._e(),
                 ],
@@ -30898,11 +31150,42 @@ var render = function () {
                     _vm._v(" "),
                     _vm.$v.register.site_location_not_listed.$error
                       ? [
-                          !_vm.$v.register.site_location_not_listed.required
-                            ? _c("p", { staticClass: "text-red-500 text-sm" }, [
-                                _vm._v("other is required"),
-                              ])
-                            : _vm._e(),
+                          _c(
+                            "div",
+                            { staticClass: "flex items-center space-x-1" },
+                            [
+                              _c(
+                                "svg",
+                                {
+                                  staticClass: "h-4 w-4 text-red-500",
+                                  attrs: {
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    fill: "none",
+                                    viewBox: "0 0 24 24",
+                                    stroke: "currentColor",
+                                  },
+                                },
+                                [
+                                  _c("path", {
+                                    attrs: {
+                                      "stroke-linecap": "round",
+                                      "stroke-linejoin": "round",
+                                      "stroke-width": "2",
+                                      d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z",
+                                    },
+                                  }),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              !_vm.$v.register.site_location_not_listed.required
+                                ? _c(
+                                    "p",
+                                    { staticClass: "text-red-500 text-sm" },
+                                    [_vm._v("other is required")]
+                                  )
+                                : _vm._e(),
+                            ]
+                          ),
                         ]
                       : _vm._e(),
                   ],

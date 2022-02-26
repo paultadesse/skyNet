@@ -68,7 +68,15 @@
 							@blur="$v.register.name.$touch()"/>
 
 							<template v-if="$v.register.name.$error">
-								<p class="text-red-500 text-sm" v-if="!$v.register.name.required">name is required</p>
+								<div class="flex items-center space-x-1">
+								  		<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>								
+											<div>
+												<p class="text-red-500 text-sm" v-if="!$v.register.name.required">name is required</p>
+											</div>
+						  			</div>
+								
 							</template>
 						</div>
 						<div>
@@ -89,10 +97,18 @@
 							v-on="$listeners"
 							@blur="$v.register.phone_number.$touch()"/>
 							<template v-if="$v.register.phone_number.$error">
-								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.required">phone number is required</p>
-								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.numeric">Alphabets are not allowed.</p>
-								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.minLength">phone number must be 10 digits</p>
-								<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.maxLength">phone number must be 10 digits</p>
+								<div class="flex items-center space-x-1">
+								  		<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											
+											<div>
+												<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.required">phone number is required</p>
+											<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.numeric">Alphabets are not allowed.</p>
+											<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.minLength">phone number must be 10 digits</p>
+											<p class="text-red-500 text-sm" v-if="!$v.register.phone_number.maxLength">phone number must be 10 digits</p>
+											</div>
+						  			</div>
 							</template>
 						</div>
 						<div v-if="!$v.register.phone_number.$invalid" class="text-white mt-4 ml-1">
@@ -111,8 +127,15 @@
 							v-on="$listeners"
 							@blur="$v.register.email.$touch()"/>
 							<template v-if="$v.register.email.$error">
-								<p class="text-red-500 text-sm" v-if="!$v.register.email.required">email is required</p>
-								<p class="text-red-500 text-sm" v-if="!$v.register.email.email">must be an email</p>
+								<div class="flex items-center space-x-1">
+								  		<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>								
+											<div>
+												<p class="text-red-500 text-sm" v-if="!$v.register.email.required">email is required</p>
+												<p class="text-red-500 text-sm" v-if="!$v.register.email.email">must be an email</p>
+											</div>
+						  			</div>
 							</template>
 						</div>
 						<div>
@@ -129,15 +152,20 @@
 					  	<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">service type</label>
 						  <multiselect v-model="register.service_type" 
 								@blur="$v.register.service_type.$touch()"  
-								class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
+								class="w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
 								:options="serviceTypes"
 								@input="setSpeed"  
 								:searchable="false" 
 								:allow-empty="false">
-						    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-3" >{{ option.name }}</span></template>
+						    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-2 uppercase" >{{ option.name }}</span></template>
 						  </multiselect>
 						  <template v-if="$v.register.service_type.$error">
+						  	<div class="flex items-center space-x-1">
+						  		<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+									</svg>
 										<p class="text-red-500 text-sm" v-if="!$v.register.service_type.required">service type is required</p>
+						  	</div>
 							</template>
 					  </div>
 					  <div>
@@ -155,14 +183,20 @@
 						  		<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Speed</label>
 								  <multiselect v-model="register.desired_speed" 
 										@blur="$v.register.desired_speed.$touch()"  
-										class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="speed" label="speed" placeholder=" select one" 
+										class="w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="speed" label="speed" placeholder=" select one" 
 										:options="speed"
 										:searchable="false" 
 										:allow-empty="false">
-								    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-3" >{{ option.speed }}</span></template>
+								    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-2 " >{{ option.speed }}</span></template>
 								  </multiselect>
 								  <template v-if="$v.register.desired_speed.$error">
-												<p class="text-red-500 text-sm" v-if="!$v.register.desired_speed.required">speed is required</p>
+								  	<div class="flex items-center space-x-1">
+								  		<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											<p class="text-red-500 text-sm" v-if="!$v.register.desired_speed.required">speed is required</p>
+						  			</div>
+												
 									</template>
 						  </div>
 						  <div>
@@ -178,15 +212,21 @@
 						  <div class="flex-1">
 						  	<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">site location</label>
 							  <multiselect v-model="register.site_location" 
-									@blur="$v.register.site_location.$touch()"  
-									class="w-full border cursor-pointer py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
+									@blur="$v.register.site_location.$touch()" 
+									@input='setOtherEmptyOnLocationChanged' 
+									class="w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder="select one" 
 									:options="siteLocations" 
 									:searchable="false" 
 									:allow-empty="false">
-							    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-3 " >{{ option.name }}</span></template>
+							    <template  slot="singleLabel" slot-scope="{ option }"><span class="text-sm space-y-3 ml-2 uppercase" >{{ option.name }}</span></template>
 							  </multiselect>
 							  <template v-if="$v.register.site_location.$error">
+							  			<div class="flex items-center space-x-1">
+								  		<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>											
 											<p class="text-red-500 text-sm" v-if="!$v.register.site_location.required">location is required</p>
+						  			</div>
 								</template>
 						  </div>
 						  <div>
@@ -207,7 +247,13 @@
 							v-on="$listeners"
 									@blur="$v.register.site_location_not_listed.$touch()"/>
 							<template v-if="$v.register.site_location_not_listed.$error">
+								<div class="flex items-center space-x-1">
+								  		<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											
 										<p class="text-red-500 text-sm" v-if="!$v.register.site_location_not_listed.required">other is required</p>
+						  			</div>
 							</template>
 						</div>
 						<div>
@@ -294,6 +340,9 @@ export default {
   	setSpeed(){
   		this.register.desired_speed = '';
   		this.speed = this.register.service_type.speeds;
+  	},
+  	setOtherEmptyOnLocationChanged(){
+  		this.register.site_location_not_listed = '';
   	},
   	createRegistiration() {
   		this.$v.$touch();
