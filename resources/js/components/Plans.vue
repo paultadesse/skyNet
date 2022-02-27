@@ -1,7 +1,7 @@
 <template lang="">
     <div class="pt-7">
-        <div class="flex flex-col md:flex-row justify-center p-4 font-poppins">
-            <div class="shadow-md flex flex-col md:flex-row">
+        <div class="flex flex-col xl:flex-row justify-center p-4 font-poppins">
+            <div class="shadow-md flex flex-col xl:flex-row">
                 <div class="">
                     <div
                         style="height: 50rem"

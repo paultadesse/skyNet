@@ -29675,10 +29675,10 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "flex flex-col md:flex-row justify-center p-4 font-poppins",
+            "flex flex-col xl:flex-row justify-center p-4 font-poppins",
         },
         [
-          _c("div", { staticClass: "shadow-md flex flex-col md:flex-row" }, [
+          _c("div", { staticClass: "shadow-md flex flex-col xl:flex-row" }, [
             _c("div", {}, [
               _c(
                 "div",
