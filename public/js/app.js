@@ -2603,7 +2603,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -27283,131 +27282,145 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "flex xl:space-x-3" }, [
-              _c("div", { staticClass: "flex space-x-1" }, [
-                _c("span", [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "h-5 w-5",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        fill: "none",
-                        viewBox: "0 0 24 24",
-                        stroke: "currentColor",
-                      },
-                    },
-                    [
-                      _c("path", {
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex flex-col xl:flex-row space-y-3 xl:space-y-0 xl:space-x-3",
+              },
+              [
+                _c("div", { staticClass: "flex space-x-1" }, [
+                  _c("span", [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-5 w-5",
                         attrs: {
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                          "stroke-width": "1",
-                          d: "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
                         },
-                      }),
-                    ]
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "1",
+                            d: "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7",
+                          },
+                        }),
+                      ]
+                    ),
+                  ]),
+                  _c(
+                    "span",
+                    { staticClass: "uppercase text-sm tracking-widest" },
+                    [_vm._v("Ethiopia")]
                   ),
                 ]),
-                _c(
-                  "span",
-                  { staticClass: "uppercase text-sm tracking-widest" },
-                  [_vm._v("Ethiopia")]
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex space-x-1 items-center" }, [
-                _c("span", [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "h-5 w-5",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        fill: "none",
-                        viewBox: "0 0 24 24",
-                        stroke: "currentColor",
-                      },
-                    },
-                    [
-                      _c("path", {
+                _vm._v(" "),
+                _c("div", { staticClass: "flex space-x-1 items-center" }, [
+                  _c("span", [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-5 w-5",
                         attrs: {
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                          "stroke-width": "1",
-                          d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
                         },
-                      }),
-                    ]
-                  ),
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "1",
+                            d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
+                          },
+                        }),
+                      ]
+                    ),
+                  ]),
+                  _c("span", { staticClass: "tracking-widest text-sm" }, [
+                    _vm._v("+25198765412"),
+                  ]),
                 ]),
-                _c("span", { staticClass: "tracking-widest text-sm" }, [
-                  _vm._v("+25198765412"),
-                ]),
-              ]),
-            ]),
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "flex xl:space-x-3" }, [
-              _c("div", { staticClass: "flex space-x-1 items-center" }, [
-                _c("span", [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "h-5 w-5",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        fill: "none",
-                        viewBox: "0 0 24 24",
-                        stroke: "currentColor",
-                      },
-                    },
-                    [
-                      _c("path", {
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex flex-col space-y-3 xl:space-y-0 xl:flex-row xl:space-x-3",
+              },
+              [
+                _c("div", { staticClass: "flex space-x-1 items-center" }, [
+                  _c("span", [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-5 w-5",
                         attrs: {
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                          "stroke-width": "1",
-                          d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
                         },
-                      }),
-                    ]
-                  ),
-                ]),
-                _c("span", { staticClass: "tracking-widest text-sm" }, [
-                  _vm._v("+25198765412"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex space-x-1 items-center" }, [
-                _c("span", [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "h-5 w-5",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        fill: "none",
-                        viewBox: "0 0 24 24",
-                        stroke: "currentColor",
                       },
-                    },
-                    [
-                      _c("path", {
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "1",
+                            d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+                          },
+                        }),
+                      ]
+                    ),
+                  ]),
+                  _c("span", { staticClass: "tracking-widest text-sm" }, [
+                    _vm._v("+25198765412"),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "flex space-x-1 items-center" }, [
+                  _c("span", [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-5 w-5",
                         attrs: {
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                          "stroke-width": "1",
-                          d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
                         },
-                      }),
-                    ]
-                  ),
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "1",
+                            d: "M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207",
+                          },
+                        }),
+                      ]
+                    ),
+                  ]),
+                  _c("span", { staticClass: "text-sm tracking-widest" }, [
+                    _vm._v("info@skynet.com"),
+                  ]),
                 ]),
-                _c("span", { staticClass: "text-sm tracking-widest" }, [
-                  _vm._v("info@skynet.com"),
-                ]),
-              ]),
-            ]),
+              ]
+            ),
           ]),
           _vm._v(" "),
           _c(
@@ -27455,7 +27468,7 @@ var render = function () {
                         "div",
                         {
                           staticClass:
-                            "px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
+                            "xl:px-9 font-light uppercase text-xs xl:text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1 text-center",
                         },
                         [_vm._v("Check out our services")]
                       ),
@@ -31312,7 +31325,7 @@ var render = function () {
           "flex flex-col-reverse xl:flex-row xl:divide-x xl:divide-opacity-30 xl:divide-GreenLizard xl:space-x-10 justify-evenly items-center border border-opacity-50 border-GreenLizard  p-10  rounded-lg  ",
       },
       [
-        _c("div", { staticClass: "pt-10 md:pt-0 text-GreenLizard space-y-7" }, [
+        _c("div", { staticClass: "pt-10 xl:pt-0 text-GreenLizard space-y-7" }, [
           _c(
             "h1",
             {

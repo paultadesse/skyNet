@@ -19,7 +19,7 @@
         </div>
         
         </div>
-        <div class="flex xl:space-x-3">
+        <div class="flex flex-col xl:flex-row space-y-3 xl:space-y-0 xl:space-x-3">
           <div class="flex space-x-1"> 
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,7 +35,7 @@
           </span><span class="tracking-widest text-sm">+25198765412</span>
         </div>
         </div>
-        <div class="flex xl:space-x-3">
+        <div class="flex flex-col space-y-3 xl:space-y-0 xl:flex-row xl:space-x-3">
           <div class="flex space-x-1 items-center"> 
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -51,7 +51,6 @@
           </span><span class="text-sm tracking-widest">info@skynet.com</span>
         </div>
         </div>
-        
       </div>
       <div class="space-y-2">
         <div class="font-bold text-lg uppercase">Register now</div>
@@ -59,7 +58,7 @@
 
         <router-link to="/services" class=" max-w-xs cursor-pointer">
           <div class="border border-transparent hover:border-current">
-            <div class="px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1">Check out our services</div>
+            <div class="xl:px-9 font-light uppercase text-xs xl:text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1 text-center">Check out our services</div>
           </div>
         </router-link>
       </div>

@@ -1,7 +1,7 @@
 <template>
 	<div class="flex justify-center pt-10 font-ubuntu">
 		<div class="flex flex-col-reverse xl:flex-row xl:divide-x xl:divide-opacity-30 xl:divide-GreenLizard xl:space-x-10 justify-evenly items-center border border-opacity-50 border-GreenLizard  p-10  rounded-lg  ">
-			<div class="pt-10 md:pt-0 text-GreenLizard space-y-7">
+			<div class="pt-10 xl:pt-0 text-GreenLizard space-y-7">
 				<h1 class="text-3xl uppercase font-bold tracking-widest text-center  max-w-md text-transparent bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen ">Register and get the most out of Us !</h1>
 				<div class="flex items-center space-x-5 justify-center">
 					<hr class="opacity-20 w-4/12">
