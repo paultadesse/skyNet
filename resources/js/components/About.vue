@@ -17,7 +17,7 @@
           max-w-5xl
           text-GreenSheen
           leading-relaxed
-          md:tracking-wide p-4 md:p-0 text-justify
+          md:tracking-wide p-4 xl:p-0 text-justify
         "
       >
         A strong Information Technology infrastructure is extremely critical for
@@ -34,7 +34,7 @@
     </div>
 
     <div class="flex justify-center items-center p-4 md:p-20">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
         <div class="shadow-lg bg-gradient-to-l from-LightGreen to-GreenLizard col-span-3 md:p-20 md:col-span-1 space-y-2 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"

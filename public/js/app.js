@@ -26566,7 +26566,7 @@ var render = function () {
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "flex justify-center items-center p-4 md:p-20" }, [
-      _c("div", { staticClass: "grid grid-cols-1 md:grid-cols-3 gap-8" }, [
+      _c("div", { staticClass: "grid grid-cols-1 xl:grid-cols-3 gap-8" }, [
         _c(
           "div",
           {
@@ -26751,7 +26751,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "\n        max-w-5xl\n        text-GreenSheen\n        leading-relaxed\n        md:tracking-wide p-4 md:p-0 text-justify\n      ",
+              "\n        max-w-5xl\n        text-GreenSheen\n        leading-relaxed\n        md:tracking-wide p-4 xl:p-0 text-justify\n      ",
           },
           [
             _vm._v(
