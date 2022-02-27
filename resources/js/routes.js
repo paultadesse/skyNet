@@ -4,6 +4,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Register from "./components/Register";
 import PageNotFound from "./components/PageNotFound";
+import Login from "./components/Admin/Login";
+import AdminDashboard from "./components/Admin/AdminDashboard";
 
 export default {
     mode: "history",
@@ -53,6 +55,16 @@ export default {
             path: "/register",
             component: Register,
             name: "register"
+        },
+        {
+            path: "/admin-login",
+            component: Login,
+            name: "admin-login"
+        },
+        {
+            path: "/admin-dashboard",
+            component: AdminDashboard,
+            name: "admin-dashboard"
         },
     ],
 };
