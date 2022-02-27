@@ -56,9 +56,9 @@
       <div class="space-y-2">
         <div class="font-bold text-lg uppercase">Register now</div>
         <div class="max-w-md space-x-1 pb-4"><span>Not registered yet ?</span> <router-link to="/register" class=" uppercase text-sm tracking-widest text-GreenSheen">register here</router-link> </div>
-        <div class="border border-transparent hover:border-current max-w-xs cursor-pointer">
+        <router-link to="/services" class="border border-transparent hover:border-current max-w-xs cursor-pointer">
           <div class="px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1">Check out our services</div>
-        </div>
+        </router-link>
       </div>
     </div>
     <div class="flex flex-col space-y-1 justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-16">

@@ -3,6 +3,8 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Register from "./components/Register";
+import PageNotFound from "./components/PageNotFound";
+
 export default {
     mode: "history",
     // linkActiveClass: "border-b-2 border-t-2 border-gray-400 text-gray-500 ",
@@ -22,10 +24,10 @@ export default {
         }
     },
     routes: [
-        // {
-        //     path: "*",
-        //     component: PageNotFound
-        // },
+        {
+            path: "*",
+            component: PageNotFound
+        },
 
         {
             path: "/",
