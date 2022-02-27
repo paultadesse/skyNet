@@ -27628,7 +27628,7 @@ var render = function () {
           "div",
           {
             staticClass:
-              "\n                flex flex-col\n                md:flex-row\n                space-y-7\n                md:space-y-0\n                justify-center\n                items-center\n                md:justify-evenly\n                flex-wrap\n            ",
+              "\n                flex flex-col\n                xl:flex-row\n                space-y-7\n                xl:space-y-0\n                justify-center\n                items-center\n                xl:justify-evenly\n                flex-wrap\n            ",
           },
           [
             _c(
@@ -27636,7 +27636,7 @@ var render = function () {
               {
                 staticClass:
                   "\n\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-blue-900 \n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm md:bottom-0\n                ",
-                class: _vm.showResidential ? "pb-14 pt-16 md:pt-0 md:pb-0" : "",
+                class: _vm.showResidential ? "pb-14 pt-16 xl:pt-0 xl:pb-0" : "",
                 on: {
                   mouseover: function ($event) {
                     _vm.showResidential = true
@@ -27913,7 +27913,7 @@ var render = function () {
                 staticClass:
                   "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    p-12 border-GreenLizard border \n                    shadow-xl\n                    rounded-sm\n                ",
                 class: _vm.showCommercial
-                  ? "bottom-20 top-20 md:bottom-0 md:top-0"
+                  ? "bottom-20 top-20 xl:bottom-0 xl:top-0"
                   : "",
                 on: {
                   mouseover: function ($event) {
@@ -28188,7 +28188,7 @@ var render = function () {
                   "\n                    relative\n                    flex flex-col\n                    justify-center\n                    items-center\n                    text-center\n                    max-w-sm\n                    border-GreenLizard border \n                    p-12\n                    shadow-xl\n                    rounded-sm\n                ",
                 class:
                   _vm.showCommercial || _vm.showEnterprise
-                    ? "top-20 md:top-0"
+                    ? "top-20 xl:top-0"
                     : "",
                 on: {
                   mouseover: function ($event) {
@@ -28618,7 +28618,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "\n                flex flex-col\n                md:flex-row\n                items-center\n                justify-between\n                bg-gradient-to-t from-GreenLizard to-LightGreen\n                p-10\n            ",
+          "\n                flex flex-col\n                xl:flex-row\n                items-center\n                justify-between\n                bg-gradient-to-t from-GreenLizard to-LightGreen\n                p-10\n            ",
       },
       [
         _c(
@@ -28650,7 +28650,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "flex font-ubuntu justify-start pt-7 md:pt-0" },
+          { staticClass: "flex font-ubuntu justify-start pt-7 xl:pt-0" },
           [
             _c(
               "div",

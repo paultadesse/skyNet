@@ -99,12 +99,12 @@
             <div
                 class="
                     flex flex-col
-                    md:flex-row
+                    xl:flex-row
                     space-y-7
-                    md:space-y-0
+                    xl:space-y-0
                     justify-center
                     items-center
-                    md:justify-evenly
+                    xl:justify-evenly
                     flex-wrap
                 "
             >
@@ -123,7 +123,7 @@
                         shadow-xl
                         rounded-sm md:bottom-0
                     "
-                    :class="showResidential ? 'pb-14 pt-16 md:pt-0 md:pb-0':''"
+                    :class="showResidential ? 'pb-14 pt-16 xl:pt-0 xl:pb-0':''"
                     @mouseover="showResidential = true"
                     @mouseout="showResidential = false"
                 >
@@ -370,7 +370,7 @@
                         shadow-xl
                         rounded-sm
                     "
-                    :class="showCommercial ? 'bottom-20 top-20 md:bottom-0 md:top-0':''"
+                    :class="showCommercial ? 'bottom-20 top-20 xl:bottom-0 xl:top-0':''"
                     @mouseover="showCommercial = true"
                     @mouseout="showCommercial = false"
                 >
@@ -616,7 +616,7 @@
                         shadow-xl
                         rounded-sm
                     "
-                    :class="showCommercial ||showEnterprise  ? 'top-20 md:top-0':''"
+                    :class="showCommercial ||showEnterprise  ? 'top-20 xl:top-0':''"
                     @mouseover="showEnterprise = true"
                     @mouseout="showEnterprise = false"
                 >
@@ -853,7 +853,7 @@
             <div
                 class="
                     flex flex-col
-                    md:flex-row
+                    xl:flex-row
                     items-center
                     justify-between
                     bg-gradient-to-t from-GreenLizard to-LightGreen
@@ -887,7 +887,7 @@
                         Contact Us
                     </button>
                 </div>
-                <div class="flex font-ubuntu justify-start pt-7 md:pt-0">
+                <div class="flex font-ubuntu justify-start pt-7 xl:pt-0">
                     <div
                         class="
                             grid grid-cols-2
