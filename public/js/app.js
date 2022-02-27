@@ -27223,7 +27223,7 @@ var render = function () {
         "div",
         {
           staticClass:
-            "md:flex justify-around text-GreenLizard p-10 space-y-9 md:space-y-0",
+            "xl:flex justify-around text-GreenLizard p-10 space-y-9 xl:space-y-0",
         },
         [
           _vm._m(0),
