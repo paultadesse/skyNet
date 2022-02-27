@@ -32607,7 +32607,7 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n            ",
+                        "\n              font-bold\n              xl:text-xl\n              pt-2\n              pb-2\n              text-transparent xl:text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n            ",
                     },
                     [
                       _vm._v(
@@ -32670,7 +32670,7 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              text-xl\n              pt-2\n              pb-2\n              text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n            ",
+                        "\n              font-bold\n              xl:text-xl\n              pt-2\n              pb-2\n              text-transparent xl:text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n            ",
                     },
                     [_vm._v("\n            Free Setup Fee\n          ")]
                   ),
@@ -32739,7 +32739,7 @@ var render = function () {
                     "h2",
                     {
                       staticClass:
-                        "\n              font-bold\n              pt-2\n              pb-2\n              text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n             \n            ",
+                        "\n              font-bold\n              pt-2\n              pb-2\n              text-transparent xl:text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n             \n            ",
                     },
                     [_vm._v("\n            Unlimited Internet\n          ")]
                   ),
@@ -32768,14 +32768,14 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            space-x-7\n            shadow-lg\n            col-span-2\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
+                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            xl:space-x-7\n            shadow-lg\n            col-span-2\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
                 },
                 [
                   _c(
                     "svg",
                     {
                       staticClass:
-                        "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen",
+                        "flex-none xl:ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",
@@ -32803,14 +32803,14 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            space-x-7\n            shadow-lg\n            col-span-2\n            xl:col-span-3\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
+                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            xl:space-x-7\n            shadow-lg\n            col-span-2\n            xl:col-span-3\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
                 },
                 [
                   _c(
                     "svg",
                     {
                       staticClass:
-                        "flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen",
+                        "flex-none xl:ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         fill: "none",

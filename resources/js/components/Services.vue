@@ -133,10 +133,10 @@
             <h2
               class="
                 font-bold
-                text-xl
+                xl:text-xl
                 pt-2
                 pb-2
-                text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
+                text-transparent xl:text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
               "
             >
               Packages for Every Budget
@@ -182,10 +182,10 @@
             <h2
               class="
                 font-bold
-                text-xl
+                xl:text-xl
                 pt-2
                 pb-2
-                text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
+                text-transparent xl:text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
               "
             >
               Free Setup Fee
@@ -224,7 +224,7 @@
                 font-bold
                 pt-2
                 pb-2
-                text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
+                text-transparent xl:text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
                
               "
             >
@@ -242,7 +242,7 @@
               flex
               items-center
               divide-x divide-GreenLizard
-              space-x-7
+              xl:space-x-7
               shadow-lg
               col-span-2
               p-4
@@ -253,7 +253,7 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen"
+              class="flex-none xl:ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -281,7 +281,7 @@
               flex
               items-center
               divide-x divide-GreenLizard
-              space-x-7
+              xl:space-x-7
               shadow-lg
               col-span-2
               xl:col-span-3
@@ -293,7 +293,7 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="flex-none ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen"
+              class="flex-none xl:ml-4 h-7 w-7 dark:text-blue-100 text-GreenSheen"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
