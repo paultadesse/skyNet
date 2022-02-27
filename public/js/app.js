@@ -2601,6 +2601,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -27437,8 +27440,7 @@ var render = function () {
               _c(
                 "router-link",
                 {
-                  staticClass:
-                    "border border-transparent hover:border-current max-w-xs cursor-pointer",
+                  staticClass: " max-w-xs cursor-pointer",
                   attrs: { to: "/services" },
                 },
                 [
@@ -27446,9 +27448,18 @@ var render = function () {
                     "div",
                     {
                       staticClass:
-                        "px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
+                        "border border-transparent hover:border-current",
                     },
-                    [_vm._v("Check out our services")]
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "px-9 font-light uppercase text-sm tracking-widest py-3 border border-GreenLizard justify-center flex transform transition duration-300 hover:-translate-y-1 hover:bg-GreenLizard hover:text-DarkLiver hover:-translate-x-1",
+                        },
+                        [_vm._v("Check out our services")]
+                      ),
+                    ]
                   ),
                 ]
               ),
