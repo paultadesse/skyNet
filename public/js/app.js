@@ -32496,7 +32496,7 @@ var render = function () {
             "div",
             {
               staticClass:
-                "\n          grid grid-cols-1\n          gap-4\n          sm:grid-cols-2\n          md:grid-cols-3 md:gap-8\n          text-center\n          md:p-28\n        ",
+                "\n          grid grid-cols-1\n          gap-4\n          pt-8\n          sm:grid-cols-2\n          xl:grid-cols-3 xl:gap-8\n          text-center\n          xl:p-28\n        ",
             },
             [
               _vm._m(0),
@@ -32505,7 +32505,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            md:col-span-1\n            space-y-4\n            p-4\n          ",
+                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            xl:col-span-1\n            space-y-4\n            p-4\n          ",
                 },
                 [
                   _c(
@@ -32564,7 +32564,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            md:col-span-1\n            space-y-4\n            p-4\n          ",
+                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            xl:col-span-1\n            space-y-4\n            p-4\n          ",
                 },
                 [
                   _c(
@@ -32627,7 +32627,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            md:col-span-1\n            space-y-4\n            p-4\n          ",
+                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            xl:col-span-1\n            space-y-4\n            p-4\n          ",
                 },
                 [
                   _c(
@@ -32686,7 +32686,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            md:col-span-1\n            space-y-4\n            p-4\n          ",
+                    "\n            flex flex-col\n            items-start\n            justify-center\n            shadow-lg\n            col-span-2\n            xl:col-span-1\n            space-y-4\n            p-4\n          ",
                 },
                 [
                   _c(
@@ -32790,7 +32790,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            space-x-7\n            shadow-lg\n            col-span-2\n            md:col-span-3\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
+                    "\n            flex\n            items-center\n            divide-x divide-GreenLizard\n            space-x-7\n            shadow-lg\n            col-span-2\n            xl:col-span-3\n            p-4\n            text-gray-500\n            tracking-wide\n            text-sm\n          ",
                 },
                 [
                   _c(
@@ -32836,49 +32836,54 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "\n            flex flex-col\n            justify-evenly\n            space-y-7\n            items-center\n            shadow-lg bg-gradient-to-r from-LightGreen  to-GreenLizard\n            row-span-1\n            col-span-2\n            md:col-span-1 md:row-span-3 md:p-20 md:h-full\n          ",
+          "\n            flex flex-col\n            justify-evenly\n            space-y-7\n            items-center xl:border border-GreenLizard rounded-sm border-opacity-40\n            shadow-2xl\n            row-span-1\n            col-span-2\n            xl:col-span-1 xl:row-span-3 xl:p-20 xl:h-full\n          ",
       },
       [
         _c(
-          "h2",
-          {
-            staticClass:
-              "\n              text-gray-800 text-2xl\n              md:text-7xl\n              tracking-tighter\n              font-bold\n            ",
-          },
-          [_vm._v("\n            Skynet\n          ")]
+          "div",
+          { staticClass: "flex flex-col xl:space-y-8 space-y-8 items-center" },
+          [
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "\n              text-transparent  text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen\n              xl:text-7xl\n              tracking-tighter\n              font-bold\n            ",
+              },
+              [_vm._v("\n            We've Got You Covered !\n          ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "relative shadow-2xl h-20 w-20 rounded-full bg-gradient-to-r from-GreenLizard to-LightGreen",
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "\n                  absolute\n                  top-5\n                  left-3\n                  font-semibold\n                  leading-relaxed\n                  tracking-wide\n                  text-2xl text-transparent text-2xl bg-clip-text bg-gray-800\n                ",
+                  },
+                  [_vm._v("\n                24/7\n              ")]
+                ),
+              ]
+            ),
+          ]
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "flex flex-col items-center" }, [
-          _c(
-            "div",
-            { staticClass: "text-2xl pb-7 text-gray-800 font-semibold" },
-            [_vm._v("\n              We've Got You Covered !\n            ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "relative shadow-2xl h-20 w-20 rounded-full bg-gray-800",
-            },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "\n                  absolute\n                  top-5\n                  left-3\n                  font-semibold\n                  leading-relaxed\n                  tracking-wide\n                  text-2xl text-GreenLizard\n                ",
-                },
-                [_vm._v("\n                24/7\n              ")]
-              ),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-base text-black " }, [
-          _vm._v(
-            "\n            Dependable, Fast Internet connection !\n          "
-          ),
-        ]),
+        _c(
+          "p",
+          {
+            staticClass:
+              "text-base text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen ",
+          },
+          [
+            _vm._v(
+              "\n            Dependable, Fast Internet connection !\n          "
+            ),
+          ]
+        ),
       ]
     )
   },

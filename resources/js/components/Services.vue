@@ -7,10 +7,11 @@
           class="
             grid grid-cols-1
             gap-4
+            pt-8
             sm:grid-cols-2
-            md:grid-cols-3 md:gap-8
+            xl:grid-cols-3 xl:gap-8
             text-center
-            md:p-28
+            xl:p-28
           "
         >
           <div
@@ -18,29 +19,28 @@
               flex flex-col
               justify-evenly
               space-y-7
-              items-center
-              shadow-lg bg-gradient-to-r from-LightGreen  to-GreenLizard
+              items-center xl:border border-GreenLizard rounded-sm border-opacity-40
+              shadow-2xl
               row-span-1
               col-span-2
-              md:col-span-1 md:row-span-3 md:p-20 md:h-full
+              xl:col-span-1 xl:row-span-3 xl:p-20 xl:h-full
             "
           >
-            <h2
+            
+            <div class="flex flex-col xl:space-y-8 space-y-8 items-center">
+              <h2
               class="
-                text-gray-800 text-2xl
-                md:text-7xl
+                text-transparent  text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen
+                xl:text-7xl
                 tracking-tighter
                 font-bold
               "
             >
-              Skynet
+              We've Got You Covered !
             </h2>
-            <div class="flex flex-col items-center">
-              <div class="text-2xl pb-7 text-gray-800 font-semibold">
-                We've Got You Covered !
-              </div>
+              
               <div
-                class="relative shadow-2xl h-20 w-20 rounded-full bg-gray-800"
+                class="relative shadow-2xl h-20 w-20 rounded-full bg-gradient-to-r from-GreenLizard to-LightGreen"
               >
                 <div
                   class="
@@ -50,14 +50,14 @@
                     font-semibold
                     leading-relaxed
                     tracking-wide
-                    text-2xl text-GreenLizard
+                    text-2xl text-transparent text-2xl bg-clip-text bg-gray-800
                   "
                 >
                   24/7
                 </div>
               </div>
             </div>
-            <p class="text-base text-black ">
+            <p class="text-base text-transparent text-2xl bg-clip-text bg-gradient-to-r from-GreenLizard to-GreenSheen ">
               Dependable, Fast Internet connection !
             </p>
           </div>
@@ -68,7 +68,7 @@
               justify-center
               shadow-lg
               col-span-2
-              md:col-span-1
+              xl:col-span-1
               space-y-4
               p-4
             "
@@ -116,7 +116,7 @@
               justify-center
               shadow-lg
               col-span-2
-              md:col-span-1
+              xl:col-span-1
               space-y-4
               p-4
             "
@@ -165,7 +165,7 @@
               justify-center
               shadow-lg
               col-span-2
-              md:col-span-1
+              xl:col-span-1
               space-y-4
               p-4
             "
@@ -204,7 +204,7 @@
               justify-center
               shadow-lg
               col-span-2
-              md:col-span-1
+              xl:col-span-1
               space-y-4
               p-4
             "
@@ -284,7 +284,7 @@
               space-x-7
               shadow-lg
               col-span-2
-              md:col-span-3
+              xl:col-span-3
               p-4
               text-gray-500
               tracking-wide
