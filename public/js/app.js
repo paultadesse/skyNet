@@ -30473,7 +30473,24 @@ var render = function () {
             ]),
           ]),
           _vm._v(" "),
-          _vm._m(1),
+          _c("div", { staticClass: "ml-9 pt-4 space-y-4 text-sm" }, [
+            _c("div", { staticClass: "text-gray-400" }, [_vm._v("Analytics")]),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "text-gray-400",
+                    attrs: { to: "/admin-dashboard" },
+                  },
+                  [_vm._v("Status")]
+                ),
+              ],
+              1
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c(
@@ -30639,16 +30656,6 @@ var staticRenderFns = [
         _c("span", { staticClass: "text-lg" }, [_vm._v("admin")]),
       ]
     )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-9 pt-4 space-y-4 text-sm" }, [
-      _c("div", { staticClass: "text-gray-400" }, [_vm._v("Analytics")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "text-gray-400" }, [_vm._v("Status")]),
-    ])
   },
 ]
 render._withStripped = true

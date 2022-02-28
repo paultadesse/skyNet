@@ -22,7 +22,7 @@
 				</div>
 				<div class="ml-9 pt-4 space-y-4 text-sm">
 					<div class="text-gray-400">Analytics</div>
-					<div class="text-gray-400">Status</div>
+					<div><router-link to="/admin-dashboard" class="text-gray-400">Status</router-link></div>
 				</div>
 			</div>
 			
