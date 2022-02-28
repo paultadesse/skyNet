@@ -40,8 +40,8 @@
                     </thead>
                     <tbody>
                         <!-- Product 1 -->
-                        <tr v-for="(user, index) in registrations" class="bg-gray-900 border-b border-GreenSheen">
-                        	<td class="py-4 px-6 text-sm font-medium text-GreenSheen whitespace-nowrap dark:text-white">
+                        <tr v-for="(user, index) in registrations" class="bg-gray-900 border-b border-gray-700">
+                        	<td class="py-4 px-6 text-sm font-medium text-white whitespace-nowrap dark:text-white">
                                 {{ ++index }}
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-GreenSheen whitespace-nowrap dark:text-white">
@@ -66,10 +66,10 @@
                                 {{ user.site_location_not_listed ? user.site_location_not_listed : '-' }}
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <button class="block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded">edit</button>
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                <a href="#" class="text-red-600 dark:text-red-500 hover:underline">Delete</a>
+                                <button class="block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded">delete</button>
                             </td>
                         </tr>
                     </tbody>

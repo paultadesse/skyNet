@@ -31072,13 +31072,13 @@ var render = function () {
                   _vm._l(_vm.registrations, function (user, index) {
                     return _c(
                       "tr",
-                      { staticClass: "bg-gray-900 border-b border-GreenSheen" },
+                      { staticClass: "bg-gray-900 border-b border-gray-700" },
                       [
                         _c(
                           "td",
                           {
                             staticClass:
-                              "py-4 px-6 text-sm font-medium text-GreenSheen whitespace-nowrap dark:text-white",
+                              "py-4 px-6 text-sm font-medium text-white whitespace-nowrap dark:text-white",
                           },
                           [
                             _vm._v(
@@ -31368,12 +31368,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-blue-600 dark:text-blue-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded",
           },
-          [_vm._v("Edit")]
+          [_vm._v("edit")]
         ),
       ]
     )
@@ -31390,12 +31390,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-red-600 dark:text-red-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded",
           },
-          [_vm._v("Delete")]
+          [_vm._v("delete")]
         ),
       ]
     )
@@ -31445,13 +31445,13 @@ var render = function () {
                   _vm._l(_vm.services, function (service, index) {
                     return _c(
                       "tr",
-                      { staticClass: "bg-gray-900 border-b border-GreenSheen" },
+                      { staticClass: "bg-gray-900 border-b border-gray-700" },
                       [
                         _c(
                           "td",
                           {
                             staticClass:
-                              "py-4 px-6 text-sm font-medium text-GreenSheen whitespace-nowrap dark:text-white",
+                              "py-4 px-6 text-sm font-medium text-white whitespace-nowrap dark:text-white",
                           },
                           [
                             _vm._v(
@@ -31648,12 +31648,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-blue-600 dark:text-blue-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded",
           },
-          [_vm._v("Edit")]
+          [_vm._v("edit")]
         ),
       ]
     )
@@ -31670,12 +31670,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-red-600 dark:text-red-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded",
           },
-          [_vm._v("Delete")]
+          [_vm._v("delete")]
         ),
       ]
     )
@@ -31918,13 +31918,13 @@ var render = function () {
                   _vm._l(_vm.sites, function (site, index) {
                     return _c(
                       "tr",
-                      { staticClass: "bg-gray-900 border-b border-GreenSheen" },
+                      { staticClass: "bg-gray-900 border-b border-gray-700" },
                       [
                         _c(
                           "td",
                           {
                             staticClass:
-                              "py-4 px-6 text-sm font-medium text-GreenSheen whitespace-nowrap dark:text-white",
+                              "py-4 px-6 text-sm font-medium text-white whitespace-nowrap dark:text-white",
                           },
                           [
                             _vm._v(
@@ -32092,12 +32092,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-blue-600 dark:text-blue-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded",
           },
-          [_vm._v("Edit")]
+          [_vm._v("edit")]
         ),
       ]
     )
@@ -32114,12 +32114,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-red-600 dark:text-red-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded",
           },
-          [_vm._v("Delete")]
+          [_vm._v("delete")]
         ),
       ]
     )
@@ -32362,13 +32362,13 @@ var render = function () {
                   _vm._l(_vm.speeds, function (speed, index) {
                     return _c(
                       "tr",
-                      { staticClass: "bg-gray-900 border-b border-GreenSheen" },
+                      { staticClass: "bg-gray-900 border-b border-gray-700" },
                       [
                         _c(
                           "td",
                           {
                             staticClass:
-                              "py-4 px-6 text-sm font-medium text-GreenSheen whitespace-nowrap dark:text-white",
+                              "py-4 px-6 text-sm font-medium text-white whitespace-nowrap dark:text-white",
                           },
                           [
                             _vm._v(
@@ -32536,12 +32536,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-blue-600 dark:text-blue-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded",
           },
-          [_vm._v("Edit")]
+          [_vm._v("edit")]
         ),
       ]
     )
@@ -32558,12 +32558,12 @@ var staticRenderFns = [
       },
       [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "text-red-600 dark:text-red-500 hover:underline",
-            attrs: { href: "#" },
+            staticClass:
+              "block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded",
           },
-          [_vm._v("Delete")]
+          [_vm._v("delete")]
         ),
       ]
     )
