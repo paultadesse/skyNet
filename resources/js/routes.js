@@ -8,6 +8,7 @@ import Login from "./components/Admin/Login";
 import AdminDashboard from "./components/Admin/AdminDashboard";
 import ServiceTypes from "./components/Admin/service-types/ServiceTypes";
 import SiteLocations from "./components/Admin/site-locations/SiteLocations";
+import Speeds from "./components/Admin/speed/Speeds";
 
 export default {
     mode: "history",
@@ -77,6 +78,11 @@ export default {
             path: "/site-locations",
             component: SiteLocations,
             name: "site-locations"
+        },
+        {
+            path: "/speeds",
+            component: Speeds,
+            name: "speeds"
         },
     ],
 };

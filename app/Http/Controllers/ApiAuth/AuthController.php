@@ -22,7 +22,7 @@ class AuthController extends Controller
         {
             return $valid_user;
         }else {
-            return response()->json([ 'message' => 'Credentials are incorrect !']);
+            return response()->json([ 'message' => 'Credentials are incorrect !'], 401);
         }
 
     }

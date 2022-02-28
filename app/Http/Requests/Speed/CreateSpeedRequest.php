@@ -28,7 +28,8 @@ class CreateSpeedRequest extends FormRequest
     {
         return [
             'speed' => 'required',
-            'birr' => 'required'
+            'birr' => 'required',
+            'service_type' => 'required',
         ];
     }
 

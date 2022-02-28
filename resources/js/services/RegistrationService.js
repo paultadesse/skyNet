@@ -11,6 +11,11 @@ export default {
 		return Api.get("site-locations");
 	},
 
+	getSpeeds()
+	{
+		return Api.get("speed");
+	},
+
 	postSiteLocation(siteLocation)
 	{
 		return Api.post("site-location/create", siteLocation);
@@ -25,6 +30,11 @@ export default {
 	{
 		return Api.post("service-type/create", serviceType);
 	},
+
+	postSpeed(speed)
+	{
+		return Api.post("speed/create", speed);
+	}
 
 
 }

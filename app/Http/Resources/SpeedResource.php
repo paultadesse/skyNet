@@ -19,7 +19,7 @@ class SpeedResource extends JsonResource
             'id' => $this->id,
             'speed' => $this->speed,
             'birr' => $this->birr,
-            'serviceType' => ServiceTypeResource::make($this->whenLoaded('serviceType')),
+            'service_type' => ServiceTypeResource::make($this->whenLoaded('serviceType')),
         ];
     }
 }
