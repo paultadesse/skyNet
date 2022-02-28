@@ -31173,7 +31173,9 @@ var render = function () {
                           [
                             _vm._v(
                               "\n                                " +
-                                _vm._s(user.site_location) +
+                                _vm._s(
+                                  user.site_location ? user.site_location : "-"
+                                ) +
                                 "\n                            "
                             ),
                           ]
@@ -31188,7 +31190,11 @@ var render = function () {
                           [
                             _vm._v(
                               "\n                                " +
-                                _vm._s(user.site_location_not_listed) +
+                                _vm._s(
+                                  user.site_location_not_listed
+                                    ? user.site_location_not_listed
+                                    : "-"
+                                ) +
                                 "\n                            "
                             ),
                           ]

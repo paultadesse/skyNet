@@ -60,10 +60,10 @@
                                 {{ user.desired_speed }}
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
-                                {{ user.site_location }}
+                                {{ user.site_location ? user.site_location : '-' }}
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
-                                {{ user.site_location_not_listed }}
+                                {{ user.site_location_not_listed ? user.site_location_not_listed : '-' }}
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
                                 <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
