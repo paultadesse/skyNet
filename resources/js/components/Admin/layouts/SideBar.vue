@@ -48,7 +48,7 @@
 					<div class="text-gray-400">users</div>
 					<div class="text-gray-400">Registrations</div>
 					<div><router-link to="/service-types" class="text-gray-400">Service Types</router-link></div>
-					<div class="text-gray-400">Site Location</div>
+					<div><router-link to="/site-locations" class="text-gray-400">Site Location</router-link></div>
 					<div class="text-gray-400">Speed</div>
 				</div>
 			</div>

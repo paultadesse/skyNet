@@ -7,6 +7,7 @@ import PageNotFound from "./components/PageNotFound";
 import Login from "./components/Admin/Login";
 import AdminDashboard from "./components/Admin/AdminDashboard";
 import ServiceTypes from "./components/Admin/service-types/ServiceTypes";
+import SiteLocations from "./components/Admin/site-locations/SiteLocations";
 
 export default {
     mode: "history",
@@ -71,6 +72,11 @@ export default {
             path: "/service-types",
             component: ServiceTypes,
             name: "service-types"
+        },
+        {
+            path: "/site-locations",
+            component: SiteLocations,
+            name: "site-locations"
         },
     ],
 };

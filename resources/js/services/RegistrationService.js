@@ -11,6 +11,11 @@ export default {
 		return Api.get("site-locations");
 	},
 
+	postSiteLocation(siteLocation)
+	{
+		return Api.post("site-location/create", siteLocation);
+	},
+
 	postRegistration(registration) 
 	{
 		return Api.post("registration/create", registration);
@@ -19,5 +24,7 @@ export default {
 	postServiceType(serviceType) 
 	{
 		return Api.post("service-type/create", serviceType);
-	}
+	},
+
+
 }
