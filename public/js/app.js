@@ -30506,9 +30506,13 @@ var render = function () {
       "div",
       { staticClass: "p-10 space-y-9" },
       [
-        _c("h1", { staticClass: "text-GreenLizard text-3xl" }, [
-          _vm._v("Service Types"),
-        ]),
+        _c(
+          "h1",
+          {
+            staticClass: "text-GreenLizard text-3xl uppercase tracking-widest",
+          },
+          [_vm._v("Service Types")]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "flex" }, [
           _c(
@@ -30546,7 +30550,9 @@ var render = function () {
                 ]
               ),
               _vm._v(" "),
-              _c("span", [_vm._v("Service Type ")]),
+              _c("span", { staticClass: "uppercase text-xs tracking-wider" }, [
+                _vm._v("Service Type "),
+              ]),
             ]
           ),
         ]),
@@ -30944,9 +30950,13 @@ var render = function () {
       "div",
       { staticClass: "p-10 space-y-9" },
       [
-        _c("h1", { staticClass: "text-GreenLizard text-3xl" }, [
-          _vm._v("Site Locations"),
-        ]),
+        _c(
+          "h1",
+          {
+            staticClass: "text-GreenLizard text-3xl uppercase tracking-widest",
+          },
+          [_vm._v("Site Locations")]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "flex" }, [
           _c(

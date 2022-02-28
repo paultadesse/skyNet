@@ -1,7 +1,7 @@
 <template>
 	<div class="font-ubuntu">
 		<div class="p-10 space-y-9"> 
-			<h1 class="text-GreenLizard text-3xl">Site Locations</h1>
+			<h1 class="text-GreenLizard text-3xl uppercase tracking-widest">Site Locations</h1>
 			<div class="flex">
 				<button @click="showForm = !showForm" class="bg-GreenLizard flex items-center space-x-2 px-4 py-2 rounded">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -1,13 +1,13 @@
 <template>
 	<div class="font-ubuntu">
 		<div class="p-10 space-y-9"> 
-			<h1 class="text-GreenLizard text-3xl">Service Types</h1>
+			<h1 class="text-GreenLizard text-3xl uppercase tracking-widest">Service Types</h1>
 			<div class="flex">
 				<button @click="showForm = !showForm" class="bg-GreenLizard flex items-center space-x-2 px-4 py-2 rounded">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 	  					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
 					</svg>
-					 <span>Service Type </span>
+					 <span class="uppercase text-xs tracking-wider">Service Type </span>
 				</button>	
 			</div>
 
