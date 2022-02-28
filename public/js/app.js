@@ -29960,7 +29960,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "thead",
-      { staticClass: "bg-gradient-to-r from-GreenLizard to-LightGreen" },
+      {
+        staticClass:
+          "sticky top-0 bg-gradient-to-r from-GreenLizard to-LightGreen",
+      },
       [
         _c("tr", [
           _c(

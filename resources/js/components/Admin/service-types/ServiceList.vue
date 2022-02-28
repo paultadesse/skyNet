@@ -4,7 +4,7 @@
         <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
             <div style="height: 40rem" class="overflow-hidden shadow-md sm:rounded-lg overflow-y-scroll">
                 <table class="min-w-full">
-                    <thead class="bg-gradient-to-r from-GreenLizard to-LightGreen">
+                    <thead class="sticky top-0 bg-gradient-to-r from-GreenLizard to-LightGreen">
                         <tr>
                         	<th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase">
                                 #
