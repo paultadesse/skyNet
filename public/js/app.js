@@ -7157,6 +7157,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -37327,7 +37330,8 @@ var render = function () {
                   _vm._v(" "),
                   _c("multiselect", {
                     staticClass:
-                      "w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                      "w-full overflow-y-auto border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                    staticStyle: { "max-height": "7rem" },
                     attrs: {
                       "track-by": "name",
                       label: "name",
@@ -37458,7 +37462,8 @@ var render = function () {
                       _vm._v(" "),
                       _c("multiselect", {
                         staticClass:
-                          "w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                          "w-full overflow-y-auto border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                        staticStyle: { "max-height": "7rem" },
                         attrs: {
                           "track-by": "speed",
                           label: "speed",
@@ -37590,7 +37595,8 @@ var render = function () {
                   _vm._v(" "),
                   _c("multiselect", {
                     staticClass:
-                      "w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                      "w-full overflow-y-auto border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none",
+                    staticStyle: { "max-height": "7rem" },
                     attrs: {
                       "track-by": "name",
                       label: "name",

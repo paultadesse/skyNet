@@ -151,8 +151,9 @@
 					  <div class="flex-1">
 					  	<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">service type</label>
 						  <multiselect v-model="register.service_type" 
-								@blur="$v.register.service_type.$touch()"  
-								class="w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
+								@blur="$v.register.service_type.$touch()"
+								style="max-height: 7rem;"  
+								class="w-full overflow-y-auto border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder=" select one" 
 								:options="serviceTypes"
 								@input="setSpeed"  
 								:searchable="false" 
@@ -182,8 +183,9 @@
 						  <div class="flex-1">
 						  		<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">Speed</label>
 								  <multiselect v-model="register.desired_speed" 
-										@blur="$v.register.desired_speed.$touch()"  
-										class="w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="speed" label="speed" placeholder=" select one" 
+										@blur="$v.register.desired_speed.$touch()"
+										style="max-height: 7rem;"  
+										class="w-full overflow-y-auto border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="speed" label="speed" placeholder=" select one" 
 										:options="speed"
 										:searchable="false" 
 										:allow-empty="false">
@@ -212,9 +214,10 @@
 						  <div class="flex-1">
 						  	<label class="block opacity-80 tracking-widest uppercase text-xs font-medium text-GreenLizard">site location</label>
 							  <multiselect v-model="register.site_location" 
-									@blur="$v.register.site_location.$touch()" 
+									@blur="$v.register.site_location.$touch()"
+									style="max-height: 7rem;" 
 									@input='setOtherEmptyOnLocationChanged' 
-									class="w-full border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder="select one" 
+									class="w-full overflow-y-auto border cursor-pointer pl-2 py-2 text-white bg-gray-800 rounded border-opacity-50 border-GreenLizard focus:text-LightGreen focus:bg-gray-800 focus:border-LightGreen focus:outline-none"  track-by="name" label="name" placeholder="select one" 
 									:options="siteLocations" 
 									:searchable="false" 
 									:allow-empty="false">
