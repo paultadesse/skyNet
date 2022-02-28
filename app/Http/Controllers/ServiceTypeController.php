@@ -16,7 +16,6 @@ class ServiceTypeController extends Controller
 
         if($service_types != null)
         {
-            
             $service_types_resource = ServiceTypeResource::collection($service_types);
             return $service_types_resource;
 
@@ -32,7 +31,9 @@ class ServiceTypeController extends Controller
 
         if($service_type->wasRecentlyCreated)
         {
-            return response()->json($service_type, 201);
+            $service_type->load('speeds');
+            $service_type_resource = ServiceTypeResource::make($service_type);
+            return response()->json($service_type_resource, 201);
         }else{
             return response()->json([ 'message' => 'some error occured']);
         }

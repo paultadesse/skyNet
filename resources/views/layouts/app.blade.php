@@ -35,7 +35,21 @@
 </head>
 <body>
     <div id="app">
-        <div class="flex flex-col h-screen justify-between bg-gray-900">
+        {{-- admin view --}}
+        {{-- @auth --}}
+            <div class="flex bg-gray-800 font-poppins">
+                  <div>
+                    <side-bar></side-bar>
+                  </div>
+                  <div class="w-full">
+                    <admin-nav-bar></admin-nav-bar>
+                    <router-view></router-view>
+                  </div>      
+            </div>
+        {{-- @endauth --}}
+
+        {{-- user view --}}
+        <div class="hidden  flex flex-col h-screen justify-between bg-gray-900">
             <div>
                 <nav-bar></nav-bar>
             </div>
@@ -49,6 +63,7 @@
                 <footer-bar></footer-bar>
             </div>
         </div>
+
     </div>
 </body>
 </html>

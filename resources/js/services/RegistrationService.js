@@ -14,5 +14,10 @@ export default {
 	postRegistration(registration) 
 	{
 		return Api.post("registration/create", registration);
+	},
+
+	postServiceType(serviceType) 
+	{
+		return Api.post("service-type/create", serviceType);
 	}
 }

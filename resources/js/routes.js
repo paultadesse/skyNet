@@ -6,6 +6,7 @@ import Register from "./components/Register";
 import PageNotFound from "./components/PageNotFound";
 import Login from "./components/Admin/Login";
 import AdminDashboard from "./components/Admin/AdminDashboard";
+import ServiceTypes from "./components/Admin/service-types/ServiceTypes";
 
 export default {
     mode: "history",
@@ -65,6 +66,11 @@ export default {
             path: "/admin-dashboard",
             component: AdminDashboard,
             name: "admin-dashboard"
+        },
+        {
+            path: "/service-types",
+            component: ServiceTypes,
+            name: "service-types"
         },
     ],
 };

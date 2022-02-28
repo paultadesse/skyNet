@@ -1,25 +1,30 @@
 <template>
-	<div class="flex justify-center">
-		<div class=" text-GreenLizard font-bold  ">
-			
-			<h1>Admin Dashboard Goes Here...</h1>
-			
-		</div>
-	</div>
+  <div class="px-10 ">
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <div class="py-7 font-bold text-xl text-GreenLizard">Dashboard</div>
+    <div class="flex space-x-4">
+      <!-- card components -->
+      <Cards/>
+      <!-- recent activity component -->
+      <RecentActivity/>
+    </div>
+    <!-- revenue -->
+    <Revenue/>
+  </div>
 </template>
 
 <script>
+// @ is an alias to /src
+import Cards from './dashboard-components/Cards.vue'
+import RecentActivity from './dashboard-components/RecentActivity.vue'
+import Revenue from './dashboard-components/Revenue.vue'
+
 export default {
-
   name: 'AdminDashboard',
-
-  data () {
-    return {
-
-    }
+  components: {
+    Cards,
+    RecentActivity,
+    Revenue,
   }
 }
 </script>
-
-<style lang="css" scoped>
-</style>

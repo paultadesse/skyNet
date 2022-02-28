@@ -58,6 +58,9 @@ Vue.component("nav-bar", require("./components/Navbar.vue").default);
 Vue.component("footer-bar", require("./components/Footerbar.vue").default);
 Vue.component("register-banner", require("./components/Registerbanner.vue").default);
 
+Vue.component("admin-nav-bar", require("./components/Admin/layouts/AdminNavBar.vue").default);
+Vue.component("side-bar", require("./components/Admin/layouts/SideBar.vue").default);
+
 const app = new Vue({
     el: "#app",
     router: new VueRouter(routes),
