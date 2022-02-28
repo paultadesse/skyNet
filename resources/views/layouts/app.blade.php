@@ -37,7 +37,7 @@
     <div id="app">
         {{-- admin view --}}
         {{-- @auth --}}
-            <div class="hidden flex bg-gray-800 font-poppins">
+            <div class="flex bg-gray-800 font-poppins">
                   <div>
                     <side-bar></side-bar>
                   </div>
@@ -49,7 +49,7 @@
         {{-- @endauth --}}
 
         {{-- user view --}}
-        <div class="  flex flex-col h-screen justify-between bg-gray-900">
+        <div class="hidden  flex flex-col h-screen justify-between bg-gray-900">
             <div>
                 <nav-bar></nav-bar>
             </div>

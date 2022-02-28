@@ -16,6 +16,10 @@ export default {
 		return Api.get("speed");
 	},
 
+	getRegistrations(){
+		return Api.get("registrations");
+	},
+
 	postSiteLocation(siteLocation)
 	{
 		return Api.post("site-location/create", siteLocation);

@@ -9,6 +9,7 @@ import AdminDashboard from "./components/Admin/AdminDashboard";
 import ServiceTypes from "./components/Admin/service-types/ServiceTypes";
 import SiteLocations from "./components/Admin/site-locations/SiteLocations";
 import Speeds from "./components/Admin/speed/Speeds";
+import Registerations from "./components/Admin/registrations/Registration";
 
 export default {
     mode: "history",
@@ -83,6 +84,11 @@ export default {
             path: "/speeds",
             component: Speeds,
             name: "speeds"
+        },
+        {
+            path: "/registrations",
+            component: Registerations,
+            name: "registrations"
         },
     ],
 };

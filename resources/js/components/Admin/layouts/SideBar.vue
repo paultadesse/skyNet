@@ -46,7 +46,7 @@
 				</div>
 				<div class="ml-9 pt-4 space-y-4 text-sm">
 					<div class="text-gray-400">users</div>
-					<div class="text-gray-400">Registrations</div>
+					<div><router-link to="/registrations" class="text-gray-400">Registrations</router-link></div>
 					<div><router-link to="/service-types" class="text-gray-400">Service Types</router-link></div>
 					<div><router-link to="/site-locations" class="text-gray-400">Site Location</router-link></div>
 					<div><router-link to="/speeds" class="text-gray-400">Speed</router-link></div>
