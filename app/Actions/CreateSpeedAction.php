@@ -14,7 +14,6 @@ class CreateSpeedAction {
 		$service_type = ServiceType::find($request['service_type']);
 
 		if(!$service_type){
-			// abort(404);
 			throw new ModelNotFoundException();
 		}
 
