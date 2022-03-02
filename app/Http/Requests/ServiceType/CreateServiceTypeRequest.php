@@ -15,8 +15,8 @@ class CreateServiceTypeRequest extends FormRequest
      */
     public function authorize()
     {
-        //just set it to TRUE ONLY FOR NOW but [ ONLY AUTH USER CAN ACCESS THIS REQUEST in the future]
-        return true;
+        //[ ONLY AUTH USER with ADMIN role CAN ACCESS THIS REQUEST ]
+        return auth()->user()->hasRole('admin');
     }
 
     /**

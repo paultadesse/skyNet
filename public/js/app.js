@@ -2763,8 +2763,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this.$router.push({
           name: "admin-login"
         });
-      })["catch"](function (error) {
-        console.log(error);
+      })["catch"](function (error) {// console.log(error)
       });
     }
   }

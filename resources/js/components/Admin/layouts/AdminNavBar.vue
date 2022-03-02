@@ -76,7 +76,7 @@ export default {
   		this.$store.dispatch('User/logout').then(() => {
   			this.$router.push({ name: "admin-login" });
   		}).catch((error) => {
-  			console.log(error)
+  			// console.log(error)
   		})
   	},
   }
