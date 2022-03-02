@@ -45,7 +45,7 @@ import RegistrationService from '../../../services/RegistrationService.js';
 import BaseInput from '../../BaseInput';
 import { required } from 'vuelidate/lib/validators';
 import SiteLocationList from './SiteLocationList';
-
+import { mapState } from 'vuex';
 
 export default {
 
@@ -59,19 +59,16 @@ export default {
   data () {
     return {
     	showForm: false,
-    	siteLocations: [],
     	siteLocation: this.createFreshSiteLocationObject(),
     }
   },
 
   created() {
-  	RegistrationService.getSiteLocations()
-  		.then(response => { 
-  			this.siteLocations = response.data.data
-  		})
-  		.catch(error => { 
-  			console.log('Ther was an error: ' + error.response[0]);
-  		 });
+  	this.$store.dispatch('SiteLocation/fetchSiteLocations');
+  },
+
+  computed:{
+  	...mapState('SiteLocation', ['siteLocations'])
   },
 
   validations: {
@@ -86,22 +83,19 @@ export default {
 
   		if (!this.$v.$invalid) {
 
-  			RegistrationService.postSiteLocation(this.siteLocation)
-  			.then((response) => { 
-  				this.$swal.fire({
-				  position: 'center',
-				  icon: 'success',
-				  title: "<p style='color:#B5F44A' >" +'Your New Site Has Been Added ' +"</p>",
-				  showConfirmButton: false,
-				  background: '#111',
-				  timer: 3500
-				})
-				  this.siteLocations.push(response.data)
-  				this.siteLocation = this.createFreshSiteLocationObject();
-  				this.$v.$reset()
-  			})
-  			.catch((error) => {
-  				this.$swal.fire({
+  			this.$store.dispatch('SiteLocation/createSiteLocation', this.siteLocation).then(() => {
+	  				this.$swal.fire({
+					  position: 'center',
+					  icon: 'success',
+					  title: "<p style='color:#B5F44A' >" +'Your New Site Has Been Added ' +"</p>",
+					  showConfirmButton: false,
+					  background: '#111',
+					  timer: 3500
+						})
+		  				this.siteLocation = this.createFreshSiteLocationObject();
+		  				this.$v.$reset()
+		  			}).catch(() => {
+  			this.$swal.fire({
 				  position: 'center',
 				  icon: 'error',
 				  title: "<p style='color:red' >" +'Some error occured please try again.' +"</p>",
@@ -109,8 +103,32 @@ export default {
 				  confirmButtonColor: 'red',
 				  background: '#111',
 				})
-  				this.siteLocation = this.createFreshSiteLocationObject();
-  			})
+  		})
+  		// 	RegistrationService.postSiteLocation(this.siteLocation)
+  		// 	.then((response) => { 
+  		// 		this.$swal.fire({
+				//   position: 'center',
+				//   icon: 'success',
+				//   title: "<p style='color:#B5F44A' >" +'Your New Site Has Been Added ' +"</p>",
+				//   showConfirmButton: false,
+				//   background: '#111',
+				//   timer: 3500
+				// })
+				//   this.siteLocations.push(response.data)
+  		// 		this.siteLocation = this.createFreshSiteLocationObject();
+  		// 		this.$v.$reset()
+  		// 	})
+  		// 	.catch((error) => {
+  		// 		this.$swal.fire({
+				//   position: 'center',
+				//   icon: 'error',
+				//   title: "<p style='color:red' >" +'Some error occured please try again.' +"</p>",
+				//   showConfirmButton: true,
+				//   confirmButtonColor: 'red',
+				//   background: '#111',
+				// })
+  		// 		this.siteLocation = this.createFreshSiteLocationObject();
+  		// 	})
   		}
   	},
   	createFreshSiteLocationObject() {

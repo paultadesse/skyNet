@@ -3283,8 +3283,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../services/RegistrationService.js */ "./resources/js/services/RegistrationService.js");
 /* harmony import */ var _BaseInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../BaseInput */ "./resources/js/components/BaseInput.vue");
-/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
 /* harmony import */ var _SiteLocationList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SiteLocationList */ "./resources/js/components/Admin/site-locations/SiteLocationList.vue");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -3327,6 +3334,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 
@@ -3340,35 +3348,29 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       showForm: false,
-      siteLocations: [],
       siteLocation: this.createFreshSiteLocationObject()
     };
   },
   created: function created() {
-    var _this = this;
-
-    _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].getSiteLocations().then(function (response) {
-      _this.siteLocations = response.data.data;
-    })["catch"](function (error) {
-      console.log('Ther was an error: ' + error.response[0]);
-    });
+    this.$store.dispatch('SiteLocation/fetchSiteLocations');
   },
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_3__.mapState)('SiteLocation', ['siteLocations'])),
   validations: {
     siteLocation: {
       name: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__.required
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
       }
     }
   },
   methods: {
     createSiteLocation: function createSiteLocation() {
-      var _this2 = this;
+      var _this = this;
 
       this.$v.$touch();
 
       if (!this.$v.$invalid) {
-        _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].postSiteLocation(this.siteLocation).then(function (response) {
-          _this2.$swal.fire({
+        this.$store.dispatch('SiteLocation/createSiteLocation', this.siteLocation).then(function () {
+          _this.$swal.fire({
             position: 'center',
             icon: 'success',
             title: "<p style='color:#B5F44A' >" + 'Your New Site Has Been Added ' + "</p>",
@@ -3377,13 +3379,11 @@ __webpack_require__.r(__webpack_exports__);
             timer: 3500
           });
 
-          _this2.siteLocations.push(response.data);
+          _this.siteLocation = _this.createFreshSiteLocationObject();
 
-          _this2.siteLocation = _this2.createFreshSiteLocationObject();
-
-          _this2.$v.$reset();
-        })["catch"](function (error) {
-          _this2.$swal.fire({
+          _this.$v.$reset();
+        })["catch"](function () {
+          _this.$swal.fire({
             position: 'center',
             icon: 'error',
             title: "<p style='color:red' >" + 'Some error occured please try again.' + "</p>",
@@ -3391,9 +3391,31 @@ __webpack_require__.r(__webpack_exports__);
             confirmButtonColor: 'red',
             background: '#111'
           });
-
-          _this2.siteLocation = _this2.createFreshSiteLocationObject();
-        });
+        }); // 	RegistrationService.postSiteLocation(this.siteLocation)
+        // 	.then((response) => { 
+        // 		this.$swal.fire({
+        //   position: 'center',
+        //   icon: 'success',
+        //   title: "<p style='color:#B5F44A' >" +'Your New Site Has Been Added ' +"</p>",
+        //   showConfirmButton: false,
+        //   background: '#111',
+        //   timer: 3500
+        // })
+        //   this.siteLocations.push(response.data)
+        // 		this.siteLocation = this.createFreshSiteLocationObject();
+        // 		this.$v.$reset()
+        // 	})
+        // 	.catch((error) => {
+        // 		this.$swal.fire({
+        //   position: 'center',
+        //   icon: 'error',
+        //   title: "<p style='color:red' >" +'Some error occured please try again.' +"</p>",
+        //   showConfirmButton: true,
+        //   confirmButtonColor: 'red',
+        //   background: '#111',
+        // })
+        // 		this.siteLocation = this.createFreshSiteLocationObject();
+        // 	})
       }
     },
     createFreshSiteLocationObject: function createFreshSiteLocationObject() {
@@ -8151,6 +8173,56 @@ var mutations = {
 
 /***/ }),
 
+/***/ "./resources/js/store/SiteLocation/index.js":
+/*!**************************************************!*\
+  !*** ./resources/js/store/SiteLocation/index.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/RegistrationService.js */ "./resources/js/services/RegistrationService.js");
+
+var state = {
+  siteLocations: []
+};
+var getters = {// siteLocations: state => state.siteLocations
+};
+var actions = {
+  createSiteLocation: function createSiteLocation(_ref, siteLocation) {
+    var commit = _ref.commit;
+    return _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].postSiteLocation(siteLocation).then(function (response) {
+      commit('ADD_SITE_LOCATION', response.data);
+    });
+  },
+  fetchSiteLocations: function fetchSiteLocations(_ref2) {
+    var commit = _ref2.commit;
+    _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].getSiteLocations().then(function (response) {
+      commit('SET_SITE_LOCATIONS', response.data.data);
+    })["catch"](function () {});
+  }
+};
+var mutations = {
+  ADD_SITE_LOCATION: function ADD_SITE_LOCATION(state, siteLocation) {
+    state.siteLocations.push(siteLocation);
+  },
+  SET_SITE_LOCATIONS: function SET_SITE_LOCATIONS(state, siteLocations) {
+    state.siteLocations = siteLocations;
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  namespaced: true,
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
 /***/ "./resources/js/store/index.js":
 /*!*************************************!*\
   !*** ./resources/js/store/index.js ***!
@@ -8162,19 +8234,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _ServiceType__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ServiceType */ "./resources/js/store/ServiceType/index.js");
+/* harmony import */ var _SiteLocation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SiteLocation */ "./resources/js/store/SiteLocation/index.js");
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_2__["default"]);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_2__["default"].Store({
+
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_3__["default"]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_3__["default"].Store({
   state: {},
   mutations: {},
   actions: {},
   modules: {
-    ServiceType: _ServiceType__WEBPACK_IMPORTED_MODULE_0__["default"]
+    ServiceType: _ServiceType__WEBPACK_IMPORTED_MODULE_0__["default"],
+    SiteLocation: _SiteLocation__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 }));
 
