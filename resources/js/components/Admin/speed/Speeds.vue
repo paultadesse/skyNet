@@ -41,6 +41,7 @@
 								</svg>								
 								<div>
 									<p class="text-red-500 text-sm" v-if="!$v.speed.birr.required">Birr is required</p>
+									<p class="text-red-500 text-sm" v-if="!$v.speed.birr.numeric">Alphabets are not allowed.</p>
 								</div>
 			  			</div>
 					</template>
@@ -86,7 +87,7 @@ import Multiselect from 'vue-multiselect'
 
 import RegistrationService from '../../../services/RegistrationService.js';
 import BaseInput from '../../BaseInput';
-import { required } from 'vuelidate/lib/validators';
+import { required, numeric } from 'vuelidate/lib/validators';
 import SpeedList from './SpeedList';
 
 
@@ -131,7 +132,7 @@ export default {
   validations: {
   	speed: {
   		speed: { required },
-  		birr: { required },
+  		birr: { required, numeric },
   		service_type: { required }
   	}
   },

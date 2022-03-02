@@ -3591,6 +3591,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -3632,7 +3633,8 @@ __webpack_require__.r(__webpack_exports__);
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
       },
       birr: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required,
+        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.numeric
       },
       service_type: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
@@ -32796,6 +32798,16 @@ var render = function () {
                                             staticClass: "text-red-500 text-sm",
                                           },
                                           [_vm._v("Birr is required")]
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    !_vm.$v.speed.birr.numeric
+                                      ? _c(
+                                          "p",
+                                          {
+                                            staticClass: "text-red-500 text-sm",
+                                          },
+                                          [_vm._v("Alphabets are not allowed.")]
                                         )
                                       : _vm._e(),
                                   ]),
