@@ -45,7 +45,7 @@ import RegistrationService from '../../../services/RegistrationService.js';
 import BaseInput from '../../BaseInput';
 import { required } from 'vuelidate/lib/validators';
 import ServiceList from './ServiceList';
-
+import { mapState	 } from 'vuex';
 
 export default {
 
@@ -59,19 +59,16 @@ export default {
   data () {
     return {
     	showForm: false,
-    	serviceTypes: [],
     	serviceType: this.createFreshServiceTypeObject(),
     }
   },
 
   created() {
-  	RegistrationService.getServiceTypes()
-  		.then(response => { 
-  			this.serviceTypes = response.data.data
-  		})
-  		.catch(error => { 
-  			console.log('Ther was an error: ' + error.response[0]);
-  		 });
+  	this.$store.dispatch('ServiceType/fetchServiceTypes');
+  },
+
+  computed: {
+  	...mapState('ServiceType', ['serviceTypes'])
   },
 
   validations: {
@@ -85,31 +82,26 @@ export default {
   		this.$v.$touch();
 
   		if (!this.$v.$invalid) {
-
-  			RegistrationService.postServiceType(this.serviceType)
-  			.then((response) => { 
-  				this.$swal.fire({
-				  position: 'center',
-				  icon: 'success',
-				  title: "<p style='color:#B5F44A' >" +'Service Type Successfully Added ' +"</p>",
-				  showConfirmButton: false,
-				  background: '#111',
-				  timer: 3500
-				})
-				this.serviceTypes.push(response.data)
+  				this.$store.dispatch('ServiceType/createServiceType', this.serviceType).then(() => {
+  					this.$swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: "<p style='color:#B5F44A' >" +'Service Type Successfully Added ' +"</p>",
+                  showConfirmButton: false,
+                  background: '#111',
+                  timer: 3500
+                })
+  				this.$v.$reset();
   				this.serviceType = this.createFreshServiceTypeObject();
-  				this.$v.$reset()
-  			})
-  			.catch((error) => {
-  				this.$swal.fire({
-				  position: 'center',
-				  icon: 'error',
-				  title: "<p style='color:red' >" +'Some error occured please try again.' +"</p>",
-				  showConfirmButton: true,
-				  confirmButtonColor: 'red',
-				  background: '#111',
-				})
-  				this.serviceType = this.createFreshServiceTypeObject();
+  			}).catch(() => {
+	  				this.$swal.fire({
+						  position: 'center',
+						  icon: 'error',
+						  title: "<p style='color:red' >" +'Some error occured please try again.' +"</p>",
+						  showConfirmButton: true,
+						  confirmButtonColor: 'red',
+						  background: '#111',
+						})
   			})
   		}
   	},

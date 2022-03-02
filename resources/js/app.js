@@ -14,6 +14,8 @@ import VueSweetalert2 from 'vue-sweetalert2';
 // If you don't need the styles, do not connect
 import 'sweetalert2/dist/sweetalert2.min.css';
 
+import store from "./store";
+
 Vue.use(VueSweetalert2);
 
 const requireComponent = require.context(
@@ -59,9 +61,10 @@ Vue.component("footer-bar", require("./components/Footerbar.vue").default);
 Vue.component("register-banner", require("./components/Registerbanner.vue").default);
 
 Vue.component("admin-nav-bar", require("./components/Admin/layouts/AdminNavBar.vue").default);
-Vue.component("side-bar", require("./components/Admin/layouts/SideBar.vue").default);
+Vue.component("side-bar", require("./components/Admin/layouts/SideBar.vue").default);   
 
 const app = new Vue({
     el: "#app",
+    store,
     router: new VueRouter(routes),
 });
