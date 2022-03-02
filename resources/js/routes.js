@@ -10,6 +10,7 @@ import ServiceTypes from "./components/Admin/service-types/ServiceTypes";
 import SiteLocations from "./components/Admin/site-locations/SiteLocations";
 import Speeds from "./components/Admin/speed/Speeds";
 import Registerations from "./components/Admin/registrations/Registration";
+import store from "./store";
 
 export default {
     mode: "history",
@@ -21,18 +22,13 @@ export default {
         }else {
             //scroll to the top
             return { x:0, y:0, behavior: 'smooth'}
-            
-            // return new Promise((resolve, reject) => {
-            //   setTimeout(() => {
-            //     resolve({ x:0, y:0, behavior: 'smooth' })
-            //   }, 500)
-            // })
         }
     },
     routes: [
         {
             path: "*",
-            component: PageNotFound
+            component: PageNotFound,
+            name: "404"
         },
 
         {
@@ -68,27 +64,42 @@ export default {
         {
             path: "/admin-dashboard",
             component: AdminDashboard,
-            name: "admin-dashboard"
+            name: "admin-dashboard",
+            beforeEnter:(to, from, next) => {
+                store.getters['User/currentUser'].length !== 0 ? next() : next('404');
+            }
         },
         {
             path: "/service-types",
             component: ServiceTypes,
-            name: "service-types"
+            name: "service-types",
+            beforeEnter:(to, from, next) => {
+                store.getters['User/currentUser'].length !== 0 ? next() : next('404');
+            }
         },
         {
             path: "/site-locations",
             component: SiteLocations,
-            name: "site-locations"
+            name: "site-locations",
+            beforeEnter:(to, from, next) => {
+                store.getters['User/currentUser'].length !== 0 ? next() : next('404');
+            }
         },
         {
             path: "/speeds",
             component: Speeds,
-            name: "speeds"
+            name: "speeds",
+            beforeEnter:(to, from, next) => {
+                store.getters['User/currentUser'].length !== 0 ? next() : next('404');
+            }
         },
         {
             path: "/registrations",
             component: Registerations,
-            name: "registrations"
+            name: "registrations",
+            beforeEnter:(to, from, next) => {
+                store.getters['User/currentUser'].length !== 0 ? next() : next('404');
+            }
         },
     ],
 };

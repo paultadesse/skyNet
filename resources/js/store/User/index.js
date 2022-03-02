@@ -4,7 +4,7 @@ const state = {
     user: JSON.parse(localStorage.getItem("user")) || []
 };
 const getters = { 
-    // currentuser: state => state.user,
+    currentUser: state => state.user,
 };
 const actions = {
     login({ commit }, user) {

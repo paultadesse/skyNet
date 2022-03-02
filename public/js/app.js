@@ -8081,6 +8081,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Admin_site_locations_SiteLocations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Admin/site-locations/SiteLocations */ "./resources/js/components/Admin/site-locations/SiteLocations.vue");
 /* harmony import */ var _components_Admin_speed_Speeds__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Admin/speed/Speeds */ "./resources/js/components/Admin/speed/Speeds.vue");
 /* harmony import */ var _components_Admin_registrations_Registration__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Admin/registrations/Registration */ "./resources/js/components/Admin/registrations/Registration.vue");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./store */ "./resources/js/store/index.js");
+
 
 
 
@@ -8106,16 +8108,13 @@ __webpack_require__.r(__webpack_exports__);
         x: 0,
         y: 0,
         behavior: 'smooth'
-      }; // return new Promise((resolve, reject) => {
-      //   setTimeout(() => {
-      //     resolve({ x:0, y:0, behavior: 'smooth' })
-      //   }, 500)
-      // })
+      };
     }
   },
   routes: [{
     path: "*",
-    component: _components_PageNotFound__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _components_PageNotFound__WEBPACK_IMPORTED_MODULE_5__["default"],
+    name: "404"
   }, {
     path: "/",
     component: _components_Home__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -8143,23 +8142,38 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     path: "/admin-dashboard",
     component: _components_Admin_AdminDashboard__WEBPACK_IMPORTED_MODULE_7__["default"],
-    name: "admin-dashboard"
+    name: "admin-dashboard",
+    beforeEnter: function beforeEnter(to, from, next) {
+      _store__WEBPACK_IMPORTED_MODULE_12__["default"].getters["User/currentUser"].length !== 0 ? next() : next('404');
+    }
   }, {
     path: "/service-types",
     component: _components_Admin_service_types_ServiceTypes__WEBPACK_IMPORTED_MODULE_8__["default"],
-    name: "service-types"
+    name: "service-types",
+    beforeEnter: function beforeEnter(to, from, next) {
+      _store__WEBPACK_IMPORTED_MODULE_12__["default"].getters["User/currentUser"].length !== 0 ? next() : next('404');
+    }
   }, {
     path: "/site-locations",
     component: _components_Admin_site_locations_SiteLocations__WEBPACK_IMPORTED_MODULE_9__["default"],
-    name: "site-locations"
+    name: "site-locations",
+    beforeEnter: function beforeEnter(to, from, next) {
+      _store__WEBPACK_IMPORTED_MODULE_12__["default"].getters["User/currentUser"].length !== 0 ? next() : next('404');
+    }
   }, {
     path: "/speeds",
     component: _components_Admin_speed_Speeds__WEBPACK_IMPORTED_MODULE_10__["default"],
-    name: "speeds"
+    name: "speeds",
+    beforeEnter: function beforeEnter(to, from, next) {
+      _store__WEBPACK_IMPORTED_MODULE_12__["default"].getters["User/currentUser"].length !== 0 ? next() : next('404');
+    }
   }, {
     path: "/registrations",
     component: _components_Admin_registrations_Registration__WEBPACK_IMPORTED_MODULE_11__["default"],
-    name: "registrations"
+    name: "registrations",
+    beforeEnter: function beforeEnter(to, from, next) {
+      _store__WEBPACK_IMPORTED_MODULE_12__["default"].getters["User/currentUser"].length !== 0 ? next() : next('404');
+    }
   }]
 });
 
@@ -8383,7 +8397,10 @@ __webpack_require__.r(__webpack_exports__);
 var state = {
   user: JSON.parse(localStorage.getItem("user")) || []
 };
-var getters = {// currentuser: state => state.user,
+var getters = {
+  currentUser: function currentUser(state) {
+    return state.user;
+  }
 };
 var actions = {
   login: function login(_ref, user) {
