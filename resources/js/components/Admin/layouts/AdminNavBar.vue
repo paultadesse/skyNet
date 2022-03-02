@@ -36,14 +36,17 @@
 				</div>
 				<span class="font-light text-sm">Notification</span>
 			</div>
-			<div>
+			<div v-if="user.length !== 0">
 				<div class="flex items-center space-x-2 cursor-pointer">
 					<div class="h-10 w-10 bg-gray-800 rounded-full border border-4 border-black"></div> 
 					<div> 
-						<div>
-							Brook Tadesse
+						<div class="uppercase">
+							{{ user.user.name }}
 						</div>
-						<div class="text-xs font-light">SUPER-ADMIN</div>
+						<div class="text-xs font-light">
+							<div>ADMIN</div>
+							<div><button @click="getOut" class="uppercase bg-black py-1 px-4 rounded text-GreenLizard">logout </button></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -52,6 +55,8 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
 
   name: 'AdminNavBar',
@@ -60,6 +65,20 @@ export default {
     return {
 
     }
+  },
+
+  computed:{
+  	...mapState('User',['user'])
+  },
+
+  methods:{
+  	getOut(){
+  		this.$store.dispatch('User/logout').then(() => {
+  			this.$router.push({ name: "admin-login" });
+  		}).catch((error) => {
+  			console.log(error)
+  		})
+  	},
   }
 }
 </script>

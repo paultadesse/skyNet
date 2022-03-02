@@ -44,6 +44,7 @@
 <script>
 import BaseInput from '../BaseInput';
 import { required, email } from 'vuelidate/lib/validators';
+import User from '../../services/User/UserService.js';
 
 export default {
 
@@ -59,10 +60,6 @@ export default {
     }
   },
 
-  created() {
-
-  },
-
   validations: {
   	login: {
   		email: {required, email},
@@ -71,15 +68,32 @@ export default {
   },
 
   methods: {
+  	
   	createFreshRLoginObject() {
       return {
-		email: "",
+				email: "",
         password: "",	
       };
     },
 
     adminLogin(){
     	this.$v.$touch();
+    	if (!this.$v.$invalid) {
+    		this.$store.dispatch('User/login', this.login).then(() => {
+    				this.$v.$reset();
+    				this.login = this.createFreshRLoginObject();
+    				this.$router.push({ name: "admin-dashboard" });
+    		}).catch((error) => {
+	    			this.$swal.fire({
+					  position: 'center',
+					  icon: 'error',
+					  title: "<p style='color:red' >" + error.response.data.message +"</p>",
+					  showConfirmButton: true,
+					  confirmButtonColor: 'red',
+					  background: '#111',
+					})
+    		})
+  		}
     }
   }
 }
