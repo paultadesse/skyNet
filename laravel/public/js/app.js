@@ -34171,8 +34171,8 @@ var render = function () {
           _vm._v(" "),
           _c(
             "p",
-            { staticClass: " text-DarkLiver text-sm font-bold uppercase" },
-            [_vm._v("Made with ❤️ in 🇪🇹")]
+            { staticClass: " text-DarkLiver text-sm font-bold tracking-wider" },
+            [_vm._v("Powered By Skynetvisp.")]
           ),
         ]
       ),

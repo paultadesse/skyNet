@@ -66,7 +66,7 @@
     <div class="flex flex-col space-y-1 justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-16">
       <p class="font-ubuntu  text-sm text-DarkLiver font-bold">&copy; {{ new Date().getFullYear() }} &middot; Skynet - <span class="text-xs">All rights reserved.</span></p>
       <hr class="w-5 border-DarkLiver">
-      <p class=" text-DarkLiver text-sm font-bold uppercase">Made with ❤️ in 🇪🇹</p>
+      <p class=" text-DarkLiver text-sm font-bold tracking-wider">Powered By Skynetvisp.</p>
     </div>
   </div>
 </template>
