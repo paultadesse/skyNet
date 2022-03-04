@@ -34153,12 +34153,12 @@ var render = function () {
         "div",
         {
           staticClass:
-            "flex flex-col space-y-1 justify-center items-center bg-gradient-to-b p-4 from-GreenLizard to-LightGreen h-16",
+            "flex flex-col space-y-1 justify-center items-center bg-gray-900 h-16",
         },
         [
           _c(
             "p",
-            { staticClass: "font-ubuntu  text-sm text-DarkLiver font-bold" },
+            { staticClass: "font-ubuntu  text-sm text-GreenSheen font-bold" },
             [
               _vm._v("© " + _vm._s(new Date().getFullYear()) + " · Skynet - "),
               _c("span", { staticClass: "text-xs" }, [
@@ -34171,7 +34171,9 @@ var render = function () {
           _vm._v(" "),
           _c(
             "p",
-            { staticClass: " text-DarkLiver text-sm font-bold tracking-wider" },
+            {
+              staticClass: " text-GreenSheen text-sm font-bold tracking-wider",
+            },
             [_vm._v("Powered By Skynetvisp.")]
           ),
         ]
