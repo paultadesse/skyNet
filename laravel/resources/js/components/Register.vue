@@ -386,13 +386,13 @@ export default {
     createFreshRegisterObject() {
       return {
         name: "",
-				phone_number: "",
-				email: "",
-				service_type: "",
-				desired_speed: "",
-				site_location: "",
-				site_location_not_listed: "",
-				comment: "test"
+		phone_number: "",
+		email: "",
+		service_type: "",
+		desired_speed: "",
+		site_location: "",
+		site_location_not_listed: "",
+		comment: "test"
       };
     },
   }
