@@ -20,6 +20,8 @@ class CreateRegistrationAction {
             'comment' 		=> $request['comment']
 		]);
 
+		// i think i can remove the [ if ] block and directly return [ $created_registration ] since it will be checked in the controller
+
 		if ($created_registration->wasRecentlyCreated)
 		{
 			return $created_registration;	
