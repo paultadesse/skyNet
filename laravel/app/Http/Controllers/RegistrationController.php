@@ -30,6 +30,7 @@ class RegistrationController extends Controller
 
         if ($registration->wasRecentlyCreated) 
         {
+            // i can also return the newly created registration using [ RegistrationResource ] for now i'll leave it.
             return response()->json($registration, 201);    
         }else{
             return response()->json([ 'message' => 'some error occured']);
