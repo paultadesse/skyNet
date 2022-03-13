@@ -13,6 +13,8 @@ class CreateServiceTypeAction {
 			'name' => $request['name']
 		]);
 
+		// i think i can remove the [ if ] block and directly return [ $created_service_type ] since it will be checked in the controller
+
 		if($created_service_type->wasRecentlyCreated)
 		{
 			return $created_service_type;
