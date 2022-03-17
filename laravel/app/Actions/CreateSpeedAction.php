@@ -22,6 +22,8 @@ class CreateSpeedAction {
 			'birr' => $request['birr'],
 		]);
 
+		// i think i can remove the [ if ] block and directly return [ $created_speed ] since it will be checked in the controller
+
 		if($created_speed->wasRecentlyCreated)
 		{
 			return $created_speed;
