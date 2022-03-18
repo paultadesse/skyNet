@@ -42,6 +42,8 @@
 </template>
 
 <script>
+/*jshint esversion: 6 */
+	
 import BaseInput from '../BaseInput';
 import { required, email } from 'vuelidate/lib/validators';
 import User from '../../services/User/UserService.js';
