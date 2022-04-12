@@ -37,7 +37,7 @@ class SiteLocationController extends Controller
 
         }else {
 
-            return response()->json([ 'message' => 'Record not updated']);
+            return response()->json([ 'message' => 'Record not updated'], abort);
 
         }
 

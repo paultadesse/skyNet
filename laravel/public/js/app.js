@@ -3317,10 +3317,45 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     editSite: function editSite() {
+      var _this = this;
+
       this.$v.$touch();
+
+      if (!this.$v.$invalid) {
+        this.$store.dispatch('SiteLocation/updateSiteLocation', this.site).then(function () {
+          _this.$swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: "<p style='color:#B5F44A' >" + 'Your Site Has Been Updated' + "</p>",
+            showConfirmButton: false,
+            background: '#111',
+            timer: 3500
+          });
+
+          _this.site = _this.createFreshSiteObject();
+
+          _this.$v.$reset();
+
+          _this.closeEditForm();
+        })["catch"](function () {
+          _this.$swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: "<p style='color:red' >" + 'Record not updated.' + "</p>",
+            showConfirmButton: true,
+            confirmButtonColor: 'red',
+            background: '#111'
+          });
+        });
+      }
     },
     closeEditForm: function closeEditForm() {
       this.$emit('close-modal');
+    },
+    createFreshSiteObject: function createFreshSiteObject() {
+      return {
+        name: ""
+      };
     }
   }
 });
@@ -8365,6 +8400,9 @@ __webpack_require__.r(__webpack_exports__);
   postSiteLocation: function postSiteLocation(siteLocation) {
     return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].post("site-location/create", siteLocation);
   },
+  updateSiteLocation: function updateSiteLocation(siteLocation) {
+    return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].put("site-location/" + siteLocation.id + "/edit", siteLocation);
+  },
   postRegistration: function postRegistration(registration) {
     return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].post("registration/create", registration);
   },
@@ -8479,8 +8517,12 @@ var actions = {
       commit('ADD_SITE_LOCATION', response.data);
     });
   },
-  fetchSiteLocations: function fetchSiteLocations(_ref2) {
+  updateSiteLocation: function updateSiteLocation(_ref2, siteLocation) {
     var commit = _ref2.commit;
+    return _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].updateSiteLocation(siteLocation).then(function (response) {});
+  },
+  fetchSiteLocations: function fetchSiteLocations(_ref3) {
+    var commit = _ref3.commit;
     _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].getSiteLocations().then(function (response) {
       commit('SET_SITE_LOCATIONS', response.data.data);
     })["catch"](function () {});
@@ -32955,7 +32997,8 @@ var staticRenderFns = [
           "button",
           {
             staticClass:
-              "block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded",
+              "block uppercase cursor-not-allowed text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded",
+            attrs: { disabled: "" },
           },
           [_vm._v("delete")]
         ),

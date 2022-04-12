@@ -78,11 +78,43 @@ export default {
 
     editSite () {
       this.$v.$touch();
+
+      if(!this.$v.$invalid){
+
+      	this.$store.dispatch('SiteLocation/updateSiteLocation', this.site).then(() => {
+      		this.$swal.fire({
+			  position: 'center',
+			  icon: 'success',
+			  title: "<p style='color:#B5F44A' >" +'Your Site Has Been Updated' +"</p>",
+			  showConfirmButton: false,
+			  background: '#111',
+			  timer: 3500
+			})
+			this.site = this.createFreshSiteObject();
+			this.$v.$reset();
+			this.closeEditForm();
+      	}).catch(() => {
+      		this.$swal.fire({
+				  position: 'center',
+				  icon: 'error',
+				  title: "<p style='color:red' >" +'Record not updated.' +"</p>",
+				  showConfirmButton: true,
+				  confirmButtonColor: 'red',
+				  background: '#111',
+				})
+      	})
+      }
     },
 
     closeEditForm() {
     	this.$emit('close-modal');
-    } 
+    },
+
+    createFreshSiteObject() {
+  		return {
+  			name: "",
+  		};
+  	} 
   }
 
 }

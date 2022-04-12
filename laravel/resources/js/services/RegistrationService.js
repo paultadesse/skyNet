@@ -25,6 +25,11 @@ export default {
 		return Api.post("site-location/create", siteLocation);
 	},
 
+	updateSiteLocation(siteLocation)
+	{
+		return Api.put("site-location/" + siteLocation.id + "/edit", siteLocation);
+	},
+
 	postRegistration(registration) 
 	{
 		return Api.post("registration/create", registration);

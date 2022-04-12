@@ -48,7 +48,7 @@
                                  >edit</button>
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                <button class="block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded">delete</button>
+                                <button disabled class="block uppercase cursor-not-allowed text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded">delete</button>
                             </td>
                         </tr>
                     </tbody>
