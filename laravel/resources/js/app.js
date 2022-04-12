@@ -11,12 +11,15 @@ import camelCase from 'lodash/camelCase'
 
 import VueSweetalert2 from 'vue-sweetalert2';
 
+import moment from "moment";
+
 // If you don't need the styles, do not connect
 import 'sweetalert2/dist/sweetalert2.min.css';
 
 import store from "./store";
 
 Vue.use(VueSweetalert2);
+Vue.prototype.moment = moment;
 
 const requireComponent = require.context(
   // The relative path of the components folder
@@ -67,5 +70,6 @@ Vue.component("landing", require("./components/Landing.vue").default);
 const app = new Vue({
     el: "#app",
     store,
+    moment,
     router: new VueRouter(routes),
 });

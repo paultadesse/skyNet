@@ -37,10 +37,10 @@
                                 {{ site.name }}
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
-                                {{ site.created_at }}
+                                {{ moment(site.created_at).format("MMM Do y") }}
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
-                                {{ site.updated_at }}
+                                {{ moment(site.updated_at).format("MMM Do y") }}
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
                                 <button class="block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded"
