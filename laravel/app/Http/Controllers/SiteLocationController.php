@@ -26,9 +26,21 @@ class SiteLocationController extends Controller
         }
     }
 
-    public function edit(EditSiteLocationRequest $request, SiteLocationService $siteLocationService)
+    public function update(EditSiteLocationRequest $request, SiteLocation $siteLocation, SiteLocationService $siteLocationService)
     {
-        $edited_site_location = $siteLocationService->edit($request);
+
+        $edited_site_location = $siteLocationService->update($request, $siteLocation);
+
+        if($edited_site_location)
+        {
+            return response()->json($siteLocation, 200);
+
+        }else {
+
+            return response()->json([ 'message' => 'Record not updated']);
+
+        }
+
     }
 
     public function store(CreateSiteLocationRequest $request, SiteLocationService $siteLocationService)
@@ -37,9 +49,12 @@ class SiteLocationController extends Controller
 
         if ($site_location->wasRecentlyCreated)
         {
-            return response()->json($site_location, 201);    
+            return response()->json($site_location, 201);   
+
         }else {
+
             return response()->json([ 'message' => 'some error occured']);
+
         }
     }
 }

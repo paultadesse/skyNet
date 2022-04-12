@@ -25,9 +25,15 @@ class SiteLocationService {
 	}
 
 
-	public function edit(EditSiteLocationRequest $request)
+	public function update(EditSiteLocationRequest $request, SiteLocation $siteLocation) : bool
 	{
+		$siteLocation->fill(['name' => $request->name]);
 
+        $changes = $siteLocation->getDirty();
+        
+        $siteLocation->save();
+        
+        return count($changes);
 	}
 }
 
