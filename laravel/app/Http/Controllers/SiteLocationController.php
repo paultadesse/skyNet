@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Actions\CreateSiteLocationAction;
 use App\Http\Requests\SiteLocation\CreateSiteLocationRequest;
+use App\Http\Requests\SiteLocation\EditSiteLocationRequest;
 use App\Http\Resources\SiteLocationResource;
 use App\Models\SiteLocation;
+use App\Services\SiteLocationService;
 use Illuminate\Http\Request;
 
 class SiteLocationController extends Controller
@@ -25,9 +26,14 @@ class SiteLocationController extends Controller
         }
     }
 
-    public function store(CreateSiteLocationRequest $request, CreateSiteLocationAction $createSiteLocationAction)
+    public function edit(EditSiteLocationRequest $request, SiteLocationService $siteLocationService)
     {
-        $site_location = $createSiteLocationAction->create($request);
+        $edited_site_location = $siteLocationService->edit($request);
+    }
+
+    public function store(CreateSiteLocationRequest $request, SiteLocationService $siteLocationService)
+    {
+        $site_location = $siteLocationService->create($request);
 
         if ($site_location->wasRecentlyCreated)
         {

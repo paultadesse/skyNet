@@ -1,20 +1,12 @@
-<?php 
+<?php
 
-namespace App\Actions;
+namespace App\Services;
 
 use App\Http\Requests\SiteLocation\CreateSiteLocationRequest;
+use App\Http\Requests\SiteLocation\EditSiteLocationRequest;
 use App\Models\SiteLocation;
 
-class CreateSiteLocationAction {
-
-	/**
-	 * 
-	 * 
-	 *  This class is no longer in use [ i replace it with service class instead :to handle more methods: ]
-	 * 
-	 * 
-	 * 
-	 * */
+class SiteLocationService {
 
 	public function create(CreateSiteLocationRequest $request) : SiteLocation 
 	{
@@ -31,4 +23,11 @@ class CreateSiteLocationAction {
 
 		return $created_site_location;
 	}
+
+
+	public function edit(EditSiteLocationRequest $request)
+	{
+
+	}
 }
+
