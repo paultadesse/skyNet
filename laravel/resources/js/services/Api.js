@@ -4,7 +4,7 @@
 import axios from "axios";
 
 const Api = axios.create({
-	baseURL: "https://skynetvisp.com" + "/api",
+	baseURL: process.env.MIX_APP_URL + "/api",
 	withCredentials: false,
 	headers: {
 		'Accept': 'application/json',
