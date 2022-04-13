@@ -22,6 +22,7 @@ class RegistrationResource extends JsonResource
             'desired_speed' =>$this->desired_speed , 
             'site_location' => $this->site_location,
             'site_location_not_listed' => $this->site_location_not_listed ,
+            'created_at' => $this->created_at,
             'comment' => $this->comment,
         ];
         // return parent::toArray($request);
