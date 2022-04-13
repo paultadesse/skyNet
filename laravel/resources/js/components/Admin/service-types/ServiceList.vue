@@ -39,10 +39,10 @@
                                 {{ service.name }}
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
-                                {{ service.created_at }}
+                                {{ moment(service.created_at).format("MMM Do y") }}
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
-                                {{ service.updated_at }}
+                                {{ moment(service.updated_at).format("MMM Do y") }}
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
                                 {{ service.speeds.length }}

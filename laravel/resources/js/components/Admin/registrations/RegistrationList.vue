@@ -30,6 +30,9 @@
                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase">
                                 other
                             </th>
+                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase">
+                                registration date
+                            </th>
                             <th scope="col" class="relative py-3 px-6">
                                 <span class="sr-only">Edit</span>
                             </th>
@@ -64,6 +67,9 @@
                             </td>
                             <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
                                 {{ user.site_location_not_listed ? user.site_location_not_listed : '-' }}
+                            </td>
+                            <td class="py-4 px-6 text-sm text-GreenSheen whitespace-nowrap">
+                                {{ moment(user.created_at).format("MMM Do y") }}
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
                                 <button class="block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded">edit</button>

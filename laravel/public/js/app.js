@@ -3000,6 +3000,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'RegistrationList',
   props: {
@@ -53790,6 +53796,23 @@ var render = function () {
                           ]
                         ),
                         _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "py-4 px-6 text-sm text-GreenSheen whitespace-nowrap",
+                          },
+                          [
+                            _vm._v(
+                              "\n                                " +
+                                _vm._s(
+                                  _vm.moment(user.created_at).format("MMM Do y")
+                                ) +
+                                "\n                            "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
                         _vm._m(1, true),
                         _vm._v(" "),
                         _vm._m(2, true),
@@ -53927,6 +53950,20 @@ var staticRenderFns = [
             [
               _vm._v(
                 "\n                                other\n                            "
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "th",
+            {
+              staticClass:
+                "py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase",
+              attrs: { scope: "col" },
+            },
+            [
+              _vm._v(
+                "\n                                registration date\n                            "
               ),
             ]
           ),
@@ -54076,7 +54113,11 @@ var render = function () {
                           [
                             _vm._v(
                               "\n                                " +
-                                _vm._s(service.created_at) +
+                                _vm._s(
+                                  _vm
+                                    .moment(service.created_at)
+                                    .format("MMM Do y")
+                                ) +
                                 "\n                            "
                             ),
                           ]
@@ -54091,7 +54132,11 @@ var render = function () {
                           [
                             _vm._v(
                               "\n                                " +
-                                _vm._s(service.updated_at) +
+                                _vm._s(
+                                  _vm
+                                    .moment(service.updated_at)
+                                    .format("MMM Do y")
+                                ) +
                                 "\n                            "
                             ),
                           ]
