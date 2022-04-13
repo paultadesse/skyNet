@@ -1,5 +1,6 @@
 <template>
-	<div class="flex flex-col">
+	<div class="relative flex flex-col">
+        
     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
             <div style="height: 30rem" class="overflow-hidden shadow-md sm:rounded-lg overflow-y-scroll">
@@ -42,10 +43,12 @@
                                 {{ speed.service_type.name }}
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                <button class="block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded">edit</button>
+                                <button class="block uppercase text-xs tracking-wider bg-GreenLizard px-2 py-1 rounded"
+                                @click="edit(speed)"
+                                >edit</button>
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                <button class="block uppercase text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded">delete</button>
+                                <button class="block uppercase cursor-not-allowed text-white tracking-wider text-xs bg-red-500 px-2 py-1 rounded">delete</button>
                             </td>
                         </tr>
                     </tbody>
@@ -53,13 +56,23 @@
             </div>
         </div>
     </div>
+    <!-- show edit component -->
+    <div v-if="showEditForm" class="absolute w-full h-full bg-black bg-opacity-50">
+        <Edit :speed="speed" @close-modal="closeModal"/>
+    </div>
 </div>
 </template>
 
 <script>
+import Edit from './Edit';
+
 export default {
 
   name: 'SpeedList',
+
+  components: {
+    Edit
+  },
 
   props:{
  	speeds:{
@@ -69,9 +82,30 @@ export default {
 
   data () {
     return {
-
+        speed: {},
+        showEditForm: false
     }
+  },
+
+  methods: {
+
+    edit(speed) {
+        this.speed = speed;
+        this.toggleEditForm();
+    },
+
+    closeModal(event) {
+        // called from child
+        this.toggleEditForm();
+    },
+
+    toggleEditForm(){
+        this.showEditForm = !this.showEditForm;
+    }
+
+
   }
+
 }
 </script>
 
