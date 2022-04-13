@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Actions\CreateSpeedAction;
+// use App\Actions\CreateSpeedAction;
 use App\Http\Requests\Speed\CreateSpeedRequest;
+use App\Http\Requests\Speed\EditSpeedRequest;
 use App\Http\Resources\SpeedResource;
 use App\Models\Speed;
-use Illuminate\Http\Request;
+use App\Services\SpeedService;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Http\Request;
 
 class SpeedController extends Controller
 {
@@ -26,11 +28,28 @@ class SpeedController extends Controller
         }
     }
 
-    public function store(CreateSpeedRequest $request, CreateSpeedAction $createSpeedAction)
+    public function update(EditSpeedRequest $request, Speed $speed, SpeedService $speedService)
+    {
+
+        $edited_speed = $speedService->update($request, $speed);
+
+        if($edited_speed)
+        {
+            return response()->json($speed, 200);
+
+        }else {
+
+             return response()->json([ 'message' => 'Record not updated'], abort);
+            
+        }
+
+    }
+
+    public function store(CreateSpeedRequest $request, SpeedService $speedService)
     {
         try {
 
-            $speed = $createSpeedAction->create($request);
+            $speed = $speedService->create($request);
 
         } catch (ModelNotFoundException $e) {
             return response()->json([ 'message' => 'object not found'], 404);

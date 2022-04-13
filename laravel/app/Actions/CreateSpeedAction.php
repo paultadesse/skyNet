@@ -9,6 +9,15 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class CreateSpeedAction {
 
+	/**
+	 * 
+	 * 
+	 *  This class is no longer in use [ i replace it with service class instead :to handle more methods: ]
+	 * 
+	 * 
+	 * 
+	 * */
+
 	public function create(CreateSpeedRequest $request) : Speed 
 	{
 		$service_type = ServiceType::find($request['service_type']);
