@@ -5,6 +5,7 @@ import Vuex from "vuex";
 import ServiceType from "./ServiceType";
 import SiteLocation from "./SiteLocation";
 import User from "./User";
+import Speed from "./Speed";
 
 Vue.use(Vuex);
 
@@ -15,6 +16,7 @@ export default new Vuex.Store({
 	modules:{
 		User,
 		ServiceType,
-		SiteLocation
+		SiteLocation,
+		Speed,
 	}
 });

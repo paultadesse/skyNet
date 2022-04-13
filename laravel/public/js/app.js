@@ -3728,30 +3728,37 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     editSpeed: function editSpeed() {
-      this.$v.$touch(); //    if(!this.$v.$invalid){
-      //    	this.$store.dispatch('SpeedLocation/updateSpeedLocation', this.speed).then(() => {
-      //    		this.$swal.fire({
-      //   position: 'center',
-      //   icon: 'success',
-      //   title: "<p style='color:#B5F44A' >" +'Your Speed Has Been Updated' +"</p>",
-      //   showConfirmButton: false,
-      //   background: '#111',
-      //   timer: 3500
-      // })
-      // this.speed = this.createFreshSpeedObject();
-      // this.$v.$reset();
-      // this.closeEditForm();
-      //    	}).catch(() => {
-      //    		this.$swal.fire({
-      // 	  position: 'center',
-      // 	  icon: 'error',
-      // 	  title: "<p style='color:red' >" +'Record not updated.' +"</p>",
-      // 	  showConfirmButton: true,
-      // 	  confirmButtonColor: 'red',
-      // 	  background: '#111',
-      // 	})
-      //    	})
-      //    }
+      var _this = this;
+
+      this.$v.$touch();
+
+      if (!this.$v.$invalid) {
+        this.$store.dispatch('Speed/updateSpeed', this.speed).then(function () {
+          _this.$swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: "<p style='color:#B5F44A' >" + 'Your Speed Has Been Updated' + "</p>",
+            showConfirmButton: false,
+            background: '#111',
+            timer: 3500
+          });
+
+          _this.speed = _this.createFreshSpeedObject();
+
+          _this.$v.$reset();
+
+          _this.closeEditForm();
+        })["catch"](function () {
+          _this.$swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: "<p style='color:red' >" + 'Record not updated.' + "</p>",
+            showConfirmButton: true,
+            confirmButtonColor: 'red',
+            background: '#111'
+          });
+        });
+      }
     },
     closeEditForm: function closeEditForm() {
       this.$emit('close-modal');
@@ -3893,8 +3900,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_multiselect__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_multiselect__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/RegistrationService.js */ "./resources/js/services/RegistrationService.js");
 /* harmony import */ var _BaseInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../BaseInput */ "./resources/js/components/BaseInput.vue");
-/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
 /* harmony import */ var _SpeedList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SpeedList */ "./resources/js/components/Admin/speed/SpeedList.vue");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -3979,6 +3993,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 
@@ -3994,37 +4009,26 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       showForm: false,
-      serviceTypes: [],
-      speeds: [],
       serviceTypeId: '',
       speed: this.createFreshSpeedObject()
     };
   },
   created: function created() {
-    var _this = this;
-
-    _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_1__["default"].getServiceTypes().then(function (response) {
-      _this.serviceTypes = response.data.data;
-    })["catch"](function (error) {
-      console.log('Ther was an error: ' + error.response[0]);
-    });
-    _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_1__["default"].getSpeeds().then(function (response) {
-      _this.speeds = response.data.data;
-    })["catch"](function (error) {
-      console.log('Ther was an error: ' + error.response[0]);
-    });
+    this.$store.dispatch('ServiceType/fetchServiceTypes');
+    this.$store.dispatch('Speed/fetchSpeeds');
   },
+  computed: _objectSpread(_objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_4__.mapState)('ServiceType', ['serviceTypes'])), (0,vuex__WEBPACK_IMPORTED_MODULE_4__.mapState)('Speed', ['speeds'])),
   validations: {
     speed: {
       speed: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__.required
       },
       birr: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required,
-        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.numeric
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__.required,
+        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__.numeric
       },
       service_type: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_4__.required
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__.required
       }
     }
   },
@@ -4033,15 +4037,14 @@ __webpack_require__.r(__webpack_exports__);
       this.serviceTypeId = this.speed.service_type.id;
     },
     createSpeed: function createSpeed() {
-      var _this2 = this;
+      var _this = this;
 
       this.$v.$touch();
 
       if (!this.$v.$invalid) {
         this.speed.service_type = this.serviceTypeId;
-        console.log(this.speed);
-        _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_1__["default"].postSpeed(this.speed).then(function (response) {
-          _this2.$swal.fire({
+        this.$store.dispatch('Speed/createSpeed', this.speed).then(function () {
+          _this.$swal.fire({
             position: 'center',
             icon: 'success',
             title: "<p style='color:#B5F44A' >" + 'Your New Speed Has Been Added ' + "</p>",
@@ -4050,15 +4053,11 @@ __webpack_require__.r(__webpack_exports__);
             timer: 3500
           });
 
-          console.log(response.data);
+          _this.speed = _this.createFreshSpeedObject();
 
-          _this2.speeds.push(response.data);
-
-          _this2.speed = _this2.createFreshSpeedObject();
-
-          _this2.$v.$reset();
-        })["catch"](function (error) {
-          _this2.$swal.fire({
+          _this.$v.$reset();
+        })["catch"](function () {
+          _this.$swal.fire({
             position: 'center',
             icon: 'error',
             title: "<p style='color:red' >" + 'Some error occured please try again.' + "</p>",
@@ -4067,7 +4066,7 @@ __webpack_require__.r(__webpack_exports__);
             background: '#111'
           });
 
-          _this2.speed = _this2.createFreshSiteLocationObject();
+          _this.speed = _this.createFreshSpeedObject();
         });
       }
     },
@@ -8560,9 +8559,6 @@ __webpack_require__.r(__webpack_exports__);
   getSiteLocations: function getSiteLocations() {
     return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].get("site-locations");
   },
-  getSpeeds: function getSpeeds() {
-    return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].get("speed");
-  },
   getRegistrations: function getRegistrations() {
     return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].get("registrations");
   },
@@ -8578,8 +8574,14 @@ __webpack_require__.r(__webpack_exports__);
   postServiceType: function postServiceType(serviceType) {
     return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].post("service-type/create", serviceType);
   },
+  getSpeeds: function getSpeeds() {
+    return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].get("speed");
+  },
   postSpeed: function postSpeed(speed) {
     return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].post("speed/create", speed);
+  },
+  updateSpeed: function updateSpeed(speed) {
+    return _Api__WEBPACK_IMPORTED_MODULE_0__["default"].put("speed/" + speed.id + "/edit", speed);
   }
 });
 
@@ -8715,6 +8717,60 @@ var mutations = {
 
 /***/ }),
 
+/***/ "./resources/js/store/Speed/index.js":
+/*!*******************************************!*\
+  !*** ./resources/js/store/Speed/index.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/RegistrationService.js */ "./resources/js/services/RegistrationService.js");
+
+var state = {
+  speeds: []
+};
+var getters = {// speeds: state => state.speeds
+};
+var actions = {
+  createSpeed: function createSpeed(_ref, speed) {
+    var commit = _ref.commit;
+    return _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].postSpeed(speed).then(function (response) {
+      commit('ADD_SPEED', response.data);
+    });
+  },
+  updateSpeed: function updateSpeed(_ref2, speed) {
+    var commit = _ref2.commit;
+    return _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].updateSpeed(speed).then(function (response) {});
+  },
+  fetchSpeeds: function fetchSpeeds(_ref3) {
+    var commit = _ref3.commit;
+    _services_RegistrationService_js__WEBPACK_IMPORTED_MODULE_0__["default"].getSpeeds().then(function (response) {
+      commit('SET_SPEEDS', response.data.data);
+    })["catch"](function () {});
+  }
+};
+var mutations = {
+  ADD_SPEED: function ADD_SPEED(state, speed) {
+    state.speeds.push(speed);
+  },
+  SET_SPEEDS: function SET_SPEEDS(state, speeds) {
+    state.speeds = speeds;
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  namespaced: true,
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
 /***/ "./resources/js/store/User/index.js":
 /*!******************************************!*\
   !*** ./resources/js/store/User/index.js ***!
@@ -8782,26 +8838,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _ServiceType__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ServiceType */ "./resources/js/store/ServiceType/index.js");
 /* harmony import */ var _SiteLocation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SiteLocation */ "./resources/js/store/SiteLocation/index.js");
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./User */ "./resources/js/store/User/index.js");
+/* harmony import */ var _Speed__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Speed */ "./resources/js/store/Speed/index.js");
 /*jshint esversion: 6 */
 
 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_3__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_4__["default"]);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_4__["default"].Store({
+
+vue__WEBPACK_IMPORTED_MODULE_4__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_5__["default"]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_5__["default"].Store({
   state: {},
   mutations: {},
   actions: {},
   modules: {
     User: _User__WEBPACK_IMPORTED_MODULE_2__["default"],
     ServiceType: _ServiceType__WEBPACK_IMPORTED_MODULE_0__["default"],
-    SiteLocation: _SiteLocation__WEBPACK_IMPORTED_MODULE_1__["default"]
+    SiteLocation: _SiteLocation__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Speed: _Speed__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 }));
 
@@ -55248,7 +55307,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("h2", { staticClass: "text-GreenLizard text-2xl font-semibold" }, [
-        _vm._v("Editing speed Location"),
+        _vm._v("Editing speed"),
       ]),
     ])
   },

@@ -9,7 +9,7 @@
 					</svg>
         		</div>
         		<div>
-        			<h2 class="text-GreenLizard text-2xl font-semibold">Editing speed Location</h2>
+        			<h2 class="text-GreenLizard text-2xl font-semibold">Editing speed</h2>
         		</div>
         		<hr class="border-GreenSheen opacity-25">
 				<form @submit.prevent="editSpeed">
@@ -94,31 +94,33 @@ export default {
     editSpeed () {
       this.$v.$touch();
 
-   //    if(!this.$v.$invalid){
+      if(!this.$v.$invalid){
 
-   //    	this.$store.dispatch('SpeedLocation/updateSpeedLocation', this.speed).then(() => {
-   //    		this.$swal.fire({
-			//   position: 'center',
-			//   icon: 'success',
-			//   title: "<p style='color:#B5F44A' >" +'Your Speed Has Been Updated' +"</p>",
-			//   showConfirmButton: false,
-			//   background: '#111',
-			//   timer: 3500
-			// })
-			// this.speed = this.createFreshSpeedObject();
-			// this.$v.$reset();
-			// this.closeEditForm();
-   //    	}).catch(() => {
-   //    		this.$swal.fire({
-			// 	  position: 'center',
-			// 	  icon: 'error',
-			// 	  title: "<p style='color:red' >" +'Record not updated.' +"</p>",
-			// 	  showConfirmButton: true,
-			// 	  confirmButtonColor: 'red',
-			// 	  background: '#111',
-			// 	})
-   //    	})
-   //    }
+      	this.$store.dispatch('Speed/updateSpeed', this.speed).then(() => {
+      		this.$swal.fire({
+				  position: 'center',
+				  icon: 'success',
+				  title: "<p style='color:#B5F44A' >" +'Your Speed Has Been Updated' +"</p>",
+				  showConfirmButton: false,
+				  background: '#111',
+				  timer: 3500
+				})
+
+				this.speed = this.createFreshSpeedObject();
+				this.$v.$reset();
+				this.closeEditForm();
+
+	      	}).catch(() => {
+	      		this.$swal.fire({
+					  position: 'center',
+					  icon: 'error',
+					  title: "<p style='color:red' >" +'Record not updated.' +"</p>",
+					  showConfirmButton: true,
+					  confirmButtonColor: 'red',
+					  background: '#111',
+					})
+      	})
+      }
     },
 
     closeEditForm() {

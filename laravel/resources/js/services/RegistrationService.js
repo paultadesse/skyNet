@@ -11,11 +11,6 @@ export default {
 		return Api.get("site-locations");
 	},
 
-	getSpeeds()
-	{
-		return Api.get("speed");
-	},
-
 	getRegistrations(){
 		return Api.get("registrations");
 	},
@@ -40,10 +35,20 @@ export default {
 		return Api.post("service-type/create", serviceType);
 	},
 
+	getSpeeds()
+	{
+		return Api.get("speed");
+	},
+
 	postSpeed(speed)
 	{
 		return Api.post("speed/create", speed);
-	}
+	},
+
+	updateSpeed(speed)
+	{
+		return Api.put("speed/" + speed.id + "/edit", speed);
+	},
 
 
 }

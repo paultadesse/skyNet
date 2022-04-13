@@ -89,6 +89,7 @@ import RegistrationService from '../../../services/RegistrationService.js';
 import BaseInput from '../../BaseInput';
 import { required, numeric } from 'vuelidate/lib/validators';
 import SpeedList from './SpeedList';
+import { mapState	 } from 'vuex';
 
 
 export default {
@@ -104,29 +105,21 @@ export default {
   data () {
     return {
     	showForm: false,
-    	serviceTypes: [],
-    	speeds: [],
     	serviceTypeId:'',
     	speed: this.createFreshSpeedObject(),
     }
   },
 
   created() {
-  	RegistrationService.getServiceTypes()
-  		.then(response => { 
-  			this.serviceTypes = response.data.data
-  		})
-  		.catch(error => { 
-  			console.log('Ther was an error: ' + error.response[0]);
-  		 });
 
-  	RegistrationService.getSpeeds()
-  		.then(response => { 
-  			this.speeds = response.data.data
-  		})
-  		.catch(error => { 
-  			console.log('Ther was an error: ' + error.response[0]);
-  		 });
+  	this.$store.dispatch('ServiceType/fetchServiceTypes');
+  	this.$store.dispatch('Speed/fetchSpeeds');
+
+  },
+
+  computed: {
+  	...mapState('ServiceType', ['serviceTypes']),
+  	...mapState('Speed', ['speeds']),
   },
 
   validations: {
@@ -146,9 +139,8 @@ export default {
 
   		if (!this.$v.$invalid) {
   			this.speed.service_type = this.serviceTypeId;
-  			console.log(this.speed)
-  			RegistrationService.postSpeed(this.speed)
-  			.then((response) => { 
+  			this.$store.dispatch('Speed/createSpeed', this.speed)
+  			.then(() => { 
   				this.$swal.fire({
 				  position: 'center',
 				  icon: 'success',
@@ -157,12 +149,10 @@ export default {
 				  background: '#111',
 				  timer: 3500
 				})
-  				console.log(response.data)
-				  this.speeds.push(response.data)
   				this.speed = this.createFreshSpeedObject();
   				this.$v.$reset()
   			})
-  			.catch((error) => {
+  			.catch(() => {
   				this.$swal.fire({
 				  position: 'center',
 				  icon: 'error',
@@ -171,7 +161,7 @@ export default {
 				  confirmButtonColor: 'red',
 				  background: '#111',
 				})
-  				this.speed = this.createFreshSiteLocationObject();
+  				this.speed = this.createFreshSpeedObject();
   			})
   		}
   	},
