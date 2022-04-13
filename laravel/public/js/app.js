@@ -8524,7 +8524,7 @@ __webpack_require__.r(__webpack_exports__);
 // When relying upon ECMAScript 6 features such as [const], you should set this option so JSHint doesn't raise unnecessary warnings.
 
 var Api = axios__WEBPACK_IMPORTED_MODULE_0___default().create({
-  baseURL: "http://127.0.0.1:8000" + "/api",
+  baseURL: "https://skynetvisp.com" + "/api",
   withCredentials: false,
   headers: {
     'Accept': 'application/json',
