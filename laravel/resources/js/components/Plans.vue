@@ -8,8 +8,9 @@
 
 
                     <!-- this style binding is used to controll the scroll bar -->
+                    <!-- :style="serviceType.speeds.length > 6 ? 'height: 50rem;' : ''" -->
                     <div
-                        :style="serviceType.speeds.length > 6 ? 'height: 50rem;' : ''"
+                        style="height: 40rem;"
                         :class ="index != serviceTypes.length - 1 ? 'border-r border-GreenLizard border-opacity-50' : ''"   
                         class=" 
                             flex flex-col
