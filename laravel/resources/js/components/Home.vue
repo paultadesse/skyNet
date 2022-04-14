@@ -119,7 +119,7 @@
                         text-center
                         max-w-sm
                         border-blue-900 
-                        p-12 border-GreenLizard border 
+                        p-12 border-GreenLizard border  border-opacity-30
                         shadow-xl
                         rounded-sm md:bottom-0
                     "
@@ -366,7 +366,7 @@
                         items-center
                         text-center
                         max-w-sm
-                        p-12 border-GreenLizard border 
+                        p-12 border-GreenLizard border border-opacity-30
                         shadow-xl
                         rounded-sm
                     "
@@ -611,7 +611,7 @@
                         items-center
                         text-center
                         max-w-sm
-                        border-GreenLizard border 
+                        border-GreenLizard border border-opacity-30
                         p-12
                         shadow-xl
                         rounded-sm

@@ -21,6 +21,9 @@ class ServiceTypeResource extends JsonResource
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'speeds' => SpeedResource::collection($this->whenLoaded('speeds')),
+            'speeds_count' => $this->whenLoaded('speeds', function(){
+                return $this->speeds->count();
+            }),
         ];
     }
 }

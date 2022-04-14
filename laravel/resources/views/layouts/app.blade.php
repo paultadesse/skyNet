@@ -54,7 +54,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #222;
+  background: #000;
 }
 
 *::-webkit-scrollbar-thumb {
