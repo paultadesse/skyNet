@@ -6276,7 +6276,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Plans',
@@ -57843,7 +57842,7 @@ var render = function () {
                     index != _vm.serviceTypes.length - 1
                       ? "border-r border-GreenLizard border-opacity-50"
                       : "",
-                  staticStyle: { height: "50rem" },
+                  style: serviceType.speeds.length > 6 ? "height: 50rem;" : "",
                 },
                 [
                   _c(

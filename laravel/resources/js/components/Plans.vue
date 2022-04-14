@@ -8,9 +8,8 @@
 
 
                     <!-- this style binding is used to controll the scroll bar -->
-                    <!-- :style="serviceType.speeds.length > 6 ? 'height: 50rem;' : ''" -->
                     <div
-                        style="height: 50rem;"
+                        :style="serviceType.speeds.length > 6 ? 'height: 50rem;' : ''"
                         :class ="index != serviceTypes.length - 1 ? 'border-r border-GreenLizard border-opacity-50' : ''"   
                         class=" 
                             flex flex-col
@@ -108,7 +107,7 @@ export default {
             return Math.max.apply(null, speed_counts);
         }
     },
-    
+
 };
 </script>
 
