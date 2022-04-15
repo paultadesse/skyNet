@@ -16,6 +16,6 @@ class ServiceType extends Model
 
     public function speeds()
     {
-        return $this->hasMany(Speed::class);
+        return $this->hasMany(Speed::class)->orderBy('birr');
     }
 }

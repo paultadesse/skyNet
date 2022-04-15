@@ -14,6 +14,16 @@ class ServiceTypeController extends Controller
     {
         $service_types = ServiceType::with('speeds')->get();
 
+        /**
+         * using join instead of Eloquent -- For performance - for now it's okay but in the future i might need this..
+         * 
+         * $service_types = ServiceType::select(['service_types.*', 'speeds.birr as speed_birr'])
+         * ->join('speeds', 'service_types.id', '=', 'speeds.service_type_id')
+         * ->orderBy('speeds.birr')
+         * ->get();
+         * 
+         * */
+        
         if($service_types != null)
         {
             $service_types_resource = ServiceTypeResource::collection($service_types);
